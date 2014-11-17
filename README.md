@@ -1,4 +1,4 @@
-dip
+Car UI
 ===
 
-Diplomová práce Car UI
+Diplomová práce
