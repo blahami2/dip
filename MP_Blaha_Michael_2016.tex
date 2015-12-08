@@ -1,0 +1,330 @@
+% % % % % % % % % % % % %
+% Example thesis (CTU FIT) based on CTUstyle 
+% use: pdfcsplain <FIT-ZP.tex>
+% write this document as UTF-8
+% % % % % % % % % % % % %
+% CTUstyle: see more at http://petr.olsak.net/ctustyle.html
+% requirements: ctustyle.tex, ctulogo.pdf
+% CTUstyle requires OPmac (opmac.tex)
+% download OPmac from
+% http://petr.olsak.net/opmac.html
+% % % % % % % % % % % % %
+
+% This example created by Ondrej Guth <ondrej.guth@fit.cvut.cz> 2014
+% based on CTUstyle by Petr Olsak
+
+% % % % % % % % % % % % % 
+% The following not to be modified
+% % % % % % % % % % % % % 
+\input ctustyle
+\faculty {F8}
+% % % % % % % % % % % % % 
+% Modify the following
+% % % % % % % % % % % % %
+
+% (thesis type {B,M,D})/(language {CZ,EN})
+\worktype [M/EN]
+\department {Katedra teoretické informatiky}
+\title {Tablet infotainment system}
+\author {Bc. Michael Bl\' aha}
+\date {January 2016}
+\supervisor{Ing Jan \v Sediv\' y, CSc.}
+\abstractEN {This document is for testing purpose only.}
+\abstractCZ {Tento dokument je pouze pro pot{\v r}eby testování.}
+\declaration {Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e a \v ze jsem uvedl(a) ve\v sker\'e pou\v zit\'e informa\v cn\'\i{} zdroje v~souladu s~Metodick\'ym pokynem o~etick\'e p\v r\'\i{}prav\v e vysoko\v skolsk\'ych z\'av\v ere\v cn\'ych prac\'\i{}.
+
+		Beru na v\v edom\'\i{}, \v ze se na moji pr\'aci vztahuj\'\i{} pr\'ava a povinnosti vypl\'yvaj\'\i{}c\'\i{} ze z\'akona \v c.~121/2000~Sb., autorsk\'eho z\'akona, ve zn\v en\'\i{} pozd\v ej\v s\'\i{}ch p\v redpis{\r u}, zejm\'ena skute\v cnost, \v ze \v Cesk\'e vysok\'e u\v cen\'\i{} technick\'e v~Praze m\'a pr\'avo na uzav\v ren\'\i{} licen\v cn\'\i{} smlouvy o~u\v zit\'\i{} t\'eto pr\'ace jako \v skoln\'\i{}ho d\'\i{}la podle \S{}~60 odst.~1 autorsk\'eho z\'akona.}
+
+\makefront
+
+
+%------------------------------------------------------------------------ INTRODUCTION ------------------------------------------------------------------------%
+\chap Introduction
+
+
+Some stuff
+
+%	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
+\sec Project
+
+
+stuff
+%		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
+\secc Motivation
+
+
+.
+%	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
+\sec Assignment analysis
+
+\secc Review existing Android applications for in-car use
+
+One of the key approches in research project is reviewing the existing progress in the given field. Reviewing existing applications helps understanding the topic, seeing the bigger picture, learning from mistakes of others and last but not least, getting general idea about competition.
+
+\secc Review and analyse User Interface development methods for in-car infotainment applications
+
+Cosindering the car environment, the user interface must deal with a lot of different problems than usual. This task should review existing User Interface development rules and apply them to the car environment, then analyse them and choose proper method for car-UI design process.
+
+\secc Analyze the in-car OBD API and exported data
+
+On-Board Diagnostics API is a standard API provided by modern cars for gathering various information from speed to engine temperature. This task focuses on understanding and gathering data from the OBD API.
+
+\secc Design an application system architecture for accessing the OBD data and resources
+
+Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unneccesary (FIX!) delay.
+
+\secc Design a tablet User Interface for in-car use
+
+After reviewing existing applications and UI development methods, the next goal is to create new User Interface for in-car use, while considering the constraints this environment puts on it.
+
+\secc Design and implement in-car application offering the OBD data for Android tablet platform
+
+With everything prepared and thought through, the application will be developed based on result from all the tasks accomplished so far. In this case, the Android platform will be used as explained later in the text.
+
+\secc Perform UI and application testing and evaluate results
+
+For best results the application must and will be tested. Both code and UI must be tested properly, using various testing approaches, such as unit tests or UI testing with reaul users in a car simulator.
+
+%------------------------------------------------------------------------ ANALYSIS ------------------------------------------------------------------------%
+\chap Analysis
+
+
+%	------------------------------------------------------------------------ Existing applications ----------------------------------------------------------------------%
+\sec Existing applications
+
+
+\secc Applications
+
+
+\secc Google AutoUI
+
+
+%	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
+\sec Platforms
+
+
+%	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
+\sec Android platform
+
+
+\secc Architecture
+
+
+\secc Specifics
+
+
+%	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
+\sec GUI
+
+
+\secc Basic principles
+
+
+\secc Car UI differences
+
+
+%	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%
+\sec Server
+
+
+\secc Functionality
+
+
+\secc Data storage
+
+
+\secc Communication
+
+
+%	------------------------------------------------------------------------ Development and support tools ----------------------------------------------------------------------%
+\sec Development and support tools
+
+
+\secc Development environment
+
+
+\secc Quality Assurance tools
+
+
+\secc Version system
+
+
+\secc Test driven development
+
+
+\secc Continuous integration
+
+
+
+%------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
+\chap Design
+
+
+%	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
+\sec Application architecture
+
+
+\secc Extensibility
+
+
+\secc Modularity
+
+
+\secc Adaptability
+
+
+\secc AutoUI preparation
+
+
+\secc Platform limitations
+
+
+%	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
+\sec GUI
+
+
+\secc Basic elements
+
+
+\secc UI drafts
+
+
+%------------------------------------------------------------------------ REALIZATION ------------------------------------------------------------------------%
+\chap Realization
+
+
+%	------------------------------------------------------------------------ Preparation ----------------------------------------------------------------------%
+\sec Preparation
+
+
+\secc Environment
+
+
+\secc Versioning
+
+
+\secc Testing
+
+
+\secc Scripting
+
+
+%	------------------------------------------------------------------------ Core ----------------------------------------------------------------------%
+\sec Core
+
+
+\secc Core
+
+
+\secc Data storage
+
+
+\secc Communication
+
+
+\secc Optimization
+
+
+%	------------------------------------------------------------------------ Modularity ----------------------------------------------------------------------%
+\sec Modularity
+
+
+\secc Requirements
+
+
+\secc Integration
+
+
+%	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
+\sec GUI
+
+
+\secc Common elements
+
+
+\secc Multiple designs
+
+
+%------------------------------------------------------------------------ TESTING ------------------------------------------------------------------------%
+\chap Testing
+
+
+%	------------------------------------------------------------------------ Implementation ----------------------------------------------------------------------%
+\sec Implementation
+
+
+\secc Unit testing
+
+
+\secc Integration testing
+
+
+\secc System testing
+
+
+\secc Qualification testing
+
+
+%	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
+\sec GUI
+
+
+\secc Heuristic testing
+
+
+\secc Evaluation
+
+subsubsub
+
+\par Some text
+
+text
+
+
+\secc Testing with users
+
+
+\secc Simulator
+
+subsubsub
+
+\secc Preparations
+
+subsubsub
+
+\secc Course
+
+subsubsub
+
+\secc Evaluation
+
+subsubsub
+
+%	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
+\sec Summary
+
+
+%------------------------------------------------------------------------ CONCLUSION ------------------------------------------------------------------------%
+\chap Conclusion
+
+
+%	------------------------------------------------------------------------ Assignment completion ----------------------------------------------------------------------%
+\sec Assignment completion
+
+
+%	------------------------------------------------------------------------ Project life cycle ----------------------------------------------------------------------%
+\sec Project life cycle
+
+
+\secc Present
+
+
+\secc Future
+
+
+%	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
+\sec Summary
+
+
+
+\bye
