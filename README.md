@@ -1,4 +1,0 @@
-Car UI
-===
-
-Diplomová práce
