@@ -36,6 +36,8 @@
 		Beru na v\v edom\'\i{}, \v ze se na moji pr\'aci vztahuj\'\i{} pr\'ava a povinnosti vypl\'yvaj\'\i{}c\'\i{} ze z\'akona \v c.~121/2000~Sb., autorsk\'eho z\'akona, ve zn\v en\'\i{} pozd\v ej\v s\'\i{}ch p\v redpis{\r u}, zejm\'ena skute\v cnost, \v ze \v Cesk\'e vysok\'e u\v cen\'\i{} technick\'e v~Praze m\'a pr\'avo na uzav\v ren\'\i{} licen\v cn\'\i{} smlouvy o~u\v zit\'\i{} t\'eto pr\'ace jako \v skoln\'\i{}ho d\'\i{}la podle \S{}~60 odst.~1 autorsk\'eho z\'akona.}
 
 
+\picw=.8\hsize
+
 \makefront
 
 
@@ -62,31 +64,33 @@ See above
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \sec Assignment analysis
 
-\secc Review existing Android applications for in-car use
+\secc Assignment tasks
+
+\seccc Review existing Android applications for in-car use
 
 One of the key approches in research project is reviewing the existing progress in the given field. Reviewing existing applications helps understanding the topic, seeing the bigger picture, learning from mistakes of others and last but not least, getting general idea about competition.
 
-\secc Review and analyse User Interface development methods for in-car infotainment applications
+\seccc Review and analyse User Interface development methods for in-car infotainment applications
 
 Cosindering the car environment, the user interface must deal with a lot of different problems than usual. This task should review existing User Interface development rules and apply them to the car environment, then analyse them and choose proper method for car-UI design process.
 
-\secc Analyze the in-car OBD API and exported data
+\seccc Analyze the in-car OBD API and exported data
 
 On-Board Diagnostics API is a standard API provided by modern cars for gathering various information from speed to engine temperature. This task focuses on understanding and gathering data from the OBD API.
 
-\secc Design an application system architecture for accessing the OBD data and resources
+\seccc Design an application system architecture for accessing the OBD data and resources
 
 Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unneccesary (FIX!) delay.
 
-\secc Design a tablet User Interface for in-car use
+\seccc Design a tablet User Interface for in-car use
 
 After reviewing existing applications and UI development methods, the next goal is to create new User Interface for in-car use, while considering the constraints this environment puts on it.
 
-\secc Design and implement in-car application offering the OBD data for Android tablet platform
+\seccc Design and implement in-car application offering the OBD data for Android tablet platform
 
 With everything prepared and thought through, the application will be developed based on result from all the tasks accomplished so far. In this case, the Android platform will be used as explained later in the text.
 
-\secc Perform UI and application testing and evaluate results
+\seccc Perform UI and application testing and evaluate results
 
 For best results the application must and will be tested. Both code and UI must be tested properly, using various testing approaches, such as unit tests or UI testing with reaul users in a car simulator.
 
@@ -110,6 +114,11 @@ see \url{https://docs.google.com/document/d/1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KEC
 Starting with an empty screen, lot of settings are required before using this application, since there is no default mode. Adding new views is easy and intuitive, but still very confusing. The add menu lacks hierarchy and everything is just sorted array of various options. There is no cancel button when popping the menu dialog.
 
 This application can actually show almost anything OBD provides. It supports differents types of display, but it is hard to tell by their names. Responsiveness it not smooth at all and launching the application in horizontal mode confuses it, everything behaves like if it was in vertical mode.
+
+
+\medskip
+\centerline{\inspic images/analysis_app_torque.png }\nobreak\medskip
+\caption/f Screenshot from Torque
 
 \seccc Advantages
 
@@ -137,6 +146,10 @@ This application starts with a pop-up tutorial for it's elementary functionality
 
 It appears to be just a simple application offering speed, compass, weather and external application launcher. The new version also displays location (address) and a phone version is able to respond to text messages. It also supports text to speech (on touch).
 
+\medskip
+\centerline{\inspic images/analysis_app_carhomeultra.png }\nobreak\medskip
+\caption/f Screenshot from CarHome Ultra
+
 \seccc Advantages
 
 \begitems
@@ -163,6 +176,10 @@ After a long loading the main window appears. It has three screens, which change
 
 It also provides settings for bluetooth, brightness, screen rotation, fullscreen, day/night mode and application settings, where other options can be set, such as home adress, theme, units.
 
+\medskip
+\centerline{\inspic images/analysis_app_cardashdroid.png }\nobreak\medskip
+\caption/f Screenshot from Car Dashdroid
+
 \seccc Advantages
 
 \begitems
@@ -183,6 +200,10 @@ It also provides settings for bluetooth, brightness, screen rotation, fullscreen
 \secc Ultimate Car Dock
 
 While the design is very similar to CarHome Ultra, this application offers fewer displays on a single screen. There are five screens, each one consists of six cards. Every card can change into shortcut or a build-in application. The Ultimate Car Dock has only few built-in applications: music player, voice command, speed, weather, messages and calls. It also supports shortcuts to other external applications.
+
+\medskip
+\centerline{\inspic images/analysis_app_ultimatecardock.png }\nobreak\medskip
+\caption/f Screenshot from Ultimate Car Dock
 
 \seccc Advantages
 

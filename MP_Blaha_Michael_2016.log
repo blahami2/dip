@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  9 DEC 2015 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  9 DEC 2015 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,7 +114,7 @@ FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
 English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{c:/tex
 live/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>]
 [-2]
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []\tenrm Prohlašuji, že jsem před-lože-nou
 
 \hbox(7.57762+2.13887)x190.63347, glue set 4.54439
@@ -152,7 +152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
 .etc.
 
 [-3] [-4] [-5] [-6]
-Overfull \hbox (46.58926pt too wide) in paragraph at lines 47--48
+Overfull \hbox (46.58926pt too wide) in paragraph at lines 49--50
 [][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] / 1pGtlS
 5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8[] /|
 
@@ -191,7 +191,7 @@ Overfull \hbox (46.58926pt too wide) in paragraph at lines 47--48
 .etc.
 
 
-Overfull \hbox (150.44128pt too wide) in paragraph at lines 49--50
+Overfull \hbox (150.44128pt too wide) in paragraph at lines 51--52
 []\tenrm generally progress: [][]\tentt https:[] /[] / docs[] . google[] . com[
 ] / document[] / d[] / 1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8[] /|
 
@@ -230,7 +230,7 @@ Overfull \hbox (150.44128pt too wide) in paragraph at lines 49--50
 .etc.
 
 [1] [2]
-Overfull \hbox (161.32544pt too wide) in paragraph at lines 96--98
+Overfull \hbox (161.32544pt too wide) in paragraph at lines 100--102
 \tenrm see [][]\tentt ap-pli-ca-tion anal-y-sis https:[] /[] / docs[] . google[
 ] . com[] / document[] / d[] / 1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-|
 
@@ -274,7 +274,7 @@ Overfull \hbox (161.32544pt too wide) in paragraph at lines 96--98
 .etc.
 
 
-Overfull \hbox (150.96733pt too wide) in paragraph at lines 96--98
+Overfull \hbox (150.96733pt too wide) in paragraph at lines 100--102
 \tentt UL0[] / edit[][][] \tenrm pri-or-ity list [][]\tentt https:[] /[] / docs
 [] . google[] . com[] / document[] / d[] / 1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejg
 bhqzw7kI[] /|
@@ -315,7 +315,7 @@ bhqzw7kI[] /|
 .etc.
 
 
-Overfull \hbox (63.15054pt too wide) in paragraph at lines 105--107
+Overfull \hbox (63.15054pt too wide) in paragraph at lines 109--111
 \tenrm see [][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d
 [] / 1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY[] /|
 
@@ -354,7 +354,7 @@ Overfull \hbox (63.15054pt too wide) in paragraph at lines 105--107
 .etc.
 
 
-Overfull \hbox (2.83376pt too wide) in paragraph at lines 105--107
+Overfull \hbox (2.83376pt too wide) in paragraph at lines 109--111
 \tentt edit[][][] [][]http:[] /[] / www[] . makeuseof[] . com[] / tag[] / 5-bes
 t-dashboard-car-mode-apps-android-|
 
@@ -392,8 +392,11 @@ t-dashboard-car-mode-apps-android-|
 .\penalty 10000
 .etc.
 
-[3] [4] [5] [6] [7] [8] [9]
-Overfull \hbox (35.03928pt too wide) in paragraph at lines 457--458
+[3 <./images/analysis_app_torque.png (PNG copy)>] [4 <./images/analysis_app_car
+homeultra.png (PNG copy)>] [5 <./images/analysis_app_cardashdroid.png (PNG copy
+)>] [6 <./images/analysis_app_ultimatecardock.png (PNG copy)>] [7] [8] [9]
+[10]
+Overfull \hbox (35.03928pt too wide) in paragraph at lines 478--479
 [][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] / 1LAPqm
 Yqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -431,16 +434,16 @@ Yqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 .\tentt o
 .etc.
 
-[10] [11] [12] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+[11] [12] [13] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
 xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
 t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
 <c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (18 pages, 225482 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (19 pages, 1151284 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 611 compressed objects within 7 object streams
- 102 named destinations out of 1000 (max. 500000)
- 678 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 650 words of extra memory for PDF output out of 10000 (max. 10000000)
 
