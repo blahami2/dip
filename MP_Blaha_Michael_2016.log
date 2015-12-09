@@ -1,0 +1,446 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  9 DEC 2015 21:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+ encTeX v. Jun. 2004, reencoding enabled
+**./MP_Blaha_Michael_2016.tex
+(./MP_Blaha_Michael_2016.tex The format: csplain <Aug. 2014>.
+The cs-fonts are preloaded and A4 size implicitly defined.
+The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
+(./ctustyle.tex
+CTUstyle: Thesis at Czech Technical University in Prague, <beta(4) Oct.2015>
+\testinput=\read0
+
+(c:/texlive/2015/texmf-dist/tex/csplain/opmac/opmac.tex
+This is OPmac (Olsak's Plain macros), version <Nov. 2015>
+\tmpnum=\count27
+\tmpdim=\dimen16
+\iindent=\dimen17
+\ttindent=\dimen18
+\colsep=\dimen19
+\mnoteindent=\dimen20
+\mnotesize=\dimen21
+\ptunit=\dimen22
+\fontdim=\dimen23
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/ams-math.tex
+FONT: AMS math fonts - \mathchardef's prepared, 12 math families preloaded.
+\ptmunit=\dimen24
+)
+The \^, \`, \', \v, \" and \r expands to characters by ISO-8859-2.
+\reffile=\write0
+\testin=\read1
+\chapnum=\count28
+\secnum=\count29
+\seccnum=\count30
+\nonumnum=\count31
+\remskipamount=\skip18
+\tnum=\count32
+\fnum=\count33
+\dnum=\count34
+\itemnum=\count35
+\mullines=\count36
+\oulnum=\count37
+\ttline=\count38
+\viline=\count39
+\vifile=\read2
+\tabdata=\toks12
+\colnum=\count40
+\picwidth=\dimen25
+\picheight=\dimen26
+\fnotenum=\count41
+\fnotenumlocal=\count42
+\mnotenum=\count43
+\mnoteskip=\dimen27
+\auxfile=\write1
+\bibnum=\count44
+\bibmark=\toks13
+\lastcitenum=\count45
+\lastpage=\count46
+\pgwidth=\dimen28
+\pgheight=\dimen29
+\shiftoffset=\dimen30
+
+(./MP_Blaha_Michael_2016.ref)
+\openout0 = `MP_Blaha_Michael_2016.ref'.
+
+)
+\faculty=\toks14
+\department=\toks15
+\title=\toks16
+\subtitle=\toks17
+\author=\toks18
+\supervisor=\toks19
+\date=\toks20
+\studyinfo=\toks21
+\authorinfo=\toks22
+\workinfo=\toks23
+\workname=\toks24
+\pagetwo=\toks25
+\titleEN=\toks26
+\titleCZ=\toks27
+\titleSK=\toks28
+\subtitleEN=\toks29
+\subtitleCZ=\toks30
+\subtitleSK=\toks31
+\abstractEN=\toks32
+\abstractCZ=\toks33
+\abstractSK=\toks34
+\keywordsEN=\toks35
+\keywordsCZ=\toks36
+\keywordsSK=\toks37
+\thanks=\toks38
+\declaration=\toks39
+\specification=\toks40
+
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/lmfonts.tex
+FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/chars-8z.tex))
+\leftbox=\box16
+\rightbox=\box17
+\frontht=\dimen31
+\tocbox=\box18
+\tofbox=\box19
+\totbox=\box20
+\secccnum=\count47
+\appnum=\count48
+\numA=\count49
+\numB=\count50
+\numC=\count51
+\numD=\count52
+\numE=\count53
+\maxglosindent=\dimen32
+\rfcnum=\count54
+)
+English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{c:/tex
+live/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>]
+[-2]
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]\tenrm Prohlašuji, že jsem před-lože-nou
+
+\hbox(7.57762+2.13887)x190.63347, glue set 4.54439
+.\hbox(0.0+0.0)x11.66563
+.\tenrm P
+.\tenrm r
+.\tenrm o
+.\tenrm h
+.\tenrm l
+.\tenrm a
+.\tenrm š
+.\tenrm u
+.\tenrm j
+.\tenrm i
+.\tenrm ,
+.\glue 3.66666 plus 2.29166 minus 0.97777
+.\tenrm ž
+.\tenrm e
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm j
+.\tenrm s
+.\tenrm e
+.\tenrm m
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm p
+.\tenrm ř
+.\tenrm e
+.\tenrm d
+.\discretionary
+..\tenrm -
+.\tenrm l
+.\tenrm o
+.\tenrm ž
+.\tenrm e
+.etc.
+
+[-3] [-4] [-5] [-6]
+Overfull \hbox (46.58926pt too wide) in paragraph at lines 47--48
+[][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] / 1pGtlS
+5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8[] /|
+
+\hbox(7.63895+2.44446)x415.41025
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(https://docs.google.com/docu\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt s
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt d
+.\tentt o
+.\tentt c
+.\tentt s
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt .
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt g
+.\tentt o
+.etc.
+
+
+Overfull \hbox (150.44128pt too wide) in paragraph at lines 49--50
+[]\tenrm generally progress: [][]\tentt https:[] /[] / docs[] . google[] . com[
+] / document[] / d[] / 1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8[] /|
+
+\hbox(7.63895+2.44446)x415.41025, glue set - 1.0
+.\hbox(0.0+0.0)x11.66563
+.\tenrm g
+.\tenrm e
+.\tenrm n
+.\tenrm e
+.\tenrm r
+.\tenrm a
+.\tenrm l
+.\tenrm l
+.\tenrm y
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm p
+.\tenrm r
+.\tenrm o
+.\tenrm g
+.\tenrm r
+.\tenrm e
+.\tenrm s
+.\tenrm s
+.\tenrm :
+.\glue 4.88887 plus 3.66666 minus 0.6111
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(https://docs.google.com/docu\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt s
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.etc.
+
+[1] [2]
+Overfull \hbox (161.32544pt too wide) in paragraph at lines 96--98
+\tenrm see [][]\tentt ap-pli-ca-tion anal-y-sis https:[] /[] / docs[] . google[
+] . com[] / document[] / d[] / 1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-|
+
+\hbox(7.63895+2.44446)x415.41025, glue set - 1.0
+.\tenrm s
+.\tenrm e
+.\tenrm e
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(application analysis https:/\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt a
+.\tentt p
+.\discretionary
+..\tentt -
+.\tentt p
+.\tentt l
+.\tentt i
+.\discretionary
+..\tentt -
+.\tentt c
+.\tentt a
+.\discretionary
+..\tentt -
+.\tentt t
+.\tentt i
+.\tentt o
+.\tentt n
+.\glue 5.775
+.\tentt a
+.\tentt n
+.\tentt a
+.\tentt l
+.\discretionary
+..\tentt -
+.\tentt y
+.\discretionary
+..\tentt -
+.\tentt s
+.\tentt i
+.etc.
+
+
+Overfull \hbox (150.96733pt too wide) in paragraph at lines 96--98
+\tentt UL0[] / edit[][][] \tenrm pri-or-ity list [][]\tentt https:[] /[] / docs
+[] . google[] . com[] / document[] / d[] / 1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejg
+bhqzw7kI[] /|
+
+\hbox(7.63895+2.44446)x415.41025, glue set - 1.0
+.\tentt U
+.\tentt L
+.\tentt 0
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt e
+.\tentt d
+.\tentt i
+.\tentt t
+.\hbox(0.0+0.0)x0.0
+.\pdfcolorstack 1 pop
+.\pdfendlink
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm p
+.\tenrm r
+.\tenrm i
+.\discretionary
+..\tenrm -
+.\tenrm o
+.\tenrm r
+.\discretionary
+..\tenrm -
+.\tenrm i
+.\tenrm t
+.\kern-0.30557
+.\tenrm y
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm l
+.etc.
+
+
+Overfull \hbox (63.15054pt too wide) in paragraph at lines 105--107
+\tenrm see [][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d
+[] / 1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY[] /|
+
+\hbox(7.63895+2.44446)x415.41025, glue set - 1.0
+.\tenrm s
+.\tenrm e
+.\tenrm e
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(https://docs.google.com/docu\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt s
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt d
+.\tentt o
+.\tentt c
+.\tentt s
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt .
+.etc.
+
+
+Overfull \hbox (2.83376pt too wide) in paragraph at lines 105--107
+\tentt edit[][][] [][]http:[] /[] / www[] . makeuseof[] . com[] / tag[] / 5-bes
+t-dashboard-car-mode-apps-android-|
+
+\hbox(7.63895+2.44446)x415.41025, glue set - 1.0
+.\tentt e
+.\tentt d
+.\tentt i
+.\tentt t
+.\hbox(0.0+0.0)x0.0
+.\pdfcolorstack 1 pop
+.\pdfendlink
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(http://www.makeuseof.com/tag\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt w
+.\tentt w
+.\tentt w
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.etc.
+
+[3] [4] [5] [6] [7]
+Overfull \hbox (35.03928pt too wide) in paragraph at lines 387--388
+[][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] / 1LAPqm
+Yqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
+
+\hbox(7.63895+2.44446)x415.41025
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(https://docs.google.com/docu\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt s
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt d
+.\tentt o
+.\tentt c
+.\tentt s
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt .
+.\penalty 100
+.\glue 0.0 plus 0.57753
+.\tentt g
+.\tentt o
+.etc.
+
+[8] [9] [10] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/texl
+ive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dist/
+fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
+lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c
+:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/te
+xmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (16 pages, 216079 bytes).
+PDF statistics:
+ 549 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+
