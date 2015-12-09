@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  9 DEC 2015 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  9 DEC 2015 22:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,8 +392,8 @@ t-dashboard-car-mode-apps-android-|
 .\penalty 10000
 .etc.
 
-[3] [4] [5] [6] [7]
-Overfull \hbox (35.03928pt too wide) in paragraph at lines 387--388
+[3] [4] [5] [6] [7] [8] [9]
+Overfull \hbox (35.03928pt too wide) in paragraph at lines 457--458
 [][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] / 1LAPqm
 Yqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -431,16 +431,16 @@ Yqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 .\tentt o
 .etc.
 
-[8] [9] [10] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/texl
-ive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dist/
-fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
-lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c
-:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/te
-xmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (16 pages, 216079 bytes).
+[10] [11] [12] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
+t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
+c/lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+<c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/
+texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (18 pages, 225482 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 519 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 611 compressed objects within 7 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 678 words of extra memory for PDF output out of 10000 (max. 10000000)
 

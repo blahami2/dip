@@ -27,71 +27,74 @@
 \Xtoc{2}{\rm }{2.1.3}{CarHome Ultra }{3}
 \Xpage{4}
 \Xtoc{2}{\rm }{2.1.4}{Car Dashdroid }{4}
-\Xtoc{2}{\rm }{2.1.5}{Ultimate Car Dock }{4}
-\Xtoc{2}{\rm }{2.1.6}{Google AutoUI }{4}
-\Xtoc{1}{\rm }{2.2}{Platforms }{4}
-\Xtoc{1}{\rm }{2.3}{Android platform }{4}
-\Xtoc{2}{\rm }{2.3.1}{Architecture }{4}
-\Xtoc{2}{\rm }{2.3.2}{Specifics }{4}
-\Xtoc{1}{\rm }{2.4}{GUI }{4}
 \Xpage{5}
-\Xtoc{2}{\rm }{2.4.1}{Basic principles }{5}
-\Xtoc{2}{\rm }{2.4.2}{Car UI differences }{5}
-\Xtoc{1}{\rm }{2.5}{Server }{5}
-\Xtoc{2}{\rm }{2.5.1}{Functionality }{5}
-\Xtoc{2}{\rm }{2.5.2}{Data storage }{5}
-\Xtoc{2}{\rm }{2.5.3}{Communication }{5}
-\Xtoc{1}{\rm }{2.6}{Development and support tools }{5}
-\Xtoc{2}{\rm }{2.6.1}{Development environment }{5}
-\Xtoc{2}{\rm }{2.6.2}{Quality Assurance tools }{5}
-\Xtoc{2}{\rm }{2.6.3}{Version system }{5}
-\Xtoc{2}{\rm }{2.6.4}{Test driven development }{5}
-\Xtoc{2}{\rm }{2.6.5}{Continuous integration }{5}
+\Xtoc{2}{\rm }{2.1.5}{Ultimate Car Dock }{5}
+\Xtoc{2}{\rm }{2.1.6}{Conclusion }{5}
+\Xtoc{2}{\rm }{2.1.7}{Google AutoUI }{5}
 \Xpage{6}
-\Xtoc{0}{\bfshape }{3}{Design }{6}
-\Xtoc{1}{\rm }{3.1}{Application architecture }{6}
-\Xtoc{2}{\rm }{3.1.1}{Extensibility }{6}
-\Xtoc{2}{\rm }{3.1.2}{Modularity }{6}
-\Xtoc{2}{\rm }{3.1.3}{Adaptability }{6}
-\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation }{6}
-\Xtoc{2}{\rm }{3.1.5}{Platform limitations }{6}
-\Xtoc{1}{\rm }{3.2}{GUI }{6}
-\Xtoc{2}{\rm }{3.2.1}{Basic elements }{6}
-\Xtoc{2}{\rm }{3.2.2}{UI drafts }{6}
+\Xtoc{1}{\rm }{2.2}{Platforms }{6}
+\Xtoc{1}{\rm }{2.3}{Android platform }{6}
+\Xtoc{2}{\rm }{2.3.1}{Architecture }{6}
+\Xtoc{2}{\rm }{2.3.2}{Specifics }{6}
+\Xtoc{1}{\rm }{2.4}{GUI }{6}
+\Xtoc{2}{\rm }{2.4.1}{Basic principles }{6}
+\Xtoc{2}{\rm }{2.4.2}{Car UI differences }{6}
+\Xtoc{1}{\rm }{2.5}{Server }{6}
+\Xtoc{2}{\rm }{2.5.1}{Functionality }{6}
+\Xtoc{2}{\rm }{2.5.2}{Data storage }{6}
+\Xtoc{2}{\rm }{2.5.3}{Communication }{6}
 \Xpage{7}
-\Xtoc{0}{\bfshape }{4}{Realization }{7}
-\Xtoc{1}{\rm }{4.1}{Preparation }{7}
-\Xtoc{2}{\rm }{4.1.1}{Environment }{7}
-\Xtoc{2}{\rm }{4.1.2}{Versioning }{7}
-\Xtoc{2}{\rm }{4.1.3}{Testing }{7}
-\Xtoc{2}{\rm }{4.1.4}{Scripting }{7}
-\Xtoc{1}{\rm }{4.2}{Core }{7}
-\Xtoc{2}{\rm }{4.2.1}{Core }{7}
-\Xtoc{2}{\rm }{4.2.2}{Data storage }{7}
-\Xtoc{2}{\rm }{4.2.3}{Communication }{7}
-\Xtoc{2}{\rm }{4.2.4}{Optimization }{7}
-\Xtoc{1}{\rm }{4.3}{Modularity }{7}
-\Xtoc{2}{\rm }{4.3.1}{Requirements }{7}
-\Xtoc{2}{\rm }{4.3.2}{Integration }{7}
-\Xtoc{1}{\rm }{4.4}{GUI }{7}
-\Xtoc{2}{\rm }{4.4.1}{Common elements }{7}
-\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{7}
+\Xtoc{1}{\rm }{2.6}{Development and support tools }{7}
+\Xtoc{2}{\rm }{2.6.1}{Development environment }{7}
+\Xtoc{2}{\rm }{2.6.2}{Quality Assurance tools }{7}
+\Xtoc{2}{\rm }{2.6.3}{Version system }{7}
+\Xtoc{2}{\rm }{2.6.4}{Test driven development }{7}
+\Xtoc{2}{\rm }{2.6.5}{Continuous integration }{7}
 \Xpage{8}
-\Xtoc{0}{\bfshape }{5}{Testing }{8}
-\Xtoc{1}{\rm }{5.1}{Code }{8}
-\Xtoc{2}{\rm }{5.1.1}{Unit testing }{8}
-\Xtoc{2}{\rm }{5.1.2}{Integration testing }{8}
-\Xtoc{2}{\rm }{5.1.3}{System testing }{8}
-\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{8}
-\Xtoc{1}{\rm }{5.2}{GUI }{8}
-\Xtoc{2}{\rm }{5.2.1}{Heuristic testing }{8}
-\Xtoc{2}{\rm }{5.2.2}{Testing with users }{8}
+\Xtoc{0}{\bfshape }{3}{Design }{8}
+\Xtoc{1}{\rm }{3.1}{Application architecture }{8}
+\Xtoc{2}{\rm }{3.1.1}{Extensibility }{8}
+\Xtoc{2}{\rm }{3.1.2}{Modularity }{8}
+\Xtoc{2}{\rm }{3.1.3}{Adaptability }{8}
+\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation }{8}
+\Xtoc{2}{\rm }{3.1.5}{Platform limitations }{8}
+\Xtoc{1}{\rm }{3.2}{GUI }{8}
+\Xtoc{2}{\rm }{3.2.1}{Basic elements }{8}
+\Xtoc{2}{\rm }{3.2.2}{UI drafts }{8}
 \Xpage{9}
-\Xtoc{1}{\rm }{5.3}{Summary }{9}
+\Xtoc{0}{\bfshape }{4}{Realization }{9}
+\Xtoc{1}{\rm }{4.1}{Preparation }{9}
+\Xtoc{2}{\rm }{4.1.1}{Environment }{9}
+\Xtoc{2}{\rm }{4.1.2}{Versioning }{9}
+\Xtoc{2}{\rm }{4.1.3}{Testing }{9}
+\Xtoc{2}{\rm }{4.1.4}{Scripting }{9}
+\Xtoc{1}{\rm }{4.2}{Core }{9}
+\Xtoc{2}{\rm }{4.2.1}{Core }{9}
+\Xtoc{2}{\rm }{4.2.2}{Data storage }{9}
+\Xtoc{2}{\rm }{4.2.3}{Communication }{9}
+\Xtoc{2}{\rm }{4.2.4}{Optimization }{9}
+\Xtoc{1}{\rm }{4.3}{Modularity }{9}
+\Xtoc{2}{\rm }{4.3.1}{Requirements }{9}
+\Xtoc{2}{\rm }{4.3.2}{Integration }{9}
+\Xtoc{1}{\rm }{4.4}{GUI }{9}
+\Xtoc{2}{\rm }{4.4.1}{Common elements }{9}
+\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{9}
 \Xpage{10}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{10}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{10}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{10}
-\Xtoc{2}{\rm }{6.2.1}{Present }{10}
-\Xtoc{2}{\rm }{6.2.2}{Future }{10}
-\Xtoc{1}{\rm }{6.3}{Summary }{10}
+\Xtoc{0}{\bfshape }{5}{Testing }{10}
+\Xtoc{1}{\rm }{5.1}{Code }{10}
+\Xtoc{2}{\rm }{5.1.1}{Unit testing }{10}
+\Xtoc{2}{\rm }{5.1.2}{Integration testing }{10}
+\Xtoc{2}{\rm }{5.1.3}{System testing }{10}
+\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{10}
+\Xtoc{1}{\rm }{5.2}{GUI }{10}
+\Xtoc{2}{\rm }{5.2.1}{Heuristic testing }{10}
+\Xtoc{2}{\rm }{5.2.2}{Testing with users }{10}
+\Xpage{11}
+\Xtoc{1}{\rm }{5.3}{Summary }{11}
+\Xpage{12}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{12}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{12}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{12}
+\Xtoc{2}{\rm }{6.2.1}{Present }{12}
+\Xtoc{2}{\rm }{6.2.2}{Future }{12}
+\Xtoc{1}{\rm }{6.3}{Summary }{12}
