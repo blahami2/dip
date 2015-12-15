@@ -433,8 +433,11 @@ Released in 2014, Android Studio became the main platform for Android developmen
 
 In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main VCS worth considering (\url{http://www.sitepoint.com/version-control-software-2014-what-options/}). 
 
-\seccc SVN
+\seccc Subversion
 
+Based on CVS, Subversion has a single repository where all the data are stored. This simplifies the backup of a whole project, because all the data are located in one place. This, however, creates possible threat of data loss when the central repository gets destroyed without backup.
+
+Because of the central repository, Subversion allows read and write access controls for a every single location and have them enforced across the entire project, which can come in handy when developing in a large community, but it is usually not required when developing in a small team.
 
 
 \seccc Mercurial

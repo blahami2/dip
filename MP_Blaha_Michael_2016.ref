@@ -44,12 +44,11 @@
 \Xtoc{2}{\rm }{2.4.2}{UI in a car environment }{11}
 \Xpage{12}
 \Xtoc{1}{\rm }{2.5}{Development and support tools TODO }{12}
-\Xtoc{2}{\rm }{2.5.1}{Development environment TODO }{12}
-\Xtoc{2}{\rm }{2.5.2}{Quality Assurance tools TODO }{12}
-\Xtoc{2}{\rm }{2.5.3}{Version system TODO }{12}
+\Xtoc{2}{\rm }{2.5.1}{Development environment }{12}
 \Xpage{13}
-\Xtoc{2}{\rm }{2.5.4}{Test driven development TODO }{13}
-\Xtoc{2}{\rm }{2.5.5}{Continuous integration TODO }{13}
+\Xtoc{2}{\rm }{2.5.2}{Version control system }{13}
+\Xtoc{2}{\rm }{2.5.3}{Test driven development TODO }{13}
+\Xtoc{2}{\rm }{2.5.4}{Continuous integration TODO }{13}
 \Xtoc{1}{\rm }{2.6}{On-Board Diagnostics TODO }{13}
 \Xtoc{2}{\rm }{2.6.1}{Overview TODO }{13}
 \Xtoc{2}{\rm }{2.6.2}{API TODO }{13}
