@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,8 +411,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 .....\kern -46.1998
 .....\pdfdest name{toc:.2} xyz
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis }{\the \pagen
-o }}
+....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis TODO }{\the \
+pageno \ETC.}
 ....\thefont 2
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -420,7 +420,7 @@ o }}
 ...\penalty 10000
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.14297
-...\hbox(16.66306+6.83914)x392.64806, glue set 161.4059fil
+...\hbox(16.66306+6.83914)x392.64806, glue set 128.29846fil
 ....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
 ....\mF A
 ....\mF n
@@ -430,6 +430,11 @@ o }}
 ....\mF s
 ....\mF i
 ....\mF s
+....\glue 6.97002 plus 3.48499 minus 2.32335
+....\mF T
+....\mF O
+....\mF D
+....\mF O
 ....\rule(16.66306+6.83914)x0.0
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1208,8 +1213,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 .etc.
 
  [6 <./images/analysis_app_cardashdroid.png (PNG copy)>] [7 <./images/analysis_
-app_ultimatecardock.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 \tentt 03[] / gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipa
 d-
 
@@ -1246,8 +1251,9 @@ d-
 .\tentt s
 .etc.
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+[9 <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.pn
+g>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1283,8 +1289,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--358
 .\tentt -
 .etc.
 
-[10] [11] [12] [13]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 554--555
+[11] [12] [13] [14]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 566--567
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1328,16 +1334,16 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 554--555
 .\tentt .
 .etc.
 
-[14] [15] [16] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+[15] [16] [17] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
 xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
 t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
 <c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (22 pages, 1163346 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (23 pages, 2230625 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 599 compressed objects within 6 object streams
- 100 named destinations out of 1000 (max. 500000)
- 650 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 665 words of extra memory for PDF output out of 10000 (max. 10000000)
 
