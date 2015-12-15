@@ -33,12 +33,13 @@
 \Xtoc{2}{\rm }{2.2.1}{Android }{9}
 \Xtoc{2}{\rm }{2.2.2}{iOS }{9}
 \Xtoc{2}{\rm }{2.2.3}{Windows }{9}
+\Xtoc{2}{\rm }{2.2.4}{Conclusion }{9}
 \Xtoc{1}{\rm }{2.3}{Android platform }{9}
 \Xtoc{2}{\rm }{2.3.1}{Architecture }{9}
 \Xtoc{2}{\rm }{2.3.2}{Specifics }{9}
 \Xtoc{1}{\rm }{2.4}{GUI }{9}
-\Xtoc{2}{\rm }{2.4.1}{Basic principles }{9}
 \Xpage{10}
+\Xtoc{2}{\rm }{2.4.1}{Basic principles }{10}
 \Xtoc{2}{\rm }{2.4.2}{Car UI differences }{10}
 \Xtoc{1}{\rm }{2.5}{Development and support tools }{10}
 \Xtoc{2}{\rm }{2.5.1}{Development environment }{10}
