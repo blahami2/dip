@@ -47,57 +47,58 @@
 \Xtoc{2}{\rm }{2.5.1}{Development environment TODO }{12}
 \Xtoc{2}{\rm }{2.5.2}{Quality Assurance tools TODO }{12}
 \Xtoc{2}{\rm }{2.5.3}{Version system TODO }{12}
-\Xtoc{2}{\rm }{2.5.4}{Test driven development TODO }{12}
-\Xtoc{2}{\rm }{2.5.5}{Continuous integration TODO }{12}
-\Xtoc{1}{\rm }{2.6}{On-Board Diagnostics TODO }{12}
-\Xtoc{2}{\rm }{2.6.1}{Overview TODO }{12}
-\Xtoc{2}{\rm }{2.6.2}{API TODO }{12}
-\Xtoc{2}{\rm }{2.6.3}{Data TODO }{12}
 \Xpage{13}
-\Xtoc{0}{\bfshape }{3}{Design TODO }{13}
-\Xtoc{1}{\rm }{3.1}{Application architecture TODO }{13}
-\Xtoc{2}{\rm }{3.1.1}{Extensibility TODO }{13}
-\Xtoc{2}{\rm }{3.1.2}{Modularity TODO }{13}
-\Xtoc{2}{\rm }{3.1.3}{Adaptability TODO }{13}
-\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation TODO }{13}
-\Xtoc{2}{\rm }{3.1.5}{Platform limitations TODO }{13}
-\Xtoc{1}{\rm }{3.2}{GUI TODO }{13}
-\Xtoc{2}{\rm }{3.2.1}{Basic elements TODO }{13}
-\Xtoc{2}{\rm }{3.2.2}{UI drafts TODO }{13}
+\Xtoc{2}{\rm }{2.5.4}{Test driven development TODO }{13}
+\Xtoc{2}{\rm }{2.5.5}{Continuous integration TODO }{13}
+\Xtoc{1}{\rm }{2.6}{On-Board Diagnostics TODO }{13}
+\Xtoc{2}{\rm }{2.6.1}{Overview TODO }{13}
+\Xtoc{2}{\rm }{2.6.2}{API TODO }{13}
+\Xtoc{2}{\rm }{2.6.3}{Data TODO }{13}
 \Xpage{14}
-\Xtoc{0}{\bfshape }{4}{Realization TODO }{14}
-\Xtoc{1}{\rm }{4.1}{Preparation TODO }{14}
-\Xtoc{2}{\rm }{4.1.1}{Environment TODO }{14}
-\Xtoc{2}{\rm }{4.1.2}{Versioning TODO }{14}
-\Xtoc{2}{\rm }{4.1.3}{Testing TODO }{14}
-\Xtoc{2}{\rm }{4.1.4}{Scripting TODO }{14}
-\Xtoc{1}{\rm }{4.2}{Core TODO }{14}
-\Xtoc{2}{\rm }{4.2.1}{Core TODO }{14}
-\Xtoc{2}{\rm }{4.2.2}{Data storage TODO }{14}
-\Xtoc{2}{\rm }{4.2.3}{Communication TODO }{14}
-\Xtoc{2}{\rm }{4.2.4}{Optimization TODO }{14}
-\Xtoc{1}{\rm }{4.3}{Modularity TODO }{14}
-\Xtoc{2}{\rm }{4.3.1}{Requirements TODO }{14}
-\Xtoc{2}{\rm }{4.3.2}{Integration TODO }{14}
-\Xtoc{1}{\rm }{4.4}{GUI TODO }{14}
-\Xtoc{2}{\rm }{4.4.1}{Common elements TODO }{14}
-\Xtoc{2}{\rm }{4.4.2}{Multiple designs TODO }{14}
+\Xtoc{0}{\bfshape }{3}{Design TODO }{14}
+\Xtoc{1}{\rm }{3.1}{Application architecture TODO }{14}
+\Xtoc{2}{\rm }{3.1.1}{Extensibility TODO }{14}
+\Xtoc{2}{\rm }{3.1.2}{Modularity TODO }{14}
+\Xtoc{2}{\rm }{3.1.3}{Adaptability TODO }{14}
+\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation TODO }{14}
+\Xtoc{2}{\rm }{3.1.5}{Platform limitations TODO }{14}
+\Xtoc{1}{\rm }{3.2}{GUI TODO }{14}
+\Xtoc{2}{\rm }{3.2.1}{Basic elements TODO }{14}
+\Xtoc{2}{\rm }{3.2.2}{UI drafts TODO }{14}
 \Xpage{15}
-\Xtoc{0}{\bfshape }{5}{Testing TODO }{15}
-\Xtoc{1}{\rm }{5.1}{Code TODO }{15}
-\Xtoc{2}{\rm }{5.1.1}{Unit testing TODO }{15}
-\Xtoc{2}{\rm }{5.1.2}{Integration testing TODO }{15}
-\Xtoc{2}{\rm }{5.1.3}{System testing TODO }{15}
-\Xtoc{2}{\rm }{5.1.4}{Qualification testing TODO }{15}
-\Xtoc{1}{\rm }{5.2}{GUI TODO }{15}
-\Xtoc{2}{\rm }{5.2.1}{Heuristic testing TODO }{15}
+\Xtoc{0}{\bfshape }{4}{Realization TODO }{15}
+\Xtoc{1}{\rm }{4.1}{Preparation TODO }{15}
+\Xtoc{2}{\rm }{4.1.1}{Environment TODO }{15}
+\Xtoc{2}{\rm }{4.1.2}{Versioning TODO }{15}
+\Xtoc{2}{\rm }{4.1.3}{Testing TODO }{15}
+\Xtoc{2}{\rm }{4.1.4}{Scripting TODO }{15}
+\Xtoc{1}{\rm }{4.2}{Core TODO }{15}
+\Xtoc{2}{\rm }{4.2.1}{Core TODO }{15}
+\Xtoc{2}{\rm }{4.2.2}{Data storage TODO }{15}
+\Xtoc{2}{\rm }{4.2.3}{Communication TODO }{15}
+\Xtoc{2}{\rm }{4.2.4}{Optimization TODO }{15}
+\Xtoc{1}{\rm }{4.3}{Modularity TODO }{15}
+\Xtoc{2}{\rm }{4.3.1}{Requirements TODO }{15}
+\Xtoc{2}{\rm }{4.3.2}{Integration TODO }{15}
+\Xtoc{1}{\rm }{4.4}{GUI TODO }{15}
+\Xtoc{2}{\rm }{4.4.1}{Common elements TODO }{15}
+\Xtoc{2}{\rm }{4.4.2}{Multiple designs TODO }{15}
 \Xpage{16}
-\Xtoc{2}{\rm }{5.2.2}{Testing with users TODO }{16}
-\Xtoc{1}{\rm }{5.3}{Summary TODO }{16}
+\Xtoc{0}{\bfshape }{5}{Testing TODO }{16}
+\Xtoc{1}{\rm }{5.1}{Code TODO }{16}
+\Xtoc{2}{\rm }{5.1.1}{Unit testing TODO }{16}
+\Xtoc{2}{\rm }{5.1.2}{Integration testing TODO }{16}
+\Xtoc{2}{\rm }{5.1.3}{System testing TODO }{16}
+\Xtoc{2}{\rm }{5.1.4}{Qualification testing TODO }{16}
+\Xtoc{1}{\rm }{5.2}{GUI TODO }{16}
+\Xtoc{2}{\rm }{5.2.1}{Heuristic testing TODO }{16}
 \Xpage{17}
-\Xtoc{0}{\bfshape }{6}{Conclusion TODO }{17}
-\Xtoc{1}{\rm }{6.1}{Assignment completion TODO }{17}
-\Xtoc{1}{\rm }{6.2}{Project life cycle TODO }{17}
-\Xtoc{2}{\rm }{6.2.1}{Present TODO }{17}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{17}
-\Xtoc{1}{\rm }{6.3}{Summary TODO }{17}
+\Xtoc{2}{\rm }{5.2.2}{Testing with users TODO }{17}
+\Xtoc{1}{\rm }{5.3}{Summary TODO }{17}
+\Xpage{18}
+\Xtoc{0}{\bfshape }{6}{Conclusion TODO }{18}
+\Xtoc{1}{\rm }{6.1}{Assignment completion TODO }{18}
+\Xtoc{1}{\rm }{6.2}{Project life cycle TODO }{18}
+\Xtoc{2}{\rm }{6.2.1}{Present TODO }{18}
+\Xtoc{2}{\rm }{6.2.2}{Future TODO }{18}
+\Xtoc{1}{\rm }{6.3}{Summary TODO }{18}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1289,8 +1289,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 370--371
 .\tentt -
 .etc.
 
-[11] [12] [13] [14]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 576--577
+[11] [12] [13] [14] [15]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 586--587
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1334,16 +1334,16 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 576--577
 .\tentt .
 .etc.
 
-[15] [16] [17] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+[16] [17] [18] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
 xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
 t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
 <c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (23 pages, 2231620 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (24 pages, 2234561 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 105 named destinations out of 1000 (max. 500000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
+ 106 named destinations out of 1000 (max. 500000)
  697 words of extra memory for PDF output out of 10000 (max. 10000000)
 
