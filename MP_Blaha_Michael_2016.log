@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.5)  15 DEC 2015 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1209,7 +1209,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 
  [6 <./images/analysis_app_cardashdroid.png (PNG copy)>] [7 <./images/analysis_
 app_ultimatecardock.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 \tentt 03[] / gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipa
 d-
 
@@ -1247,7 +1247,7 @@ d-
 .etc.
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1283,8 +1283,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 .\tentt -
 .etc.
 
-[10] [11] [12]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 542--543
+[10] [11] [12] [13]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 554--555
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1328,16 +1328,16 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 542--543
 .\tentt .
 .etc.
 
-[13] [14] [15] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+[14] [15] [16] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
 xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
 t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
 <c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (21 pages, 1159249 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (22 pages, 1163346 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 596 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 100 named destinations out of 1000 (max. 500000)
  650 words of extra memory for PDF output out of 10000 (max. 10000000)
 

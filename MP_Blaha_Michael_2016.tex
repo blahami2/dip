@@ -292,9 +292,6 @@ It seems to be a good sign that even Google is interested in this area and perfo
 %	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
 \sec Platforms
 
-Possibilities: Android, iOS, WP(?)
-State requirements, properties, criteria
-
 The chosen platform heavily influences the piece of market an application can reach. Therefore, only platforms with solid market share are considered. Another criteria is the simplicity of development, which influences the time and effort put into an application before it can be released. This is especially important for quickly finding out the sale potential of an application.
 Following the first rule mentioned above and based on tablet sales in past years (sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
 
@@ -334,6 +331,25 @@ Fulfiling the requirements for customer base as well as simplicity of developmen
 
 \secc Basic principles
 
+As the main tool of communication between an application and it's user, user interface must follow one basic rule -- the user goes first. UI is about the user, he must have a good feeling when using the application. He must understand what to do and how to do it. Therefore there are four rules a proper UI must obey:
+\begitems
+* {\bf Clear} -- it must be obvious what and where the user can control,
+* {\bf Effective} -- minimizing the required user interactions for certain (requested) thing to happen,
+* {\bf Foolproof} - avoiding the errors before they happen,
+* {\bf Pleasant} - no stress when working with the UI, pleasant colors, contrast, good readability.
+\enditems
+
+Those rules might seem too shallow. That is why there are certain subgoals which are more specific, helping to achieve the main four goals. Those subgoals are the following seven:
+\begitems
+* {\bf Minimality} -- removing everything that can be removed without losing the requested information value,
+* {\bf Responsiveness} -- giving the user a proper feedback, so that he knows something is happening,
+* {\bf Forgiveness} -- letting the user make mistakes, allowing him to fix them, for example undo button or prompt message,
+* {\bf Familiarity} -- using familiar, commonly used metaphors, icons, procedures,
+* {\bf Consistency} -- using consistent visual and interaction language,
+* {\bf Integration} -- using platform specific elements and rules
+* {\bf Simplicity} - allowing user to quickly learn how to use the UI
+\enditems
+
 sources:
 \begitems
 * MI-NUR \url{https://edux.fit.cvut.cz/courses/MI-NUR/lectures/start}
@@ -341,37 +357,33 @@ sources:
 * UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         
 \enditems
 
+\secc UI in a car environment
+
+When developing user interface for car, it adds a certain responsibility. The need for safety while using the UI becomes the main priority. Because of that, some aspects are more important than other. The most important are described later in this section.
+
+\seccc Minimality
+
+For minimizing the cognitive load, the must be as little information as possible at a certain time. The user must see what he wants to see on first sight without seeking the answer for too long. When minimizing the information displayed there is no confusion, minimizing the glance time.
+
 \seccc Consistence
 
-Dont make user learn things twice
+Supporting usability and shortness of learning curve, consistency allows user to remember one procedure and apply it successfuly in different sections of UI. It allows user to learn things just once.
 
-\seccc Simplicity of usage
+\seccc Readability
 
-KIS principle
-
-\seccc Shortness of learning curve
-
-Easy to learn, critical environment
-
-\secc Car UI differences
-
-What else to consider?
+Good readability is one of the condition for application to be pleasant to use. In case of car environment, however, the readability of information is not just pleasant, but critical. Allowing the user to see the information he needs to see in the shortest time possible is fatal when it comes to driving. Therefore the font has to be large enough for every driver to see.
 
 \seccc Controls
 
-Sizes, big enough to touch 
+When it comes to controlling an application in an environment such as car, it is required to consider certain aspects not present in other environments. The moving car prevents user from being precise when it comes to touch. Therefore, the controls must be large enough to be reliably selectable. 
 
-\seccc Visibility
+\seccc Colors
 
-Sizes, fonts big enough to see, data
+While in other environment the user can usually control the device brightness, it is not as easy task while driving. Furthermore, blinding the user with too much light might be fatal. Therefore proper colors must be used. For example, dominance of white color might be visible well in the daylight, but might blind the user at the night time. Also, proper color contrast must be considered for good visibility and readability.
 
-\seccc Contrast
+\seccc Responsiveness
 
-Colors, visibility at night/day
-
-\seccc Responsivness
-
-Responsive, must see whats going an as fast as possible
+Responsiveness is an important factor when it comes to pleasure of using an application, but when it comes to using it in a car, it becomes extremely important for safety as well. When the application is responsive, the user does not have to check the screen for progress so often or worse, wait for the progress looking at it continuously.
 
 
 %	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%

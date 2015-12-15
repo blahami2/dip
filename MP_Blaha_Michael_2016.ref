@@ -40,58 +40,59 @@
 \Xtoc{1}{\rm }{2.4}{GUI }{9}
 \Xpage{10}
 \Xtoc{2}{\rm }{2.4.1}{Basic principles }{10}
-\Xtoc{2}{\rm }{2.4.2}{Car UI differences }{10}
-\Xtoc{1}{\rm }{2.5}{Development and support tools }{10}
-\Xtoc{2}{\rm }{2.5.1}{Development environment }{10}
-\Xtoc{2}{\rm }{2.5.2}{Quality Assurance tools }{10}
-\Xtoc{2}{\rm }{2.5.3}{Version system }{10}
-\Xtoc{2}{\rm }{2.5.4}{Test driven development }{10}
-\Xtoc{2}{\rm }{2.5.5}{Continuous integration }{10}
+\Xtoc{2}{\rm }{2.4.2}{UI in a car environment }{10}
 \Xpage{11}
-\Xtoc{0}{\bfshape }{3}{Design }{11}
-\Xtoc{1}{\rm }{3.1}{Application architecture }{11}
-\Xtoc{2}{\rm }{3.1.1}{Extensibility }{11}
-\Xtoc{2}{\rm }{3.1.2}{Modularity }{11}
-\Xtoc{2}{\rm }{3.1.3}{Adaptability }{11}
-\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation }{11}
-\Xtoc{2}{\rm }{3.1.5}{Platform limitations }{11}
-\Xtoc{1}{\rm }{3.2}{GUI }{11}
-\Xtoc{2}{\rm }{3.2.1}{Basic elements }{11}
-\Xtoc{2}{\rm }{3.2.2}{UI drafts }{11}
+\Xtoc{1}{\rm }{2.5}{Development and support tools }{11}
+\Xtoc{2}{\rm }{2.5.1}{Development environment }{11}
+\Xtoc{2}{\rm }{2.5.2}{Quality Assurance tools }{11}
+\Xtoc{2}{\rm }{2.5.3}{Version system }{11}
+\Xtoc{2}{\rm }{2.5.4}{Test driven development }{11}
+\Xtoc{2}{\rm }{2.5.5}{Continuous integration }{11}
 \Xpage{12}
-\Xtoc{0}{\bfshape }{4}{Realization }{12}
-\Xtoc{1}{\rm }{4.1}{Preparation }{12}
-\Xtoc{2}{\rm }{4.1.1}{Environment }{12}
-\Xtoc{2}{\rm }{4.1.2}{Versioning }{12}
-\Xtoc{2}{\rm }{4.1.3}{Testing }{12}
-\Xtoc{2}{\rm }{4.1.4}{Scripting }{12}
-\Xtoc{1}{\rm }{4.2}{Core }{12}
-\Xtoc{2}{\rm }{4.2.1}{Core }{12}
-\Xtoc{2}{\rm }{4.2.2}{Data storage }{12}
-\Xtoc{2}{\rm }{4.2.3}{Communication }{12}
-\Xtoc{2}{\rm }{4.2.4}{Optimization }{12}
-\Xtoc{1}{\rm }{4.3}{Modularity }{12}
-\Xtoc{2}{\rm }{4.3.1}{Requirements }{12}
-\Xtoc{2}{\rm }{4.3.2}{Integration }{12}
-\Xtoc{1}{\rm }{4.4}{GUI }{12}
-\Xtoc{2}{\rm }{4.4.1}{Common elements }{12}
-\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{12}
+\Xtoc{0}{\bfshape }{3}{Design }{12}
+\Xtoc{1}{\rm }{3.1}{Application architecture }{12}
+\Xtoc{2}{\rm }{3.1.1}{Extensibility }{12}
+\Xtoc{2}{\rm }{3.1.2}{Modularity }{12}
+\Xtoc{2}{\rm }{3.1.3}{Adaptability }{12}
+\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation }{12}
+\Xtoc{2}{\rm }{3.1.5}{Platform limitations }{12}
+\Xtoc{1}{\rm }{3.2}{GUI }{12}
+\Xtoc{2}{\rm }{3.2.1}{Basic elements }{12}
+\Xtoc{2}{\rm }{3.2.2}{UI drafts }{12}
 \Xpage{13}
-\Xtoc{0}{\bfshape }{5}{Testing }{13}
-\Xtoc{1}{\rm }{5.1}{Code }{13}
-\Xtoc{2}{\rm }{5.1.1}{Unit testing }{13}
-\Xtoc{2}{\rm }{5.1.2}{Integration testing }{13}
-\Xtoc{2}{\rm }{5.1.3}{System testing }{13}
-\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{13}
-\Xtoc{1}{\rm }{5.2}{GUI }{13}
-\Xtoc{2}{\rm }{5.2.1}{Heuristic testing }{13}
+\Xtoc{0}{\bfshape }{4}{Realization }{13}
+\Xtoc{1}{\rm }{4.1}{Preparation }{13}
+\Xtoc{2}{\rm }{4.1.1}{Environment }{13}
+\Xtoc{2}{\rm }{4.1.2}{Versioning }{13}
+\Xtoc{2}{\rm }{4.1.3}{Testing }{13}
+\Xtoc{2}{\rm }{4.1.4}{Scripting }{13}
+\Xtoc{1}{\rm }{4.2}{Core }{13}
+\Xtoc{2}{\rm }{4.2.1}{Core }{13}
+\Xtoc{2}{\rm }{4.2.2}{Data storage }{13}
+\Xtoc{2}{\rm }{4.2.3}{Communication }{13}
+\Xtoc{2}{\rm }{4.2.4}{Optimization }{13}
+\Xtoc{1}{\rm }{4.3}{Modularity }{13}
+\Xtoc{2}{\rm }{4.3.1}{Requirements }{13}
+\Xtoc{2}{\rm }{4.3.2}{Integration }{13}
+\Xtoc{1}{\rm }{4.4}{GUI }{13}
+\Xtoc{2}{\rm }{4.4.1}{Common elements }{13}
+\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{13}
 \Xpage{14}
-\Xtoc{2}{\rm }{5.2.2}{Testing with users }{14}
-\Xtoc{1}{\rm }{5.3}{Summary }{14}
+\Xtoc{0}{\bfshape }{5}{Testing }{14}
+\Xtoc{1}{\rm }{5.1}{Code }{14}
+\Xtoc{2}{\rm }{5.1.1}{Unit testing }{14}
+\Xtoc{2}{\rm }{5.1.2}{Integration testing }{14}
+\Xtoc{2}{\rm }{5.1.3}{System testing }{14}
+\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{14}
+\Xtoc{1}{\rm }{5.2}{GUI }{14}
+\Xtoc{2}{\rm }{5.2.1}{Heuristic testing }{14}
 \Xpage{15}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{15}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{15}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{15}
-\Xtoc{2}{\rm }{6.2.1}{Present }{15}
-\Xtoc{2}{\rm }{6.2.2}{Future }{15}
-\Xtoc{1}{\rm }{6.3}{Summary }{15}
+\Xtoc{2}{\rm }{5.2.2}{Testing with users }{15}
+\Xtoc{1}{\rm }{5.3}{Summary }{15}
+\Xpage{16}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{16}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{16}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{16}
+\Xtoc{2}{\rm }{6.2.1}{Present }{16}
+\Xtoc{2}{\rm }{6.2.2}{Future }{16}
+\Xtoc{1}{\rm }{6.3}{Summary }{16}
