@@ -45,11 +45,11 @@
 %------------------------------------------------------------------------ INTRODUCTION ------------------------------------------------------------------------%
 \chap Introduction
 
-
-\url{https://docs.google.com/document/d/1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8/edit}
-
-generally progress: \url{https://docs.google.com/document/d/1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8/edit}
-
+sources:
+\begitems
+* \url{https://docs.google.com/document/d/1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8/edit}
+* generally progress: \url{https://docs.google.com/document/d/1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8/edit}
+\enditems
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
 \sec Project
@@ -97,8 +97,11 @@ For best results the application must and will be tested. Both code and UI must 
 %------------------------------------------------------------------------ ANALYSIS ------------------------------------------------------------------------%
 \chap Analysis
 
-see \url{application analysis https://docs.google.com/document/d/1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-UL0/edit}
-priority list \url{https://docs.google.com/document/d/1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejgbhqzw7kI/edit}
+sources:
+\begitems
+* application analysis \url{https://docs.google.com/document/d/1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-UL0/edit}
+* priority list \url{https://docs.google.com/document/d/1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejgbhqzw7kI/edit}
+\enditems
 
 %	------------------------------------------------------------------------ Existing applications ----------------------------------------------------------------------%
 \sec Existing applications
@@ -106,8 +109,11 @@ priority list \url{https://docs.google.com/document/d/1juKYgUUDSI5CmfzjR4BsYSPHV
 
 \secc Applications
 
-see \url{https://docs.google.com/document/d/1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY/edit}
-\url{http://www.makeuseof.com/tag/5-best-dashboard-car-mode-apps-android-compared/}
+sources:
+\begitems
+* \url{https://docs.google.com/document/d/1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY/edit}
+* \url{http://www.makeuseof.com/tag/5-best-dashboard-car-mode-apps-android-compared/}
+\enditems
 
 \secc Torque
 
@@ -243,7 +249,7 @@ Except by Torque, which focuses mainly (and only) on OBD, all the applications a
 * TTS for incoming notifications.
 \enditems
 
-\seccc Possible issues
+\seccc Possible issues to avoid
 
 \begitems
 * Responsiveness,
@@ -252,14 +258,51 @@ Except by Torque, which focuses mainly (and only) on OBD, all the applications a
 * distractive ads.
 \enditems
 
-\secc Google AutoUI
+\secc Android Auto
 
+sources:
+\begitems
+* \url{http://developer.android.com/design/auto/index.html}
+* \url{https://www.google.com/design/spec-auto/designing-for-android-auto/designing-for-cars.html}
+\enditems
+
+Recently, Google presented new application model for information delivery while driving. It is called Android Auto, it provides a standardized user interface and user interaction model for Android devices. Focusing on minimazing the driver distraction, it presents a few options to interact with user. It supports three application types:
+\begitems
+* System overview
+* Audio applications
+* Messaging applications
+\enditems
+
+\seccc System overview
+
+System overview is supposed to be a home screen for Android Auto application. It presents both current and past notifications. The amount of notifications is limited based on screen size. Every notification consists of an intent icon, text and image, while following certain sizing rules. Every such notification can be expanded on the spot or another subapplication can be launched.
+
+\seccc Audio applications
+
+Audio applications in Android Auto have a simple template structure. It consists of a main consumption view, a drawer and a queue screen. The main consumption view displays a few control elements and a cover background. The drawer is a simple list and provides access to favorite and popular content. Finally the queue screen displays a list of pending content, for example songs in a queue.
+
+\seccc Messaging applications
+
+Focusing on minimizing the cognitive load, messaging concept in Android Auto focuses on voice control over looking and typing. It allows reading the message outloud and responding with a set of predefined voice commands as well as dictating a whole message using built-in speech recognition.
+
+\seccc Conclusion
+
+It seems to be a good sign that even Google is interested in this area and performs such a research. Every Android application can be designed for Android Auto and use it's simplified user interface, allowing the developer to focus on other issues than in-car user interaction. However, the functionality is currently very limited. Hopefully there will be further progress as soon as possible.
 
 %	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
 \sec Platforms
 
 Possibilities: Android, iOS, WP(?)
 State requirements, properties, criteria
+
+The chosen platform heavily influences the piece of market an application can reach. Therefore, only platforms with solid market share are considered. Another criteria is the simplicity of development, which influences the time and effort put into an application before it can be released. This is especially important for quickly finding out the sale potential of an application. Last criteria is possibility to bend the platform rules a bit, since the car environment is so specific.
+Following the first rule mentioned above and based on tablet sales in past years (sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
+
+\secc Android
+
+\secc iOS
+
+\secc Windows
 
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
 \sec Android platform
@@ -277,7 +320,12 @@ State requirements, properties, criteria
 
 \secc Basic principles
 
-MI-NUR           
+sources:
+\begitems
+* MI-NUR \url{https://edux.fit.cvut.cz/courses/MI-NUR/lectures/start}
+* Designing for indash automotive \url{http://revinity.com/?p=128 }
+* UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         
+\enditems
 
 \seccc Consistence
 
@@ -313,18 +361,18 @@ Responsive, must see whats going an as fast as possible
 
 
 %	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%
-\sec Server
-
-
-\secc Functionality
-
-
-\secc Data storage
-
-
-\secc Communication
-
-
+%\sec Server
+%
+%
+%\secc Functionality
+%
+%
+%\secc Data storage
+%
+%
+%\secc Communication
+%
+%
 %	------------------------------------------------------------------------ Development and support tools ----------------------------------------------------------------------%
 \sec Development and support tools
 
@@ -475,7 +523,10 @@ Introduction, description
 
 \seccc Evaluation
 
-\url{https://docs.google.com/document/d/1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-Q/edit}
+sources:
+\begitems
+* \url{https://docs.google.com/document/d/1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-Q/edit}
+\enditems
 
 \seccc Conclusion
 
