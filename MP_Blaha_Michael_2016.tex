@@ -330,6 +330,7 @@ Fulfiling the requirements for customer base as well as simplicity of developmen
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
 \sec Android platform TODO
 
+There are some platform aspects to be considered when developing for Android-based tablet device.
 
 \secc Architecture TODO
 
@@ -448,7 +449,7 @@ Because of the central repository, Subversion allows read and write access contr
 
 Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
 
-\secc Continuous integration TODO
+\secc Continuous integration
 
 "Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible." (Martin Fowler, \url{http://www.martinfowler.com/articles/continuousIntegration.html})
 
@@ -459,9 +460,15 @@ For simple CI practice integration, there are several online services. For this 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \sec On-Board Diagnostics TODO
 
-\secc Overview TODO
+\secc Overview
+
+On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes. The full specifications are explained in ISO 15031 (TODO fix). Some of them will be discussed later in the text.
+
+Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly. 
 
 \secc API TODO
+
+
 
 \secc Data TODO
 
@@ -472,6 +479,8 @@ For simple CI practice integration, there are several online services. For this 
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
 \sec Application architecture TODO
+
+\secc Platform limitations TODO
 
 
 \secc Extensibility TODO
@@ -486,7 +495,6 @@ For simple CI practice integration, there are several online services. For this 
 \secc AutoUI preparation TODO
 
 
-\secc Platform limitations TODO
 
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
