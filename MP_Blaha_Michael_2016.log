@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -151,7 +151,330 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 .\tenrm e
 .etc.
 
-[-3] [-4] [-5] [-6]
+[-3] [-4]
+l.90 OPmac WARNING: duplicated label [introduction], ignored.
+l.90 OPmac WARNING: duplicated label [introduction.project], ignored.
+l.90 OPmac WARNING: duplicated label [introduction.motivation], ignored.
+l.90 OPmac WARNING: duplicated label [introduction.assignment_analysis], ignore
+d.
+l.130 OPmac WARNING: duplicated label [analysis], ignored.
+l.130 OPmac WARNING: duplicated label [analysis-existing_applications], ignored
+.
+l.130 OPmac WARNING: duplicated label [analysis-existing_applications-applicati
+ons], ignored.
+l.130 OPmac WARNING: duplicated label [analysis-existing_applications-torque], 
+ignored.
+l.160 OPmac WARNING: duplicated label [analysis-existing_applications-carhome_u
+ltra], ignored.
+l.190 OPmac WARNING: duplicated label [analysis-existing_applications-car_dashd
+roid], ignored.
+l.215 OPmac WARNING: duplicated label [analysis-existing_applications-ultimate_
+car_dock], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+<argument> Conclusion \xdef a
+                             nalysis-existing_applications-conclusion{analys...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...ications-conclusion}\ignorespaces }{7}
+                                                  \tocline {2}{\rm }{2.1.7}{...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.289 OPmac WARNING: duplicated label [analysis-existing_applications-android_a
+uto], ignored.
+l.313 OPmac WARNING: duplicated label [analysis-use_cases], ignored.
+l.344 OPmac WARNING: duplicated label [analysis-platforms], ignored.
+l.344 OPmac WARNING: duplicated label [analysis-platforms-android], ignored.
+l.344 OPmac WARNING: duplicated label [analysis-platforms-ios], ignored.
+l.344 OPmac WARNING: duplicated label [analysis-platforms-windows], ignored.
+l.344 OPmac WARNING: duplicated label [analysis-platforms-conclusion], ignored.
+
+l.344 OPmac WARNING: duplicated label [analysis-android_platform], ignored.
+l.375 OPmac WARNING: duplicated label [analysis-android_platform-performance], 
+ignored.
+l.375 OPmac WARNING: duplicated label [analysis-android_platform-architecture],
+ ignored.
+l.375 OPmac WARNING: duplicated label [analysis-android_platform-material_desig
+n], ignored.
+l.375 OPmac WARNING: duplicated label [analysis-gui], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+<argument> Basic principles\xdef a
+                                  nalysis-gui-basic_principles{analysis-gui-...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...i-basic_principles}\ignorespaces }{11}
+                                                  \tocline {2}{\rm }{2.5.2}{...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+<argument> UI in a car environment\xdef a
+                                         nalysis-gui-ui_in_a_car_environment...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ..._a_car_environment}\ignorespaces }{12}
+                                                  \tocline {1}{\rm }{2.6}{De...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.464 OPmac WARNING: duplicated label [analysis-development_and_support_tools],
+ ignored.
+l.464 OPmac WARNING: duplicated label [analysis-development_and_support_tools-i
+de], ignored.
+l.464 OPmac WARNING: duplicated label [analysis-development_and_support_tools-v
+cs], ignored.
+l.491 OPmac WARNING: duplicated label [analysis-development_and_support_tools-t
+dd], ignored.
+l.491 OPmac WARNING: duplicated label [analysis-development_and_support_tools-c
+i], ignored.
+l.491 OPmac WARNING: duplicated label [analysis-obd], ignored.
+l.491 OPmac WARNING: duplicated label [analysis-obd-api], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+<argument> Data TODO\xdef a
+                           nalysis-obd-data{analysis-obd-data}\ignorespaces 
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...{analysis-obd-data}\ignorespaces }{14}
+                                                  \tocline {0}{\bfshape }{3}...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.514 OPmac WARNING: duplicated label [design], ignored.
+l.514 OPmac WARNING: duplicated label [design-application_architecture], ignore
+d.
+l.514 OPmac WARNING: duplicated label [design-application_architecture-platform
+_limitations], ignored.
+l.514 OPmac WARNING: duplicated label [design-application_architecture-extensib
+ility], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   d
+<argument> Modularity TODO\xdef d
+                                 esign-application_architecture-modularity{d...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...tecture-modularity}\ignorespaces }{15}
+                                                  \tocline {2}{\rm }{3.1.4}{...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.550 OPmac WARNING: duplicated label [design-application_architecture-adaptabi
+lity], ignored.
+l.550 OPmac WARNING: duplicated label [design-application_architecture-android_
+auto_preparation], ignored.
+l.550 OPmac WARNING: duplicated label [design-gui], ignored.
+l.550 OPmac WARNING: duplicated label [design-gui.basic_elements], ignored.
+l.550 OPmac WARNING: duplicated label [design-gui-drafts], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   d
+<argument> The early phase TODO\xdef d
+                                      esign-gui-the_early_phase{design-gui-t...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...ui-the_early_phase}\ignorespaces }{16}
+                                                  \tocline {2}{\rm }{3.2.4}{...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.587 OPmac WARNING: duplicated label [design-gui-the_second_phase], ignored.
+l.630 OPmac WARNING: duplicated label [design-gui-the_grid], ignored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   d
+<argument> The final design\xdef d
+                                  esign-gui-the_final_design{design-gui-the_...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...i-the_final_design}\ignorespaces }{18}
+                                                  \tocline {0}{\bfshape }{4}...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.689 OPmac WARNING: duplicated label [realization], ignored.
+l.689 OPmac WARNING: duplicated label [realization-preparation], ignored.
+l.689 OPmac WARNING: duplicated label [realization-preparation-environment], ig
+nored.
+l.689 OPmac WARNING: duplicated label [realization-preparation-versioning], ign
+ored.
+l.689 OPmac WARNING: duplicated label [realization-preparation-testing], ignore
+d.
+l.689 OPmac WARNING: duplicated label [realization-preparation-scripting], igno
+red.
+l.689 OPmac WARNING: duplicated label [realization-core], ignored.
+l.689 OPmac WARNING: duplicated label [realization-core-core], ignored.
+l.689 OPmac WARNING: duplicated label [realization-core-data_storage], ignored.
+
+l.689 OPmac WARNING: duplicated label [realization-core-communication], ignored
+.
+l.689 OPmac WARNING: duplicated label [realization-core-optimization], ignored.
+
+l.689 OPmac WARNING: duplicated label [realization-modularity], ignored.
+l.689 OPmac WARNING: duplicated label [realization-modularity-requirements], ig
+nored.
+l.689 OPmac WARNING: duplicated label [realization-modularity-integration], ign
+ored.
+l.689 OPmac WARNING: duplicated label [realization-gui], ignored.
+l.689 OPmac WARNING: duplicated label [realization-gui-common_elements], ignore
+d.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   r
+<argument> Multiple designs TODO\xdef r
+                                       ealization-gui-multiple_designs{reali...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...i-multiple_designs}\ignorespaces }{20}
+                                                  \tocline {0}{\bfshape }{5}...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.751 OPmac WARNING: duplicated label [testing], ignored.
+l.751 OPmac WARNING: duplicated label [testing-code], ignored.
+l.751 OPmac WARNING: duplicated label [testing-code-unit_testing], ignored.
+l.751 OPmac WARNING: duplicated label [testing-code-integration_testing], ignor
+ed.
+l.751 OPmac WARNING: duplicated label [testing-code-system_testing], ignored.
+l.751 OPmac WARNING: duplicated label [testing-code-qualification_testing], ign
+ored.
+l.751 OPmac WARNING: duplicated label [testing-gui], ignored.
+l.751 OPmac WARNING: duplicated label [testing-gui-heuristic_testing], ignored.
+
+l.764 OPmac WARNING: duplicated label [testing-gui-testing_with_users], ignored
+.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   t
+<argument> Summary TODO\xdef t
+                              esting-summary{testing-summary}\ignorespaces 
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\toclist ...ry{testing-summary}\ignorespaces }{22}
+                                                  \tocline {0}{\bfshape }{6}...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+...
+l.41 \makefront
+               
+? 
+l.785 OPmac WARNING: duplicated label [conclusion], ignored.
+l.785 OPmac WARNING: duplicated label [conclusion-assignment_completion], ignor
+ed.
+l.785 OPmac WARNING: duplicated label [conclusion-project_life_cycle], ignored.
+
+l.785 OPmac WARNING: duplicated label [conclusion-project_life_cycle-present], 
+ignored.
+l.785 OPmac WARNING: duplicated label [conclusion-project_life_cycle-future], i
+gnored.
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   c
+<argument> Summary TODO\xdef c
+                              onclusion-summary{conclusion-summary}\ignoresp...
+
+\tocline ... \llap {#2\toclink {#3}\enspace }{#2#4
+                                                  \unskip }\nobreak \tocdotf...
+
+\maketoc ... TeX me again}\openref \else \toclist 
+                                                  \fi 
+\tocpages ...arskip =0pt \iindent =4.7mm \maketoc 
+                                                  \vfil } \prepbox \tocbox \...
+...
+l.41 \makefront
+               
+? 
+[-5] [-6]
+! Undefined control sequence.
+\label ...el [#1], ignored}\else \xdef \lastlabel 
+                                                  {#1}\fi \ignorespaces 
+<argument> Introduction TODO\label [introduction]
+                                                  \unskip 
+\printchap ...\ifnonum \else \thechapnum .\ \fi #1
+                                                  }\mark {}\nobreak \begitem...
+
+\chap ...oc 0\bfshape {#1}}\printchap {#1\unskip }
+                                                  \resetnonumnotoc 
+l.47 
+     
+? 
+
 Overfull \hbox (58.2549pt too wide) in paragraph at lines 50--51
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8[] /|
@@ -241,7 +564,39 @@ Overfull \hbox (150.44128pt too wide) in paragraph at lines 51--52
 .\tentt p
 .etc.
 
-[1] [2]
+[1]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->1.\ Introduction TODO\xdef {
+                                        introduction}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.99 
+     
+? 
+[2]
+! Undefined control sequence.
+\label ...el [#1], ignored}\else \xdef \lastlabel 
+                                                  {#1}\fi \ignorespaces 
+<argument> Analysis TODO\label [analysis]
+                                          \unskip 
+\printchap ...\ifnonum \else \thechapnum .\ \fi #1
+                                                  }\mark {}\nobreak \begitem...
+
+\chap ...oc 0\bfshape {#1}}\printchap {#1\unskip }
+                                                  \resetnonumnotoc 
+l.99 
+     
+? 
+
 Overfull \hbox (130.91612pt too wide) in paragraph at lines 102--103
  [][][]\tenrm application anal-y-sis [][]\tentt https:[] /[] / docs[] . google[
 ] . com[] / document[] / d[] / 1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-|
@@ -411,8 +766,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 .....\kern -46.1998
 .....\pdfdest name{toc:.2} xyz
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis TODO }{\the \
-pageno \ETC.}
+....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis TODO\label [a
+nalys\ETC.}
 ....\thefont 2
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -585,6 +940,24 @@ pageno \ETC.}
 .etc.
 
  [3]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.160 
+      
+? 
+
 Underfull \vbox (badness 5504) has occurred while \output is active
 \vbox(674.33032+2.75)x415.41025, glue set 3.80754
 .\vbox(0.0+0.0)x0.0, glue set 25.0fil
@@ -604,6 +977,11 @@ Underfull \vbox (badness 5504) has occurred while \output is active
 .\glue(\baselineskip) 5.0555
 .\hbox(6.9445+1.94443)x415.41025, glue set 116.69269fil
 ..\glue(\leftskip) 11.66563 plus 1.0fil
+..\vbox(0.0+0.0)x0.0, glue set 13.99994fil
+...\kern -13.99994
+...\pdfdest name{ref:analysis-existing_applications-torque} xyz
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\write0<3>{\Xlabel{analysis-existing_applications-torque}{2.1}}
 ..\mF F
 ..\mF i
 ..\mF g
@@ -631,8 +1009,6 @@ Underfull \vbox (badness 5504) has occurred while \output is active
 ..\tenrm r
 ..\tenrm o
 ..\tenrm m
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\tenrm T
 ..etc.
 .\penalty -100
 .\glue 6.8 plus 2.26653 minus 2.26653
@@ -787,6 +1163,9 @@ Underfull \vbox (badness 5504) has occurred while \output is active
 .etc.
 
  [4 <./images/analysis_app_torque.png (PNG copy)>]
+l.190 OPmac WARNING: duplicated label [analysis-existing_applications], ignored
+.
+
 Underfull \vbox (badness 3364) has occurred while \output is active
 \vbox(674.33032+2.13887)x415.41025, glue set 3.23138
 .\vbox(0.0+0.0)x0.0, glue set 25.0fil
@@ -806,6 +1185,11 @@ Underfull \vbox (badness 3364) has occurred while \output is active
 .\glue(\baselineskip) 5.0555
 .\hbox(6.9445+1.94443)x415.41025, glue set 98.06787fil
 ..\glue(\leftskip) 11.66563 plus 1.0fil
+..\vbox(0.0+0.0)x0.0, glue set 13.99994fil
+...\kern -13.99994
+...\pdfdest name{ref:analysis-existing_applications-carhome_ultra} xyz
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\write0<3>{\Xlabel{analysis-existing_applications-carhome_ultra}{2.2}}
 ..\mF F
 ..\mF i
 ..\mF g
@@ -833,8 +1217,6 @@ Underfull \vbox (badness 3364) has occurred while \output is active
 ..\tenrm r
 ..\tenrm o
 ..\tenrm m
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\tenrm C
 ..etc.
 .\penalty -100
 .\glue 6.8 plus 2.26653 minus 2.26653
@@ -1000,6 +1382,24 @@ Underfull \vbox (badness 3364) has occurred while \output is active
 .etc.
 
  [5 <./images/analysis_app_carhomeultra.png (PNG copy)>]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.215 
+      
+? 
+
 Underfull \vbox (badness 10000) has occurred while \output is active
 \vbox(674.33032+2.13887)x415.41025, glue set 7.46346
 .\vbox(0.0+0.0)x0.0, glue set 25.0fil
@@ -1019,6 +1419,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 .\glue(\baselineskip) 5.0555
 .\hbox(6.9445+1.94443)x415.41025, glue set 99.77614fil
 ..\glue(\leftskip) 11.66563 plus 1.0fil
+..\vbox(0.0+0.0)x0.0, glue set 13.99994fil
+...\kern -13.99994
+...\pdfdest name{ref:analysis-existing_applications-car_dashdroid} xyz
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\write0<3>{\Xlabel{analysis-existing_applications-car_dashdroid}{2.3}}
 ..\mF F
 ..\mF i
 ..\mF g
@@ -1046,8 +1451,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 ..\tenrm r
 ..\tenrm o
 ..\tenrm m
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\tenrm C
 ..etc.
 .\penalty -100
 .\glue 6.8 plus 2.26653 minus 2.26653
@@ -1212,10 +1615,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 ..etc.
 .etc.
 
- [6 <./images/analysis_app_cardashdroid.png (PNG copy)>] [7 <./images/analysis_
-app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>] [9
- <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.png>
-]
+ [6 <./images/analysis_app_cardashdroid.png (PNG copy)>]
+l.256 OPmac WARNING: duplicated label [analysis-existing_applications], ignored
+.
+[7 <./images/analysis_app_ultimatecardock.png (PNG copy)>]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.289 ...ne{\inspic images/analysis_aa_audio.png }
+                                                  \nobreak\medskip
+? 
+[8 <./images/analysis_aa_overview.png>]
+l.313 OPmac WARNING: duplicated label [analysis-use_cases], ignored.
+[9 <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.pn
+g>]
 Underfull \hbox (badness 1584) in paragraph at lines 314--315
 \tenrm (sources: [][]\tentt http:[] /[] / techcrunch[] . com[] / 2014[] / 03[] 
 / 03[] / gartner-195m-tablets-sold-
@@ -1254,8 +1678,27 @@ Underfull \hbox (badness 1584) in paragraph at lines 314--315
 .\tentt c
 .etc.
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.344 
+      
+? 
+[10]
+l.375 OPmac WARNING: duplicated label [analysis-gui], ignored.
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1291,87 +1734,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--386
 .\tentt -
 .etc.
 
-[12] [13]
-Overfull \hbox (1461.46277pt too wide) in paragraph at lines 468--469
-[]|
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.414 
+      
+? 
+[12]
+l.464 OPmac WARNING: duplicated label [analysis-development_and_support_tools],
+ ignored.
+[13]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   {
+\headchap ->2.\ Analysis TODO\xdef {
+                                    analysis}\ignorespaces  \unskip 
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.491 
+      
+? 
+[14] [15]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+\headchap ->3.\ Design TODO\xdef a
+                                  nalysis-obd-data{design}\ignorespaces  \un...
 
-\hbox(7.63895+2.44446)x415.41025
-.\hbox(7.63895+2.44446)x1876.87302
-..\tentt C
-..\tentt o
-..\tentt n
-..\tentt t
-..\tentt i
-..\tentt n
-..\tentt u
-..\tentt o
-..\tentt u
-..\tentt s
-..\glue 5.775
-..\tentt I
-..\tentt n
-..\tentt t
-..\tentt e
-..\tentt g
-..\tentt r
-..\tentt a
-..\tentt t
-..\tentt i
-..\tentt o
-..\tentt n
-..\glue 5.775
-..\tentt i
-..\tentt s
-..\glue 5.775
-..\tentt a
-..\glue 5.775
-..\tentt s
-..\tentt o
-..etc.
-.\glue(\rightskip) 0.0
-.\rule(*+*)x5.0
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.550 F
+       or both drafts the following would apply. The swipe action would invo...
 
+? 
+[16]
+l.587 OPmac WARNING: duplicated label [design-gui], ignored.
+[17]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   a
+\headchap ->3.\ Design TODO\xdef a
+                                  nalysis-obd-data{design}\ignorespaces  \un...
 
-Overfull \hbox (2.77321pt too wide) in paragraph at lines 468--469
-\tenrm (Mar-tin Fowler, [][]\tentt http:[] /[] / www[] . martinfowler[] . com[]
- / articles[] / continuousIntegration[] .|
-
-\hbox(8.25+2.75)x415.41025, glue set - 1.0
-.\tenrm (
-.\tenrm M
-.\tenrm a
-.\tenrm r
-.\discretionary
-..\tenrm -
-.\tenrm t
-.\tenrm i
-.\tenrm n
-.\glue 3.66666 plus 1.83333 minus 1.22221
-.\tenrm F
-.\kern-0.91667
-.\tenrm o
-.\kern-0.30557
-.\tenrm w
-.\tenrm l
-.\tenrm e
-.\tenrm r
-.\tenrm ,
-.\glue 3.66666 plus 2.29166 minus 0.97777
-.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
-/Subtype/Link/A <</Type/Action/S/URI/URI(http://www.martinfowler.com/\ETC.}
-.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
-.\tentt h
-.\tentt t
-.\tentt t
-.\tentt p
-.\tentt :
-.\hbox(0.0+0.0)x0.0
-.\penalty 10000
-.\glue 0.0 plus 0.57753
-.\tentt /
-.etc.
-
-[14] [15] [16] [17] [18] [19] [20]
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.630 
+      
+? 
+[18]
+l.630 OPmac WARNING: duplicated label [design-gui], ignored.
+[19] [20]
 Overfull \hbox (46.70491pt too wide) in paragraph at lines 725--726
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
@@ -1416,17 +1860,37 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 725--726
 .\tentt .
 .etc.
 
-[21] [22] [23] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
-c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (29 pages, 2254831 bytes).
+[21]
+! Missing control sequence inserted.
+<inserted text> 
+                \inaccessible 
+<to be read again> 
+                   r
+\headchap ->5.\ Testing TODO\xdef r
+                                   ealization-gui-multiple_designs{testing}\...
+
+\printheadline ...lse \locpgcolor \Grey \headchap 
+                                                  \ \tecky \hskip -3.7cm\fi 
+\makeheadline ...ne {\vbox to10pt{}\the \headline 
+                                                  }\vss }\nointerlineskip 
+\ensureblacko ...\colorstackpush \pdfblackcolor #1
+                                                  \colorstackpop 
+...
+l.764 
+      
+? 
+[22] [23] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{/u
+sr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt1
+0.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (29 pages, 2278335 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 689 compressed objects within 7 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 843 PDF objects out of 1000 (max. 8388607)
+ 788 compressed objects within 8 object streams
+ 196 named destinations out of 1000 (max. 500000)
  737 words of extra memory for PDF output out of 10000 (max. 10000000)
 
