@@ -330,15 +330,18 @@ Fulfiling the requirements for customer base as well as simplicity of developmen
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
 \sec Android platform TODO
 
-There are some platform aspects to be considered when developing for Android-based tablet device.
+There are some platform aspects to be considered when developing for Android-based tablet device. First is the problem with most of the tablet devices -- the device performance. While the hardware is continuously evolving, one must consider older devices as well as growing requirements for graphics presentation. The second possible issue is the Android architecture, which influences the application inner communication.
 
-\secc Architecture TODO
+\secc Performance
 
+Nearly with every new version of Android, new presentation effects are prepared for developers to use. While it is not mandatory, it is still adviced to hold the platform standards as the market demands it. The application must have a good look and feel in order to attract attention. This must be considered when building the application, because the environment demands fluent responses.
 
-\secc Specifics TODO
+\secc Architecture
 
+The main building block in Android application is an activity. The activity is an idependent component of application, a hybrid between controller and view in MVC architecture. It contains a single screen (which contains a single layout), it has it's own independent data. An application usually consists of multiple loosely coupled activities. Those activities are held in an activity stack, where they are preserved to be used later without need to create them all over again. However, if the system needs memory, it clears the stack from the bottom (least recently used activities).
+For communication between activities there are so called Intents. An intent is the main concept of communication between two components. A component can be for example an activity or a service. Intent can contain simple data, such as primitive or serialized data.
 
-%	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
+%------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \sec GUI TODO
 
 
@@ -368,7 +371,7 @@ sources:
 \begitems
 * MI-NUR \url{https://edux.fit.cvut.cz/courses/MI-NUR/lectures/start}
 * Designing for indash automotive \url{http://revinity.com/?p=128 }
-* UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         
+* UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         0
 \enditems
 
 \secc UI in a car environment
