@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,47 +1213,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 .etc.
 
  [6 <./images/analysis_app_cardashdroid.png (PNG copy)>] [7 <./images/analysis_
-app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
-\tentt 03[] / gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipa
-d-
+app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>] [9
+ <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.png>
+]
+Underfull \hbox (badness 1584) in paragraph at lines 314--315
+\tenrm (sources: [][]\tentt http:[] /[] / techcrunch[] . com[] / 2014[] / 03[] 
+/ 03[] / gartner-195m-tablets-sold-
 
-\hbox(7.63895+2.44446)x415.41025, glue set 9.66241
-.\tentt 0
-.\tentt 3
+\hbox(8.25+2.75)x415.41025, glue set 2.51358
+.\tenrm (
+.\tenrm s
+.\tenrm o
+.\tenrm u
+.\tenrm r
+.\tenrm c
+.\tenrm e
+.\tenrm s
+.\tenrm :
+.\glue 4.88887 plus 3.66666 minus 0.6111
+.\pdfstartlink(9.89993+3.30003)x* attr{/C[1 .8 0] /Border[0 0 .6]} action user{
+/Subtype/Link/A <</Type/Action/S/URI/URI(http://techcrunch.com/2014/0\ETC.}
+.\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+.\tentt h
+.\tentt t
+.\tentt t
+.\tentt p
+.\tentt :
+.\hbox(0.0+0.0)x0.0
+.\penalty 10000
+.\glue 0.0 plus 0.57753
+.\tentt /
 .\hbox(0.0+0.0)x0.0
 .\penalty 10000
 .\glue 0.0 plus 0.57753
 .\tentt /
 .\penalty 100
 .\glue 0.0 plus 0.57753
-.\tentt g
-.\tentt a
-.\tentt r
 .\tentt t
-.\tentt n
 .\tentt e
-.\tentt r
-.\tentt -
-.\discretionary
-.\tentt 1
-.\tentt 9
-.\tentt 5
-.\tentt m
-.\tentt -
-.\discretionary
-.\tentt t
-.\tentt a
-.\tentt b
-.\tentt l
-.\tentt e
-.\tentt t
-.\tentt s
+.\tentt c
 .etc.
 
-[9 <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.pn
-g>] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+[10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1289,8 +1291,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--380
 .\tentt -
 .etc.
 
-[12]
-Overfull \hbox (1461.46277pt too wide) in paragraph at lines 462--463
+[12] [13]
+Overfull \hbox (1461.46277pt too wide) in paragraph at lines 468--469
 []|
 
 \hbox(7.63895+2.44446)x415.41025
@@ -1330,7 +1332,7 @@ Overfull \hbox (1461.46277pt too wide) in paragraph at lines 462--463
 .\rule(*+*)x5.0
 
 
-Overfull \hbox (2.77321pt too wide) in paragraph at lines 462--463
+Overfull \hbox (2.77321pt too wide) in paragraph at lines 468--469
 \tenrm (Mar-tin Fowler, [][]\tentt http:[] /[] / www[] . martinfowler[] . com[]
  / articles[] / continuousIntegration[] .|
 
@@ -1369,8 +1371,8 @@ Overfull \hbox (2.77321pt too wide) in paragraph at lines 462--463
 .\tentt /
 .etc.
 
-[13] [14] [15] [16] [17] [18]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 668--669
+[14] [15] [16] [17] [18] [19] [20]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 725--726
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1414,17 +1416,17 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 668--669
 .\tentt .
 .etc.
 
-[19] [20] [21] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
+[21] [22] [23] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
 c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (27 pages, 2248179 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (29 pages, 2254831 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 665 compressed objects within 7 object streams
- 111 named destinations out of 1000 (max. 500000)
- 713 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 689 compressed objects within 7 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 737 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,7 +24,7 @@
 
 % (thesis type {B,M,D})/(language {CZ,EN})
 \worktype [M/EN]
-\department {Katedra teoretické informatiky}
+\department {Katedra softwarového inženýrství}
 \title {Tablet infotainment system}
 \author {Bc. Michael Bl\' aha}
 \date {January 2016}
@@ -348,6 +348,8 @@ The main building block in Android application is an activity. The activity is a
 
 For communication between activities there are so called Intents. An intent is the main concept of communication between two components. A component can be for example an activity or a service. Intent can contain simple data, such as primitive or serialized data.
 
+Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the GUI designed create a GUI without having to understand the Java language or the Android API.
+
 \secc Material design
 
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
@@ -506,6 +508,15 @@ The main approach to achieve proper extensibility should be to write a clean cod
 
 \secc Modularity TODO
 
+\seccc Note for Android platform limitations
+
+The first considered approach was to create requirements on modules, such as manifest file as a descriptor and an implementation file with source codes and resources, so that the modules could be loaded dynamically and the extensions could be customizable. Then a user-base could develop modules on their own and add them freely into the application once they meet the requirements.
+
+However, the Android concept with XML layouts does not allow their inflating during runtime. Because it is a performance-expensive operation, it pre-processes a XML file when building the application, as quoted below.
+
+\uv{For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.} (TODO andoid layoutinflater documentation and quotes) 
+
+\seccc Overview 
 Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. 
 
 \secc Adaptability
@@ -536,7 +547,7 @@ In the early phase of the design process, the main idea was to display single pi
 
 This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image (TODO link and image \#2), however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
 
-For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images (TODO \#3 \#4) in the additional (TODO PRILOHA?).
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images (TODO \#3 \#4) in the additional (TODO PRILOHA?). An early implementation is shown in the additional as well (TODO link).
 
 \seccc Advantages
 
