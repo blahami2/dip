@@ -310,6 +310,7 @@ Based on above. Also other typical analysis stuff.
 \sec Platforms
 
 The chosen platform heavily influences the piece of market an application can reach. Therefore, only platforms with solid market share are considered. Another criteria is the simplicity of development, which influences the time and effort put into an application before it can be released. This is especially important for quickly finding out the sale potential of an application.
+
 Following the first rule mentioned above and based on tablet sales in past years (sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
 
 \secc Android
@@ -344,7 +345,10 @@ Nearly with every new version of Android, new presentation effects are prepared 
 \secc Architecture
 
 The main building block in Android application is an activity. The activity is an idependent component of application, a hybrid between controller and view in MVC architecture. It contains a single screen (which contains a single layout), it has it's own independent data. An application usually consists of multiple loosely coupled activities. Those activities are held in an activity stack, where they are preserved to be used later without need to create them all over again. However, if the system needs memory, it clears the stack from the bottom (least recently used activities).
+
 For communication between activities there are so called Intents. An intent is the main concept of communication between two components. A component can be for example an activity or a service. Intent can contain simple data, such as primitive or serialized data.
+
+\secc Material design
 
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \sec GUI TODO
@@ -550,8 +554,9 @@ For both drafts the following would apply. The swipe action would invoke text-to
 
 \secc The second phase TODO
 
-Next step was to fix the problems mentioned above. Being inspired by the reviewed applications (TODO link to section) one attempt ended with concept shown on image (TODO link \#5). It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption. 
-The second image shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
+Next step was to fix the problems mentioned above. Being inspired by the reviewed applications (TODO link to section) one attempt ended with concept shown on image (TODO link \#5). It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
+
+The second image (TODO link \#6) shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
 
 \seccc Advantages
 
@@ -565,6 +570,47 @@ The second image shows possibility of inserting a subapplication screen between 
 * {\bf Minimality} -- the amount of data grows and it appears to be too much. There are different kinds of data displayed at the same time.
 * {\bf Consistency} -- the vertical application list is consistent, however, the central panel is still suffering from lack of consistency, as every sub-application can have a different layout.
 \enditems
+
+\secc The grid
+
+The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image (TODO link \#7), it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
+
+Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image (TODO link \#8)). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card.
+
+
+\seccc Advantages
+
+\begitems
+* {\bf Accsessible functionality} -- the concept shows available basic functionality without the need to invoke full application. This allows the user to remain in the main screen in most cases.
+\enditems
+
+\seccc Disadvantages
+
+\begitems
+* {\bf Controls} -- in order to fit in the card area, the controls might prove to be too small, which makes it difficult to touch them
+* {\bf Readability} -- in order to fit in the card area, the text might have to be too small, which makes it difficult to read 
+\enditems
+
+\secc The final design 
+
+Because every of the previously mentioned designs had at least one critical disadvantage, a new approach had to be taken. Because of consistency, every element must be specified. But considering the need for simplicity, there must be very limited amount of those elements.
+
+Given the requirements for both consistency and simplicity, as well as extensible functionality, the elements are divided into two groups: those, that display information and those, that control the application. The simpliest way appeared to be the following: one element serves as a displayer, which displays one and only one kind of information, and the second element servers as a control button, which allows user to perform a single action. Every kind of functionality appears to be achievable by those elements or by sets of those elements.
+
+Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hiearachical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
+
+As shown on image (TODO link \#11), the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly. 
+
+\seccc Advantages
+
+\begitems
+* {\bf Minimality} -- only a single value is displayed per each panel,
+* {\bf familiarity} -- using familiar (platform specific) icons should ease the information seeking process,
+* {\bf consistency} -- consistent hierarchical model with only two types of elements,
+* {\bf integration} -- using platform specific icons and specifics is a part of realization process,
+* {\bf simplicity} -- again, there are only two kinds of elements, which is simple enough.
+\enditems
+
 
 Describe the process, phases, analyse and compare advantages, disadvantages, thoughts
 

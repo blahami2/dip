@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  25 DEC 2015 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,7 +1370,7 @@ Overfull \hbox (2.77321pt too wide) in paragraph at lines 462--463
 .etc.
 
 [13] [14] [15] [16] [17] [18]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 650--651
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 668--669
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1421,10 +1421,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
 dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (27 pages, 2246804 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (27 pages, 2248179 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 659 compressed objects within 7 object streams
- 110 named destinations out of 1000 (max. 500000)
- 705 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 665 compressed objects within 7 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 713 words of extra memory for PDF output out of 10000 (max. 10000000)
 
