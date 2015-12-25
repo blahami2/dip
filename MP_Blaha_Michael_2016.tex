@@ -518,12 +518,39 @@ For that reason there will be module containers which can contain multiple modul
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \sec GUI TODO
 
+Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in chapter (TODO link).
 
 \secc Basic elements TODO
 
 Basic idea
 
-\secc UI drafts TODO
+\secc Drafts TODO
+
+\secc The early phase TODO
+
+In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image (TODO link and image \#1).
+
+This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image (TODO link and image \#2), however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
+
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images (TODO \#3 \#4) in the additional (TODO PRILOHA?).
+
+\seccc Advantages
+
+\begitems
+* {\bf Readability} -- given a single panel per screen with only a name and icon in it, the font can be large enough to be properly readable.
+* {\bf Colors} -- colors can distinguish separate applications panels making them easily recognizable, once the user learns the colors for each application.
+\enditems
+
+\seccc Disadvantages
+
+\begitems
+* {\bf Consistency} -- however is the main screen consistent, the~invoked subapplications are not. The concept does not force them to be, neither it gives a~clue about how they should look.
+* {\bf Limited} -- the main screen has a limited functionality (near to none) while the layout of subapplications would have to be created independently everytime a~new feature is implemented. This also limits easy extensibility, as creating a~proper GUI is not a~simple task with the given constraints.
+\enditems
+
+\secc The second phase TODO
+
+
 
 Describe the process, phases, analyse and compare advantages, disadvantages, thoughts
 
