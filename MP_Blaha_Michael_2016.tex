@@ -444,11 +444,17 @@ Because of the central repository, Subversion allows read and write access contr
 
 \seccc Git
 
-\secc Test driven development TODO
+\secc Test driven development
 
+Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
 
 \secc Continuous integration TODO
 
+"Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible." (Martin Fowler, \url{http://www.martinfowler.com/articles/continuousIntegration.html})
+
+Continuous integration supports rapid application development while giving the much needed feedback, so that the developer can see and adjust the direction, which the application development takes. 
+
+For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen (TODO link \url{https://travis-ci.org/}). While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \sec On-Board Diagnostics TODO

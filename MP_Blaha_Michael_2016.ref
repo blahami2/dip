@@ -1,5 +1,4 @@
-%% OPmac - REF file (\inputref)
-\Xrefversion{2}
+%% OPmac - REF file
 \Xpage{-1}
 \Xpage{-2}
 \Xpage{-3}
@@ -7,97 +6,93 @@
 \Xpage{-5}
 \Xpage{-6}
 \Xpage{1}
-\Xtoc{0}{\bfshape }{1}{Introduction TODO }{1}
-\Xtoc{1}{\rm }{1.1}{Project TODO }{1}
-\Xtoc{2}{\rm }{1.1.1}{Motivation TODO }{1}
-\Xtoc{1}{\rm }{1.2}{Assignment analysis }{1}
-\Xtoc{2}{\rm }{1.2.1}{Assignment tasks }{1}
+\Xchap{1}{Introduction TODO }{1}
+\Xsec{1.1}{Project TODO }{1}
+\Xsecc{1.1.1}{Motivation TODO }{1}
+\Xsec{1.2}{Assignment analysis }{1}
+\Xsecc{1.2.1}{Assignment tasks }{1}
 \Xpage{2}
+\Xchap{2}{Analysis TODO }{2}
+\Xsec{2.1}{Existing applications }{2}
+\Xsecc{2.1.1}{Applications TODO }{2}
+\Xsecc{2.1.2}{Torque }{2}
 \Xpage{3}
-\Xtoc{0}{\bfshape }{2}{Analysis TODO }{3}
-\Xtoc{1}{\rm }{2.1}{Existing applications }{3}
-\Xtoc{2}{\rm }{2.1.1}{Applications TODO }{3}
-\Xtoc{2}{\rm }{2.1.2}{Torque }{3}
+\Xsecc{2.1.3}{CarHome Ultra }{3}
+\Xsecc{2.1.4}{Car Dashdroid }{3}
 \Xpage{4}
-\Xtoc{2}{\rm }{2.1.3}{CarHome Ultra }{4}
+\Xsecc{2.1.5}{Ultimate Car Dock }{4}
 \Xpage{5}
-\Xtoc{2}{\rm }{2.1.4}{Car Dashdroid }{5}
+\Xsecc{2.1.6}{Conclusion }{5}
+\Xsecc{2.1.7}{Android Auto }{5}
 \Xpage{6}
-\Xtoc{2}{\rm }{2.1.5}{Ultimate Car Dock }{6}
 \Xpage{7}
-\Xtoc{2}{\rm }{2.1.6}{Conclusion }{7}
+\Xsec{2.2}{Platforms }{7}
+\Xsecc{2.2.1}{Android }{7}
+\Xsecc{2.2.2}{iOS }{7}
+\Xsecc{2.2.3}{Windows }{7}
+\Xsecc{2.2.4}{Conclusion }{7}
+\Xsec{2.3}{Android platform TODO }{7}
+\Xsecc{2.3.1}{Architecture TODO }{7}
+\Xsecc{2.3.2}{Specifics TODO }{7}
+\Xsec{2.4}{GUI TODO }{7}
 \Xpage{8}
-\Xtoc{2}{\rm }{2.1.7}{Android Auto }{8}
+\Xsecc{2.4.1}{Basic principles }{8}
+\Xsecc{2.4.2}{UI in a car environment }{8}
+\Xsec{2.5}{Development and support tools TODO }{8}
 \Xpage{9}
-\Xtoc{1}{\rm }{2.2}{Platforms }{9}
+\Xsecc{2.5.1}{Development environment }{9}
+\Xsecc{2.5.2}{Version control system }{9}
+\Xsecc{2.5.3}{Test driven development TODO }{9}
+\Xsecc{2.5.4}{Continuous integration TODO }{9}
+\Xsec{2.6}{On-Board Diagnostics TODO }{9}
+\Xsecc{2.6.1}{Overview TODO }{9}
+\Xsecc{2.6.2}{API TODO }{9}
+\Xsecc{2.6.3}{Data TODO }{9}
 \Xpage{10}
-\Xtoc{2}{\rm }{2.2.1}{Android }{10}
-\Xtoc{2}{\rm }{2.2.2}{iOS }{10}
-\Xtoc{2}{\rm }{2.2.3}{Windows }{10}
-\Xtoc{2}{\rm }{2.2.4}{Conclusion }{10}
-\Xtoc{1}{\rm }{2.3}{Android platform TODO }{10}
-\Xtoc{2}{\rm }{2.3.1}{Architecture TODO }{10}
-\Xtoc{2}{\rm }{2.3.2}{Specifics TODO }{10}
-\Xtoc{1}{\rm }{2.4}{GUI TODO }{10}
+\Xchap{3}{Design TODO }{10}
+\Xsec{3.1}{Application architecture TODO }{10}
+\Xsecc{3.1.1}{Extensibility TODO }{10}
+\Xsecc{3.1.2}{Modularity TODO }{10}
+\Xsecc{3.1.3}{Adaptability TODO }{10}
+\Xsecc{3.1.4}{AutoUI preparation TODO }{10}
+\Xsecc{3.1.5}{Platform limitations TODO }{10}
+\Xsec{3.2}{GUI TODO }{10}
+\Xsecc{3.2.1}{Basic elements TODO }{10}
+\Xsecc{3.2.2}{UI drafts TODO }{10}
 \Xpage{11}
-\Xtoc{2}{\rm }{2.4.1}{Basic principles }{11}
-\Xtoc{2}{\rm }{2.4.2}{UI in a car environment }{11}
+\Xchap{4}{Realization TODO }{11}
+\Xsec{4.1}{Preparation TODO }{11}
+\Xsecc{4.1.1}{Environment TODO }{11}
+\Xsecc{4.1.2}{Versioning TODO }{11}
+\Xsecc{4.1.3}{Testing TODO }{11}
+\Xsecc{4.1.4}{Scripting TODO }{11}
+\Xsec{4.2}{Core TODO }{11}
+\Xsecc{4.2.1}{Core TODO }{11}
+\Xsecc{4.2.2}{Data storage TODO }{11}
+\Xsecc{4.2.3}{Communication TODO }{11}
+\Xsecc{4.2.4}{Optimization TODO }{11}
+\Xsec{4.3}{Modularity TODO }{11}
+\Xsecc{4.3.1}{Requirements TODO }{11}
+\Xsecc{4.3.2}{Integration TODO }{11}
+\Xsec{4.4}{GUI TODO }{11}
+\Xsecc{4.4.1}{Common elements TODO }{11}
+\Xsecc{4.4.2}{Multiple designs TODO }{11}
 \Xpage{12}
-\Xtoc{1}{\rm }{2.5}{Development and support tools TODO }{12}
-\Xtoc{2}{\rm }{2.5.1}{Development environment }{12}
+\Xchap{5}{Testing TODO }{12}
+\Xsec{5.1}{Code TODO }{12}
+\Xsecc{5.1.1}{Unit testing TODO }{12}
+\Xsecc{5.1.2}{Integration testing TODO }{12}
+\Xsecc{5.1.3}{System testing TODO }{12}
+\Xsecc{5.1.4}{Qualification testing TODO }{12}
+\Xsec{5.2}{GUI TODO }{12}
+\Xsecc{5.2.1}{Heuristic testing TODO }{12}
+\Xsecc{5.2.2}{Testing with users TODO }{12}
 \Xpage{13}
-\Xtoc{2}{\rm }{2.5.2}{Version control system }{13}
-\Xtoc{2}{\rm }{2.5.3}{Test driven development TODO }{13}
-\Xtoc{2}{\rm }{2.5.4}{Continuous integration TODO }{13}
-\Xtoc{1}{\rm }{2.6}{On-Board Diagnostics TODO }{13}
-\Xtoc{2}{\rm }{2.6.1}{Overview TODO }{13}
-\Xtoc{2}{\rm }{2.6.2}{API TODO }{13}
-\Xtoc{2}{\rm }{2.6.3}{Data TODO }{13}
+\Xsec{5.3}{Summary TODO }{13}
 \Xpage{14}
-\Xtoc{0}{\bfshape }{3}{Design TODO }{14}
-\Xtoc{1}{\rm }{3.1}{Application architecture TODO }{14}
-\Xtoc{2}{\rm }{3.1.1}{Extensibility TODO }{14}
-\Xtoc{2}{\rm }{3.1.2}{Modularity TODO }{14}
-\Xtoc{2}{\rm }{3.1.3}{Adaptability TODO }{14}
-\Xtoc{2}{\rm }{3.1.4}{AutoUI preparation TODO }{14}
-\Xtoc{2}{\rm }{3.1.5}{Platform limitations TODO }{14}
-\Xtoc{1}{\rm }{3.2}{GUI TODO }{14}
-\Xtoc{2}{\rm }{3.2.1}{Basic elements TODO }{14}
-\Xtoc{2}{\rm }{3.2.2}{UI drafts TODO }{14}
-\Xpage{15}
-\Xtoc{0}{\bfshape }{4}{Realization TODO }{15}
-\Xtoc{1}{\rm }{4.1}{Preparation TODO }{15}
-\Xtoc{2}{\rm }{4.1.1}{Environment TODO }{15}
-\Xtoc{2}{\rm }{4.1.2}{Versioning TODO }{15}
-\Xtoc{2}{\rm }{4.1.3}{Testing TODO }{15}
-\Xtoc{2}{\rm }{4.1.4}{Scripting TODO }{15}
-\Xtoc{1}{\rm }{4.2}{Core TODO }{15}
-\Xtoc{2}{\rm }{4.2.1}{Core TODO }{15}
-\Xtoc{2}{\rm }{4.2.2}{Data storage TODO }{15}
-\Xtoc{2}{\rm }{4.2.3}{Communication TODO }{15}
-\Xtoc{2}{\rm }{4.2.4}{Optimization TODO }{15}
-\Xtoc{1}{\rm }{4.3}{Modularity TODO }{15}
-\Xtoc{2}{\rm }{4.3.1}{Requirements TODO }{15}
-\Xtoc{2}{\rm }{4.3.2}{Integration TODO }{15}
-\Xtoc{1}{\rm }{4.4}{GUI TODO }{15}
-\Xtoc{2}{\rm }{4.4.1}{Common elements TODO }{15}
-\Xtoc{2}{\rm }{4.4.2}{Multiple designs TODO }{15}
-\Xpage{16}
-\Xtoc{0}{\bfshape }{5}{Testing TODO }{16}
-\Xtoc{1}{\rm }{5.1}{Code TODO }{16}
-\Xtoc{2}{\rm }{5.1.1}{Unit testing TODO }{16}
-\Xtoc{2}{\rm }{5.1.2}{Integration testing TODO }{16}
-\Xtoc{2}{\rm }{5.1.3}{System testing TODO }{16}
-\Xtoc{2}{\rm }{5.1.4}{Qualification testing TODO }{16}
-\Xtoc{1}{\rm }{5.2}{GUI TODO }{16}
-\Xtoc{2}{\rm }{5.2.1}{Heuristic testing TODO }{16}
-\Xpage{17}
-\Xtoc{2}{\rm }{5.2.2}{Testing with users TODO }{17}
-\Xtoc{1}{\rm }{5.3}{Summary TODO }{17}
-\Xpage{18}
-\Xtoc{0}{\bfshape }{6}{Conclusion TODO }{18}
-\Xtoc{1}{\rm }{6.1}{Assignment completion TODO }{18}
-\Xtoc{1}{\rm }{6.2}{Project life cycle TODO }{18}
-\Xtoc{2}{\rm }{6.2.1}{Present TODO }{18}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{18}
-\Xtoc{1}{\rm }{6.3}{Summary TODO }{18}
+\Xchap{6}{Conclusion TODO }{14}
+\Xsec{6.1}{Assignment completion TODO }{14}
+\Xsec{6.2}{Project life cycle TODO }{14}
+\Xsecc{6.2.1}{Present TODO }{14}
+\Xsecc{6.2.2}{Future TODO }{14}
+\Xsec{6.3}{Summary TODO }{14}
