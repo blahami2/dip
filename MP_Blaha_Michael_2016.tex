@@ -80,7 +80,7 @@ On-Board Diagnostics API is a standard API provided by modern cars for gathering
 
 \seccc Design an application system architecture for accessing the OBD data and resources
 
-Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unneccesary (FIX!) delay.
+Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unneccesary (TODO FIX!) delay.
 
 \seccc Design a tablet User Interface for in-car use
 
@@ -444,9 +444,9 @@ Based on CVS, Subversion has a single repository where all the data are stored. 
 Because of the central repository, Subversion allows read and write access controls for a every single location and have them enforced across the entire project, which can come in handy when developing in a large community, but it is usually not required when developing in a small team.
 
 
-\seccc Mercurial
+\seccc Mercurial TODO
 
-\seccc Git
+\seccc Git TODO
 
 \secc Test driven development
 
@@ -483,14 +483,21 @@ Currently there are two versions of OBD. The first one (OBD I) provides only dia
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
 \sec Application architecture TODO
 
-\secc Platform limitations TODO
+Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours (TODO link Code Complete?). Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
 
+\secc Platform limitations
 
-\secc Extensibility TODO
+As mentioned in platform analysis (TODO link), the typical Android application consits of multiple Activities, which communicate with each other using Intents. While this approach supports the loosely coupled concept, it makes certain inter-cooperation rather difficult.  Sharing an object between activities usually means serializing the object or saving it to the database, which means deserializing or loading from database later. When striving for excellent performance, this can emerge into a real problem. As the Android platform does not allow database IO operations on the main presentation thread, it requires background thread with callbacks to the main one and screen revalidation when such callback occurs. It is critical to avoid such delays as much as possible, when comes to car environment where rapid reactions are required.
 
+\secc Extensibility
+
+With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to CarDashboard application (TODO name?), new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
+
+The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in the next section.
 
 \secc Modularity TODO
 
+Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. 
 
 \secc Adaptability TODO
 
