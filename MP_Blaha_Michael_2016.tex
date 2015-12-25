@@ -301,6 +301,11 @@ Focusing on minimizing the cognitive load, messaging concept in Android Auto foc
 
 It seems to be a good sign that even Google is interested in this area and performs such a research. Every Android application can be designed for Android Auto and use it's simplified user interface, allowing the developer to focus on other issues than in-car user interaction. However, the functionality is currently very limited. Hopefully there will be further progress as soon as possible.
 
+%	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
+\sec Use-cases
+
+Based on above. Also other typical analysis stuff.
+
 %	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
 \sec Platforms
 
@@ -499,8 +504,11 @@ The main approach to achieve proper extensibility should be to write a clean cod
 
 Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. 
 
-\secc Adaptability TODO
+\secc Adaptability
 
+Because the space on the screen is limited and also unknown (multiple devices have varying screen sizes) and every user might want to see different kind of information, he must be able to modify the layout, to choose the information he wants to see. The application must be adaptable to user's needs and requirements, so that he can control the application fluently and spend as little time as possible seeking the requested information.
+
+For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility. 
 
 \secc AutoUI preparation TODO
 
