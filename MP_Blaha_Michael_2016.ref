@@ -154,9 +154,9 @@
 \Xtoc{2}{\rm }{4.3.2}{Data storage TODO }{21}
 \Xlabel{realization.core.communication}{4.3.3}
 \Xtoc{2}{\rm }{4.3.3}{Communication TODO }{21}
-\Xlabel{realization.core.optimization}{4.3.4}
-\Xtoc{2}{\rm }{4.3.4}{Optimization TODO }{21}
 \Xpage{22}
+\Xlabel{realization.core.optimization}{4.3.4}
+\Xtoc{2}{\rm }{4.3.4}{Optimization TODO }{22}
 \Xlabel{realization.core.modules}{4.3.5}
 \Xtoc{2}{\rm }{4.3.5}{Modules TODO }{22}
 \Xlabel{realization.modularity}{4.4}

@@ -542,7 +542,7 @@ As mentioned in Android platform analysis in section \ref[analysis-android_platf
 
 With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis (TODO name?), new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
 
-The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in the next section.
+The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in section \ref[design.application_architecture.modularity].
 
 \label[design.application_architecture.modularity]
 \secc Modularity TODO
@@ -733,7 +733,7 @@ As mentioned in section \ref[analysis.android_platform.architecture] on page \pg
 \label[realization.tablet.adapter]
 \secc ModuleFragmentAdapter
 
-{\tt ModuleFragmentAdapter} follows the adapter concept, where extension of Android API class Adapter is used to cover the access to list of data. This adapter gets a single {\tt ParentModule} (described in section \ref[realization.core.modules] on page \pgref[realization.core.modules]) and retrieves it submodules on demand.
+{\tt ModuleFragmentAdapter} follows the adapter concept, where extension of Android API class {\tt Adapter} is used to cover the access to list of data. This adapter gets a single {\tt ParentModule} (described in section \ref[realization.core.modules] on page \pgref[realization.core.modules]) and retrieves it submodules on demand.
 
 \label[realization.tablet.gridlayout]
 \secc GridLayout
