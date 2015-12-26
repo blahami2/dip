@@ -43,7 +43,8 @@
 
 
 %----------------------------------------------------------------------- INTRODUCTION ------------------------------------------------------------------------%
-\chap Introduction TODO\label[introduction]
+\label[introduction]
+\chap Introduction TODO
 
 sources:
 \begitems
@@ -52,17 +53,20 @@ sources:
 \enditems
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
-\sec Project TODO\label[introduction.project]
+\label[introduction.project]
+\sec Project TODO
 
 See above
 
 %		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
-\secc Motivation TODO\label[introduction.motivation]
+\label[introduction.motivation]
+\secc Motivation TODO
 
 See above
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
-\sec Assignment analysis\label[introduction.assignment_analysis]
+\label[introduction.assignment_analysis]
+\sec Assignment analysis
 
 \secc Assignment tasks
 
@@ -95,7 +99,8 @@ With everything prepared and thought through, the application will be developed 
 For best results the application must and will be tested. Both code and UI must be tested properly, using various testing approaches, such as unit tests or UI testing with reaul users in a car simulator.
 
 %------------------------------------------------------------------------ ANALYSIS ------------------------------------------------------------------------%
-\chap Analysis TODO\label[analysis]
+\label[analysis]
+\chap Analysis TODO
 
 sources:
 \begitems
@@ -104,10 +109,12 @@ sources:
 \enditems
 
 %	------------------------------------------------------------------------ Existing applications ----------------------------------------------------------------------%
-\sec Existing applications\label[analysis-existing_applications]
+\label[analysis.existing_applications]
+\sec Existing applications
 
 
-\secc Applications TODO\label[analysis-existing_applications-applications]
+\label[analysis.existing_applications.applications]
+\secc Applications TODO
 
 sources:
 \begitems
@@ -115,7 +122,8 @@ sources:
 * \url{http://www.makeuseof.com/tag/5-best-dashboard-car-mode-apps-android-compared/}
 \enditems
 
-\secc Torque \label[analysis-existing_applications-torque]
+\label[analysis.existing_applications.torque]
+\secc Torque 
 
 Starting with an empty screen, lot of settings are required before using this application, since there is no default mode. Adding new views is easy and intuitive, but still very confusing. The add menu lacks hierarchy and everything is just sorted array of various options. There is no cancel button when popping the menu dialog.
 
@@ -146,7 +154,8 @@ This application can actually show almost anything OBD provides. It supports dif
 
 % screenshot
 
-\secc CarHome Ultra \label[analysis-existing_applications-carhome_ultra]
+\label[analysis.existing_applications.carhome_ultra]
+\secc CarHome Ultra 
 
 This application starts with a pop-up tutorial for it's elementary functionality, telling the user about the speedmeter, compass, weather forecast and customizable dashboard for launching external applications. In default it offers Google Maps, Google Navigation and voice search. Adding another external application shortcut is done by tapping the tab. Also there are basic settings, which offer brightness mode (day, night, auto), theme and safety options.
 
@@ -176,7 +185,8 @@ It appears to be just a simple application offering speed, compass, weather and 
 * tapping weather makes the app speak for every single tap, no matter if it already speaks (it can speak for hours after few taps).
 \enditems
 
-\secc Car Dashdroid \label[analysis-existing_applications-car_dashdroid]
+\label[analysis.existing_applications.car_dashdroid]
+\secc Car Dashdroid 
 
 After a long loading the main window appears. It has three screens, which change by swiping right or left. The left screen contains dial keyboard, the right screen contains customizable cards (for external application shortcuts or built-in tools) and the main screen consists of weather, speed and shortcuts to contacts, music, navigation and voice command.
 
@@ -203,7 +213,8 @@ It also provides settings for bluetooth, brightness, screen rotation, fullscreen
 * distractive commercial ads in free version.
 \enditems
 
-\secc Ultimate Car Dock \label[analysis-existing_applications-ultimate_car_dock]
+\label[analysis.existing_applications.ultimate_car_dock]
+\secc Ultimate Car Dock 
 
 While the design is very similar to CarHome Ultra, this application offers fewer displays on a single screen. There are five screens, each one consists of six cards. Every card can change into shortcut or a build-in application. The Ultimate Car Dock has only few built-in applications: music player, voice command, speed, weather, messages and calls. It also supports shortcuts to other external applications.
 
@@ -230,7 +241,8 @@ While the design is very similar to CarHome Ultra, this application offers fewer
 * small font.
 \enditems
 
-\secc Conclusion \label[analysis-existing_applications-conclusion]
+\label[analysis.existing_applications.conclusion]
+\secc Conclusion 
 
 Except by Torque, which focuses mainly (and only) on OBD, all the applications are very similar to each other. They have similar design and functionality -- mostly weather, speed provided by GPS, voice command and shortcuts for external applications.
 
@@ -258,7 +270,8 @@ Except by Torque, which focuses mainly (and only) on OBD, all the applications a
 * distractive ads.
 \enditems
 
-\secc Android Auto \label[analysis-existing_applications-android_auto]
+\label[analysis.existing_applications.android_auto]
+\secc Android Auto 
 
 sources:
 \begitems
@@ -302,47 +315,56 @@ Focusing on minimizing the cognitive load, messaging concept in Android Auto foc
 It seems to be a good sign that even Google is interested in this area and performs such a research. Every Android application can be designed for Android Auto and use it's simplified user interface, allowing the developer to focus on other issues than in-car user interaction. However, the functionality is currently very limited. Hopefully there will be further progress as soon as possible.
 
 %	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
-\sec Use-cases\label[analysis-use_cases]
+\label[analysis.use_cases]
+\sec Use-cases
 
 Based on above. Also other typical analysis stuff.
 
 %	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
-\sec Platforms\label[analysis-platforms]
+\label[analysis.platforms]
+\sec Platforms
 
 The chosen platform heavily influences the piece of market an application can reach. Therefore, only platforms with solid market share are considered. Another criteria is the simplicity of development, which influences the time and effort put into an application before it can be released. This is especially important for quickly finding out the sale potential of an application.
 
 Following the first rule mentioned above and based on tablet sales in past years (sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
 
-\secc Android\label[analysis-platforms-android]
+\label[analysis.platforms.android]
+\secc Android
 
 In 2013, the Android platform had 61.9 \% market share, making it the most used platform in the world. Targeting the Android platform would create large base of potential customers.
 
 The development language for Android is Java, commonly known object-oriented programming language with solid developer base. Therefore it is easy to find developers as well as answers to variety of programming related issues, making the development much easier.
 
-\secc iOS\label[analysis-platforms-ios]
+\label[analysis.platforms.ios]
+\secc iOS
 
 With 36 \% market share in 2013, iOS is the second most popular tablet platform. Considering a typical iOS user, who is willing to pay for quality, iOS could be a good choice for an application in context of potential customers.
 
 However, the development language called Swift is somewhat new in the world, which brings a lot of possible difficulties. Searching for answers while developing in this technology might prove too troublesome.
 
-\secc Windows\label[analysis-platforms-windows]
+\label[analysis.platforms.windows]
+\secc Windows
 
 With only 2.1 \% market share in 2014, the Windows platform does not seem to be a valid choise for given criteria. Having thirty times lower customer base than Android, it goes into the nice-to-have section when it comes to multi-platform applications.
 
-\secc Conclusion\label[analysis-platforms-conclusion]
+\label[analysis.platforms.conclusion]
+\secc Conclusion
 
 Fulfiling the requirements for customer base as well as simplicity of development, the Android platform seems to be the best choice available at the time of writing this. As such, it will be analyzed more thoroughly later in this chapter.
 
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
-\sec Android platform TODO\label[analysis-android_platform]
+\label[analysis.android_platform]
+\sec Android platform TODO
 
 There are some platform aspects to be considered when developing for Android-based tablet device. First is the problem with most of the tablet devices -- the device performance. While the hardware is continuously evolving, one must consider older devices as well as growing requirements for graphics presentation. The second possible issue is the Android architecture, which influences the application inner communication.
 
-\secc Performance\label[analysis-android_platform-performance]
+\label[analysis.android_platform.performance]
+\secc Performance
 
 Nearly with every new version of Android, new presentation effects are prepared for developers to use. While it is not mandatory, it is still adviced to hold the platform standards as the market demands it. The application must have a good look and feel in order to attract attention. This must be considered when building the application, because the environment demands fluent responses.
 
-\secc Architecture\label[analysis-android_platform-architecture]
+\label[analysis.android_platform.architecture]
+\secc Architecture
 
 The main building block in Android application is an activity. The activity is an idependent component of application, a hybrid between controller and view in MVC architecture. It contains a single screen (which contains a single layout), it has it's own independent data. An application usually consists of multiple loosely coupled activities. Those activities are held in an activity stack, where they are preserved to be used later without need to create them all over again. However, if the system needs memory, it clears the stack from the bottom (least recently used activities).
 
@@ -350,13 +372,16 @@ For communication between activities there are so called Intents. An intent is t
 
 Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the GUI designed create a GUI without having to understand the Java language or the Android API.
 
-\secc Material design\label[analysis-android_platform-material_design]
+\label[analysis.android_platform.material_design]
+\secc Material design
 
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
-\sec GUI TODO\label[analysis-gui]
+\label[analysis.gui]
+\sec GUI TODO
 
 
-\secc Basic principles\label[analysis-gui-basic_principles]
+\label[analysis.gui.basic_principles]
+\secc Basic principles
 
 As the main tool of communication between an application and it's user, user interface must follow one basic rule -- the user goes first. UI is about the user, he must have a good feeling when using the application. He must understand what to do and how to do it. Therefore there are four rules a proper UI must obey:
 \begitems
@@ -384,7 +409,8 @@ sources:
 * UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         0
 \enditems
 
-\secc UI in a car environment\label[analysis-gui-ui_in_a_car_environment]
+\label[analysis.gui.ui_in_a_car_environment]
+\secc UI in a car environment
 
 When developing user interface for car, it adds a certain responsibility. The need for safety while using the UI becomes the main priority. Because of that, some aspects are more important than other. The most important are described later in this section.
 
@@ -427,10 +453,12 @@ Responsiveness is an important factor when it comes to pleasure of using an appl
 %
 %
 %	------------------------------------------------------------------------ Development and support tools ----------------------------------------------------------------------%
-\sec Development and support tools TODO\label[analysis-development_and_support_tools]
+\label[analysis.development_and_support_tools]
+\sec Development and support tools TODO
 
 
-\secc Development environment\label[analysis-development_and_support_tools-ide]
+\label[analysis.development_and_support_tools.ide]
+\secc Development environment
 
 While using text editor and command line is an option, for speed of development only Integrated Development Environments are considered. In the time of writing this text, there were two possibilities for Android development -- Eclipse and AndroidStudio.
 
@@ -443,7 +471,8 @@ Based on research by (\url{http://zeroturnaround.com/rebellabs/java-tools-and-te
 Released in 2014, Android Studio became the main platform for Android development. It is based on IntelliJ IDE and supported by Google. For that reason, it is an obvious choice for new applications to be developed in Android Studio.
 
 
-\secc Version control system\label[analysis-development_and_support_tools-vcs]
+\label[analysis.development_and_support_tools.vcs]
+\secc Version control system
 
 In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main VCS worth considering (\url{http://www.sitepoint.com/version-control-software-2014-what-options/}). 
 
@@ -458,11 +487,13 @@ Because of the central repository, Subversion allows read and write access contr
 
 \seccc Git TODO
 
-\secc Test driven development\label[analysis-development_and_support_tools-tdd]
+\label[analysis.development_and_support_tools.tdd]
+\secc Test driven development
 
-Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
+Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text. (TODO JUnit?)
 
-\secc Continuous integration\label[analysis-development_and_support_tools-ci]
+\label[analysis.development_and_support_tools.ci]
+\secc Continuous integration
 
 {\it\uv{Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.}} (Martin Fowler, \url{http://www.martinfowler.com/articles/continuousIntegration.html})
 
@@ -471,41 +502,46 @@ Continuous integration supports rapid application development while giving the m
 For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen (TODO link \url{https://travis-ci.org/}). While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
-\sec On-Board Diagnostics TODO\label[analysis-obd]
-
-\secc Overview
+\label[analysis.obd]
+\sec On-Board Diagnostics TODO
 
 On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes. The full specifications are explained in ISO 15031 (TODO fix). Some of them will be discussed later in the text.
 
 Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly. 
 
-\secc API TODO\label[analysis-obd-api]
+\label[analysis.obd.api]
+\secc API TODO
 
 
-
-\secc Data TODO\label[analysis-obd-data]
+\label[analysis.obd.data]
+\secc Data TODO
 
 
 %------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
-\chap Design TODO\label[design]
+\label[design]
+\chap Design TODO
 
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
-\sec Application architecture TODO\label[design-application_architecture]
+\label[design.application_architecture]
+\sec Application architecture TODO
 
 Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours (TODO link Code Complete?). Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
 
-\secc Platform limitations\label[design-application_architecture-platform_limitations]
+\label[design.application_architecture.platform_limitations]
+\secc Platform limitations
 
 As mentioned in Android platform analysis in section \ref[analysis-android_platform] on page \pgref[analysis-android_platform], the typical Android application consits of multiple Activities, which communicate with each other using Intents. While this approach supports the loosely coupled concept, it makes certain inter-cooperation rather difficult.  Sharing an object between activities usually means serializing the object or saving it to the database, which means deserializing or loading from database later. When striving for excellent performance, this can emerge into a real problem. As the Android platform does not allow database IO operations on the main presentation thread, it requires background thread with callbacks to the main one and screen revalidation when such callback occurs. It is critical to avoid such delays as much as possible, when comes to car environment where rapid reactions are required.
 
-\secc Extensibility\label[design-application_architecture-extensibility]
+\label[design.application_architecture.extensibility]
+\secc Extensibility
 
 With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis (TODO name?), new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
 
 The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in the next section.
 
-\secc Modularity TODO\label[design-application_architecture-modularity]
+\label[design.application_architecture.modularity]
+\secc Modularity TODO
 
 \seccc Note for Android platform limitations
 
@@ -519,29 +555,35 @@ However, the Android concept with XML layouts does not allow their inflating dur
 
 Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. 
 
-\secc Adaptability\label[design-application_architecture-adaptability]
+\label[design.application_architecture.adaptability]
+\secc Adaptability
 
 Because the space on the screen is limited and also unknown (multiple devices have varying screen sizes) and every user might want to see different kind of information, he must be able to modify the layout, to choose the information he wants to see. The application must be adaptable to user's needs and requirements, so that he can control the application fluently and spend as little time as possible seeking the requested information.
 
 For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility. 
 
-\secc Android Auto preparation TODO\label[design-application_architecture-android_auto_preparation]
+\label[design.application_architecture.android_auto_preparation]
+\secc Android Auto preparation TODO
 
 
 
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
-\sec GUI TODO\label[design-gui]
+\label[design.gui]
+\sec GUI TODO
 
 Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in chapter (TODO link).
 
-\secc Basic elements TODO\label[design-gui.basic_elements]
+\label[design.gui.basic_elements]
+\secc Basic elements TODO
 
 Basic idea
 
-\secc Drafts TODO\label[design-gui-drafts]
+\label[design.gui.drafts]
+\secc Drafts TODO
 
-\secc The early phase TODO\label[design-gui-the_early_phase]
+\label[design.gui.the_early_phase]
+\secc The early phase TODO
 
 In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image (TODO link and image \#1).
 
@@ -563,7 +605,8 @@ For both drafts the following would apply. The swipe action would invoke text-to
 * {\bf Limited} -- the main screen has a limited functionality (near to none) while the layout of subapplications would have to be created independently everytime a~new feature is implemented. This also limits easy extensibility, as creating a~proper GUI is not a~simple task with the given constraints.
 \enditems
 
-\secc The second phase TODO\label[design-gui-the_second_phase]
+\label[design.gui.the_second_phase]
+\secc The second phase TODO
 
 Next step was to fix the problems mentioned above. Being inspired by the reviewed applications (TODO link to section) one attempt ended with concept shown on image (TODO link \#5). It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
 
@@ -582,7 +625,8 @@ The second image (TODO link \#6) shows possibility of inserting a subapplication
 * {\bf Consistency} -- the vertical application list is consistent, however, the central panel is still suffering from lack of consistency, as every sub-application can have a different layout.
 \enditems
 
-\secc The grid\label[design-gui-the_grid]
+\label[design.gui.the_grid]
+\secc The grid
 
 The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image (TODO link \#7), it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
 
@@ -602,7 +646,8 @@ Adding functionality to this grid, a new card concept emerged. It would consist 
 * {\bf Readability} -- in order to fit in the card area, the text might have to be too small, which makes it difficult to read 
 \enditems
 
-\secc The final design\label[design-gui-the_final_design]
+\label[design.gui.the_final_design]
+\secc The final design
 
 Because every of the previously mentioned designs had at least one critical disadvantage, a new approach had to be taken. Because of consistency, every element must be specified. But considering the need for simplicity, there must be very limited amount of those elements.
 
@@ -626,95 +671,120 @@ As shown on image (TODO link \#11), the display panel consists of a name, an ico
 Describe the process, phases, analyse and compare advantages, disadvantages, thoughts
 
 %------------------------------------------------------------------------ REALIZATION ------------------------------------------------------------------------%
-\chap Realization TODO\label[realization]
+\label[realization]
+\chap Realization TODO
 
 
 %	------------------------------------------------------------------------ Preparation ----------------------------------------------------------------------%
-\sec Preparation TODO\label[realization-preparation]
+\label[realization.preparation]
+\sec Preparation TODO
 
 
-\secc Environment TODO\label[realization-preparation-environment]
+\label[realization.preparation.environment]
+\secc Environment TODO
 
 
-\secc Versioning TODO\label[realization-preparation-versioning]
+\label[realization.preparation.versioning]
+\secc Versioning TODO
 
 
-\secc Testing TODO\label[realization-preparation-testing]
+\label[realization.preparation.testing]
+\secc Testing TODO
 
 
-\secc Scripting TODO\label[realization-preparation-scripting]
+\label[realization.preparation.scripting]
+\secc Scripting TODO
 
 
 %	------------------------------------------------------------------------ Core ----------------------------------------------------------------------%
-\sec Core TODO\label[realization-core]
+\label[realization.core]
+\sec Core TODO
 
 
-\secc Core TODO\label[realization-core-core]
+\label[realization.core.core]
+\secc Core TODO
 
 
-\secc Data storage TODO\label[realization-core-data_storage]
+\label[realization.core.data_storage]
+\secc Data storage TODO
 
 
-\secc Communication TODO\label[realization-core-communication]
+\label[realization.core.communication]
+\secc Communication TODO
 
 
-\secc Optimization TODO\label[realization-core-optimization]
+\label[realization.core.optimization]
+\secc Optimization TODO
 
 
 %	------------------------------------------------------------------------ Modularity ----------------------------------------------------------------------%
-\sec Modularity TODO\label[realization-modularity]
+\label[realization.modularity]
+\sec Modularity TODO
 
 
-\secc Requirements TODO\label[realization-modularity-requirements]
+\label[realization.modularity.requirements]
+\secc Requirements TODO
 
 
-\secc Integration TODO\label[realization-modularity-integration]
+\label[realization.modularity.integration]
+\secc Integration TODO
 
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
-\sec GUI TODO\label[realization-gui]
+\label[realization.gui]
+\sec GUI TODO
 
 GUI implementation based on the design! Implementing modules, color, responsive effects
 
-\secc Common elements TODO\label[realization-gui-common_elements]
+\label[realization.gui.common_elements]
+\secc Common elements TODO
 
 Hierarchical model, effects, submenus
 
-\secc Multiple designs TODO\label[realization-gui-multiple_designs]
+\label[realization.gui.multiple_designs]
+\secc Multiple designs TODO
 
 Limited set of module types
 
 %------------------------------------------------------------------------ TESTING ------------------------------------------------------------------------%
-\chap Testing TODO\label[testing]
+\label[testing]
+\chap Testing TODO
 
 Brag about TDD, CI and Simulator!
 
 %	------------------------------------------------------------------------ Implementation ----------------------------------------------------------------------%
-\sec Code TODO\label[testing-code]
+\label[testing.code]
+\sec Code TODO
 
 Describe testing code, common testing (look\&see, etc.)
 
-\secc Unit testing TODO\label[testing-code-unit_testing]
+\label[testing.code.unit_testing]
+\secc Unit testing TODO
 
 Unit testing on android, mention Test driven development, continuous integration, automatic tests, consider giving an example
 
-\secc Integration testing TODO\label[testing-code-integration_testing]
+\label[testing.code.integration_testing]
+\secc Integration testing TODO
 
 Instrumentation? Describe TDD, CI, automation
 
-\secc System testing TODO\label[testing-code-system_testing]
+\label[testing.code.system_testing]
+\secc System testing TODO
 
 Server testing, consider removing
 
-\secc Qualification testing TODO\label[testing-code-qualification_testing]
+\label[testing.code.qualification_testing]
+\secc Qualification testing TODO
 
 Testing with users - consider section on its own - testing application as a whole thing
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
-\sec GUI TODO\label[testing-gui]
+\label[testing.gui]
+\sec GUI TODO
 
 
-\secc Heuristic testing TODO\label[testing-gui-heuristic_testing]
+\label[testing.gui.heuristic_testing]
+\secc Heuristic testing TODO
 
 Introduction, description
 
@@ -729,7 +799,8 @@ sources:
 
 Did not have time to fix
 
-\secc Testing with users TODO\label[testing-gui-testing_with_users]
+\label[testing.gui.testing_with_users]
+\secc Testing with users TODO
 
 
 \seccc Usability testing TODO
@@ -756,29 +827,36 @@ The testing itself, describing participants
 Evaluating results
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
-\sec Summary TODO\label[testing-summary]
+\label[testing.summary]
+\sec Summary TODO
 
 
 %------------------------------------------------------------------------ CONCLUSION ------------------------------------------------------------------------%
-\chap Conclusion TODO\label[conclusion]
+\label[conclusion]
+\chap Conclusion TODO
 
 
 %	------------------------------------------------------------------------ Assignment completion ----------------------------------------------------------------------%
-\sec Assignment completion TODO\label[conclusion-assignment_completion]
+\label[conclusion.assignment_completion]
+\sec Assignment completion TODO
 
 
 %	------------------------------------------------------------------------ Project life cycle ----------------------------------------------------------------------%
-\sec Project life cycle TODO\label[conclusion-project_life_cycle]
+\label[conclusion.project_life_cycle]
+\sec Project life cycle TODO
 
 
-\secc Present TODO\label[conclusion-project_life_cycle-present]
+\label[conclusion.project_life_cycle.present]
+\secc Present TODO
 
 
-\secc Future TODO\label[conclusion-project_life_cycle-future]
+\label[conclusion.project_life_cycle.future]
+\secc Future TODO
 
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
-\sec Summary TODO\label[conclusion-summary]
+\label[conclusion.summary]
+\sec Summary TODO
 
 
 
