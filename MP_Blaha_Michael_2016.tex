@@ -739,6 +739,7 @@ As mentioned in section \ref[analysis.android_platform.architecture] on page \pg
 \secc GridLayout
 
 Because the Android concept does not expect functionality required by this application, a library class {\tt android.widget.GridLayout} is not suitable for this situation. As mentioned in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design], Android suggests the lists to be scrollable vertically. This is a functionality fully supported by {\tt android.widget.GridLayout} but unsuitable for the given use-case. It also makes it difficult to use this library class for the use-case described in section \ref[design.gui.the_final_design].
+
 For reasons mentioned above a custom layout had to be created. Based on given measurements (of a module tile, a space) it computes amount of modules displayed per page and also their positions. Given the computed positions it then layouts all the provided modules.
 
 
