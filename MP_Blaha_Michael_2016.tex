@@ -679,13 +679,18 @@ Describe the process, phases, analyse and compare advantages, disadvantages, tho
 \label[realization.preparation]
 \sec Preparation TODO
 
+While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet GUI and other specifics.
 
 \label[realization.preparation.environment]
-\secc Environment TODO
+\secc Environment
+
+As mentioned in analysis section \ref[analysis.development_and_support_tools.ide] on page \pgref[analysis.development_and_support_tools.ide], Android Studio IDE is used for code development. As it does not allow importing other project as a library, it requires a shared project to be registered as a module. This module has to be placed in a project subfolder and it is an Android Studio project of it's own. This is done by adding a new module and selecting a library module.
 
 
 \label[realization.preparation.versioning]
-\secc Versioning TODO
+\secc Versioning
+
+Because of the workaround with a shared library in Android Studio, a special approach has to be taken. As Git supports submodules, a shared library has to be registered as one. This can be achieved by calling command {\tt git submodule add LIBRARY\_REPOSITORY\_URL} in the root project folder and then adding the library subfolder into the {\tt .gitignore} file.
 
 
 \label[realization.preparation.testing]
@@ -694,6 +699,12 @@ Describe the process, phases, analyse and compare advantages, disadvantages, tho
 
 \label[realization.preparation.scripting]
 \secc Scripting TODO
+
+
+%	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
+\label[realization.tablet_specific]
+\sec Tablet specific TODO
+
 
 
 %	------------------------------------------------------------------------ Core ----------------------------------------------------------------------%
