@@ -702,8 +702,25 @@ Because of the workaround with a shared library in Android Studio, a special app
 
 
 %	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
-\label[realization.tablet_specific]
+\label[realization.tablet]
 \sec Tablet specific TODO
+
+\label[realization.tablet.activity]
+\secc ModulePagerActivity
+
+As mentioned in analysis section \ref[analysis.android_platform.architecture] on page \pgref[analysis.android_platform.architecture], an Activity is the basic component of every Android application. In this case, it is the only launch point of the application, it implements so called {\tt IModuleContext} interface described in section \ref[realization.core] on page \pgref[realization.core], which controls the interaction with modules (\ref[design.application_architecture.modularity]). Presentation of screen content is delegated to {\tt ModulePageFragment} (\ref[realization.tablet.fragment]).
+
+While usually multiple activities are present in a single application, thanks to consistent hierarchical model a single activity class can be reused for multiple instances with different data. Which means that there is a single activity invoked per one requested set of modules.
+
+\seccc Improvements
+
+There are some improvements implemented for performance, battery consumption and hardware overloading prevention reasons, one of which is reacting to acitivity state by disabling inactive modules. Because of the independent module concept, modules display data on their own and they do not know when the data are requested. Therefore, the activity uses a list of those modules to deactive them when entering a paused or stopped state.
+
+Also, sometimes it is required to restart the entire application, for example when some global changes need to be performed. As the Android architecture saves latest activities in a stack as mentioned in section \ref[analysis.android_platform.architecture] on page \pgref[analysis.android_platform.architecture], it is nessessary to clear this stack first, so that the OS does not backtrack to an old Activity. This is done by keeping control over existing activities and ending them one by one. This can also be used, when forcing the application to exit, as there is no proper option to end an application on Android platform from the application developer's view. 
+
+\label[realization.tablet.fragment]
+\secc ModulePageFragment
+
 
 
 
