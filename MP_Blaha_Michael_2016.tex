@@ -377,6 +377,8 @@ As a relatively new concept, so called Fragment was created. It is similar to ac
 \label[analysis.android_platform.material_design]
 \secc Material design
 
+Describe scrolling lists
+
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[analysis.gui]
 \sec GUI TODO
@@ -657,7 +659,9 @@ Given the requirements for both consistency and simplicity, as well as extensibl
 
 Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hiearachical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
 
-As shown on image (TODO link \#11), the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly. 
+As shown on image (TODO link \#11), the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
+
+The idea is to have several screens containing several application panels (where amount of panels is based on screen size) with changing the screen by swiping left or right. As mentioned in section \ref[analysis.android_platform.material_design] on page \pgref[analysis.android_platform.material_design], Android suggests using vertically scrollable lists when presenting large sets of data. This can be suitable in most cases, however, in a car a user can easily swipe too heavily and scroll elsewhere and getting back to original place can put an unnecessary load on the driver's attention. Therefore there have to be separate pages, where one swipe changes a page by one.
 
 \seccc Advantages
 
@@ -723,7 +727,19 @@ Also, sometimes it is required to restart the entire application, for example wh
 \label[realization.tablet.fragment]
 \secc ModulePageFragment
 
+As mentioned in section \ref[analysis.android_platform.architecture] on page \pgref[analysis.android_platform.architecture] a Fragment can take over part of Activity's functionality. In this case a {\tt ModulePageFragment} handles the presentation of module set using a {\tt ModuleFragmentAdapter} (\ref[realization.tablet.adapter]) for obtaining the data and a custom layout {\tt GridLayout} (\ref[realization.tablet.gridlayout]) for displaying them in a grid.
 
+
+\label[realization.tablet.adapter]
+\secc ModuleFragmentAdapter
+
+{\tt ModuleFragmentAdapter} follows the adapter concept, where extension of Android API class Adapter is used to cover the access to list of data. This adapter gets a single {\tt ParentModule} (described in section \ref[realization.core.modules] on page \pgref[realization.core.modules]) and retrieves it submodules on demand.
+
+\label[realization.tablet.gridlayout]
+\secc GridLayout
+
+Because the Android concept does not expect functionality required by this application, a library class {\tt android.widget.GridLayout} is not suitable for this situation. As mentioned in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design], Android suggests the lists to be scrollable vertically. This is a functionality fully supported by {\tt android.widget.GridLayout} but unsuitable for the given use-case. It also makes it difficult to use this library class for the use-case described in section \ref[design.gui.the_final_design].
+For reasons mentioned above a custom layout had to be created. Based on given measurements (of a module tile, a space) it computes amount of modules displayed per page and also their positions. Given the computed positions it then layouts all the provided modules.
 
 
 %	------------------------------------------------------------------------ Core ----------------------------------------------------------------------%
@@ -746,6 +762,8 @@ Also, sometimes it is required to restart the entire application, for example wh
 \label[realization.core.optimization]
 \secc Optimization TODO
 
+\label[realization.core.modules]
+\secc Modules TODO
 
 %	------------------------------------------------------------------------ Modularity ----------------------------------------------------------------------%
 \label[realization.modularity]
