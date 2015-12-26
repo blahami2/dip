@@ -372,6 +372,8 @@ For communication between activities there are so called Intents. An intent is t
 
 Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the GUI designed create a GUI without having to understand the Java language or the Android API.
 
+As a relatively new concept, so called Fragment was created. It is similar to activity, however it is not a mandatory component. It can be used as a controller for certain functionality area. It's advantage is that a developer can create separate Fragments with separate area of concern and display one or many of those based on the screen size. The typical use-case example can be a list of items and a detail of a selected item. On small screens, two Activities containing a single Fragment each will be needed, while on larger screens one activity can contain both Fragments.
+
 \label[analysis.android_platform.material_design]
 \secc Material design
 
