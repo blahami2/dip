@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  26 DEC 2015 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1355,8 +1355,60 @@ l.538 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
 gain.
 l.538 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
 e again.
-[15] [16] [17] [18] [19] [20] [21] [22]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 844--845
+[15] [16] [17] [18] [19] [20] [21]
+l.767 OPmac WARNING: label [realization.core.data] unknown. Try to TeX me again
+.
+l.787 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
+ ignored.
+
+Underfull \hbox (badness 1052) in paragraph at lines 797--798
+ [][][]\mF SimpleParentModule \tenrm A mere im-ple-men-ta-tion of \tentt Ab-str
+act-Par-ent-Mod-ule \tenrm class
+
+\hbox(7.63895+2.13887)x415.41025, glue set 2.19485
+.\glue(\leftskip) 11.66563
+.\hbox(4.56946+0.0)x0.0, glue set - 12.19423fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
+..\thefont .
+..\kern -4.0
+..\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+..\kern 5.5
+.\pdfcolorstack 1 pop
+.\pdfcolorstack 1 pop
+.\mF S
+.\mF i
+.\mF m
+.\mF p
+.\mF l
+.\mF e
+.\mF P
+.\kern-0.33612
+.\mF a
+.\kern-0.33612
+.\mF r
+.\mF e
+.\mF n
+.\mF t
+.\mF M
+.\mF o
+.\kern0.3361
+.\mF d
+.\mF u
+.\mF l
+.\mF e
+.\glue 3.66666 plus 1.83333 minus 1.22221
+.\tenrm A
+.\glue 3.66666 plus 1.83148 minus 1.22343
+.\tenrm m
+.\tenrm e
+.etc.
+
+[22]
+l.809 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
+o TeX me again.
+[23] [24]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 924--925
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1400,7 +1452,7 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 844--845
 .\tentt .
 .etc.
 
-[23] [24] [25] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
+[25] [26] [27] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
 c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015/texmf-
@@ -1408,10 +1460,10 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (31 pages, 2288131 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (33 pages, 2296037 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
- 854 compressed objects within 9 object streams
- 210 named destinations out of 1000 (max. 500000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 866 compressed objects within 9 object streams
+ 212 named destinations out of 1000 (max. 500000)
  777 words of extra memory for PDF output out of 10000 (max. 10000000)
 
