@@ -665,6 +665,8 @@ As shown on image (TODO link \#11), the display panel consists of a name, an ico
 
 The idea is to have several screens containing several application panels (where amount of panels is based on screen size) with changing the screen by swiping left or right. As mentioned in section \ref[analysis.android_platform.material_design] on page \pgref[analysis.android_platform.material_design], Android suggests using vertically scrollable lists when presenting large sets of data. This can be suitable in most cases, however, in a car a user can easily swipe too heavily and scroll elsewhere and getting back to original place can put an unnecessary load on the driver's attention. Therefore there have to be separate pages, where one swipe changes a page by one.
 
+As for the colors, a proper contrast has to be present for good readability. As mentioned in section \ref[analysis.gui.ui_in_a_car_environment] on page \pgref[analysis.gui.ui_in_a_car_environment], two modes should be present. While light mode offers good readability even in a direct sunlight, it blinds the driver during night time, as it emits too much light. Therefore it is a good idea to implement a dark mode as well for night time usage. For the best contrast possible, white on black or black on white are the best options. 
+
 \seccc Advantages
 
 \begitems
@@ -672,7 +674,8 @@ The idea is to have several screens containing several application panels (where
 * {\bf familiarity} -- using familiar (platform specific) icons should ease the information seeking process,
 * {\bf consistency} -- consistent hierarchical model with only two types of elements,
 * {\bf integration} -- using platform specific icons and specifics is a part of realization process,
-* {\bf simplicity} -- again, there are only two kinds of elements, which is simple enough.
+* {\bf simplicity} -- again, there are only two kinds of elements, which is simple enough,
+* {\bf readability} -- because of the good contrast the text will be easily recognizable and readable.
 \enditems
 
 
@@ -942,41 +945,55 @@ To be able to create custom modules easily, it is necessary to create automatica
 There are many other views similar to the ones described above or just simple views used for displaying custom lists. Those views wrap access to the inner data presentation elements to separate the layers properly. 
 
 
-\label[realization.core.communication]
-\secc Communication TODO
-
-
-\label[realization.core.optimization]
-\secc Optimization TODO
-
-
-
-%	------------------------------------------------------------------------ Modularity ----------------------------------------------------------------------%
-\label[realization.modularity]
-\sec Modularity TODO
-
-
-\label[realization.modularity.requirements]
-\secc Requirements TODO
-
-
-\label[realization.modularity.integration]
-\secc Integration TODO
-
-
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[realization.gui]
 \sec GUI TODO
+
+Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section.
 
 GUI implementation based on the design! Implementing modules, color, responsive effects
 
 \label[realization.gui.common_elements]
 \secc Common elements TODO
 
+\seccc Colors
+
+As described in section \ref[design.gui.the_final_design], two color modes are present -- so called themes. One consists of white font, gray secondary icons and black background, while the other consists of black font, gray secondary icons and white background.
+
+\seccc Sizes
+
+While Material Design (\ref[analysis.android_platform.material_design]) suggests certain measures, they are not suitable for a car environment, as the control and presentation elements would be too small. Therefore sizes are adjusted and much larger.
+
+\seccc Effects
+
+Trying to follow Material Design principles (\ref[analysis.android_platform.material_design]), several graphics effects are present in order to increase the overall atractivity. All the modules support proper elevation with shadowing even with increasing the elevation when touch the button. Also, a ripple effect is present when the module is touch, a stronger ripple effect appears on a longer touch. This gives the user proper visual feedback making the application more pleasant.
+
+\seccc Quick menu
+
+As mentioned in section \ref[realization.core.modules], a quick menu is a limited set of options for every module. It gets invoked by a long touch on a module. It separates the rectangular module into four rectangular pieces, each containing a button. (TODO IMAGES)
+
+\seccc Icons
+
+Given the platform guidelines (\ref[analysis.android_platform.material_design]), it is easier to find proper icons for various actions. Material Design icons are frequently updated and more icons are added on demand. Should an icon be missing currently, it has a high chance of being created later. It also helps to use familiar icons, so that the user does not have to learn more images and their meanings.
+
 Hierarchical model, effects, submenus
 
 \label[realization.gui.multiple_designs]
 \secc Multiple designs TODO
+
+As mentioned in section \ref[design.gui.the_final_design], there are two types of modules -- an action module and a display module. Both of those modules have separate implementation, while sharing common elements like colors, standard icons, fonts and effects, as mentioned earlier (\ref[realization.gui.common_elements]).
+
+\seccc Action module
+
+An action module is a rectangular element consisting of a large centered icon and a title in the bottom on background of the opposite color to the font color. The icon ensures recognizability, while the title specifies the module identity.
+
+Such action module is meant to be pressed, not to display information. On press it performs some action, which may or may not give a feedback, based on it's purpose. However, it always gives a visual feedback (\ref[realization.gui.common_elements]).
+
+\seccc Display module
+
+A display module is also a rectangular element, however it consists of a large centered value text, a title on top, a value in the right bottom corner and a small gray icon in the left bottom corner. All of it is on backgrdoun of the opposite color to the font color.
+
+Such display module serves as a source of information for the driver. It can display various data in a well readable form, while preserving an attractive design. It is able to display several types of data from numbers to short strings.
 
 Limited set of module types
 
