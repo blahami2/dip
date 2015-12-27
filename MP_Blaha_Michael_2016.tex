@@ -814,8 +814,24 @@ An interface to be implemented by the Activity which should display the modules.
 A quick menu serves as a quick options menu for a simple module. Every module can invoke such quick menu. Usually it contains cancel, edit and delete options. It might contain other options specified by the given module.                                                                           
 
 \label[realization.core.application]
-\secc Application TODO
+\secc Application
 
+This section describes the application logic. While most of the logic is hidden in modules themselves, the communication across application components must be handled elsewhere.
+
+\seccc UpdateApplication
+
+{\tt android.app.Application} is the main class of Android architecture. There is a single instance of this class per application. For that reason, this class is extended and enhanced with creating and starting timers for timed updates. An instance of this extended class is to be used by the tablet implementation instead of the original {\tt android.app.Application}.
+
+\seccc FastEventBus
+
+The concept of event bus is to have publishers and subscribers. It is most suitable for timed events, which serve as a signal for modules to update themselves. However, it is not limited just for time updates. Most of the communication can be handled using the event bus. {\tt FastEventBus} offers such functionality while remaining as simple as possible for better performance.
+
+\label[realization.core.application.obd]
+\seccc OBD
+
+While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
+
+Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
 
 \label[realization.core.data_storage]
 \secc Data storage TODO
