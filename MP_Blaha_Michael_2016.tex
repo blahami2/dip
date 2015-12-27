@@ -923,6 +923,25 @@ This class provides simplified text-to-speech functionality. It handles all the 
 \label[realization.core.view]
 \secc Views
 
+As the in-car GUI is not the usual type of GUI, it requires several implementations of custom {\tt Views}. Some provide functionality that is not provided by the Android API, some minimize the programming effort when working with modules as well as cover the low-level implementation.
+
+\seccc AutoResizeTextView TODO change code
+
+To be able to create custom modules easily, it is necessary to create automatically adjustable elements. Such element is an {\tt AutoResizeTextView}, which automatically resizes the text based on the space provided. This enabled the information to be as large as possible, while still being able to display several types of data (even longer strings). This class is used to help displaying an {\tt AbstractDisplayModule} (\ref[realization.core.modules]).
+
+\seccc ModuleView
+
+{\tt ModuleView} is a main element of presentation layer for a module. It handles accessing the inner data, such as title or icon, as well as access to the related module object. A {\tt ModuleView} is an extension to the {\tt android.widget.RelativeLayout} and uses a XML descriptor, from which it is inflated.
+
+\seccc ModuleActiveView
+
+{\tt ModuleActiveView} is an extension to {\tt ModuleView}, it uses a different XML layout descriptor and adds a value and unit data display. It is optimized for frequent data update by saving the pointer to the {\tt View} containing the actual value. This avoid the unnecessary load when seeking an element inside a layout.
+
+\seccc Other views
+
+There are many other views similar to the ones described above or just simple views used for displaying custom lists. Those views wrap access to the inner data presentation elements to separate the layers properly. 
+
+
 \label[realization.core.communication]
 \secc Communication TODO
 

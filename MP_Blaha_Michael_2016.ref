@@ -165,9 +165,9 @@
 \Xpage{26}
 \Xlabel{realization.core.utility}{4.3.6}
 \Xtoc{2}{\rm }{4.3.6}{Utility classes }{26}
-\Xlabel{realization.core.view}{4.3.7}
-\Xtoc{2}{\rm }{4.3.7}{Views }{26}
 \Xpage{27}
+\Xlabel{realization.core.view}{4.3.7}
+\Xtoc{2}{\rm }{4.3.7}{Views }{27}
 \Xlabel{realization.core.communication}{4.3.8}
 \Xtoc{2}{\rm }{4.3.8}{Communication TODO }{27}
 \Xlabel{realization.core.optimization}{4.3.9}
