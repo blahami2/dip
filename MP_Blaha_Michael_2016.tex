@@ -854,7 +854,7 @@ For performance reasons to avoid unnecessary loading and object creating, curren
 
 Another advantage of this class it possibility to adapt. Should the modules take too much space in memory, it is easy to switch to data loading model, where modules would be loaded into memory on demand and deleted when they are not currently in use. Doing this change would not affect the rest of the application.
 
-\seccc Object creation tools TODO
+\seccc Object creation tools
 
 One of the challenging tasks was to save and then load all types of modules. Since there can be custom modules, it is not an easy task without requesting the developer to create DAO for every module. To simplify the module implementation process as much as possible, a set of creation tools was made. Once the module fits in one of those tools, it can be loaded and created without further effort. However, once a new module type is created, for example a type which requires additional data to be saved, a new tool has to be implemented into existing tools.
 
@@ -862,7 +862,12 @@ There are two types of those tools. The tools to create an object based on a loa
 
 The {\tt ModuleLoader} serves to create a new object from previously persisted session. It is an enum of many enum items, each of which implements a method to load from {\tt JSONObject} and to save into a {\tt JSONObject}. Support methods are provided for saving and loading common data, so that only the specifics have to be implemented.
 
-The {\tt ModuleCreator} serves to create a new object when swapping the {\tt EmptyModule} (\ref[realization.core.modules]). On the first sight it is simpler than {\tt ModuleLoader}, because most modules can be created just by reflection (creating a new module based on class with default data in it). However, several modules require custom data, such as {\tt SimpleShortcutModule}, {\tt AppShortcutModule}, {\tt GmapsShortcutModule}, etc. Those usually use custom Fragments handling the user data input with callbacks method back to the creator. Those Fragments will be discussed later in section \ref[realization.core.fragments] on page \ref[realization.core.fragments].
+The {\tt ModuleCreator} serves to create a new object when swapping the {\tt EmptyModule} (\ref[realization.core.modules]). On the first sight it is simpler than {\tt ModuleLoader}, because most modules can be created just by reflection (creating a new module based on class with default data in it). However, several modules require custom data, such as {\tt SimpleShortcutModule}, {\tt AppShortcutModule}, {\tt GmapsShortcutModule}, etc. Those usually use custom Fragments handling the user data input with callbacks method back to the creator. Those Fragments will be discussed later in section \ref[realization.core.fragments] on page \pgref[realization.core.fragments].
+
+
+\label[realization.core.fragments]
+\secc Fragments
+
 
 \label[realization.core.communication]
 \secc Communication TODO

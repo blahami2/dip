@@ -157,13 +157,15 @@
 \Xpage{24}
 \Xlabel{realization.core.data}{4.3.3}
 \Xtoc{2}{\rm }{4.3.3}{Data TODO }{24}
-\Xlabel{realization.core.communication}{4.3.4}
-\Xtoc{2}{\rm }{4.3.4}{Communication TODO }{24}
-\Xlabel{realization.core.optimization}{4.3.5}
-\Xtoc{2}{\rm }{4.3.5}{Optimization TODO }{24}
-\Xlabel{realization.modularity}{4.4}
-\Xtoc{1}{\rm }{4.4}{Modularity TODO }{24}
 \Xpage{25}
+\Xlabel{realization.core.fragments}{4.3.4}
+\Xtoc{2}{\rm }{4.3.4}{Fragments }{25}
+\Xlabel{realization.core.communication}{4.3.5}
+\Xtoc{2}{\rm }{4.3.5}{Communication TODO }{25}
+\Xlabel{realization.core.optimization}{4.3.6}
+\Xtoc{2}{\rm }{4.3.6}{Optimization TODO }{25}
+\Xlabel{realization.modularity}{4.4}
+\Xtoc{1}{\rm }{4.4}{Modularity TODO }{25}
 \Xlabel{realization.modularity.requirements}{4.4.1}
 \Xtoc{2}{\rm }{4.4.1}{Requirements TODO }{25}
 \Xlabel{realization.modularity.integration}{4.4.2}
