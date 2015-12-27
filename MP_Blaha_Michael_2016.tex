@@ -756,29 +756,60 @@ The core contains all the functionality, it handles data, logic and also a stand
 
 As mentioned in section \ref[design.application_architecture.modularity]), there are so called modules, which handle the interaction between the application and it's user offering a single action or information. Together they can create multiple connected sets of functionality with consistent interface.
 
+\label[realization.core.modules.imodule]
 \seccc IModule
 
 {\tt IModule} is an interface which covers the basic module functionality. It has to be implemented by every single module in order to achieve proper polymorfism. Using this approach, a tablet implementation can display a set of modules without knowing which module does what.
 
+\label[realization.core.modules.abstractsimplemodule]
 \seccc  AbstractSimpleModule
 
-{\tt AbstractSimpleModule} is an abstract class which implements most of the {\tt IModule}'s functionality. It handles creating a unique Id for every module, which will be described later in section \ref[realization.core.data]. It also handles common module events and overrides simple methods to ease the implementation of a new module, which does not need those methods.
+{\tt AbstractSimpleModule} is an abstract class which implements most of the {\tt IModule}'s functionality. It handles creating a unique Id for every module, which will be described later in section \ref[realization.core.data]. It also handles common module events and overrides simple methods to ease the implementation of a new module, which does not need those methods. Every other module extends this class.
 
+\label[realization.core.modules.abstractparentmodule]
 \seccc AbstractParentModule
 
 For consistent hierarchical model, there has to be a module containing other module. This module extends the {\tt AbstractParentModule} class, which covers the module container functionality. Every instance of {\tt ModulePagerActivity} (\ref[realization.tablet.activity]) contains such container and displays it's content as a list of modules.
 
+\label[realization.core.modules.abstractdisplaymodule]
 \seccc AbstractDisplayModule
 
 Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request.
 
+\label[realization.core.modules.abstracttimedupdatedisplaymodule]
 \seccc AbstractTimedUpdateDisplayModule
 
 {\tt AbstractTimedUpdateDisplayModule} serves as an extension to {\tt AbstractDisplayModule} handling automatic timed updates. It uses advanced genericity to offer multiple update modes for extending modules. Such mode states the frequency of calling the {\tt getUpdatedValue} method, which is to be implemented by subclasses. An optimization is implemented for this process, as {\tt getUpdatedValue} can invoke a long-lasting process. The last value is saved for further use by the {\tt updateValue} method, while the {\tt getUpdateValue} method merely updates this last value when it is done.
 
+\label[realization.core.modules.abstractshortcutmodule]
 \seccc AbstractShortcutModule
 
-As an extension to application functionality there is an option to invoke external applications as well. The {\tt AbstractShortcutModule} has a functionality of a shortcut to such external application. The developed application can then act as an application launcher optimized for in-car usage. 
+As mentioned in section \label[analysis.android_platform.architecture], there is an Intent as a mean of communication. This Intent is able to invoke an Activity, a Service and many other things. It can also invoke Activity of a different application installed on the device, which launches the application. The {\tt AbstractShortcutModule} handles invoking a custom Intent.
+
+%As an extension to application functionality there is an option to invoke external applications as well. The {\tt AbstractShortcutModule} has a functionality of a shortcut to such external application. The developed application can then act as an application launcher optimized for in-car usage.
+
+\seccc Other modules
+
+There are several implementations of the modules mentioned above. A few will be shortly described in the following list:
+
+\begitems
+  \item {\bf SimpleShortcutModule} A mere implementation of {\bf AbstractShortcutModule} class (\ref[realization.core.modules.abstractshortcutmodule])
+  \item {\bf SimpleParentModule} A mere implementation of {\bf AbstractParentModule} class  (\ref[realization.core.modules.abstractparentmodule])
+  \item {\bf AppShortcutModule} An extension to {\bf AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the (TODO name) developed application can server as an application launcher optimized for in-car usage 
+  \item {\bf EmtpyModule} An empty module meant to be swapped for a different one, occupying an empty space
+  \item {\bf BackModule} A module handling the back button, which can be pressed to get back to upper parent module (go up in the hierarchy)
+  \item {\bf LightButtonModule} A module created for IoT support, offering a way to turn a given light on or off
+  \item {\bf ObdRpmModule} A module communicating with the OBD and displaying information about current RPM of the vehicle
+  \item {\bf ObdSpeedModule} A module communicating with the OBD and displaying information about current speed of the vehicle
+\enditems 
+
+\label[realization.core.modules.imodulecontext]
+\seccc IModuleContext
+
+An interface to be implemented by the Activity which should display the modules. It provides functionality to go up or down in module hierarchy, to toggle quick menu (\ref[realization.core.modules.quick_menu]) for a certain module or to gain access to resources.
+
+\label[realization.core.modules.quick_menu]
+\seccc Quick menu
 
 \label[realization.core.application]
 \secc Application TODO
