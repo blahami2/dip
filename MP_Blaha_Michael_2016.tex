@@ -916,6 +916,10 @@ An utility class providing methods to edit ModuleViews described later in sectio
 
 A {\tt ModuleViewFactory} class enables creating new {\tt ModuleViews} (\ref[realization.core.view]). It offers creation of a simple {\tt ModuleView} or a {\tt ModuleView} in a certain holder {\tt View}. This holder can then wrap a module and adjust it's size based on the platform it is displayed on.
 
+\seccc TextToSpeechUtils
+
+This class provides simplified text-to-speech functionality. It handles all the settings and preparations and the calling object merely has to provide a string to be read outloud. This class is especially useful given the environment and it is often used with several modules. For example, all the implementations of {\tt AbstractDisplayModule} (\ref[realization.core.modules]) use the text-to-speech functionality when touched, saying the related value. Once the driver memorizes the position of a module, he can easily push it without even looking at it and still recieve the information about value.
+
 \label[realization.core.view]
 \secc Views
 

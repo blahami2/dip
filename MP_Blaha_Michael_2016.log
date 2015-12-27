@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1411,7 +1411,7 @@ own. Try to TeX me again.
 l.846 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
 [24] [25] [26] [27]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 1006--1007
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1010--1011
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1463,10 +1463,10 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (36 pages, 2308186 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (36 pages, 2308924 bytes).
 PDF statistics:
- 985 PDF objects out of 1000 (max. 8388607)
- 921 compressed objects within 10 object streams
+ 986 PDF objects out of 1000 (max. 8388607)
+ 922 compressed objects within 10 object streams
  223 named destinations out of 1000 (max. 500000)
  809 words of extra memory for PDF output out of 10000 (max. 10000000)
 
