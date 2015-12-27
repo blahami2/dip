@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1406,12 +1406,19 @@ act-Par-ent-Mod-ule \tenrm class
 l.811 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
 o TeX me again.
 [23]
-l.853 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
+l.846 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
 own. Try to TeX me again.
-l.853 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
+l.846 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
 [24] [25]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 956--957
+l.912 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
+.
+l.912 OPmac WARNING: pg-label [realization.core.view] unknown. Try to TeX me ag
+ain.
+l.916 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
+.
+[26] [27]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1002--1003
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1455,7 +1462,7 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 956--957
 .\tentt .
 .etc.
 
-[26] [27] [28] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
+[28] [29] [30] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
 c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015/texmf-
@@ -1463,10 +1470,10 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (34 pages, 2301735 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (36 pages, 2307762 bytes).
 PDF statistics:
- 942 PDF objects out of 1000 (max. 8388607)
- 881 compressed objects within 9 object streams
- 215 named destinations out of 1000 (max. 500000)
- 785 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 973 PDF objects out of 1000 (max. 8388607)
+ 909 compressed objects within 10 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 801 words of extra memory for PDF output out of 10000 (max. 10000000)
 

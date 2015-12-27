@@ -754,7 +754,7 @@ For reasons mentioned above a custom layout had to be created. Based on given me
 The core contains all the functionality, it handles data, logic and also a standardized part of presentation, which consists of predefined single module veiws. Everything will be described in following text.
                         
 \label[realization.core.modules]
-\secc Modules TODO
+\secc Modules
 
 As mentioned in section \ref[design.application_architecture.modularity]), there are so called modules, which handle the interaction between the application and it's user offering a single action or information. Together they can create multiple connected sets of functionality with consistent interface.
 
@@ -828,15 +828,8 @@ This section describes the application logic. While most of the logic is hidden 
 
 The concept of event bus is to have publishers and subscribers. It is most suitable for timed events, which serve as a signal for modules to update themselves. However, it is not limited just for time updates. Most of the communication can be handled using the event bus. {\tt FastEventBus} offers such functionality while remaining as simple as possible for better performance.
 
-\label[realization.core.application.obd]
-\seccc OBD
-
-While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
-
-Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
-
 \label[realization.core.data]
-\secc Data TODO
+\secc Data
 
 \seccc Resources
 
@@ -868,6 +861,59 @@ The {\tt ModuleCreator} serves to create a new object when swapping the {\tt Emp
 \label[realization.core.fragments]
 \secc Fragments
 
+Following are DialogFragments, which is a Fragment in a Dialog window. THe advantage of DialogFragment is the ability to adapt. On larger screens it is a Dialog window as a pop-up, on smaller screen it is a full-screen window.
+
+\seccc ModuleListDialogFragment
+
+This Fragment is used when adding a new module into the structure. It contains a list of available modules in a structure defined by the developer. This structure uses description objects for all the modules. When a module is selected, based on it's class a {\tt ModuleCreator} is obtained from the {\tt ModuleCreationToolsMap} (\ref[realization.core.data]). Using this creator a new module object is created and inserted into given position using a callback method to {\tt IModuleContext} (\ref[realization.core.modules]).
+
+\seccc ApplicationListDialogFragment
+
+When a shortcut to an external application is selected as a new module, an {\tt ApplicationListDialogFragment} is invoked by the {\tt ModuleCreator}. Adapter of this Fragment loads all the available applications installed on the device and provides their data to the {\tt ApplicationListDialogFragment}. The icons and names are displayed in a list for user to select. Selecting a module invokes a callback method, which calls the related method in {\tt ModuleCreator}.
+
+\seccc CustomShortcutDialogFragment
+
+When a custom Intent is to be created as a module, a {\tt CustomShortcutDialogFragment} is invoked. This Fragment offers input for title and Intent content and as usual, invokes a callback method once the data are provided.
+
+\seccc GmapsShortcutDialogFragment
+
+As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. It uses Google Maps API described in (TODO \url{https://developers.google.com/maps/}{here}). It allows creating the following:
+\begitems
+* Displaying a location on map,
+* launching a navigation to a certain location from the current location,
+* searching the current location for given string, for example hospital, pharmacy or gas station.
+\enditems
+
+\seccc RenameDialogFragment
+
+{\tt RenameDialogFragment} has been added to allow user to change the title of a selected module. Because the title is saved as a {\tt StringResource} (\ref[realization.core.data]), it is source-independent on the outside. Therefore, a {\tt String} can be used instead of a XML resource. The user can then customize his user interface a bit more.
+
+\label[realization.core.obd]
+\secc OBD TODO
+
+While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
+
+Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
+
+\secc Utility classes
+
+There are several utility classes -- stateless classes providing certain sets of functionality. As a utility class, every one of them is filled with static methods that help with frequently used operations that do not require to change the outer state.
+
+\seccc ModuleUtils
+
+A {\tt ModuleUtils} class implements several methods offering a functional approach for lists of modules. Providing a Single Abstract Interface for an action on an {\tt IModule} given as a parameter, it performs this action for each (even recursive) submodule of a given parent module. Also a particular module class or super class can be provided, so that only the related modules are affected.
+
+The simpler method called {\tt forEach} merely iterates over all submodules, performs action on each one of them and if the submodule happens to be also a parent module, it calls itself recursively on this parent submodule as well.
+
+The more complicated method called {\tt forEachDeepCopy} not only iterates recursively over all submodules, but also creates a deep copy of all the parent modules, so that changing their structure does not affect the original. This is helpful when adjusting modules before saving them.
+
+\seccc ModuleViewUtils
+
+An utility class providing methods to edit ModuleViews described later in section \ref[realization.core.view] on page \pgref[realization.core.view]. It enables filling them with the data provided by given {\tt IModule}, preparing listeners and quick menus. This covers the access to certain View fields, separating the view layer from the rest.
+
+\seccc ModuleViewFactory
+
+A {\tt ModuleViewFactory} class enables creating new {\tt ModuleViews} (\ref[realization.core.view]). It offers creation of a simple {\tt ModuleView} or a {\tt ModuleView} in a certain holder {\tt View}. This holder can then wrap a module and adjust it's size based on the platform it is displayed on.
 
 \label[realization.core.communication]
 \secc Communication TODO
