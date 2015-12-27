@@ -685,7 +685,7 @@ Describe the process, phases, analyse and compare advantages, disadvantages, tho
 \label[realization.preparation]
 \sec Preparation TODO
 
-While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet GUI and other specifics.
+While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile or any other platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet GUI and other specifics.
 
 \label[realization.preparation.environment]
 \secc Environment
@@ -710,6 +710,8 @@ Because of the workaround with a shared library in Android Studio, a special app
 %	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
 \label[realization.tablet]
 \sec Tablet specific TODO
+
+While the Android API is shared across all Android platforms, it is the device size that is usually different. The GUI has to adapt based on the platform and therefore it's implementation differs. This section describes the tablet-related implementation using a shared library described in section \ref[realization.core].
 
 \label[realization.tablet.activity]
 \secc ModulePagerActivity
@@ -747,9 +749,39 @@ For reasons mentioned above a custom layout had to be created. Based on given me
 \label[realization.core]
 \sec Core TODO
 
+The core contains all the functionality, it handles data, logic and also a standardized part of presentation, which consists of predefined single module veiws. Everything will be described in following text.
+                        
+\label[realization.core.modules]
+\secc Modules TODO
 
-\label[realization.core.core]
-\secc Core TODO
+As mentioned in section \ref[design.application_architecture.modularity]), there are so called modules, which handle the interaction between the application and it's user offering a single action or information. Together they can create multiple connected sets of functionality with consistent interface.
+
+\seccc IModule
+
+{\tt IModule} is an interface which covers the basic module functionality. It has to be implemented by every single module in order to achieve proper polymorfism. Using this approach, a tablet implementation can display a set of modules without knowing which module does what.
+
+\seccc  AbstractSimpleModule
+
+{\tt AbstractSimpleModule} is an abstract class which implements most of the {\tt IModule}'s functionality. It handles creating a unique Id for every module, which will be described later in section \ref[realization.core.data]. It also handles common module events and overrides simple methods to ease the implementation of a new module, which does not need those methods.
+
+\seccc AbstractParentModule
+
+For consistent hierarchical model, there has to be a module containing other module. This module extends the {\tt AbstractParentModule} class, which covers the module container functionality. Every instance of {\tt ModulePagerActivity} (\ref[realization.tablet.activity]) contains such container and displays it's content as a list of modules.
+
+\seccc AbstractDisplayModule
+
+Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request.
+
+\seccc AbstractTimedUpdateDisplayModule
+
+{\tt AbstractTimedUpdateDisplayModule} serves as an extension to {\tt AbstractDisplayModule} handling automatic timed updates. It uses advanced genericity to offer multiple update modes for extending modules. Such mode states the frequency of calling the {\tt getUpdatedValue} method, which is to be implemented by subclasses. An optimization is implemented for this process, as {\tt getUpdatedValue} can invoke a long-lasting process. The last value is saved for further use by the {\tt updateValue} method, while the {\tt getUpdateValue} method merely updates this last value when it is done.
+
+\seccc AbstractShortcutModule
+
+As an extension to application functionality there is an option to invoke external applications as well. The {\tt AbstractShortcutModule} has a functionality of a shortcut to such external application. The developed application can then act as an application launcher optimized for in-car usage. 
+
+\label[realization.core.application]
+\secc Application TODO
 
 
 \label[realization.core.data_storage]
@@ -763,8 +795,7 @@ For reasons mentioned above a custom layout had to be created. Based on given me
 \label[realization.core.optimization]
 \secc Optimization TODO
 
-\label[realization.core.modules]
-\secc Modules TODO
+
 
 %	------------------------------------------------------------------------ Modularity ----------------------------------------------------------------------%
 \label[realization.modularity]
