@@ -1411,14 +1411,16 @@ own. Try to TeX me again.
 l.846 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
 [24] [25]
-l.912 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
+l.913 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
 .
-l.912 OPmac WARNING: pg-label [realization.core.view] unknown. Try to TeX me ag
+l.913 OPmac WARNING: pg-label [realization.core.view] unknown. Try to TeX me ag
 ain.
-l.916 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
+l.917 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
+.
+l.919 OPmac WARNING: label [realization.core.view] unknown. Try to TeX me again
 .
 [26] [27]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 1002--1003
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1006--1007
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1470,10 +1472,10 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (36 pages, 2307762 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (36 pages, 2307975 bytes).
 PDF statistics:
- 973 PDF objects out of 1000 (max. 8388607)
- 909 compressed objects within 10 object streams
- 220 named destinations out of 1000 (max. 500000)
- 801 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 980 PDF objects out of 1000 (max. 8388607)
+ 916 compressed objects within 10 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 809 words of extra memory for PDF output out of 10000 (max. 10000000)
 

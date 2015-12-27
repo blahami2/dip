@@ -895,6 +895,7 @@ While modules are as independent as possible, there are cases where a shared fun
 
 Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
 
+\label[realization.core.utility]
 \secc Utility classes
 
 There are several utility classes -- stateless classes providing certain sets of functionality. As a utility class, every one of them is filled with static methods that help with frequently used operations that do not require to change the outer state.
@@ -914,6 +915,9 @@ An utility class providing methods to edit ModuleViews described later in sectio
 \seccc ModuleViewFactory
 
 A {\tt ModuleViewFactory} class enables creating new {\tt ModuleViews} (\ref[realization.core.view]). It offers creation of a simple {\tt ModuleView} or a {\tt ModuleView} in a certain holder {\tt View}. This holder can then wrap a module and adjust it's size based on the platform it is displayed on.
+
+\ref[realization.core.view]
+\secc Views
 
 \label[realization.core.communication]
 \secc Communication TODO

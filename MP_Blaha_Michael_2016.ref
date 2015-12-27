@@ -163,18 +163,20 @@
 \Xlabel{realization.core.obd}{4.3.5}
 \Xtoc{2}{\rm }{4.3.5}{OBD TODO }{25}
 \Xpage{26}
+\Xlabel{realization.core.utility}{4.3.6}
 \Xtoc{2}{\rm }{4.3.6}{Utility classes }{26}
-\Xlabel{realization.core.communication}{4.3.7}
-\Xtoc{2}{\rm }{4.3.7}{Communication TODO }{26}
-\Xlabel{realization.core.optimization}{4.3.8}
-\Xtoc{2}{\rm }{4.3.8}{Optimization TODO }{26}
+\Xtoc{2}{\rm }{4.3.7}{Views }{26}
+\Xlabel{realization.core.communication}{4.3.8}
+\Xtoc{2}{\rm }{4.3.8}{Communication TODO }{26}
+\Xlabel{realization.core.optimization}{4.3.9}
+\Xtoc{2}{\rm }{4.3.9}{Optimization TODO }{26}
 \Xlabel{realization.modularity}{4.4}
 \Xtoc{1}{\rm }{4.4}{Modularity TODO }{26}
 \Xlabel{realization.modularity.requirements}{4.4.1}
 \Xtoc{2}{\rm }{4.4.1}{Requirements TODO }{26}
-\Xlabel{realization.modularity.integration}{4.4.2}
-\Xtoc{2}{\rm }{4.4.2}{Integration TODO }{26}
 \Xpage{27}
+\Xlabel{realization.modularity.integration}{4.4.2}
+\Xtoc{2}{\rm }{4.4.2}{Integration TODO }{27}
 \Xlabel{realization.gui}{4.5}
 \Xtoc{1}{\rm }{4.5}{GUI TODO }{27}
 \Xlabel{realization.gui.common_elements}{4.5.1}
