@@ -372,6 +372,8 @@ For communication between activities there are so called Intents. An intent is t
 
 Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the GUI designed create a GUI without having to understand the Java language or the Android API.
 
+XML is not used just for layouts. Most of the resources are defined using XML descriptors. There are strings, values, dimensions and even certain graphical objects defined using XML. Those resources are accessable from code using static class {\tt R}, which is created during build time by most build system automatically.
+
 As a relatively new concept, so called Fragment was created. It is similar to activity, however it is not a mandatory component. It can be used as a controller for certain functionality area. It's advantage is that a developer can create separate Fragments with separate area of concern and display one or many of those based on the screen size. The typical use-case example can be a list of items and a detail of a selected item. On small screens, two Activities containing a single Fragment each will be needed, while on larger screens one activity can contain both Fragments.
 
 \label[analysis.android_platform.material_design]
@@ -833,9 +835,26 @@ While modules are as independent as possible, there are cases where a shared fun
 
 Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
 
-\label[realization.core.data_storage]
-\secc Data storage TODO
+\label[realization.core.data]
+\secc Data TODO
 
+\seccc Resources
+
+As mentioned in section \ref[analysis.android_platform.architecture], resources usually consist of XML files accessible as static properties of an automatically generated class. A new class was created in this project to wrap the access to resources for selected types of data. {\tt StringResource} and {\tt IconResource} classes wrap the access to single sources of resource, meaning that for example a {\tt StringResource} can load the string from resource or from runtime memory. Accessing a resource this way separates the resource user from the data access layer, making the code simpler.
+
+\seccc Storage
+
+As the application is adjustable by users, the settings need to be preserved. The main data area to be saved is the user-customized hierarchy of modules. Given the hierarchy model of those data and the simplicity of content (module type, name, additional data), a JSON format is used for data persistance. A single JSON file is created containing all the required data for customized user interface. The advantage of the JSON format is the ability to easily persist those settings on a server, given the support of JSON format in web communication procotols.
+
+To save and load those data there is a class {\tt ModuleDAO}. This class separates the access code from the rest of application, making it easy to change the saving format, the type of data saved or even the location of data. It also enables data to be saved in a background thread, so that the saving process does not block the application.
+
+\seccc Runtime data
+
+For performance reasons to avoid unnecessary loading and object creating, current modules are preserved in a runtime data container called {\tt ModuleSupplier}. This container wraps the access to modules based on their Id, as mentioned in section \ref[realization.core.modules.abstractsimplemodule] on page \pgref[realization.core.modules.abstractsimplemodule]. It also contains a default set of modules when no preserved data are available.
+
+Another advantage of this class it possibility to adapt. Should the modules take too much space in memory, it is easy to switch to data loading model, where modules would be loaded into memory on demand and deleted when they are not currently in use. Doing this change would not affect the rest of the application.
+
+\seccc Object creation tools TODO
 
 \label[realization.core.communication]
 \secc Communication TODO
