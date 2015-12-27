@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 14:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,7 +1314,7 @@ Underfull \hbox (badness 1584) in paragraph at lines 329--330
 .etc.
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1351,17 +1351,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
 .etc.
 
 [12] [13] [14]
-l.538 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
+l.540 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
 gain.
-l.538 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
+l.540 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
 e again.
 [15] [16] [17] [18] [19] [20] [21]
-l.767 OPmac WARNING: label [realization.core.data] unknown. Try to TeX me again
-.
-l.787 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
+l.789 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
  ignored.
 
-Underfull \hbox (badness 1052) in paragraph at lines 797--798
+Underfull \hbox (badness 1052) in paragraph at lines 799--800
  [][][]\mF SimpleParentModule \tenrm A mere im-ple-men-ta-tion of \tentt Ab-str
 act-Par-ent-Mod-ule \tenrm class
 
@@ -1405,10 +1403,15 @@ act-Par-ent-Mod-ule \tenrm class
 .etc.
 
 [22]
-l.809 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
+l.811 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
 o TeX me again.
-[23] [24]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 924--925
+[23]
+l.853 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
+own. Try to TeX me again.
+l.853 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
+nknown. Try to TeX me again.
+[24] [25]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 943--944
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1452,7 +1455,7 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 924--925
 .\tentt .
 .etc.
 
-[25] [26] [27] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
+[26] [27] [28] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
 c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015/texmf-
@@ -1460,10 +1463,10 @@ dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (33 pages, 2296037 bytes).
+Output written on MP_Blaha_Michael_2016.pdf (34 pages, 2299297 bytes).
 PDF statistics:
- 926 PDF objects out of 1000 (max. 8388607)
- 866 compressed objects within 9 object streams
- 212 named destinations out of 1000 (max. 500000)
+ 932 PDF objects out of 1000 (max. 8388607)
+ 871 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
  777 words of extra memory for PDF output out of 10000 (max. 10000000)
 
