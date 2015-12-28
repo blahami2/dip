@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  28 DEC 2015 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  28 DEC 2015 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1455,20 +1455,195 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 1146--1147
 .\tentt .
 .etc.
 
-[30] [31] [32 <./images/testing_users_simulator_sw.png> <./images/testing_users
-_simulator_smarteye.png>] [33] [34] ){c:/texlive/2015/texmf-dist/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:
-/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-
-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pu
-blic/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb
-><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/201
-5/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/font
-s/type1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/
-lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (40 pages, 3231119 bytes).
+[30] [31]
+Underfull \vbox (badness 10000) has occurred while \output is active
+\vbox(674.33032+2.75)x415.41025, glue set 4.38124
+.\vbox(0.0+0.0)x0.0, glue set 25.0fil
+..\kern -25.0
+..\pdfdest name{pg:.32} xyz
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\topskip) 2.42238
+.\hbox(7.57762+0.0)x415.41025, glue set 363.4113fil
+..\hbox(0.0+0.0)x11.66563
+..\tenrm A
+..\glue 3.66666 plus 1.83148 minus 1.22343
+..\tenrm A
+..\tenrm A
+..\glue 3.66666 plus 1.83148 minus 1.22343
+..\tenrm A
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 6.02238
+.\hbox(7.57762+0.0)x415.41025, glue set 370.74461fil
+..\hbox(0.0+0.0)x11.66563
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 6.02238
+.\hbox(7.57762+0.0)x415.41025, glue set 370.74461fil
+..\hbox(0.0+0.0)x11.66563
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 6.02238
+.\hbox(7.57762+0.0)x415.41025, glue set 362.49461fil
+..\hbox(0.0+0.0)x11.66563
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\tenrm A
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty -500
+.\glue 3.4 plus 1.13326 minus 1.13326
+.\glue 6.8 plus 2.26653 minus 2.26653
+.\glue 0.0
+.\glue(\baselineskip) 2.02843
+.\hbox(11.57158+0.85358)x415.41025, glue set 11.3811fil
+..\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
+..\rule(9.95845+0.85358)x11.38109
+..\pdfcolorstack 1 push {0 0 0 1 k 0 0 0 1 K}
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\vbox(11.57158+0.2494)x392.64806
+...\hbox(11.57158+4.7494)x392.64806, glue set 145.2902fil
+....\vbox(0.0+0.0)x0.0, glue set 20.32915fil
+.....\kern -20.32915
+.....\pdfdest name{ref:testing.users.simulator} xyz
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\write0<3>{\Xlabel{testing.users.simulator}{5.3.2}}
+....\vbox(0.0+0.0)x0.0, glue set 20.32915fil
+.....\kern -20.32915
+.....\pdfdest name{toc:.5.3.2} xyz
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\write0<3>{\string \Xtoc {2}{\noexpand \rm }{5.3.2}{Simulator }{\the \pagen
+o }}
+....\mF 5
+....\mF .
+....\mF 3
+....\mF .
+....\mF 2
+....\glue 14.52089
+....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
+....\mF S
+....\mF i
+....\mF m
+....\mF u
+....\mF l
+....\mF a
+....\mF t
+....\mF o
+....\kern-0.40337
+....\mF r
+....\rule(11.57158+4.7494)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\kern -4.5
+..\pdfcolorstack 1 pop
+.\pdfcolorstack 1 pop
+.\pdfcolorstack 1 pop
+.\penalty 10000
+.\glue 0.0
+.\glue 3.4 plus 1.13326 minus 1.13326
+.\kern 2.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 5.16881
+.\hbox(7.57762+2.13887)x415.41025, glue set 0.13031
+..\tenrm W
+..\tenrm h
+..\tenrm i
+..\tenrm l
+..\tenrm e
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm p
+..\tenrm r
+..\tenrm o
+..\kern-0.30557
+..\tenrm v
+..\tenrm i
+..\tenrm d
+..\tenrm i
+..\tenrm n
+..\tenrm g
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm s
+..\tenrm a
+..\tenrm f
+..\tenrm e
+..\tenrm t
+..\kern-0.30557
+..\tenrm y
+..\kern-0.91667
+..\tenrm ,
+..\glue 3.66666 plus 2.29166 minus 0.97777
+..\tenrm t
+..\tenrm h
+..\tenrm e
+..etc.
+.\penalty 10000
+.\glue(\baselineskip) 3.88351
+.\hbox(7.57762+2.13887)x415.41025, glue set 0.32352
+..\tenrm w
+..\tenrm i
+..\tenrm t
+..\tenrm h
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm s
+..\tenrm e
+..\tenrm t
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm o
+..\tenrm f
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm c
+..\tenrm a
+..\tenrm m
+..\tenrm e
+..\tenrm r
+..\tenrm a
+..\tenrm s
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm t
+..\tenrm h
+..\tenrm a
+..\tenrm t
+..\glue 3.66666 plus 1.83333 minus 1.22221
+..\tenrm t
+..\tenrm r
+..\tenrm a
+..\tenrm c
+..\kern-0.30557
+..etc.
+.etc.
+
+ [32 <./images/testing_users_simulator_sw.png>] [33 <./images/testing_users_sim
+ulator_smarteye.png>] [34] [35] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm
+/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/tex
+live/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dist
+/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
+/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:
+/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2015/te
+xmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/fonts/ty
+pe1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt
+10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (41 pages, 3235433 bytes).
 PDF statistics:
- 1037 PDF objects out of 1200 (max. 8388607)
- 966 compressed objects within 10 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 1043 PDF objects out of 1200 (max. 8388607)
+ 971 compressed objects within 10 object streams
+ 231 named destinations out of 1000 (max. 500000)
  827 words of extra memory for PDF output out of 10000 (max. 10000000)
 

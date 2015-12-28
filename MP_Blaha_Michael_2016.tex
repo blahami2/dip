@@ -1157,19 +1157,39 @@ However, there are several missing supportive elements, such as prompts, error r
 
 The importance of proper testing is critical as the driver cannot be distracted from driving. Any significant flaw in the application design might prove to be fatal and it certainly is not the intention. Therefore thorough testing must be performed in order to achieve the desired level of reliability.
 
+
 One of the most commonly used approaches is the usability testing, where usually several testers try to perform certain actions with the application. This is done in a development environment and watched by the developers.
+
 
 The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the CLT (Change Lane Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
 
+
 Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently the most downloaded OBD-supporting application on Android market. (TODO link)
+
+
+As a related application has been developed simultaneously for a mobile platform (TODO link/bibli), testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
 
 \label[testing.users.usability]
 \secc Usability testing TODO
 
 Testing the application as a regular application. Is it understandable? Is it easy to control, to see data, to understand, to comprehend, to learn?
 
+A AA AS 
+
+A AS A
+
+A ASAS 
+
+A AA A 
+
+AAAA
+
+AAAA
+
+AAAAA
+
 \label[testing.users.simulator]
-\secc Simulator TODO
+\secc Simulator
 
 While providing safety, the car simulator has other advantages as well. It is equipped with set of cameras that track eye movement. It is then easy to find out, where and for how long is the user focusing his sight, which is really important for evaluating the cognitive load. It is also easy to try out different scenarios with a single click, not requiring to drive around the world looking for a proper place.
 
@@ -1186,6 +1206,7 @@ The control software is called CarDynamics (shown on \ref[testing.users.simulato
 }
 \nobreak\medskip
 \caption/f Screenshot from CarDynamics
+\medskip
 
 As mentioned above, there is also an eye-tracking system. This enables the tester to precisely determine when and how often a user looks at the application, on the road or elsewhere. The system consists of two EyeTracker cameras and a complex software called Smart Eye Pro (see image \ref[testing.users.simulator.smarteye]).
 
@@ -1197,16 +1218,27 @@ As mentioned above, there is also an eye-tracking system. This enables the teste
 \nobreak\medskip
 \caption/f Screenshot from Smart Eye Pro
 
-
-
 Describe the car simulator in Albertov.
 DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 
 \label[testing.users.preparations]
 \secc Preparations TODO
 
-\seccc Testing scenario
+Before even starting to test with users, several preparations had to be made. This includes implementing a software, that can emulate an OBD module to transfer data from the simulator to the application. Also cameras had to be prepared, because the software is not flawless and proper eye tracking prove to be an issue. Then, finally, scenarios could have been made for all the tested situations.
 
+\seccc Software
+
+As the simulator broadcasts data through serial link, it is impossible to easily catch the data in tablet and still have a realistic scenario. Also an OBD module is expected to be used with the application, therefore it is most suitable to emulate it. A simple software has been developed in Java language for such task. It listens to the serial link on a certain port, translates those data into inner Java primitive types, as they are in the C structure format. Then a bluetooth connection is initialized and an OBD module's protocol is emulated in order to communicate with the actual tablet application. This had to be optimized for Torque as well in order to have even conditions.
+
+\seccc Cameras
+
+After testing the eye tracking cameras, a new issue emerged. Those cameras were unable to track the intended position of tablet, as it was too low. Moving the tablet up did not help, therefore positions of the cameras had to be adjusted. The cameras were moved, so that they can track the eye when looking at the tablet. However, they were no longer able to track eyes when following the road. The test results had to be limited to looking at the tablet or not looking at the tablet.
+
+\seccc Scenarios
+
+As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and CLT testing scenarios are unique for each platform, therefore more time is required.
+
+\label[testing.users.preparations.scenario]
 \table{||c|c|r||l||}{\crll
   \bf Start & \bf End & \bf Duration [min] & \bf Content \crll
   00:00:00 & 00:05:00 & 5 & Introduction \crli
@@ -1217,7 +1249,12 @@ DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
   00:55:00 & 01:05:00 & 10 & CLT testing \crli
   01:05:00 & 01:10:00 & 5 & Post-test questionnaire \crli
   01:10:00 & 01:15:00 & 5 & Debriefing \crll
-}
+}\caption/f Single user testing schedule
+\medskip
+
+The A/B testing scenario is simple. At first the user drives the route without any application, so that he gets to know it. Then he drives the same route with application A (Torque), while being frequently asked to read outloud the speed and RPM. The speed is to be read from the first second with interval of 20 seconds, the RPM is to be read from the tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the user has to scroll from one to another. The same scenario goes for the application B. A and B applications switch places for every tester (B first, A second or the other way around). The metrics then are the glance times for both applications.
+
+The change lane test (CLT) scenario is similar, however only the (TODO name?) application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
 
 Selecting the world models and preparing them for testing, installing EyeTracker cameras, installing WebCamera, preparing data gathering, designing scenarios
 
