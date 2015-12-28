@@ -1030,12 +1030,53 @@ Server testing, consider removing
 Testing with users - consider section on its own - testing application as a whole thing
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
-\label[testing.gui.heuristic_testing]
+\label[testing.heuristic]
 \sec Heuristic testing TODO
 
 Introduction, description
 
 \secc Evaluation TODO
+
+\seccc Visibility of system state
+
+\begitems 
+* No long-lasting operations present, every long-lasting operations happen in the background without the user knowing,
+* issues might appear with server synchronization, which is not implemented yet.
+\enditems
+
+\seccc Match between system and reality
+
+\begitems
+* Icons match their real world models,
+  \begitems
+  * car informative modules have a car icon,
+  * clock module has a clock icon,
+  * etc.
+  \enditems
+\enditems
+
+\seccc Minimal responsibility and stress
+
+\begitems
+* Missing confirmation prompt when removing a module (irreversible operation),
+* missing edit button for shortcut modules (irreversible module addition operation).
+\enditems
+
+\seccc Match with platform and common standards
+
+\begitems
+* Material design present where possible,
+* Material design not present where not suitable:
+  \begitems
+  * icon size (too large),
+  * list controls (does not scroll fluently, but scrolls page by page),
+  * navigation is not done by a navigation drawer, but rather a file-system like style,
+  * measures do not match the standards (too large),
+  * platform back button does not work immidietaly after changing the theme.
+  \enditems
+\enditems
+
+
 
 sources:
 \begitems
@@ -1046,21 +1087,21 @@ sources:
 
 Did not have time to fix
 
-\label[testing.gui.testing_with_users]
+\label[testing.users]
 \sec Testing with users TODO
 
-
+\label[testing.users.usability]
 \secc Usability testing TODO
 
 Testing the application as a regular application. Is it understandable? Is it easy to control, to see data, to understand, to comprehend, to learn?
 
-
+\label[testing.users.simulator]
 \secc Simulator TODO
 
 Describe the car simulator in Albertov.
 DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 
-
+\label[testing.users.preparations]
 \secc Preparations TODO
 
 \seccc Testing scenario
@@ -1078,10 +1119,12 @@ DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 
 Selecting the world models and preparing them for testing, installing EyeTracker cameras, installing WebCamera, preparing data gathering, designing scenarios
 
+\label[testing.users.process]
 \secc Process TODO
 
 The testing itself, describing participants
 
+\label[testing.users.evaluation]
 \secc Evaluation TODO
 
 Evaluating results
