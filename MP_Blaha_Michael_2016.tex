@@ -37,6 +37,8 @@
 
 
 \picw=.8\hsize
+\sdef{item:p}{ $+$ }
+\sdef{item:m}{ $-$ }
 
 \makefront
 
@@ -1033,9 +1035,11 @@ Testing with users - consider section on its own - testing application as a whol
 \label[testing.heuristic]
 \sec Heuristic testing TODO
 
+AS the 
+
 Introduction, description
 
-\secc Evaluation TODO
+\secc Evaluation
 
 \seccc Visibility of system state
 
@@ -1046,9 +1050,9 @@ Introduction, description
 
 \seccc Match between system and reality
 
-\begitems
+\begitems \style p
 * Icons match their real world models,
-  \begitems
+  \begitems \style p
   * car informative modules have a car icon,
   * clock module has a clock icon,
   * etc.
@@ -1057,17 +1061,19 @@ Introduction, description
 
 \seccc Minimal responsibility and stress
 
-\begitems
+\begitems \style m
 * Missing confirmation prompt when removing a module (irreversible operation),
-* missing edit button for shortcut modules (irreversible module addition operation).
+* missing confirmation prompt when editing a module (irreversible operation),
+* missing proper edit option for shortcut modules (irreversible module addition operation).
 \enditems
 
 \seccc Match with platform and common standards
 
-\begitems
-* Material design present where possible,
-* Material design not present where not suitable:
-  \begitems
+\begitems \style p
+* Material Design present where possible,
+\style m
+* Material Design not present where not suitable:
+  \begitems \style m
   * icon size (too large),
   * list controls (does not scroll fluently, but scrolls page by page),
   * navigation is not done by a navigation drawer, but rather a file-system like style,
@@ -1076,6 +1082,63 @@ Introduction, description
   \enditems
 \enditems
 
+\seccc Error prevention
+
+\begitems \style p
+* Mandatory fields are properly highlighted,
+* keyboard for text fields is limited based on the given field type,
+\style m
+* Intent module is not properly tested before adding.
+\enditems
+
+\seccc Look and see
+
+\begitems
+\style p
+* User interface is simple and consistent,
+\style m
+* availability of quick menu is not visible, user must memorize it,
+* position in a tree structure is missing, user does not see which layer is he in. 
+\enditems
+
+\seccc Flexibility and effectivity
+
+\begitems
+\style p
+* Basic settings are very simple,
+\style m
+* there is no advanced mode for advanced users,
+* there are no macros
+* there are no key shortcuts.
+\enditems
+
+\seccc Minimality
+
+\begitems
+\style p
+* Only the most important information are shown,
+* the concept is minimalistic,
+* only a single information displayed per module.
+\enditems
+
+\seccc Meaningful error lines
+
+\begitems
+\style p
+\style m
+* Only the platform default error line is present,
+* the error line does not say what happened wrong,
+* the error line does not say how to prevent the error from happening,
+\enditems
+
+\seccc Help and documentation
+
+\begitems
+\style m
+* The documentation is very limited,
+* the inner help is missing,
+* there is no context hint for input fields.
+\enditems
 
 
 sources:
@@ -1083,12 +1146,22 @@ sources:
 * \url{https://docs.google.com/document/d/1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-Q/edit}
 \enditems
 
-\secc Conclusion TODO
+\secc Conclusion
 
-Did not have time to fix
+Overall results are relatively positive. Several compromises which break the platform standards had to be made for the sake of safety during usage, but the priority list is clear.
+
+However, there are several missing supportive elements, such as prompts, error reports and hints. All of those are on the to-do list for later implementation and hopefully it will be fixed before the release of the application.
 
 \label[testing.users]
 \sec Testing with users TODO
+
+The importance of proper testing is critical as the driver cannot be distracted from driving. Any significant flaw in the application design might prove to be fatal and it certainly is not the intention. Therefore thorough testing must be performed in order to achieve the desired level of reliability.
+
+One of the most commonly used approaches is the usability testing, where usually several testers try to perform certain actions with the application. This is done in a development environment and watched by the developers.
+
+The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the CLT (Change Lane Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
+
+Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently the most downloaded OBD-supporting application on Android market. (TODO link)
 
 \label[testing.users.usability]
 \secc Usability testing TODO
@@ -1098,6 +1171,34 @@ Testing the application as a regular application. Is it understandable? Is it ea
 \label[testing.users.simulator]
 \secc Simulator TODO
 
+While providing safety, the car simulator has other advantages as well. It is equipped with set of cameras that track eye movement. It is then easy to find out, where and for how long is the user focusing his sight, which is really important for evaluating the cognitive load. It is also easy to try out different scenarios with a single click, not requiring to drive around the world looking for a proper place.
+
+The simulator is located in Albertov in the building of the Faculty of Transport (TODO), CTU. It is build from the interior of the \v Skoda Octavia (TODO) car and surrounded by three screens (TODO photo?). There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
+
+The data from the simulator are broadcasted over serial line and they are limited to speed and rounds per minute. However, they can supposedly be extended to wider area of information.
+
+The control software is called CarDynamics (shown on \ref[testing.users.simulator.cardynamics]), it shows all kinds of data about the current state of the vehicle, such as speed, rounds per minute, steering wheel position, gear position, acceleration, position in a world model and more. It contains several world scenarios -- highways, countryside or even small cities.
+
+\medskip
+\centerline{
+\label[testing.users.simulator.cardynamics]
+\inspic images/testing_users_simulator_sw.png
+}
+\nobreak\medskip
+\caption/f Screenshot from CarDynamics
+
+As mentioned above, there is also an eye-tracking system. This enables the tester to precisely determine when and how often a user looks at the application, on the road or elsewhere. The system consists of two EyeTracker cameras and a complex software called Smart Eye Pro (see image \ref[testing.users.simulator.smarteye]).
+
+\medskip
+\centerline{
+\label[testing.users.simulator.smarteye]
+\inspic images/testing_users_simulator_smarteye.png
+}
+\nobreak\medskip
+\caption/f Screenshot from Smart Eye Pro
+
+
+
 Describe the car simulator in Albertov.
 DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 
@@ -1105,8 +1206,9 @@ DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 \secc Preparations TODO
 
 \seccc Testing scenario
-\table{||r|r|r||l||}{\crll
-  \bf Start & \bf End & \bf Duration [min] & \bf Content \crlli
+
+\table{||c|c|r||l||}{\crll
+  \bf Start & \bf End & \bf Duration [min] & \bf Content \crll
   00:00:00 & 00:05:00 & 5 & Introduction \crli
   00:05:00 & 00:10:00 & 5 & Pre-test questionnaire \crli
   00:10:00 & 00:25:00 & 15 & Instructions and EyeTracker setup \crli
@@ -1114,7 +1216,7 @@ DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
   00:40:00 & 00:55:00 & 15 & A/B testing \crli
   00:55:00 & 01:05:00 & 10 & CLT testing \crli
   01:05:00 & 01:10:00 & 5 & Post-test questionnaire \crli
-  01:10:00 & 01:15:00 & 5 & Debriefing \crl
+  01:10:00 & 01:15:00 & 5 & Debriefing \crll
 }
 
 Selecting the world models and preparing them for testing, installing EyeTracker cameras, installing WebCamera, preparing data gathering, designing scenarios

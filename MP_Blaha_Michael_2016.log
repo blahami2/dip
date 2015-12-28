@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  28 DEC 2015 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  28 DEC 2015 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,7 +114,7 @@ FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
 English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{c:/tex
 live/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>]
 [-2]
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []\tenrm Prohlašuji, že jsem před-lože-nou
 
 \hbox(7.57762+2.13887)x190.63347, glue set 4.54439
@@ -152,7 +152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 .etc.
 
 [-3] [-4]
-Overfull \hbox (5.76617pt too wide) in paragraph at lines 41--41
+Overfull \hbox (5.76617pt too wide) in paragraph at lines 43--43
  []\tenrm ModuleFragmentAdapter [][]21[][] []  |
 
 \hbox(7.57762+2.13887)x190.63347
@@ -206,7 +206,7 @@ name{pg:.21}
 .etc.
 
 [-5] [-6]
-Overfull \hbox (58.2549pt too wide) in paragraph at lines 51--52
+Overfull \hbox (58.2549pt too wide) in paragraph at lines 53--54
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8[] /|
 
@@ -251,7 +251,7 @@ Overfull \hbox (58.2549pt too wide) in paragraph at lines 51--52
 .etc.
 
 
-Overfull \hbox (150.44128pt too wide) in paragraph at lines 52--53
+Overfull \hbox (150.44128pt too wide) in paragraph at lines 54--55
  [][][]\tenrm generally progress: [][]\tentt https:[] /[] / docs[] . google[] .
  com[] / document[] / d[] / 1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8[] /|
 
@@ -296,7 +296,7 @@ Overfull \hbox (150.44128pt too wide) in paragraph at lines 52--53
 .etc.
 
 [1] [2]
-Overfull \hbox (130.91612pt too wide) in paragraph at lines 107--108
+Overfull \hbox (130.91612pt too wide) in paragraph at lines 109--110
  [][][]\tenrm application anal-y-sis [][]\tentt https:[] /[] / docs[] . google[
 ] . com[] / document[] / d[] / 1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-|
 
@@ -343,7 +343,7 @@ Overfull \hbox (130.91612pt too wide) in paragraph at lines 107--108
 .etc.
 
 
-Overfull \hbox (113.98857pt too wide) in paragraph at lines 108--109
+Overfull \hbox (113.98857pt too wide) in paragraph at lines 110--111
  [][][]\tenrm priority list [][]\tentt https:[] /[] / docs[] . google[] . com[]
  / document[] / d[] / 1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejgbhqzw7kI[] /|
 
@@ -388,7 +388,7 @@ Overfull \hbox (113.98857pt too wide) in paragraph at lines 108--109
 .etc.
 
 
-Overfull \hbox (58.2549pt too wide) in paragraph at lines 121--122
+Overfull \hbox (58.2549pt too wide) in paragraph at lines 123--124
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY[] /|
 
@@ -1275,7 +1275,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>] [9
  <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.png>
 ]
-Underfull \hbox (badness 1584) in paragraph at lines 329--330
+Underfull \hbox (badness 1584) in paragraph at lines 331--332
 \tenrm (sources: [][]\tentt http:[] /[] / techcrunch[] . com[] / 2014[] / 03[] 
 / 03[] / gartner-195m-tablets-sold-
 
@@ -1314,7 +1314,7 @@ Underfull \hbox (badness 1584) in paragraph at lines 329--330
 .etc.
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1351,15 +1351,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--416
 .etc.
 
 [12] [13] [14]
-l.540 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
+l.542 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
 gain.
-l.540 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
+l.542 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
 e again.
 [15] [16] [17] [18] [19] [20] [21]
-l.792 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
+l.794 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
  ignored.
 
-Underfull \hbox (badness 1052) in paragraph at lines 802--803
+Underfull \hbox (badness 1052) in paragraph at lines 804--805
  [][][]\mF SimpleParentModule \tenrm A mere im-ple-men-ta-tion of \tentt Ab-str
 act-Par-ent-Mod-ule \tenrm class
 
@@ -1403,15 +1403,15 @@ act-Par-ent-Mod-ule \tenrm class
 .etc.
 
 [22]
-l.814 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
+l.816 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
 o TeX me again.
 [23]
-l.849 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
+l.851 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
 own. Try to TeX me again.
-l.849 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
+l.851 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
 [24] [25] [26] [27] [28] [29]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 1083--1084
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1146--1147
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1455,56 +1455,20 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 1083--1084
 .\tentt .
 .etc.
 
-
-Overfull \hbox (167.3305pt too wide) in paragraph at lines 1119--1119
-\mF 5.3.3.1 []Test-ing sce-nario []| |
-
-\hbox(129.19984+3.9576)x392.64806, glue set - 1.0
-.\mF 5
-.\mF .
-.\mF 3
-.\mF .
-.\mF 3
-.\mF .
-.\mF 1
-.\glue 12.09999
-.\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
-.\mF T
-.\kern-1.00835
-.\mF e
-.\mF s
-.\mF t
-.\discretionary
-..\mF -
-.\mF i
-.\mF n
-.\mF g
-.\glue 4.03333 plus 2.01665 minus 1.34445
-.\mF s
-.\mF c
-.\mF e
-.\discretionary
-..\mF -
-.\mF n
-.\mF a
-.\kern-0.33612
-.\mF r
-.\mF i
-.\mF o
-.\glue 4.03333 plus 2.01665 minus 1.34445
-.etc.
-
-[30] [31] [32] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
-xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
-t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c
-:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2015/t
-exmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (38 pages, 2319588 bytes).
+[30] [31] [32 <./images/testing_users_simulator_sw.png> <./images/testing_users
+_simulator_smarteye.png>] [33] [34] ){c:/texlive/2015/texmf-dist/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:
+/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-
+dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pu
+blic/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb
+><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/201
+5/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/font
+s/type1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/
+lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (40 pages, 3231119 bytes).
 PDF statistics:
- 1017 PDF objects out of 1200 (max. 8388607)
- 951 compressed objects within 10 object streams
- 225 named destinations out of 1000 (max. 500000)
- 817 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1037 PDF objects out of 1200 (max. 8388607)
+ 966 compressed objects within 10 object streams
+ 229 named destinations out of 1000 (max. 500000)
+ 827 words of extra memory for PDF output out of 10000 (max. 10000000)
 
