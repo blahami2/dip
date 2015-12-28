@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdfcsplain 2015.12.25)  27 DEC 2015 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  28 DEC 2015 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**MP_Blaha_Michael_2016.tex
+**./MP_Blaha_Michael_2016.tex
 (./MP_Blaha_Michael_2016.tex The format: csplain <Aug. 2014>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
@@ -11,7 +11,7 @@ The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
 CTUstyle: Thesis at Czech Technical University in Prague, <beta(4) Oct.2015>
 \testinput=\read0
 
-(/usr/local/texlive/2015/texmf-dist/tex/csplain/opmac/opmac.tex
+(c:/texlive/2015/texmf-dist/tex/csplain/opmac/opmac.tex
 This is OPmac (Olsak's Plain macros), version <Nov. 2015>
 \tmpnum=\count27
 \tmpdim=\dimen16
@@ -22,7 +22,7 @@ This is OPmac (Olsak's Plain macros), version <Nov. 2015>
 \mnotesize=\dimen21
 \ptunit=\dimen22
 \fontdim=\dimen23
-(/usr/local/texlive/2015/texmf-dist/tex/csplain/fonts/ams-math.tex
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/ams-math.tex
 FONT: AMS math fonts - \mathchardef's prepared, 12 math families preloaded.
 \ptmunit=\dimen24
 )
@@ -92,9 +92,9 @@ The \^, \`, \', \v, \" and \r expands to characters by ISO-8859-2.
 \declaration=\toks39
 \specification=\toks40
 
-(/usr/local/texlive/2015/texmf-dist/tex/csplain/fonts/lmfonts.tex
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/lmfonts.tex
 FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
-(/usr/local/texlive/2015/texmf-dist/tex/csplain/fonts/chars-8z.tex))
+(c:/texlive/2015/texmf-dist/tex/csplain/fonts/chars-8z.tex))
 \leftbox=\box16
 \rightbox=\box17
 \frontht=\dimen31
@@ -111,9 +111,9 @@ FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
 \maxglosindent=\dimen32
 \rfcnum=\count54
 )
-English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{/usr/l
-ocal/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>
-] [-2]
+English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{c:/tex
+live/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>]
+[-2]
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []\tenrm Prohlašuji, že jsem před-lože-nou
 
@@ -1410,8 +1410,8 @@ l.849 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
 own. Try to TeX me again.
 l.849 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
-[24] [25] [26] [27] [28]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 1046--1047
+[24] [25] [26] [27] [28] [29]
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1083--1084
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1455,18 +1455,56 @@ Overfull \hbox (46.70491pt too wide) in paragraph at lines 1046--1047
 .\tentt .
 .etc.
 
-[29] [30] [31] ){/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.en
-c}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}</usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/
-lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (37 pages, 2314706 bytes).
+
+Overfull \hbox (167.3305pt too wide) in paragraph at lines 1119--1119
+\mF 5.3.3.1 []Test-ing sce-nario []| |
+
+\hbox(129.19984+3.9576)x392.64806, glue set - 1.0
+.\mF 5
+.\mF .
+.\mF 3
+.\mF .
+.\mF 3
+.\mF .
+.\mF 1
+.\glue 12.09999
+.\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
+.\mF T
+.\kern-1.00835
+.\mF e
+.\mF s
+.\mF t
+.\discretionary
+..\mF -
+.\mF i
+.\mF n
+.\mF g
+.\glue 4.03333 plus 2.01665 minus 1.34445
+.\mF s
+.\mF c
+.\mF e
+.\discretionary
+..\mF -
+.\mF n
+.\mF a
+.\kern-0.33612
+.\mF r
+.\mF i
+.\mF o
+.\glue 4.03333 plus 2.01665 minus 1.34445
+.etc.
+
+[30] [31] [32] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/te
+xlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dis
+t/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
+c/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c
+:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2015/t
+exmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/fonts/t
+ype1/public/lm/lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (38 pages, 2319588 bytes).
 PDF statistics:
- 968 PDF objects out of 1000 (max. 8388607)
- 903 compressed objects within 10 object streams
- 214 named destinations out of 1000 (max. 500000)
- 769 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1017 PDF objects out of 1200 (max. 8388607)
+ 951 compressed objects within 10 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 817 words of extra memory for PDF output out of 10000 (max. 10000000)
 
