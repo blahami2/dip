@@ -83,33 +83,11 @@ for(i in 1:length(data$Tablet)){
     counter = counter + 1
   }
 }
-
-#glance time graph
-data <- fread("../usability tests/p1_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
-data[data!="tablet"] <- 0
-data[data=="tablet"] <- 1
-names(data)[names(data)=="ClosestWorldIntersection.objectName"] <- "Tablet"
-data$Tablet <- as.numeric(data$Tablet)
-glance <- c()
-barplot(data$Tablet)
-ratio = sum(data$Tablet) / length(data$Tablet)
-max = 0
-counter = 0
-for(i in 1:length(data$Tablet)){
-  val = data$Tablet[[i]]
-  if(val == 0){
-    if(counter > 0){
-	glance <- c(counter, glance)
-	counter = 0
-    }  
-  } else {
-    counter = counter + 1
-  }
-}
 if(counter > 0){
-  glance <- c(counter, glance)
+  glanceList <- c(counter, glanceList)
 }
-barplot(glance)
+
+barplot(glanceList)
 
 sprintf("App glance ratio: %f %%", ratio * 100)
 sprintf("Maximal glance time: %d ms", max * 4)
@@ -134,11 +112,11 @@ t.test(glanceList, alternative="greater") # chance the glance time will be great
 
 # barplot with all the data
 
-data1 <- fread("../usability tests/p1_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
-data2 <- fread("../usability tests/p2_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
-data3 <- fread("../usability tests/p3_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
-data4 <- fread("../usability tests/p4_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
-data5 <- fread("../usability tests/p5_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data1 <- fread("../usability tests/p1_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data2 <- fread("../usability tests/p2_m_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data3 <- fread("../usability tests/p5_m_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data4 <- fread("../usability tests/p4_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data5 <- fread("../usability tests/p5_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
 
 data1[data1!="tablet"] <- 0 
 data2[data2!="tablet"] <- 0 

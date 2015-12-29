@@ -1302,7 +1302,7 @@ After eye-tracking setup was done and the participant felt confortable with the 
 A post-questionnaire was filled and the testing was over. This was done for all 5 participants. Approximately 3 gigabytes of plain text data were collected from logging, both eye-tracking and simulator logging.
 
 \label[testing.users.evaluation]
-\secc Evaluation TODO
+\secc Questionnaire evaluation TODO
 
 \seccc Screener questionnaire
 
@@ -1316,8 +1316,35 @@ Both men and women participated in the testing, in age range from 22 to 45 years
 
 While the goals appear to be clear for all the participants, not all were entirely happy with the application. The overall satisfaction with the application was in range from 1 to 3 out of 5 with the mean of 1.8 and the standard deviation of 0.8366 and the acceptability of the ways of solutions for given tasks was also in range from 1 to 3, also with the mean of 1.8, however with the standard deviation of 0.7582. The participants expressed satisfaction with the amount of information displayed, as the grades were in range from 1 to 2 with the mean of 1.2 and the standard deviation of 0.4472. At last, 4 out of 5 participants would use the application in everyday driving.  
 
-\seccc A/B testing
+\secc A/B testing evaluation
 
+The A/B testing is a testing of Torque versus CarDashboard (TODO name) in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 4 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
+
+Logs have been examined and several outcomes measured. As first the comparison of glance frequency will be shown. Then some statistical data are measured, such as confidence intervals and such. An overall comparison is created. Then duration of glance time is examined for both application and compared. The maximal glance time and the average glance time are compared as well as mean and standard deviation.
+
+\seccc Glance frequency
+
+\medskip
+\centerline{
+\label[testing.users.ab.glance_torque]
+\inspic images/testing_users_ab_glance_torque.png
+}
+\nobreak\medskip
+\caption/f Glances for Torque
+
+Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on (TODO priloha)).
+
+\label[testing.users.glance_script]
+\begtt
+data <- c()
+for(i in 5000:10000){
+  data <- c(data, data1$Tablet[[i]] + data3$Tablet[[i]] + 
+                  data4$Tablet[[i]]+ data5$Tablet[[i]])  
+}
+barplot(data)
+\endtt
+
+This is just an illustrative plot to see the ratio of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot).
 
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
