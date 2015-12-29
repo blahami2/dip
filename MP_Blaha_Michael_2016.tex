@@ -1324,6 +1324,22 @@ Logs have been examined and several outcomes measured. As first the comparison o
 
 \seccc Glance frequency
 
+Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on (TODO priloha)).
+
+\label[testing.users.glance_script]
+\begtt
+addedData <- c()
+for(i in 5000:10000){
+  counter = 0
+  for(j in 1:5){
+    counter = counter + data[[j]]$Tablet[[i]]
+  }
+  addedData <- c(addedData, counter)  
+}
+barplot(addedData)
+axis(1)
+\endtt
+
 \medskip
 \centerline{
 \label[testing.users.ab.glance_torque]
@@ -1332,19 +1348,18 @@ Logs have been examined and several outcomes measured. As first the comparison o
 \nobreak\medskip
 \caption/f Glances for Torque
 
-Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on (TODO priloha)).
-
-\label[testing.users.glance_script]
-\begtt
-data <- c()
-for(i in 5000:10000){
-  data <- c(data, data1$Tablet[[i]] + data3$Tablet[[i]] + 
-                  data4$Tablet[[i]]+ data5$Tablet[[i]])  
+\medskip
+\centerline{
+\label[testing.users.ab.glance_cd]
+\inspic images/testing_users_ab_glance_cd.png
 }
-barplot(data)
-\endtt
+\nobreak\medskip
+\caption/f Glances for CarDashboard
+\medskip
 
-This is just an illustrative plot to see the ratio of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot).
+Those are just illustrative plots to see the portion of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot). The glance distribution in log files for CarDashboard (TODO) is visible below the Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
+
+The exact comparison is done in numbers. While 
 
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
