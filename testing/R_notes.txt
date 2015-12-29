@@ -99,7 +99,7 @@ xSd = sd(glanceList)     # spread value
 a = xMean - sqrt(0.25)
 b = a + xSd * sqrt(11.75)
 hist(glanceList, prob = 1)
-xWidth=max(glanceList) - min(xAtr)
+xWidth=max(glanceList) - min(glanceList)
 xGrid=seq(min(glanceList) - 0.2 * xWidth, max(glanceList) + 0.2 * xWidth, length = 30)
 lines (xGrid,dnorm(xGrid, mean = xMean, sd = xSd), col = 'red', lw = 2, lty = 2)
 lines (xGrid,dunif(xGrid, min = a, max = b), col = 'blue', lw = 2, lty = 2)
@@ -120,7 +120,7 @@ data4 <- fread("../usability tests/p4_t_ab_torque.log", select = c("ClosestWorld
 data5 <- fread("../usability tests/p5_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
 
 #Torque
-data <- c()
+data <- list()
 data[[1]] <- fread("../usability tests/p1_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
 data[[2]] <- fread("../usability tests/p2_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
 data[[3]] <- fread("../usability tests/p1_m_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
@@ -130,7 +130,7 @@ data[[5]] <- fread("../usability tests/p5_t_ab_torque.log", select = c("ClosestW
 #CarDashboard
 data <- list()
 data[[1]] <- fread("../usability tests/p1_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
-data[[2]] <- fread("../usability tests/p1_m_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data[[2]] <- fread("../usability tests/p4_m_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
 data[[3]] <- fread("../usability tests/p3_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
 data[[4]] <- fread("../usability tests/p4_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
 data[[5]] <- fread("../usability tests/p5_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
@@ -174,6 +174,10 @@ for(j in 1:5){
   print(ratio * 100)
   print(max * 4)
 }
+mean(eval[[1]])
+sd(eval[[1]])
+mean(eval[[2]])
+sd(eval[[2]])
 
 glanceLength = 0
 glanceSum = 0
@@ -182,6 +186,42 @@ for(j in 1:5){
   glanceSum = glanceSum + sum(data[[j]]$Tablet)
 }
 print(100 * glanceSum / glanceLength)
+
+
+glanceList <- c()
+counter = 0
+for(j in 1:5){
+  for(i in 1:length(data[[j]]$Tablet)){
+    val = data[[j]]$Tablet[[i]]
+    if(val == 0){
+      if(counter > 0){  
+        glanceList <- c(glanceList, counter * 4)
+        counter = 0 
+      } 
+    } else {
+      counter = counter + 1
+    }
+  }
+}
+if(counter > 0){
+  glanceList <- c(glanceList, counter * 4)
+}
+
+#determine distribution
+xMean = mean(glanceList) # mean value
+xSd = sd(glanceList)     # spread value
+a = xMean - sqrt(0.25)
+b = a + xSd * sqrt(11.75)
+hist(glanceList, prob = 1)
+xWidth=max(glanceList) - min(glanceList)
+xGrid=seq(min(glanceList) - 0.2 * xWidth, max(glanceList) + 0.2 * xWidth, length = 30)
+lines (xGrid,dnorm(xGrid, mean = xMean, sd = xSd), col = 'red', lw = 2, lty = 2)
+lines (xGrid,dunif(xGrid, min = a, max = b), col = 'blue', lw = 2, lty = 2)
+lines (xGrid,dexp(xGrid, rate = 1 / xMean), col = 'green', lw = 2, lty = 2)
+
+# confidence interval
+t.test(glanceList)
+t.test(glanceList, alternative="less") # chance the glance time will be greater
 
 
 data1[data1!="tablet"] <- 0 

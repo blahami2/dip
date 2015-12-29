@@ -42,9 +42,9 @@
 \Xlabel{analysis.existing_applications.android_auto}{2.1.7}
 \Xtoc{2}{\rm }{2.1.7}{Android Auto }{8}
 \Xpage{9}
-\Xlabel{analysis.use_cases}{2.2}
-\Xtoc{1}{\rm }{2.2}{Use-cases }{9}
 \Xpage{10}
+\Xlabel{analysis.use_cases}{2.2}
+\Xtoc{1}{\rm }{2.2}{Use-cases }{10}
 \Xlabel{analysis.platforms}{2.3}
 \Xtoc{1}{\rm }{2.3}{Platforms }{10}
 \Xlabel{analysis.platforms.android}{2.3.1}
@@ -55,9 +55,9 @@
 \Xtoc{2}{\rm }{2.3.3}{Windows }{10}
 \Xlabel{analysis.platforms.conclusion}{2.3.4}
 \Xtoc{2}{\rm }{2.3.4}{Conclusion }{10}
-\Xlabel{analysis.android_platform}{2.4}
-\Xtoc{1}{\rm }{2.4}{Android platform }{10}
 \Xpage{11}
+\Xlabel{analysis.android_platform}{2.4}
+\Xtoc{1}{\rm }{2.4}{Android platform }{11}
 \Xlabel{analysis.android_platform.performance}{2.4.1}
 \Xtoc{2}{\rm }{2.4.1}{Performance }{11}
 \Xlabel{analysis.android_platform.architecture}{2.4.2}
@@ -66,9 +66,9 @@
 \Xtoc{2}{\rm }{2.4.3}{Material design }{11}
 \Xlabel{analysis.gui}{2.5}
 \Xtoc{1}{\rm }{2.5}{GUI }{11}
-\Xlabel{analysis.gui.basic_principles}{2.5.1}
-\Xtoc{2}{\rm }{2.5.1}{Basic principles }{11}
 \Xpage{12}
+\Xlabel{analysis.gui.basic_principles}{2.5.1}
+\Xtoc{2}{\rm }{2.5.1}{Basic principles }{12}
 \Xlabel{analysis.gui.ui_in_a_car_environment}{2.5.2}
 \Xtoc{2}{\rm }{2.5.2}{UI in a car environment }{12}
 \Xpage{13}
@@ -76,169 +76,181 @@
 \Xtoc{1}{\rm }{2.6}{Development and support tools }{13}
 \Xlabel{analysis.development_and_support_tools.ide}{2.6.1}
 \Xtoc{2}{\rm }{2.6.1}{Development environment }{13}
-\Xlabel{analysis.development_and_support_tools.vcs}{2.6.2}
-\Xtoc{2}{\rm }{2.6.2}{Version control system }{13}
 \Xpage{14}
+\Xlabel{analysis.development_and_support_tools.vcs}{2.6.2}
+\Xtoc{2}{\rm }{2.6.2}{Version control system }{14}
 \Xlabel{analysis.development_and_support_tools.tdd}{2.6.3}
 \Xtoc{2}{\rm }{2.6.3}{Test driven development }{14}
 \Xlabel{analysis.development_and_support_tools.ci}{2.6.4}
 \Xtoc{2}{\rm }{2.6.4}{Continuous integration }{14}
 \Xlabel{analysis.obd}{2.7}
 \Xtoc{1}{\rm }{2.7}{On-Board Diagnostics }{14}
-\Xlabel{analysis.obd.api}{2.7.1}
-\Xtoc{2}{\rm }{2.7.1}{API }{14}
-\Xlabel{analysis.obd.data}{2.7.2}
-\Xtoc{2}{\rm }{2.7.2}{Data }{14}
 \Xpage{15}
-\Xlabel{design}{3}
-\Xtoc{0}{\bfshape }{3}{Design }{15}
-\Xlabel{design.application_architecture}{3.1}
-\Xtoc{1}{\rm }{3.1}{Application architecture }{15}
-\Xlabel{design.application_architecture.platform_limitations}{3.1.1}
-\Xtoc{2}{\rm }{3.1.1}{Platform limitations }{15}
-\Xlabel{design.application_architecture.extensibility}{3.1.2}
-\Xtoc{2}{\rm }{3.1.2}{Extensibility }{15}
-\Xlabel{design.application_architecture.modularity}{3.1.3}
-\Xtoc{2}{\rm }{3.1.3}{Modularity }{15}
+\Xlabel{analysis.obd.api}{2.7.1}
+\Xtoc{2}{\rm }{2.7.1}{API }{15}
+\Xlabel{analysis.obd.data}{2.7.2}
+\Xtoc{2}{\rm }{2.7.2}{Data }{15}
 \Xpage{16}
-\Xlabel{design.application_architecture.adaptability}{3.1.4}
-\Xtoc{2}{\rm }{3.1.4}{Adaptability }{16}
-\Xlabel{design.application_architecture.android_auto_preparation}{3.1.5}
-\Xtoc{2}{\rm }{3.1.5}{Android Auto preparation }{16}
-\Xlabel{design.gui}{3.2}
-\Xtoc{1}{\rm }{3.2}{GUI }{16}
-\Xlabel{design.gui.basic_elements}{3.2.1}
-\Xtoc{2}{\rm }{3.2.1}{Basic elements }{16}
-\Xlabel{design.gui.drafts}{3.2.2}
-\Xtoc{2}{\rm }{3.2.2}{Drafts }{16}
-\Xlabel{design.gui.the_early_phase}{3.2.3}
-\Xtoc{2}{\rm }{3.2.3}{The early phase }{16}
+\Xlabel{design}{3}
+\Xtoc{0}{\bfshape }{3}{Design }{16}
+\Xlabel{design.application_architecture}{3.1}
+\Xtoc{1}{\rm }{3.1}{Application architecture }{16}
+\Xlabel{design.application_architecture.platform_limitations}{3.1.1}
+\Xtoc{2}{\rm }{3.1.1}{Platform limitations }{16}
+\Xlabel{design.application_architecture.extensibility}{3.1.2}
+\Xtoc{2}{\rm }{3.1.2}{Extensibility }{16}
+\Xlabel{design.application_architecture.modularity}{3.1.3}
+\Xtoc{2}{\rm }{3.1.3}{Modularity }{16}
 \Xpage{17}
-\Xlabel{design.gui.the_second_phase}{3.2.4}
-\Xtoc{2}{\rm }{3.2.4}{The second phase }{17}
+\Xlabel{design.application_architecture.adaptability}{3.1.4}
+\Xtoc{2}{\rm }{3.1.4}{Adaptability }{17}
+\Xlabel{design.application_architecture.android_auto_preparation}{3.1.5}
+\Xtoc{2}{\rm }{3.1.5}{Android Auto preparation }{17}
+\Xlabel{design.gui}{3.2}
+\Xtoc{1}{\rm }{3.2}{GUI }{17}
+\Xlabel{design.gui.basic_elements}{3.2.1}
+\Xtoc{2}{\rm }{3.2.1}{Basic elements }{17}
+\Xlabel{design.gui.drafts}{3.2.2}
+\Xtoc{2}{\rm }{3.2.2}{Drafts }{17}
+\Xlabel{design.gui.the_early_phase}{3.2.3}
+\Xtoc{2}{\rm }{3.2.3}{The early phase }{17}
 \Xpage{18}
-\Xlabel{design.gui.the_grid}{3.2.5}
-\Xtoc{2}{\rm }{3.2.5}{The grid }{18}
-\Xlabel{design.gui.the_final_design}{3.2.6}
-\Xtoc{2}{\rm }{3.2.6}{The final design }{18}
+\Xlabel{design.gui.the_second_phase}{3.2.4}
+\Xtoc{2}{\rm }{3.2.4}{The second phase }{18}
 \Xpage{19}
+\Xlabel{design.gui.the_grid}{3.2.5}
+\Xtoc{2}{\rm }{3.2.5}{The grid }{19}
+\Xlabel{design.gui.the_final_design}{3.2.6}
+\Xtoc{2}{\rm }{3.2.6}{The final design }{19}
 \Xpage{20}
-\Xlabel{realization}{4}
-\Xtoc{0}{\bfshape }{4}{Realization }{20}
-\Xlabel{realization.preparation}{4.1}
-\Xtoc{1}{\rm }{4.1}{Preparation }{20}
-\Xlabel{realization.preparation.environment}{4.1.1}
-\Xtoc{2}{\rm }{4.1.1}{Environment }{20}
-\Xlabel{realization.preparation.versioning}{4.1.2}
-\Xtoc{2}{\rm }{4.1.2}{Versioning }{20}
-\Xlabel{realization.preparation.testing}{4.1.3}
-\Xtoc{2}{\rm }{4.1.3}{Testing }{20}
-\Xlabel{realization.preparation.scripting}{4.1.4}
-\Xtoc{2}{\rm }{4.1.4}{Scripting }{20}
-\Xlabel{realization.tablet}{4.2}
-\Xtoc{1}{\rm }{4.2}{Tablet specific }{20}
-\Xlabel{realization.tablet.activity}{4.2.1}
-\Xtoc{2}{\rm }{4.2.1}{ModulePagerActivity }{20}
 \Xpage{21}
-\Xlabel{realization.tablet.fragment}{4.2.2}
-\Xtoc{2}{\rm }{4.2.2}{ModulePageFragment }{21}
-\Xlabel{realization.tablet.adapter}{4.2.3}
-\Xtoc{2}{\rm }{4.2.3}{ModuleFragmentAdapter }{21}
-\Xlabel{realization.tablet.gridlayout}{4.2.4}
-\Xtoc{2}{\rm }{4.2.4}{GridLayout }{21}
-\Xlabel{realization.core}{4.3}
-\Xtoc{1}{\rm }{4.3}{Core }{21}
+\Xlabel{realization}{4}
+\Xtoc{0}{\bfshape }{4}{Realization }{21}
+\Xlabel{realization.preparation}{4.1}
+\Xtoc{1}{\rm }{4.1}{Preparation }{21}
+\Xlabel{realization.preparation.environment}{4.1.1}
+\Xtoc{2}{\rm }{4.1.1}{Environment }{21}
+\Xlabel{realization.preparation.versioning}{4.1.2}
+\Xtoc{2}{\rm }{4.1.2}{Versioning }{21}
+\Xlabel{realization.preparation.testing}{4.1.3}
+\Xtoc{2}{\rm }{4.1.3}{Testing }{21}
+\Xlabel{realization.preparation.scripting}{4.1.4}
+\Xtoc{2}{\rm }{4.1.4}{Scripting }{21}
+\Xlabel{realization.tablet}{4.2}
+\Xtoc{1}{\rm }{4.2}{Tablet specific }{21}
+\Xlabel{realization.tablet.activity}{4.2.1}
+\Xtoc{2}{\rm }{4.2.1}{ModulePagerActivity }{21}
 \Xpage{22}
-\Xlabel{realization.core.modules}{4.3.1}
-\Xtoc{2}{\rm }{4.3.1}{Modules }{22}
+\Xlabel{realization.tablet.fragment}{4.2.2}
+\Xtoc{2}{\rm }{4.2.2}{ModulePageFragment }{22}
+\Xlabel{realization.tablet.adapter}{4.2.3}
+\Xtoc{2}{\rm }{4.2.3}{ModuleFragmentAdapter }{22}
+\Xlabel{realization.tablet.gridlayout}{4.2.4}
+\Xtoc{2}{\rm }{4.2.4}{GridLayout }{22}
+\Xlabel{realization.core}{4.3}
+\Xtoc{1}{\rm }{4.3}{Core }{22}
 \Xpage{23}
-\Xlabel{realization.core.application}{4.3.2}
-\Xtoc{2}{\rm }{4.3.2}{Application }{23}
-\Xlabel{realization.core.data}{4.3.3}
-\Xtoc{2}{\rm }{4.3.3}{Data }{23}
+\Xlabel{realization.core.modules}{4.3.1}
+\Xtoc{2}{\rm }{4.3.1}{Modules }{23}
 \Xpage{24}
+\Xlabel{realization.core.application}{4.3.2}
+\Xtoc{2}{\rm }{4.3.2}{Application }{24}
+\Xlabel{realization.core.data}{4.3.3}
+\Xtoc{2}{\rm }{4.3.3}{Data }{24}
 \Xpage{25}
-\Xlabel{realization.core.fragments}{4.3.4}
-\Xtoc{2}{\rm }{4.3.4}{Fragments }{25}
-\Xlabel{realization.core.obd}{4.3.5}
-\Xtoc{2}{\rm }{4.3.5}{OBD }{25}
 \Xpage{26}
-\Xlabel{realization.core.utility}{4.3.6}
-\Xtoc{2}{\rm }{4.3.6}{Utility classes }{26}
-\Xlabel{realization.core.view}{4.3.7}
-\Xtoc{2}{\rm }{4.3.7}{Views }{26}
+\Xlabel{realization.core.fragments}{4.3.4}
+\Xtoc{2}{\rm }{4.3.4}{Fragments }{26}
+\Xlabel{realization.core.obd}{4.3.5}
+\Xtoc{2}{\rm }{4.3.5}{OBD }{26}
 \Xpage{27}
-\Xlabel{realization.gui}{4.4}
-\Xtoc{1}{\rm }{4.4}{GUI }{27}
-\Xlabel{realization.gui.common_elements}{4.4.1}
-\Xtoc{2}{\rm }{4.4.1}{Common elements }{27}
+\Xlabel{realization.core.utility}{4.3.6}
+\Xtoc{2}{\rm }{4.3.6}{Utility classes }{27}
+\Xlabel{realization.core.view}{4.3.7}
+\Xtoc{2}{\rm }{4.3.7}{Views }{27}
 \Xpage{28}
-\Xlabel{realization.gui.multiple_designs}{4.4.2}
-\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{28}
+\Xlabel{realization.gui}{4.4}
+\Xtoc{1}{\rm }{4.4}{GUI }{28}
+\Xlabel{realization.gui.common_elements}{4.4.1}
+\Xtoc{2}{\rm }{4.4.1}{Common elements }{28}
 \Xpage{29}
-\Xlabel{testing}{5}
-\Xtoc{0}{\bfshape }{5}{Testing }{29}
-\Xlabel{testing.code}{5.1}
-\Xtoc{1}{\rm }{5.1}{Code }{29}
-\Xlabel{testing.code.unit_testing}{5.1.1}
-\Xtoc{2}{\rm }{5.1.1}{Unit testing }{29}
-\Xlabel{testing.code.integration_testing}{5.1.2}
-\Xtoc{2}{\rm }{5.1.2}{Integration testing }{29}
-\Xlabel{testing.code.system_testing}{5.1.3}
-\Xtoc{2}{\rm }{5.1.3}{System testing }{29}
-\Xlabel{testing.code.qualification_testing}{5.1.4}
-\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{29}
-\Xlabel{testing.heuristic}{5.2}
-\Xtoc{1}{\rm }{5.2}{Heuristic testing }{29}
-\Xtoc{2}{\rm }{5.2.1}{Evaluation }{29}
+\Xlabel{realization.gui.multiple_designs}{4.4.2}
+\Xtoc{2}{\rm }{4.4.2}{Multiple designs }{29}
 \Xpage{30}
+\Xlabel{testing}{5}
+\Xtoc{0}{\bfshape }{5}{Testing }{30}
+\Xlabel{testing.code}{5.1}
+\Xtoc{1}{\rm }{5.1}{Code }{30}
+\Xlabel{testing.code.unit_testing}{5.1.1}
+\Xtoc{2}{\rm }{5.1.1}{Unit testing }{30}
+\Xlabel{testing.code.integration_testing}{5.1.2}
+\Xtoc{2}{\rm }{5.1.2}{Integration testing }{30}
+\Xlabel{testing.code.system_testing}{5.1.3}
+\Xtoc{2}{\rm }{5.1.3}{System testing }{30}
+\Xlabel{testing.code.qualification_testing}{5.1.4}
+\Xtoc{2}{\rm }{5.1.4}{Qualification testing }{30}
+\Xlabel{testing.heuristic}{5.2}
+\Xtoc{1}{\rm }{5.2}{Heuristic testing }{30}
+\Xtoc{2}{\rm }{5.2.1}{Evaluation }{30}
 \Xpage{31}
-\Xtoc{2}{\rm }{5.2.2}{Conclusion }{31}
-\Xlabel{testing.users}{5.3}
-\Xtoc{1}{\rm }{5.3}{Testing with users }{31}
-\Xlabel{testing.users.usability}{5.3.1}
-\Xtoc{2}{\rm }{5.3.1}{Usability testing }{31}
 \Xpage{32}
-\Xlabel{testing.users.simulator}{5.3.2}
-\Xtoc{2}{\rm }{5.3.2}{Simulator }{32}
-\Xlabel{testing.users.simulator.cardynamics}{5.1}
+\Xtoc{2}{\rm }{5.2.2}{Conclusion }{32}
+\Xlabel{testing.users}{5.3}
+\Xtoc{1}{\rm }{5.3}{Testing with users }{32}
+\Xlabel{testing.users.usability}{5.3.1}
+\Xtoc{2}{\rm }{5.3.1}{Usability testing }{32}
 \Xpage{33}
+\Xlabel{testing.users.simulator}{5.3.2}
+\Xtoc{2}{\rm }{5.3.2}{Simulator }{33}
+\Xlabel{testing.users.simulator.cardynamics}{5.1}
+\Xpage{34}
 \Xlabel{testing.users.simulator.smarteye}{5.2}
 \Xlabel{testing.users.preparations}{5.3.3}
-\Xtoc{2}{\rm }{5.3.3}{Preparations }{33}
-\Xpage{34}
-\Xlabel{testing.users.preparations.scenario}{5.3}
+\Xtoc{2}{\rm }{5.3.3}{Preparations }{34}
 \Xpage{35}
-\Xlabel{testing.users.process}{5.3.4}
-\Xtoc{2}{\rm }{5.3.4}{Process }{35}
-\Xlabel{testing.users.evaluation}{5.3.5}
-\Xtoc{2}{\rm }{5.3.5}{Questionnaire evaluation }{35}
+\Xlabel{testing.users.preparations.scenario}{5.3}
 \Xpage{36}
-\Xtoc{2}{\rm }{5.3.6}{A/B testing evaluation }{36}
+\Xlabel{testing.users.process}{5.3.4}
+\Xtoc{2}{\rm }{5.3.4}{Process }{36}
+\Xlabel{testing.users.evaluation}{5.3.5}
+\Xtoc{2}{\rm }{5.3.5}{Questionnaire evaluation }{36}
 \Xpage{37}
+\Xtoc{2}{\rm }{5.3.6}{A/B testing evaluation }{37}
+\Xpage{38}
 \Xlabel{testing.users.ab.glance_torque}{5.4}
 \Xlabel{testing.users.ab.glance_cd}{5.5}
-\Xlabel{testing.summary}{5.4}
-\Xtoc{1}{\rm }{5.4}{Summary }{37}
-\Xpage{38}
-\Xlabel{conclusion}{6}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{38}
-\Xlabel{conclusion.assignment_completion}{6.1}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{38}
-\Xlabel{conclusion.project_life_cycle}{6.2}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{38}
-\Xlabel{conclusion.project_life_cycle.present}{6.2.1}
-\Xtoc{2}{\rm }{6.2.1}{Present }{38}
-\Xlabel{conclusion.project_life_cycle.future}{6.2.2}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{38}
-\Xlabel{conclusion.summary}{6.3}
-\Xtoc{1}{\rm }{6.3}{Summary }{38}
 \Xpage{39}
-\Xtoc{0}{\bfshape }{A}{Thesis }{39}
+\Xlabel{testing.users.ab.torque_glance_times}{5.6}
+\Xlabel{testing.users.ab.cd_glance_times}{5.7}
 \Xpage{40}
-\Xtoc{0}{\bfshape }{B}{Images }{40}
+\Xlabel{testing.users.ab.cd_glance_distribution}{5.8}
+\Xlabel{testing.summary}{5.4}
+\Xtoc{1}{\rm }{5.4}{Summary }{40}
 \Xpage{41}
-\Xtoc{0}{\bfshape }{C}{Tables }{41}
-\Xlabel{tables.testing.ab}{C.1}
-\Xpage{42}
+\Xlabel{conclusion}{6}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{41}
+\Xlabel{conclusion.assignment_completion}{6.1}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{41}
+\Xlabel{conclusion.project_life_cycle}{6.2}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{41}
+\Xlabel{conclusion.project_life_cycle.present}{6.2.1}
+\Xtoc{2}{\rm }{6.2.1}{Present }{41}
+\Xlabel{conclusion.project_life_cycle.future}{6.2.2}
+\Xtoc{2}{\rm }{6.2.2}{Future TODO }{41}
+\Xlabel{conclusion.summary}{6.3}
+\Xtoc{1}{\rm }{6.3}{Summary }{41}
 \Xpage{43}
+\Xtoc{0}{\bfshape }{A}{Thesis }{43}
+\Xpage{44}
+\Xtoc{0}{\bfshape }{B}{Images }{44}
+\Xlabel{add.test.ab.torque_glance_distribution}{B.1}
+\Xpage{45}
+\Xtoc{0}{\bfshape }{C}{Tables }{45}
+\Xlabel{tables.testing.ab}{C.2}
+\Xpage{46}
+\Xtoc{0}{\bfshape }{D}{Scripts }{46}
+\Xpage{47}
+\Xpage{48}
+\Xpage{49}
+\Xpage{50}
+\Xpage{51}
