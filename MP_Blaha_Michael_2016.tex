@@ -1222,7 +1222,7 @@ Describe the car simulator in Albertov.
 DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
 
 \label[testing.users.preparations]
-\secc Preparations TODO
+\secc Preparations
 
 Before even starting to test with users, several preparations had to be made. This includes implementing a software, that can emulate an OBD module to transfer data from the simulator to the application. Also cameras had to be prepared, because the software is not flawless and proper eye tracking prove to be an issue. Then, finally, scenarios could have been made for all the tested situations.
 
@@ -1256,7 +1256,9 @@ The A/B testing scenario is simple. At first the user drives the route without a
 
 The change lane test (CLT) scenario is similar, however only the (TODO name?) application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
 
-Selecting the world models and preparing them for testing, installing EyeTracker cameras, installing WebCamera, preparing data gathering, designing scenarios
+\seccc World models
+
+As there are multiple world models available, it is necessay to choose the proper ones for the given scenarios. Therefore several world models were tested and the best ones were chosen. For the AB testing, a countryside with villages on the route was chosen. It is the most realistic model available, containing even traffic and so on. For the CLT testing a highway world model without traffic is the most suitable. However it had to be edited, so that an object could appear at given location when driver crosses a certain radius. This object would appear seemingly randomly, but there were two fixed locations in an envirovnment, when every part of the road looks the same, not giving the driver anything to memorize. This ensures that the driver is not prepared when the object appears. 
 
 \label[testing.users.process]
 \secc Process TODO
