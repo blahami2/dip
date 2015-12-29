@@ -1,0 +1,216 @@
+install.packages("data.table") # first time only
+library(data.table) # imports library
+data <- fread("../usability tests/p1_ab_torque.log", select = c("ClosestWorldIntersection.objectName")) # loads using c("column_name1", "column_name2", ...)
+data # prints loaded data
+data[data!="tablet"] <- 0  # maps non-tablet strings to 0
+data[data=="tablet"] <- 1  # maps tablet strings to 1 (perform AFTER the first one - or else 1 is NOT "tablet")
+data$column_name <- as.numeric(data$column_name) # remaps column column_name to numeric values
+names(data)[names(data)=="column_name"] <- "new_column_name" # renames column
+axis(1, seq(0,length(data$column_name),1000)) # labels axis x
+barplot(data$column_name, xlim = c(0, length(data$column_name))) # bar plot with limits
+dev.new() # new plot window
+dev.prev() # previous plot window
+dev.next() # next plot window
+dev.set(window_id) # make window with id window_id active (displayed number next to Device)
+rm(data) # clear object data
+gc()     # force garbage collector
+
+# script  
+rm(data) 
+rm(dataT) 
+rm(dataCD)
+gc()
+
+dev.set(2)
+data <- fread("../usability tests/p4_m_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data[data!="phone"] <- 0
+data[data=="phone"] <- 1
+names(data)[names(data)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+data$Tablet <- as.numeric(data$Tablet)
+barplot(data$Tablet)
+ratio = sum(data$Tablet) / length(data$Tablet)
+max = 0
+counter = 0
+for(i in 1:length(data$Tablet)){
+  val = data$Tablet[[i]]
+  if(val == 0){
+    if(max < counter){
+      max = counter
+    }
+    counter = 0  
+  } else {
+    counter = counter + 1
+  }
+}
+sprintf("App glance ratio: %f %%", ratio * 100)
+sprintf("Maximal glance time: %d ms", max * 4)
+
+
+dev.set(3)
+data <- fread("../usability tests/p5_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data[data!="tablet"] <- 0
+data[data=="tablet"] <- 1
+names(data)[names(data)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+data$Tablet <- as.numeric(data$Tablet)
+barplot(data$Tablet)
+ratio = sum(data$Tablet) / length(data$Tablet)
+max = 0
+counter = 0
+for(i in 1:length(data$Tablet)){
+  val = data$Tablet[[i]]
+  if(val == 0){
+    if(max < counter){
+      max = counter
+    }
+    counter = 0  
+  } else {
+    counter = counter + 1
+  }
+}
+sprintf("App glance ratio: %f %%", ratio * 100)
+sprintf("Maximal glance time: %d ms", max * 4)
+
+glanceList <- c()
+counter = 0
+for(i in 1:length(data$Tablet)){
+  val = data$Tablet[[i]]
+  if(val == 0){
+    if(counter > 0){  
+      glanceList <- c(glanceList, counter * 4)
+      counter = 0 
+    } 
+  } else {
+    counter = counter + 1
+  }
+}
+
+#glance time graph
+data <- fread("../usability tests/p1_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
+data[data!="tablet"] <- 0
+data[data=="tablet"] <- 1
+names(data)[names(data)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+data$Tablet <- as.numeric(data$Tablet)
+glance <- c()
+barplot(data$Tablet)
+ratio = sum(data$Tablet) / length(data$Tablet)
+max = 0
+counter = 0
+for(i in 1:length(data$Tablet)){
+  val = data$Tablet[[i]]
+  if(val == 0){
+    if(counter > 0){
+	glance <- c(counter, glance)
+	counter = 0
+    }  
+  } else {
+    counter = counter + 1
+  }
+}
+if(counter > 0){
+  glance <- c(counter, glance)
+}
+barplot(glance)
+
+sprintf("App glance ratio: %f %%", ratio * 100)
+sprintf("Maximal glance time: %d ms", max * 4)
+
+
+#determine distribution
+xMean = mean(glanceList) # mean value
+xSd = sd(glanceList)     # spread value
+a = xMean - sqrt(0.25)
+b = a + xSd * sqrt(11.75)
+hist(glanceList, prob = 1)
+xWidth=max(glanceList) - min(xAtr)
+xGrid=seq(min(glanceList) - 0.2 * xWidth, max(glanceList) + 0.2 * xWidth, length = 30)
+lines (xGrid,dnorm(xGrid, mean = xMean, sd = xSd), col = 'red', lw = 2, lty = 2)
+lines (xGrid,dunif(xGrid, min = a, max = b), col = 'blue', lw = 2, lty = 2)
+lines (xGrid,dexp(xGrid, rate = 1 / xMean), col = 'green', lw = 2, lty = 2)
+
+# confidence interval
+t.test(glanceList)
+t.test(glanceList, alternative="greater") # chance the glance time will be greater
+
+
+# barplot with all the data
+
+data1 <- fread("../usability tests/p1_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data2 <- fread("../usability tests/p2_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data3 <- fread("../usability tests/p3_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data4 <- fread("../usability tests/p4_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+data5 <- fread("../usability tests/p5_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
+
+data1[data1!="tablet"] <- 0 
+data2[data2!="tablet"] <- 0 
+data3[data3!="tablet"] <- 0 
+data4[data4!="tablet"] <- 0 
+data5[data5!="tablet"] <- 0 
+data1[data1=="tablet"] <- 1 
+data2[data2=="tablet"] <- 1 
+data3[data3=="tablet"] <- 1 
+data4[data4=="tablet"] <- 1 
+data5[data5=="tablet"] <- 1 
+
+names(data1)[names(data1)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+names(data2)[names(data2)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+names(data3)[names(data3)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+names(data4)[names(data4)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+names(data5)[names(data5)=="ClosestWorldIntersection.objectName"] <- "Tablet"
+
+data1$Tablet <- as.numeric(data1$Tablet)
+data2$Tablet <- as.numeric(data2$Tablet)
+data3$Tablet <- as.numeric(data3$Tablet)
+data4$Tablet <- as.numeric(data4$Tablet)
+data5$Tablet <- as.numeric(data5$Tablet)
+
+data <- c()
+for(i in 5000:10000){
+  data <- c(data, data1$Tablet[[i]] + data3$Tablet[[i]] +data4$Tablet[[i]]+ data5$Tablet[[i]])  
+}
+barplot(data)
+axis(1)
+
+# CLT tests
+
+rary("plotrix")
+> draw.circle(-5239.3,2292,35,nv=1000)
+> draw.circle(-5239.3,2292,35,nv=10000)
+> lines(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325))
+> plot.new()
+> lines(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325))
+> plot(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325), type="n")
+> lines(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325))
+> draw.circle(-5239.3,2292,35,nv=10000)
+> rect(-5239.3 - 1.1,2292 - 1.1, -5239.3 + 1.1, 2292 + 1.1) 
+> plot(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325), type="n")
+> lines(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325), type="l")
+> lines(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325), type="o")
+> plot(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325))
+> plot(data1$V3, data1$V5, xlim=c(-5280,-5230), ylim=c(2275,2325))
+
+
+# plot graph with a circle obstacle, edit in photoshop
+plot(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+5), ylim=c(2285,2305))
+draw.circle(-5239.3,2292,1.1,nv=10000)
+ 
+# plot all in one
+data1 <- fread("../cardashboard/p1_t_clt.txt", select = c(3,5))
+data2 <- fread("../cardashboard/p2_t_clt.txt", select = c(3,5))
+data3 <- fread("../cardashboard/p3_m_clt.txt", select = c(3,5))
+data4 <- fread("../cardashboard/p4_t_clt.txt", select = c(3,5))
+data5 <- fread("../cardashboard/p5_m_clt.txt", select = c(3,5))
+data2$V5 <- (-1) * data2$V5
+data3$V5 <- (-1) * data3$V5
+data4$V5 <- (-1) * data4$V5
+data5$V5 <- (-1) * data5$V5
+plot(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305))
+draw.circle(-5239.3,2292,1.1,nv=10000)
+lines(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
+lines(data2$V3, data2$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
+lines(data3$V3, data3$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
+lines(data4$V3, data4$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
+lines(data5$V3, data5$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
+
+# background
+plot(c(0,45), c(0,20), xlab="x[m]", ylab="y[m]")
+ 
