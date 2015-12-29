@@ -40,13 +40,18 @@
 \sdef{item:p}{ $+$ }
 \sdef{item:m}{ $-$ }
 
+%TODO
+\draft
+
 \makefront
 
 
 
 %----------------------------------------------------------------------- INTRODUCTION ------------------------------------------------------------------------%
 \label[introduction]
-\chap Introduction TODO
+\chap Introduction 
+
+\rfc{Introduction}
 
 sources:
 \begitems
@@ -56,15 +61,15 @@ sources:
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
 \label[introduction.project]
-\sec Project TODO
+\sec Project
 
-See above
+\rfc{Project}
 
 %		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
 \label[introduction.motivation]
-\secc Motivation TODO
+\secc Motivation 
 
-See above
+\rfc{Motivation}
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -86,7 +91,7 @@ On-Board Diagnostics API is a standard API provided by modern cars for gathering
 
 \seccc Design an application system architecture for accessing the OBD data and resources
 
-Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unneccesary (TODO FIX!) delay.
+Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unnecessary delay.
 
 \seccc Design a tablet User Interface for in-car use
 
@@ -102,7 +107,9 @@ For best results the application must and will be tested. Both code and UI must 
 
 %------------------------------------------------------------------------ ANALYSIS ------------------------------------------------------------------------%
 \label[analysis]
-\chap Analysis TODO
+\chap Analysis
+
+\rfc{Analysis introduction}
 
 sources:
 \begitems
@@ -116,7 +123,9 @@ sources:
 
 
 \label[analysis.existing_applications.applications]
-\secc Applications TODO
+\secc Applications
+
+\rfc{Check}
 
 sources:
 \begitems
@@ -356,7 +365,7 @@ Fulfiling the requirements for customer base as well as simplicity of developmen
 
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
 \label[analysis.android_platform]
-\sec Android platform TODO
+\sec Android platform
 
 There are some platform aspects to be considered when developing for Android-based tablet device. First is the problem with most of the tablet devices -- the device performance. While the hardware is continuously evolving, one must consider older devices as well as growing requirements for graphics presentation. The second possible issue is the Android architecture, which influences the application inner communication.
 
@@ -381,11 +390,11 @@ As a relatively new concept, so called Fragment was created. It is similar to ac
 \label[analysis.android_platform.material_design]
 \secc Material design
 
-Describe scrolling lists
+\rfc{Describe MD, scrolling lists}
 
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[analysis.gui]
-\sec GUI TODO
+\sec GUI
 
 
 \label[analysis.gui.basic_principles]
@@ -462,7 +471,7 @@ Responsiveness is an important factor when it comes to pleasure of using an appl
 %
 %	------------------------------------------------------------------------ Development and support tools ----------------------------------------------------------------------%
 \label[analysis.development_and_support_tools]
-\sec Development and support tools TODO
+\sec Development and support tools
 
 
 \label[analysis.development_and_support_tools.ide]
@@ -491,14 +500,18 @@ Based on CVS, Subversion has a single repository where all the data are stored. 
 Because of the central repository, Subversion allows read and write access controls for a every single location and have them enforced across the entire project, which can come in handy when developing in a large community, but it is usually not required when developing in a small team.
 
 
-\seccc Mercurial TODO
+\seccc Mercurial
 
-\seccc Git TODO
+\rfc{Describe Mercurial}
+
+\seccc Git
+
+\rfc{Describe Git}
 
 \label[analysis.development_and_support_tools.tdd]
 \secc Test driven development
 
-Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text. (TODO JUnit?)
+Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text. \rfc{JUnit}
 
 \label[analysis.development_and_support_tools.ci]
 \secc Continuous integration
@@ -507,32 +520,39 @@ Being one of the main development aproaches in the last decade, test driven deve
 
 Continuous integration supports rapid application development while giving the much needed feedback, so that the developer can see and adjust the direction, which the application development takes. 
 
-For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen (TODO link \url{https://travis-ci.org/}). While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
+For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen \rfc{link \url{https://travis-ci.org/}}. While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \label[analysis.obd]
-\sec On-Board Diagnostics TODO
+\sec On-Board Diagnostics
 
-On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes. The full specifications are explained in ISO 15031 (TODO fix). Some of them will be discussed later in the text.
+\rfc{OBD}
+
+On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes. The full specifications are explained in ISO 15031 \rfc{fix}. Some of them will be discussed later in the text.
 
 Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly. 
 
 \label[analysis.obd.api]
-\secc API TODO
+\secc API
 
+\rfc{describe OBD API}
 
 \label[analysis.obd.data]
-\secc Data TODO
+\secc Data
+
+\rfc{Describe OBD data}
 
 
 %------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
 \label[design]
-\chap Design TODO
+\chap Design 
+
+\rfc{Introduction to Design}
 
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
 \label[design.application_architecture]
-\sec Application architecture TODO
+\sec Application architecture
 
 Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours (TODO link Code Complete?). Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
 
@@ -544,12 +564,14 @@ As mentioned in Android platform analysis in section \ref[analysis-android_platf
 \label[design.application_architecture.extensibility]
 \secc Extensibility
 
-With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis (TODO name?), new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
+With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis \rfc{CarDashboard app name}, new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
 
 The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in section \ref[design.application_architecture.modularity].
 
 \label[design.application_architecture.modularity]
-\secc Modularity TODO
+\secc Modularity
+
+\rfc{Describe modularity}
 
 \seccc Note for Android platform limitations
 
@@ -557,7 +579,7 @@ The first considered approach was to create requirements on modules, such as man
 
 However, the Android concept with XML layouts does not allow their inflating during runtime. Because it is a performance-expensive operation, it pre-processes a XML file when building the application, as quoted below.
 
-{\it\uv{For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.}} (TODO andoid layoutinflater documentation and quotes) 
+{\it\uv{For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.}} \rfc{andoid layoutinflater documentation and quotes} 
 
 \seccc Overview 
 
@@ -571,33 +593,36 @@ Because the space on the screen is limited and also unknown (multiple devices ha
 For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility. 
 
 \label[design.application_architecture.android_auto_preparation]
-\secc Android Auto preparation TODO
+\secc Android Auto preparation
 
-
-
+\rfc{Anroid auto prep}
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[design.gui]
-\sec GUI TODO
+\sec GUI
 
-Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in chapter (TODO link).
+Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in chapter ( link).
 
 \label[design.gui.basic_elements]
-\secc Basic elements TODO
+\secc Basic elements
 
-Basic idea
+\rfc{Design GUI basic elements}
 
 \label[design.gui.drafts]
-\secc Drafts TODO
+\secc Drafts
+
+\rfc{Drafts in additions}
 
 \label[design.gui.the_early_phase]
-\secc The early phase TODO
+\secc The early phase
 
-In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image (TODO link and image \#1).
+\rfc{Rename}
 
-This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image (TODO link and image \#2), however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
+In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image \rfc{ link and image \#1}.
 
-For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images (TODO \#3 \#4) in the additional (TODO PRILOHA?). An early implementation is shown in the additional as well (TODO link).
+This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image \rfc{link and image \#2}, however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
+
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \rfc{ \#3 \#4} in the additional \rfc{ PRILOHA}. An early implementation is shown in the additional as well \rfc{ link}.
 
 \seccc Advantages
 
@@ -614,11 +639,13 @@ For both drafts the following would apply. The swipe action would invoke text-to
 \enditems
 
 \label[design.gui.the_second_phase]
-\secc The second phase TODO
+\secc The second phase
 
-Next step was to fix the problems mentioned above. Being inspired by the reviewed applications (TODO link to section) one attempt ended with concept shown on image (TODO link \#5). It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
+\rfc{rename}
 
-The second image (TODO link \#6) shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
+Next step was to fix the problems mentioned above. Being inspired by the reviewed applications \rfc{ link to section} one attempt ended with concept shown on image \rfc{ link \#5}. It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
+
+The second image \rfc{ link \#6} shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
 
 \seccc Advantages
 
@@ -636,9 +663,9 @@ The second image (TODO link \#6) shows possibility of inserting a subapplication
 \label[design.gui.the_grid]
 \secc The grid
 
-The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image (TODO link \#7), it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
+The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \rfc{ link \#7}, it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
 
-Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image (TODO link \#8)). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card.
+Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image \rfc{ link \#8}). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card.
 
 
 \seccc Advantages
@@ -663,7 +690,7 @@ Given the requirements for both consistency and simplicity, as well as extensibl
 
 Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hiearachical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
 
-As shown on image (TODO link \#11), the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
+As shown on image \rfc{ link \#11}, the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
 
 The idea is to have several screens containing several application panels (where amount of panels is based on screen size) with changing the screen by swiping left or right. As mentioned in section \ref[analysis.android_platform.material_design] on page \pgref[analysis.android_platform.material_design], Android suggests using vertically scrollable lists when presenting large sets of data. This can be suitable in most cases, however, in a car a user can easily swipe too heavily and scroll elsewhere and getting back to original place can put an unnecessary load on the driver's attention. Therefore there have to be separate pages, where one swipe changes a page by one.
 
@@ -685,12 +712,13 @@ Describe the process, phases, analyse and compare advantages, disadvantages, tho
 
 %------------------------------------------------------------------------ REALIZATION ------------------------------------------------------------------------%
 \label[realization]
-\chap Realization TODO
+\chap Realization
 
+\rfc{Intro to realization}
 
 %	------------------------------------------------------------------------ Preparation ----------------------------------------------------------------------%
 \label[realization.preparation]
-\sec Preparation TODO
+\sec Preparation
 
 While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile or any other platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet GUI and other specifics.
 
@@ -707,16 +735,17 @@ Because of the workaround with a shared library in Android Studio, a special app
 
 
 \label[realization.preparation.testing]
-\secc Testing TODO
+\secc Testing
 
+\rfc{Testing}
 
 \label[realization.preparation.scripting]
-\secc Scripting TODO
+\secc Scripting
 
-
+\rfc{Scripting?}
 %	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
 \label[realization.tablet]
-\sec Tablet specific TODO
+\sec Tablet specific
 
 While the Android API is shared across all Android platforms, it is the device size that is usually different. The GUI has to adapt based on the platform and therefore it's implementation differs. This section describes the tablet-related implementation using a shared library described in section \ref[realization.core].
 
@@ -754,7 +783,7 @@ For reasons mentioned above a custom layout had to be created. Based on given me
 
 %	------------------------------------------------------------------------ Core ----------------------------------------------------------------------%
 \label[realization.core]
-\sec Core TODO
+\sec Core
 
 The core contains all the functionality, it handles data, logic and also a standardized part of presentation, which consists of predefined single module veiws. Everything will be described in following text.
                         
@@ -802,7 +831,7 @@ There are several implementations of the modules mentioned above. A few will be 
 \begitems
   * {\bf SimpleShortcutModule} A mere implementation of {\tt AbstractShortcutModule} class (\ref[realization.core.modules])
   * {\bf SimpleParentModule} A mere implementation of {\tt AbstractParentModule} class  (\ref[realization.core.modules])
-  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the (TODO name) developed application can server as an application launcher optimized for in-car usage 
+  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the \rfc{ name} developed application can server as an application launcher optimized for in-car usage 
   * {\bf EmtpyModule} An empty module meant to be swapped for a different one, occupying an empty space
   * {\bf BackModule} A module handling the back button, which can be pressed to get back to upper parent module (go up in the hierarchy)
   * {\bf LightButtonModule} A module created for IoT support, offering a way to turn a given light on or off
@@ -882,7 +911,7 @@ When a custom Intent is to be created as a module, a {\tt CustomShortcutDialogFr
 
 \seccc GmapsShortcutDialogFragment
 
-As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. It uses Google Maps API described in (TODO \url{https://developers.google.com/maps/}{here}). It allows creating the following:
+As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. It uses Google Maps API described in \rfc{ \url{https://developers.google.com/maps/}{here}}. It allows creating the following:
 \begitems
 * Displaying a location on map,
 * launching a navigation to a certain location from the current location,
@@ -894,11 +923,12 @@ As an extension to previous, this Fragment allows creating custom Intents partic
 {\tt RenameDialogFragment} has been added to allow user to change the title of a selected module. Because the title is saved as a {\tt StringResource} (\ref[realization.core.data]), it is source-independent on the outside. Therefore, a {\tt String} can be used instead of a XML resource. The user can then customize his user interface a bit more.
 
 \label[realization.core.obd]
-\secc OBD TODO
+\secc OBD
 
+\rfc{OBD}
 While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
 
-Handling the OBD communication is done by background service which uses the (TODO OBD lib) library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
+Handling the OBD communication is done by background service which uses the \rfc{ OBD lib} library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
 
 \label[realization.core.utility]
 \secc Utility classes
@@ -930,7 +960,7 @@ This class provides simplified text-to-speech functionality. It handles all the 
 
 As the in-car GUI is not the usual type of GUI, it requires several implementations of custom {\tt Views}. Some provide functionality that is not provided by the Android API, some minimize the programming effort when working with modules as well as cover the low-level implementation.
 
-\seccc AutoResizeTextView TODO change code
+\seccc AutoResizeTextView \rfc{ change code}
 
 To be able to create custom modules easily, it is necessary to create automatically adjustable elements. Such element is an {\tt AutoResizeTextView}, which automatically resizes the text based on the space provided. This enabled the information to be as large as possible, while still being able to display several types of data (even longer strings). This class is used to help displaying an {\tt AbstractDisplayModule} (\ref[realization.core.modules]).
 
@@ -949,14 +979,14 @@ There are many other views similar to the ones described above or just simple vi
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[realization.gui]
-\sec GUI TODO
+\sec GUI
 
 Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section.
 
 GUI implementation based on the design! Implementing modules, color, responsive effects
 
 \label[realization.gui.common_elements]
-\secc Common elements TODO
+\secc Common elements
 
 \seccc Colors
 
@@ -972,7 +1002,7 @@ Trying to follow Material Design principles (\ref[analysis.android_platform.mate
 
 \seccc Quick menu
 
-As mentioned in section \ref[realization.core.modules], a quick menu is a limited set of options for every module. It gets invoked by a long touch on a module. It separates the rectangular module into four rectangular pieces, each containing a button. (TODO IMAGES)
+As mentioned in section \ref[realization.core.modules], a quick menu is a limited set of options for every module. It gets invoked by a long touch on a module. It separates the rectangular module into four rectangular pieces, each containing a button. \rfc{ IMAGES}
 
 \seccc Icons
 
@@ -981,7 +1011,7 @@ Given the platform guidelines (\ref[analysis.android_platform.material_design]),
 Hierarchical model, effects, submenus
 
 \label[realization.gui.multiple_designs]
-\secc Multiple designs TODO
+\secc Multiple designs
 
 As mentioned in section \ref[design.gui.the_final_design], there are two types of modules -- an action module and a display module. Both of those modules have separate implementation, while sharing common elements like colors, standard icons, fonts and effects, as mentioned earlier (\ref[realization.gui.common_elements]).
 
@@ -1001,41 +1031,48 @@ Limited set of module types
 
 %------------------------------------------------------------------------ TESTING ------------------------------------------------------------------------%
 \label[testing]
-\chap Testing TODO
+\chap Testing
+
+\rfc{Testing intro}
 
 Brag about TDD, CI and Simulator!
 
 %	------------------------------------------------------------------------ Implementation ----------------------------------------------------------------------%
 \label[testing.code]
-\sec Code TODO
+\sec Code
 
+\rfc{Code test}
 Describe testing code, common testing (look\&see, etc.)
 
 \label[testing.code.unit_testing]
-\secc Unit testing TODO
+\secc Unit testing
 
+\rfc{Unit test}
 Unit testing on android, mention Test driven development, continuous integration, automatic tests, consider giving an example
 
 \label[testing.code.integration_testing]
-\secc Integration testing TODO
+\secc Integration testing
 
+\rfc{Integ test}
 Instrumentation? Describe TDD, CI, automation
 
 \label[testing.code.system_testing]
-\secc System testing TODO
+\secc System testing
 
+\rfc{Server}
 Server testing, consider removing
 
 \label[testing.code.qualification_testing]
-\secc Qualification testing TODO
+\secc Qualification testing
 
+\rfc{Q test}
 Testing with users - consider section on its own - testing application as a whole thing
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[testing.heuristic]
-\sec Heuristic testing TODO
+\sec Heuristic testing
 
-AS the 
+\rfc{Heuristic testing intro}
 
 Introduction, description
 
@@ -1153,7 +1190,7 @@ Overall results are relatively positive. Several compromises which break the pla
 However, there are several missing supportive elements, such as prompts, error reports and hints. All of those are on the to-do list for later implementation and hopefully it will be fixed before the release of the application.
 
 \label[testing.users]
-\sec Testing with users TODO
+\sec Testing with users
 
 The importance of proper testing is critical as the driver cannot be distracted from driving. Any significant flaw in the application design might prove to be fatal and it certainly is not the intention. Therefore thorough testing must be performed in order to achieve the desired level of reliability.
 
@@ -1164,14 +1201,16 @@ One of the most commonly used approaches is the usability testing, where usually
 The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the CLT (Change Lane Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
 
 
-Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently the most downloaded OBD-supporting application on Android market. (TODO link)
+Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently the most downloaded OBD-supporting application on Android market. \rfc{ link}
 
 
-As a related application has been developed simultaneously for a mobile platform (TODO link/bibli), testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
+As a related application has been developed simultaneously for a mobile platform \rfc{ link/bibli}, testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
 
 \label[testing.users.usability]
-\secc Usability testing TODO
+\secc Usability testing
 
+
+\rfc{Usability}
 Testing the application as a regular application. Is it understandable? Is it easy to control, to see data, to understand, to comprehend, to learn?
 
 A AA AS 
@@ -1193,7 +1232,7 @@ AAAAA
 
 While providing safety, the car simulator has other advantages as well. It is equipped with set of cameras that track eye movement. It is then easy to find out, where and for how long is the user focusing his sight, which is really important for evaluating the cognitive load. It is also easy to try out different scenarios with a single click, not requiring to drive around the world looking for a proper place.
 
-The simulator is located in Albertov in the building of the Faculty of Transport (TODO), CTU. It is build from the interior of the \v Skoda Octavia (TODO) car and surrounded by three screens (TODO photo?). There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
+The simulator is located in Albertov in the building of the Faculty of Transport \rfc{FD}, CTU. It is build from the interior of the \v Skoda Octavia \rfc{Skoda} car and surrounded by three screens \rfc{ photo?}. There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
 
 The data from the simulator are broadcasted over serial line and they are limited to speed and rounds per minute. However, they can supposedly be extended to wider area of information.
 
@@ -1239,22 +1278,22 @@ After testing the eye tracking cameras, a new issue emerged. Those cameras were 
 As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and CLT testing scenarios are unique for each platform, therefore more time is required.
 
 \label[testing.users.preparations.scenario]
-\table{||c|c|r||l||}{\crll
-  \bf Start & \bf End & \bf Duration [min] & \bf Content \crll
-  00:00:00 & 00:05:00 & 5 & Introduction \crli
-  00:05:00 & 00:10:00 & 5 & Pre-test questionnaire \crli
-  00:10:00 & 00:25:00 & 15 & Instructions and EyeTracker setup \crli
-  00:25:00 & 00:40:00 & 15 & Warm-up driving \crli
-  00:40:00 & 00:55:00 & 15 & A/B testing \crli
-  00:55:00 & 01:05:00 & 10 & CLT testing \crli
-  01:05:00 & 01:10:00 & 5 & Post-test questionnaire \crli
-  01:10:00 & 01:15:00 & 5 & Debriefing \crll
+\ctable{ccrl}{
+  \bf Start & \bf End & \bf Duration [min] & \bf Content \crl
+  00:00:00 & 00:05:00 & 5 & Introduction\cr
+  00:05:00 & 00:10:00 & 5 & Pre-test questionnairei \cr
+  00:10:00 & 00:25:00 & 15 & Instructions and EyeTracker setup \cr
+  00:25:00 & 00:40:00 & 15 & Warm-up driving \cr
+  00:40:00 & 00:55:00 & 15 & A/B testing \cr
+  00:55:00 & 01:05:00 & 10 & CLT testing \cr
+  01:05:00 & 01:10:00 & 5 & Post-test questionnaire \cr
+  01:10:00 & 01:15:00 & 5 & Debriefing \cr
 }\caption/f Single user testing schedule
 \medskip
 
 The A/B testing scenario is simple. At first the user drives the route without any application, so that he gets to know it. Then he drives the same route with application A (Torque), while being frequently asked to read outloud the speed and RPM. The speed is to be read from the first second with interval of 20 seconds, the RPM is to be read from the tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the user has to scroll from one to another. The same scenario goes for the application B. A and B applications switch places for every tester (B first, A second or the other way around). The metrics then are the glance times for both applications.
 
-The change lane test (CLT) scenario is similar, however only the (TODO name?) application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
+The change lane test (CLT) scenario is similar, however only the \rfc{ name} application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
 
 \seccc World models
 
@@ -1291,22 +1330,22 @@ A post-test questionnaire serves to find out, how satisfied are the participants
 \enditems
 
 \label[testing.users.process]
-\secc Process TODO
+\secc Process
 
 At first, the screener was used to question 20 potential participants. Based on their answers, 9 of them were invited into scheduling process. As the actual testing would have 5 participants, it was a matter of time scheduling which 5 of those 9 would participate in the final stage. 
 
-After selecting 5 participants and scheduling the testing times, they were invited to come the Faculty of Transport (TODO) in Albertov, where the simulator is located. There they filled the pre-test questionnaire and begin the actual testing based on a schedule mentioned in section \ref[testing.users.preparations].
+After selecting 5 participants and scheduling the testing times, they were invited to come the Faculty of Transport \rfc{FD} in Albertov, where the simulator is located. There they filled the pre-test questionnaire and begin the actual testing based on a schedule mentioned in section \ref[testing.users.preparations].
 
 After eye-tracking setup was done and the participant felt confortable with the simulator (after driving for a while in the warm-up phase), the scenarios took their place. The eye-tracking and simulator logging was turned on as the participant accomplished all the given tasks.
 
 A post-questionnaire was filled and the testing was over. This was done for all 5 participants. Approximately 3 gigabytes of plain text data were collected from logging, both eye-tracking and simulator logging.
 
 \label[testing.users.evaluation]
-\secc Questionnaire evaluation TODO
+\secc Questionnaire evaluation
 
 \seccc Screener questionnaire
 
-As the results of screener questionnaires show (TODO priloha), from 20 potential participants, only 9 were active drivers, who drive at least once a week and use a smartphone. While 4 potential participants were not drivers at all, another 5 said they did drive truly occassionally (once a month and less). Another 3 were not smartphone users and therefore not suitable for the testing. 
+As the results of screener questionnaires show \rfc{ priloha}, from 20 potential participants, only 9 were active drivers, who drive at least once a week and use a smartphone. While 4 potential participants were not drivers at all, another 5 said they did drive truly occassionally (once a month and less). Another 3 were not smartphone users and therefore not suitable for the testing. 
 
 \seccc Pre-test questionnaire
 
@@ -1318,13 +1357,13 @@ While the goals appear to be clear for all the participants, not all were entire
 
 \secc A/B testing evaluation
 
-The A/B testing is a testing of Torque versus CarDashboard (TODO name) in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 4 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
+The A/B testing is a testing of Torque versus CarDashboard \rfc{ name} in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 4 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
 
 Logs have been examined and several outcomes measured. As first the comparison of glance frequency will be shown. Then some statistical data are measured, such as confidence intervals and such. An overall comparison is created. Then duration of glance time is examined for both application and compared. The maximal glance time and the average glance time are compared as well as mean and standard deviation.
 
 \seccc Glance frequency
 
-Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on (TODO priloha)).
+Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on \rfc{ priloha}).
 
 \label[testing.users.glance_script]
 \begtt
@@ -1357,43 +1396,86 @@ axis(1)
 \caption/f Glances for CarDashboard
 \medskip
 
-Those are just illustrative plots to see the portion of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot). The glance distribution in log files for CarDashboard (TODO) is visible below the Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
+Those are just illustrative plots to see the portion of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot). The glance distribution in log files for CarDashboard \rfc{name} is visible below the Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
 
-The exact comparison is done in numbers. While 
+While the individual percentage ratio of time spent looking at the Torque is in range from 13 to 18 percent with the mean of 15.55 and the standard deviation of 2.19, the same for CarDashboard is only in range from 6 to 8 percent with the mean of 7.45 and the standard deviation of 1.32. The average percentage ratio of time spent looking at the Torque is then 15.55 \%, while for CarDashboard it is only 7.40 \%. The R script for the average time ratio is shown below, the R scripts for individual (per participant) data are shown in \rfc{priloha}.
 
+\begtt
+glanceLength = 0
+glanceSum = 0
+for(j in 1:5){
+  glanceLength = glanceLength + length(data[[j]]$Tablet)
+  glanceSum = glanceSum + sum(data[[j]]$Tablet)
+}
+print(100 * glanceSum / glanceLength)
+\endtt  
+
+As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 308 to 388 milliseconds with the mean of 303.2 and a standard deviation of 68.67.
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[testing.summary]
-\sec Summary TODO
+\sec Summary
 
+\rfc{Test summary}
 
 %------------------------------------------------------------------------ CONCLUSION ------------------------------------------------------------------------%
 \label[conclusion]
-\chap Conclusion TODO
+\chap Conclusion
 
+\rfc{Conclusion intro}
 
 %	------------------------------------------------------------------------ Assignment completion ----------------------------------------------------------------------%
 \label[conclusion.assignment_completion]
-\sec Assignment completion TODO
+\sec Assignment completion
 
-
+\rfc{Assignment completion}
 %	------------------------------------------------------------------------ Project life cycle ----------------------------------------------------------------------%
 \label[conclusion.project_life_cycle]
-\sec Project life cycle TODO
+\sec Project life cycle
 
-
+\rfc{Project lifecycle}
 \label[conclusion.project_life_cycle.present]
-\secc Present TODO
+\secc Present
 
+\rfc{Presnet}
 
 \label[conclusion.project_life_cycle.future]
 \secc Future TODO
 
-
+\rfc{Future}
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[conclusion.summary]
-\sec Summary TODO
+\sec Summary
+
+\rfc{Summary}
+\app Thesis
+
+\app Images
+
+\app Tables
+
+\label[tables.testing.ab]
+\ctable{clclc}{
+& \multispan2\hss\bf Torque \hss \tabstrut & \multispan2\hss\bf CarDashboard\hss \tabstrut \crl
+\bf Participant & \bf Glance ratio & \bf Max glance time & \bf Glance ratio  & \bf Max glance time \crl
+P1 & 18.63329 \% & 312 ms & 8.291183 \% & 152 ms \cr
+P2 & 15.71007 \% & 388 ms & 5.478639 \% & 108 ms \cr
+P3 & 13.1708 \% & 196 ms & 7.768305 \% & 132 ms \cr
+P4 & 13.76879 \% & 308 ms & 8.866204 \% & 176 ms \cr
+P5 & 16.47285 \% & 312 ms & 6.895412 \% & 292 ms \cr
+Mean & 15.55116 \% & 303.2 ms & 7.459949 \% & 172 ms \cr
+S. deviation & 2.191875 \% & 68.66731 ms & 1.32362 \% & 71.61006 ms \cr
+}
+\caption/f A/B testing
 
 
+%\clabel[tables.testing.ab]
+%\table{||c||c|c|c|c||}{\crll
+%   &\multicolumn{2}{|c|}{Torque}  & \multicolumn{2}{|c|}{CarDashboard}  \crll
+%  \bf Participant & \bf Glance ratio & \bf Max glance time & \bf Glance ratio & \bf Max glance time \crll
+%  P1 &1 & 1 & 1 & 1 \crli
+% Average &1 & 1 & 1 & 1  \crll
+%}\caption/f A/B testing
+%\medskip
 
 \bye

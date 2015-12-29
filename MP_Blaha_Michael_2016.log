@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  29 DEC 2015 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  29 DEC 2015 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,7 +114,7 @@ FONT: Latin Modern fonts - \rm, \it, \bf, \bi, \caps\rm,... + math.
 English hyphenation used (\language=0). \nonfrenchspacing is set on. [-1{c:/tex
 live/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ctulogo.pdf>]
 [-2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []\tenrm Prohlašuji, že jsem před-lože-nou
 
 \hbox(7.57762+2.13887)x190.63347, glue set 4.54439
@@ -152,7 +152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
 .etc.
 
 [-3] [-4]
-Overfull \hbox (5.76617pt too wide) in paragraph at lines 43--43
+Overfull \hbox (5.76617pt too wide) in paragraph at lines 46--46
  []\tenrm ModuleFragmentAdapter [][]21[][] []  |
 
 \hbox(7.57762+2.13887)x190.63347
@@ -206,7 +206,7 @@ name{pg:.21}
 .etc.
 
 [-5] [-6]
-Overfull \hbox (58.2549pt too wide) in paragraph at lines 53--54
+Overfull \hbox (58.2549pt too wide) in paragraph at lines 58--59
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8[] /|
 
@@ -251,7 +251,7 @@ Overfull \hbox (58.2549pt too wide) in paragraph at lines 53--54
 .etc.
 
 
-Overfull \hbox (150.44128pt too wide) in paragraph at lines 54--55
+Overfull \hbox (150.44128pt too wide) in paragraph at lines 59--60
  [][][]\tenrm generally progress: [][]\tentt https:[] /[] / docs[] . google[] .
  com[] / document[] / d[] / 1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8[] /|
 
@@ -296,7 +296,7 @@ Overfull \hbox (150.44128pt too wide) in paragraph at lines 54--55
 .etc.
 
 [1] [2]
-Overfull \hbox (130.91612pt too wide) in paragraph at lines 109--110
+Overfull \hbox (130.91612pt too wide) in paragraph at lines 116--117
  [][][]\tenrm application anal-y-sis [][]\tentt https:[] /[] / docs[] . google[
 ] . com[] / document[] / d[] / 1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-|
 
@@ -343,7 +343,7 @@ Overfull \hbox (130.91612pt too wide) in paragraph at lines 109--110
 .etc.
 
 
-Overfull \hbox (113.98857pt too wide) in paragraph at lines 110--111
+Overfull \hbox (113.98857pt too wide) in paragraph at lines 117--118
  [][][]\tenrm priority list [][]\tentt https:[] /[] / docs[] . google[] . com[]
  / document[] / d[] / 1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejgbhqzw7kI[] /|
 
@@ -388,7 +388,7 @@ Overfull \hbox (113.98857pt too wide) in paragraph at lines 110--111
 .etc.
 
 
-Overfull \hbox (58.2549pt too wide) in paragraph at lines 123--124
+Overfull \hbox (58.2549pt too wide) in paragraph at lines 132--133
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY[] /|
 
@@ -461,17 +461,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 ....\mF e
 ....\mF r
 ....\glue 6.97002 plus 3.48499 minus 2.32335
-....\vbox(0.0+0.0)x0.0, glue set 46.1998fil
+....\vbox(0.0+0.0)x0.0, glue set 37.03307fil
 .....\kern -46.1998
 .....\pdfdest name{ref:analysis} xyz
+.....\hbox(6.9445+2.22223)x0.0, glue set - 52.49985fil
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\pdfcolorstack 1 push {0 1 1 0 k 0 1 1 0 K}
+......\tentt [
+......\tentt a
+......\tentt n
+......\tentt a
+......\tentt l
+......\tentt y
+......\tentt s
+......\tentt i
+......\tentt s
+......\tentt ]
+.....\pdfcolorstack 1 pop
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\write0<3>{\Xlabel{analysis}{2}}
 ....\vbox(0.0+0.0)x0.0, glue set 46.1998fil
 .....\kern -46.1998
 .....\pdfdest name{toc:.2} xyz
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis TODO }{\the \
-pageno \ETC.}
+....\write0<3>{\string \Xtoc {0}{\noexpand \bfshape }{2}{Analysis }{\the \pagen
+o }}
 ....\thefont 2
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -479,7 +493,7 @@ pageno \ETC.}
 ...\penalty 10000
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.14297
-...\hbox(16.66306+6.83914)x392.64806, glue set 128.29846fil
+...\hbox(16.66306+6.83914)x392.64806, glue set 161.4059fil
 ....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
 ....\mF A
 ....\mF n
@@ -489,11 +503,6 @@ pageno \ETC.}
 ....\mF s
 ....\mF i
 ....\mF s
-....\glue 6.97002 plus 3.48499 minus 2.32335
-....\mF T
-....\mF O
-....\mF D
-....\mF O
 ....\rule(16.66306+6.83914)x0.0
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -504,6 +513,21 @@ pageno \ETC.}
 .\penalty 10000
 .\glue 0.0
 .\glue 13.6 plus 4.53326 minus 4.53326
+.\vbox(0.0+0.0)x0.0, glue set 7.6221fil
+..\kern -15.39993
+..\pdfdest name{rfc:rfc-4} xyz
+..\hbox(6.9445+0.83333)x0.0, glue set - 36.7499fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdfcolorstack 1 push {0 1 1 0 k 0 1 1 0 K}
+...\tentt [
+...\tentt r
+...\tentt f
+...\tentt c
+...\tentt -
+...\tentt 4
+...\tentt ]
+..\pdfcolorstack 1 pop
+..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\lineskip) 1.0
 .\hbox(4.89801+0.0)x415.41025, glue set 377.97957fil
@@ -629,18 +653,6 @@ pageno \ETC.}
 ..etc.
 .\penalty 20000
 .\glue(\baselineskip) 4.29652
-.\hbox(6.85902+0.0)x415.41025, glue set 380.64464fil
-..\glue(\leftskip) 11.66563
-..\tentt e
-..\tentt d
-..\tentt i
-..\tentt t
-..\hbox(0.0+0.0)x0.0
-..\pdfcolorstack 1 pop
-..\pdfendlink
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .etc.
 
  [3]
@@ -703,26 +715,26 @@ Underfull \vbox (badness 5504) has occurred while \output is active
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 ..\vbox(9.6424+-0.5424)x392.64806
 ...\hbox(9.6424+3.9576)x392.64806, glue set 288.38445fil
-....\mF 2
-....\mF .
-....\mF 1
-....\mF .
-....\mF 2
-....\mF .
-....\mF 1
+....\thefont 2
+....\thefont .
+....\thefont 1
+....\thefont .
+....\thefont 2
+....\thefont .
+....\thefont 1
 ....\glue 12.09999
 ....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
-....\mF A
+....\thefont A
 ....\kern-0.33612
-....\mF d
-....\mF v
-....\mF a
-....\mF n
-....\mF t
-....\mF a
-....\mF g
-....\mF e
-....\mF s
+....\thefont d
+....\thefont v
+....\thefont a
+....\thefont n
+....\thefont t
+....\thefont a
+....\thefont g
+....\thefont e
+....\thefont s
 ....\rule(9.6424+3.9576)x0.0
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -905,26 +917,26 @@ Underfull \vbox (badness 3364) has occurred while \output is active
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 ..\vbox(9.6424+-0.5424)x392.64806
 ...\hbox(9.6424+3.9576)x392.64806, glue set 288.38445fil
-....\mF 2
-....\mF .
-....\mF 1
-....\mF .
-....\mF 3
-....\mF .
-....\mF 1
+....\thefont 2
+....\thefont .
+....\thefont 1
+....\thefont .
+....\thefont 3
+....\thefont .
+....\thefont 1
 ....\glue 12.09999
 ....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
-....\mF A
+....\thefont A
 ....\kern-0.33612
-....\mF d
-....\mF v
-....\mF a
-....\mF n
-....\mF t
-....\mF a
-....\mF g
-....\mF e
-....\mF s
+....\thefont d
+....\thefont v
+....\thefont a
+....\thefont n
+....\thefont t
+....\thefont a
+....\thefont g
+....\thefont e
+....\thefont s
 ....\rule(9.6424+3.9576)x0.0
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1118,26 +1130,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 ..\vbox(9.6424+-0.5424)x392.64806
 ...\hbox(9.6424+3.9576)x392.64806, glue set 288.38445fil
-....\mF 2
-....\mF .
-....\mF 1
-....\mF .
-....\mF 4
-....\mF .
-....\mF 1
+....\thefont 2
+....\thefont .
+....\thefont 1
+....\thefont .
+....\thefont 4
+....\thefont .
+....\thefont 1
 ....\glue 12.09999
 ....\pdfcolorstack 1 push {1 .43 0 0 k 1 .43 0 0 K}
-....\mF A
+....\thefont A
 ....\kern-0.33612
-....\mF d
-....\mF v
-....\mF a
-....\mF n
-....\mF t
-....\mF a
-....\mF g
-....\mF e
-....\mF s
+....\thefont d
+....\thefont v
+....\thefont a
+....\thefont n
+....\thefont t
+....\thefont a
+....\thefont g
+....\thefont e
+....\thefont s
 ....\rule(9.6424+3.9576)x0.0
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1275,7 +1287,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 app_ultimatecardock.png (PNG copy)>] [8 <./images/analysis_aa_overview.png>] [9
  <./images/analysis_aa_audio.png (PNG copy)> <./images/analysis_aa_message.png>
 ]
-Underfull \hbox (badness 1584) in paragraph at lines 331--332
+Underfull \hbox (badness 1584) in paragraph at lines 340--341
 \tenrm (sources: [][]\tentt http:[] /[] / techcrunch[] . com[] / 2014[] / 03[] 
 / 03[] / gartner-195m-tablets-sold-
 
@@ -1314,7 +1326,7 @@ Underfull \hbox (badness 1584) in paragraph at lines 331--332
 .etc.
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
  \tentt what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-
 
 \hbox(6.85902+2.44446)x415.41025
@@ -1351,17 +1363,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
 .etc.
 
 [12] [13] [14]
-l.542 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
+l.562 OPmac WARNING: label [analysis-android_platform] unknown. Try to TeX me a
 gain.
-l.542 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
+l.562 OPmac WARNING: pg-label [analysis-android_platform] unknown. Try to TeX m
 e again.
 [15] [16] [17] [18] [19] [20] [21]
-l.794 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
+l.823 OPmac WARNING: duplicated label [analysis.android_platform.architecture],
  ignored.
 
-Underfull \hbox (badness 1052) in paragraph at lines 804--805
- [][][]\mF SimpleParentModule \tenrm A mere im-ple-men-ta-tion of \tentt Ab-str
-act-Par-ent-Mod-ule \tenrm class
+Underfull \hbox (badness 1052) in paragraph at lines 833--834
+ [][][]\thefont SimpleParentModule \tenrm A mere im-ple-men-ta-tion of \tentt A
+b-stract-Par-ent-Mod-ule \tenrm class
 
 \hbox(7.63895+2.13887)x415.41025, glue set 2.19485
 .\glue(\leftskip) 11.66563
@@ -1374,27 +1386,27 @@ act-Par-ent-Mod-ule \tenrm class
 ..\kern 5.5
 .\pdfcolorstack 1 pop
 .\pdfcolorstack 1 pop
-.\mF S
-.\mF i
-.\mF m
-.\mF p
-.\mF l
-.\mF e
-.\mF P
+.\thefont S
+.\thefont i
+.\thefont m
+.\thefont p
+.\thefont l
+.\thefont e
+.\thefont P
 .\kern-0.33612
-.\mF a
+.\thefont a
 .\kern-0.33612
-.\mF r
-.\mF e
-.\mF n
-.\mF t
-.\mF M
-.\mF o
+.\thefont r
+.\thefont e
+.\thefont n
+.\thefont t
+.\thefont M
+.\thefont o
 .\kern0.3361
-.\mF d
-.\mF u
-.\mF l
-.\mF e
+.\thefont d
+.\thefont u
+.\thefont l
+.\thefont e
 .\glue 3.66666 plus 1.83333 minus 1.22221
 .\tenrm A
 .\glue 3.66666 plus 1.83148 minus 1.22343
@@ -1403,15 +1415,15 @@ act-Par-ent-Mod-ule \tenrm class
 .etc.
 
 [22]
-l.816 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
+l.845 OPmac WARNING: label [realization.core.modules.quick_menu] unknown. Try t
 o TeX me again.
 [23]
-l.851 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
+l.880 OPmac WARNING: label [realization.core.modules.abstractsimplemodule] unkn
 own. Try to TeX me again.
-l.851 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
+l.880 OPmac WARNING: pg-label [realization.core.modules.abstractsimplemodule] u
 nknown. Try to TeX me again.
 [24] [25] [26] [27] [28] [29]
-Overfull \hbox (46.70491pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (46.70491pt too wide) in paragraph at lines 1183--1184
  [][][][][]\tentt https:[] /[] / docs[] . google[] . com[] / document[] / d[] /
  1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-|
 
@@ -1520,9 +1532,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 ..\vbox(11.57158+0.2494)x392.64806
 ...\hbox(11.57158+4.7494)x392.64806, glue set 145.2902fil
-....\vbox(0.0+0.0)x0.0, glue set 20.32915fil
+....\vbox(0.0+0.0)x0.0, glue set 11.16241fil
 .....\kern -20.32915
 .....\pdfdest name{ref:testing.users.simulator} xyz
+.....\hbox(6.9445+2.22223)x0.0, glue set - 131.24962fil
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\pdfcolorstack 1 push {0 1 1 0 k 0 1 1 0 K}
+......\tentt [
+......\tentt t
+......\tentt e
+......\tentt s
+......\tentt t
+......\tentt i
+......\tentt n
+......\tentt g
+......\tentt .
+......\tentt u
+......\tentt s
+......\tentt e
+......\tentt r
+......\tentt s
+......\tentt .
+......\tentt s
+......\tentt i
+......\tentt m
+......\tentt u
+......\tentt l
+......\tentt a
+......\tentt t
+......\tentt o
+......\tentt r
+......\tentt ]
+.....\pdfcolorstack 1 pop
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\write0<3>{\Xlabel{testing.users.simulator}{5.3.2}}
 ....\vbox(0.0+0.0)x0.0, glue set 20.32915fil
@@ -1632,21 +1673,22 @@ o }}
 
  [32 <./images/testing_users_simulator_sw.png>] [33 <./images/testing_users_sim
 ulator_smarteye.png>] [34] [35]
-l.1321 OPmac WARNING: label [testing.users.preparation] unknown. Try to TeX me 
+l.1360 OPmac WARNING: label [testing.users.preparation] unknown. Try to TeX me 
 again.
 [36] [37 <./images/testing_users_ab_glance_torque.png> <./images/testing_users_
-ab_glance_cd.png>] [38] ){c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-math
-sy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c:/texlive/201
-5/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmri
-10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive
-/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2015/texmf-dist
-/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
-ic/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (44 pages, 3253305 bytes).
+ab_glance_cd.png>] [38] [39] [40] [41] [42] [43] ){c:/texlive/2015/texmf-dist/f
+onts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/
+lm-cs.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texliv
+e/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/f
+onts/type1/public/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
+lm/lmss10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c
+:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/te
+xmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/typ
+e1/public/lm/lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (49 pages, 3273028 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 993 compressed objects within 10 object streams
- 237 named destinations out of 1000 (max. 500000)
- 845 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1267 PDF objects out of 1440 (max. 8388607)
+ 1181 compressed objects within 12 object streams
+ 316 named destinations out of 1000 (max. 500000)
+ 869 words of extra memory for PDF output out of 10000 (max. 10000000)
 

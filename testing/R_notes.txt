@@ -128,6 +128,7 @@ data[[4]] <- fread("../usability tests/p4_t_ab_torque.log", select = c("ClosestW
 data[[5]] <- fread("../usability tests/p5_t_ab_torque.log", select = c("ClosestWorldIntersection.objectName"))
 
 #CarDashboard
+data <- list()
 data[[1]] <- fread("../usability tests/p1_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
 data[[2]] <- fread("../usability tests/p1_m_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
 data[[3]] <- fread("../usability tests/p3_t_ab_cd.log", select = c("ClosestWorldIntersection.objectName"))
@@ -152,8 +153,7 @@ for(i in 5000:10000){
 barplot(addedData)
 axis(1)
 
-eval$Ratio <- c()
-eval$Max <- c()
+eval <- list(c(),c())
 for(j in 1:5){
   ratio = sum(data[[j]]$Tablet) / length(data[[j]]$Tablet)
   max = 0
@@ -169,11 +169,20 @@ for(j in 1:5){
       counter = counter + 1
     }
   }
-  eval$Ratio <- c(ratio * 100, eval$Ratio)
-  eval$Max <- c(max * 4, eval$Max)
+  eval[[1]] <- c(ratio * 100, eval[[1]])
+  eval[[2]] <- c(max * 4, eval[[2]])
   print(ratio * 100)
   print(max * 4)
 }
+
+glanceLength = 0
+glanceSum = 0
+for(j in 1:5){
+  glanceLength = glanceLength + length(data[[j]]$Tablet)
+  glanceSum = glanceSum + sum(data[[j]]$Tablet)
+}
+print(100 * glanceSum / glanceLength)
+
 
 data1[data1!="tablet"] <- 0 
 data2[data2!="tablet"] <- 0 
