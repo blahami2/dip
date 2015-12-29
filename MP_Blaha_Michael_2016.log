@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  29 DEC 2015 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdfcsplain 2015.12.28)  29 DEC 2015 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1631,19 +1631,19 @@ o }}
 .etc.
 
  [32 <./images/testing_users_simulator_sw.png>] [33 <./images/testing_users_sim
-ulator_smarteye.png>] [34] [35] [36] ){c:/texlive/2015/texmf-dist/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.enc}{c
-:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/texmf
--dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/p
-ublic/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pf
-b><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/20
-15/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dist/fon
-ts/type1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm
-/lmtt10.pfb>
-Output written on MP_Blaha_Michael_2016.pdf (42 pages, 3239858 bytes).
+ulator_smarteye.png>] [34] [35] [36] [37] ){c:/texlive/2015/texmf-dist/fonts/en
+c/dvips/lm/lm-mathsy.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cs.e
+nc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-cstt.enc}<c:/texlive/2015/
+texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2015/texmf-dist/fonts/ty
+pe1/public/lm/lmri10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss
+10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texli
+ve/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2015/texmf-dis
+t/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
+ic/lm/lmtt10.pfb>
+Output written on MP_Blaha_Michael_2016.pdf (43 pages, 3241570 bytes).
 PDF statistics:
- 1048 PDF objects out of 1200 (max. 8388607)
- 975 compressed objects within 10 object streams
- 232 named destinations out of 1000 (max. 500000)
+ 1053 PDF objects out of 1200 (max. 8388607)
+ 979 compressed objects within 10 object streams
+ 233 named destinations out of 1000 (max. 500000)
  827 words of extra memory for PDF output out of 10000 (max. 10000000)
 
