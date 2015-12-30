@@ -1484,7 +1484,27 @@ As described in the scenario (\ref[testing.users.preparations]), every participa
 
 The most important metric in the Change-Lane test is avoiding the object while working with the application. Every participant managed to avoid the object, from which we can assume the success rate around 100 \% (the success rate of the testing is 100 \%, however it can be safely stated that nothing is perfect and real 100 \% in every situation possible is not achievable).
 
- The second metric is following the predefined route.
+ The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the realted figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
+
+\label[testing.users.clt.table_turn_coordinates]
+\ctable{ccc}{
+  \bf Color & \bf Turn coordination X & \bf Turn coordination Y \crl
+  black & -5265.919 & 2294.193 \cr
+  red & -5267.260 & 2293.928 \cr
+  blue & -5266.978 & 2293.958 \cr
+  green & -5262.808 & 2293.958 \cr
+  yellow & -5263.845 & 2293.725 \cr
+}\caption/f Results of path angle comparison
+\medskip
+
+\medskip
+\centerline{
+\label[testing.users.clt.turn_paths]
+\inspic images/testing_users_clt_paths.png
+}
+\nobreak\medskip
+\caption/f Turn paths
+\medskip   
 
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%

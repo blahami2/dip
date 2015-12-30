@@ -224,21 +224,25 @@
 \Xlabel{testing.users.ab.cd_glance_times}{5.7}
 \Xpage{40}
 \Xlabel{testing.users.ab.cd_glance_distribution}{5.8}
-\Xlabel{testing.summary}{5.4}
-\Xtoc{1}{\rm }{5.4}{Summary }{40}
+\Xtoc{2}{\rm }{5.3.7}{Change Lane Test evaluation }{40}
 \Xpage{41}
+\Xlabel{testing.users.clt.table_turn_coordinates}{5.9}
+\Xlabel{testing.users.clt.turn_paths}{5.10}
+\Xlabel{testing.summary}{5.4}
+\Xtoc{1}{\rm }{5.4}{Summary }{41}
+\Xpage{42}
 \Xlabel{conclusion}{6}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{41}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{42}
 \Xlabel{conclusion.assignment_completion}{6.1}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{41}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{42}
 \Xlabel{conclusion.project_life_cycle}{6.2}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{41}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{42}
 \Xlabel{conclusion.project_life_cycle.present}{6.2.1}
-\Xtoc{2}{\rm }{6.2.1}{Present }{41}
+\Xtoc{2}{\rm }{6.2.1}{Present }{42}
 \Xlabel{conclusion.project_life_cycle.future}{6.2.2}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{41}
+\Xtoc{2}{\rm }{6.2.2}{Future TODO }{42}
 \Xlabel{conclusion.summary}{6.3}
-\Xtoc{1}{\rm }{6.3}{Summary }{41}
+\Xtoc{1}{\rm }{6.3}{Summary }{42}
 \Xpage{43}
 \Xtoc{0}{\bfshape }{A}{Thesis }{43}
 \Xpage{44}
