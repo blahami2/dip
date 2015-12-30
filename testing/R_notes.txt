@@ -278,15 +278,17 @@ plot(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+5), ylim=c(2285,2305))
 draw.circle(-5239.3,2292,1.1,nv=10000)
  
 # plot all in one
-data1 <- fread("../cardashboard/p1_t_clt.txt", select = c(3,5))
-data2 <- fread("../cardashboard/p2_t_clt.txt", select = c(3,5))
-data3 <- fread("../cardashboard/p3_m_clt.txt", select = c(3,5))
-data4 <- fread("../cardashboard/p4_t_clt.txt", select = c(3,5))
-data5 <- fread("../cardashboard/p5_m_clt.txt", select = c(3,5))
-data2$V5 <- (-1) * data2$V5
-data3$V5 <- (-1) * data3$V5
-data4$V5 <- (-1) * data4$V5
-data5$V5 <- (-1) * data5$V5
+data <- list()
+data[[1]] <- fread("../cardashboard/p1_t_clt.txt", select = c(3,5))
+data[[2]] <- fread("../cardashboard/p2_t_clt.txt", select = c(3,5))
+data[[3]] <- fread("../cardashboard/p3_m_clt.txt", select = c(3,5))
+data[[4]] <- fread("../cardashboard/p4_t_clt.txt", select = c(3,5))
+data[[5]] <- fread("../cardashboard/p5_m_clt.txt", select = c(3,5))
+
+for(i in 1:5){
+  data[[i]]$V5 <- (-1) * data[[i]]$V5
+}
+
 plot(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305))
 draw.circle(-5239.3,2292,1.1,nv=10000)
 lines(data1$V3, data1$V5, xlim=c(-5239.3-35,-5239.3+10), ylim=c(2285,2305), type="l")
