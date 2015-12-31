@@ -1357,7 +1357,7 @@ While the goals appear to be clear for all the participants, not all were entire
 
 \secc A/B testing evaluation
 
-The A/B testing is a testing of Torque versus CarDashboard \rfc{ name} in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 4 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
+The A/B testing is a testing of Torque versus CarDashboard \rfc{ name} in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 16.6 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
 
 Logs have been examined and several outcomes measured. As first the comparison of glance frequency will be shown. Then some statistical data are measured, such as confidence intervals and such. An overall comparison is created. Then duration of glance time is examined for both application and compared. The maximal glance time and the average glance time are compared as well as mean and standard deviation.
 
@@ -1412,9 +1412,9 @@ print(100 * glanceSum / glanceLength)
 
 \seccc Glance time
 
-As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 308 to 388 milliseconds with the mean of 303.2 and a standard deviation of 68.67. The same was measured for CarDashboard \rfc{name} and the results for the maximal glance time are in range from 108 to 292 milliseconds with the mean of 172 and a standard deviation of 71.61. This means that the average maximal glance time for CarDashboard\rfc{name} is nearly half the average maximal glance time for Torque.
+As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 817 to 1616 milliseconds with the mean of 1263.3 and a standard deviation of 296.11. The same was measured for CarDashboard \rfc{name} and the results for the maximal glance time are in range from 450 to 1217 milliseconds with the mean of 716.7 and a standard deviation of 298.38. This means that the average maximal glance time for CarDashboard\rfc{name} is nearly half the average maximal glance time for Torque.
 
-Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \rfc{add}). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 37.84 milliseconds. For \rfc{Name}CarDashboard there is 1 \% chance of looking at the application for more than only 26 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\rfc{add}, the result for \rfc{name} is shown below for illustration.
+Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \rfc{add}). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{Name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\rfc{add}, the result for \rfc{name} is shown below for illustration.
 
 \begtt
 t.test(glanceList, alternative="less", conf.level=0.99)
@@ -1425,13 +1425,13 @@ data:  glanceList
 t = 24.935, df = 983, p-value = 1
 alternative hypothesis: true mean is less than 0
 99 percent confidence interval:
-     -Inf 26.05161
+     -Inf 108.5484
 sample estimates:
 mean of x 
-  23.8252 
+ 99.27168 
 \endtt
 
-With the average glance time being 34.54 milliseconds for Torque, the \rfc{name} appears to perform much better with it's average glance time of 23.82 milliseconds. The glance times for Torque are shown on figure \ref[testing.users.ab.torque_glance_times], the glance times for \rfc{name} are shown below the Torque figure on figure \ref[testing.users.ab.cd_glance_times]. 
+With the average glance time being 143.926 milliseconds for Torque, the \rfc{name} appears to perform much better with it's average glance time of 99.27 milliseconds. The glance times for Torque are shown on figure \ref[testing.users.ab.torque_glance_times], the glance times for \rfc{name} are shown below the Torque figure on figure \ref[testing.users.ab.cd_glance_times]. 
 
 \medskip
 \centerline{
@@ -1484,7 +1484,7 @@ As described in the scenario (\ref[testing.users.preparations]), every participa
 
 The most important metric in the Change-Lane test is avoiding the object while working with the application. Every participant managed to avoid the object, from which we can assume the success rate around 100 \% (the success rate of the testing is 100 \%, however it can be safely stated that nothing is perfect and real 100 \% in every situation possible is not achievable).
 
- The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the realted figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
+The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the realted figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
 
 \label[testing.users.clt.table_turn_coordinates]
 \ctable{ccc}{
@@ -1561,13 +1561,13 @@ The most important metric in the Change-Lane test is avoiding the object while w
 \ctable{clclc}{
 & \multispan2\hss\bf Torque \hss \tabstrut & \multispan2\hss\bf CarDashboard\hss \tabstrut \crl
 \bf Participant & \bf Glance ratio & \bf Max glance time & \bf Glance ratio  & \bf Max glance time \crl
-P1 & 18.63329 \% & 312 ms & 8.291183 \% & 152 ms \cr
-P2 & 15.71007 \% & 388 ms & 5.478639 \% & 108 ms \cr
-P3 & 13.1708 \% & 196 ms & 7.768305 \% & 132 ms \cr
-P4 & 13.76879 \% & 308 ms & 8.866204 \% & 176 ms \cr
-P5 & 16.47285 \% & 312 ms & 6.895412 \% & 292 ms \cr
-Mean & 15.55116 \% & 303.2 ms & 7.459949 \% & 172 ms \cr
-S. deviation & 2.191875 \% & 68.66731 ms & 1.32362 \% & 71.61006 ms \cr
+P1 & 18.63329 \% & 1300 ms & 8.291183 \% & 633 ms \cr
+P2 & 15.71007 \% & 1617 ms & 5.478639 \% & 450 ms \cr
+P3 & 13.1708 \% & 817 ms & 7.768305 \% & 550 ms \cr
+P4 & 13.76879 \% & 1283 ms & 8.866204 \% & 733 ms \cr
+P5 & 16.47285 \% & 1300 ms & 6.895412 \% & 1216 ms \cr
+Mean & 15.55116 \% & 1263 ms & 7.459949 \% & 717 ms \cr
+S. deviation & 2.191875 \% & 286.1138 ms & 1.32362 \% & 298.3752 ms \cr
 }
 \caption/f A/B testing
 
@@ -1606,9 +1606,9 @@ for(j in 1:5){
     val = data[[j]]$Tablet[[i]]
     if(val == 0){
       if(counter > 0){
-       # multiplied by 4 because of the log entry frequency  
-       #  -> 4 milliseconds
-        glanceList <- c(glanceList, counter * 4)
+       # multiplied by 1000/60 because of the log entry frequency  
+       #  -> 1000/60 milliseconds
+        glanceList <- c(glanceList, counter * 1000 / 60)
         counter = 0 
       } 
     } else {
@@ -1617,7 +1617,7 @@ for(j in 1:5){
   }
 }
 if(counter > 0){
-  glanceList <- c(glanceList, counter * 4)
+  glanceList <- c(glanceList, counter * 1000 / 60)
 }
 \endtt
 }\caption/f Creating list of glance times
@@ -1642,9 +1642,9 @@ for(j in 1:5){
     }
   }
   eval[[1]] <- c(ratio * 100, eval[[1]])
-  eval[[2]] <- c(max * 4, eval[[2]])
+  eval[[2]] <- c(max * 1000 / 60, eval[[2]])
   print(ratio * 100)
-  print(max * 4)
+  print(max * 1000 / 60)
 }
 mean(eval[[1]])
 sd(eval[[1]])
@@ -1657,7 +1657,7 @@ sd(eval[[2]])
 
 {
 \begtt
-> t.test(glanceList, conf.level = 0.99, alternative="less")
+> t.test(glanceList, alternative="less", conf.level=0.99)
 
         One Sample t-test
 
@@ -1665,12 +1665,12 @@ data:  glanceList
 t = 24.39, df = 1360, p-value = 1
 alternative hypothesis: true mean is less than 0
 99 percent confidence interval:
-     -Inf 37.84083
+     -Inf 157.6701
 sample estimates:
 mean of x 
- 34.54225 
+  143.926 
 
-> t.test(glanceList, conf.level = 0.99)
+> t.test(glanceList, conf.level=0.99)
 
         One Sample t-test
 
@@ -1678,10 +1678,10 @@ data:  glanceList
 t = 24.39, df = 1360, p-value < 2.2e-16
 alternative hypothesis: true mean is not equal to 0
 99 percent confidence interval:
- 30.8891 38.1954
+ 128.7046 159.1475
 sample estimates:
 mean of x 
- 34.54225 
+  143.926 
 \endtt
 }\caption/f Confidence intervals for Torque glance times
 \medskip
@@ -1696,10 +1696,10 @@ data:  glanceList
 t = 24.935, df = 983, p-value = 1
 alternative hypothesis: true mean is less than 0
 99 percent confidence interval:
-     -Inf 26.05161
+     -Inf 108.5484
 sample estimates:
 mean of x 
-  23.8252 
+ 99.27168 
 
 > t.test(glanceList, conf.level = 0.99)
 
@@ -1709,10 +1709,10 @@ data:  glanceList
 t = 24.935, df = 983, p-value < 2.2e-16
 alternative hypothesis: true mean is not equal to 0
 99 percent confidence interval:
- 21.35927 26.29114
+  88.99696 109.54640
 sample estimates:
 mean of x 
-  23.8252 
+ 99.27168 
 \endtt
 }\caption/f Confidence intervals for \rfc{name} glance times
 \medskip

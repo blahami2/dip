@@ -221,8 +221,8 @@
 \Xlabel{testing.users.ab.glance_cd}{5.5}
 \Xpage{39}
 \Xlabel{testing.users.ab.torque_glance_times}{5.6}
-\Xlabel{testing.users.ab.cd_glance_times}{5.7}
 \Xpage{40}
+\Xlabel{testing.users.ab.cd_glance_times}{5.7}
 \Xlabel{testing.users.ab.cd_glance_distribution}{5.8}
 \Xtoc{2}{\rm }{5.3.7}{Change Lane Test evaluation }{40}
 \Xpage{41}
