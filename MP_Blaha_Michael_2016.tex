@@ -1523,17 +1523,27 @@ The second metric is the reaction time. The reaction is determined from the path
 
 Given the results, a reaction time can be measured. As described in \rfc{http://www.visualexpert.com/Resources/reactiontime.html}, reaction time consists of three parts, which are highly situation-dependable and unexact:
 \begitems
-* \bf Mental processing time -- the amount of time it takes for brain to percieve a signal and to decide upon a response,
-* \bf movement time -- the amount of time it takes to perform the response (using muscles),
-* \bf device response time -- the amount of time it takes for a vehicle to react to input.
+* {\bf Mental processing time} -- the amount of time it takes for brain to percieve a signal and to decide upon a response,
+* {\bf movement time} -- the amount of time it takes to perform the response (using muscles),
+* {\bf device response time} -- the amount of time it takes for a vehicle to react to input.
 \enditems
 
-For the purpose of evaluating, the reaction time will be assumed to be a single value without dividing it into three parts. When driving at 60 kilometres per hour, it is approximately the speed of 16,667 metres per second. The times of reaction were measured based on the speed and the traveled distance from the moment of object appearence. The measured times and the distances (from the object) of turns are shown in table \ref[].
+For the purpose of evaluating, the reaction time will be assumed to be a single value without dividing it into three parts. A note has to be made, that the simulator reaction delay is much lower than real vehicle delay, therefore a device response time it minimized. When driving at 60 kilometres per hour, it is approximately the speed of 16,667 metres per second. The times of reaction were measured based on the speed and the traveled distance from the moment of object appearence. The measured times and the distances (from the object) of turns are shown in table \ref[testing.users.clt.turn_distances_times].
 
-\ctable{ccc}{
+\medskip
+\label[testing.users.clt.turn_distances_times]
+\ctable{crr}{
   \bf Participant & \bf Turn distance [m] & \bf Turn time [ms] \crl
- 
-}\caption/f Times and distances of turn from the object
+  P1 & 8.29 & 497.4 \cr
+  P2 & 6.97 & 418.4 \cr
+  P3 & 7.25 & 435.1 \cr
+  P4 & 11.41 & 684.6 \cr
+  P5 & 10.39 & 623.6 \cr
+}\caption/f Times and distances of turn from the object\medskip
+
+%\href{http://www.humanbenchmark.com/tests/reactiontime}
+%\href{	http://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf}
+According to statistics gathered so far in \rfc{ref}, where participants push the button when it turns green (knowing it will do so) ficve times over, the average human reaction time for highly expected signal is 215 milliseconds. While the participants in the change lane test did expect something to happen and that they will have to go around something, they drove for three minutes focusing on keeping the speed as well as controlling the tested application in a homogeneous environment of highway in the forest, which heavily lowers their alertness. However, the results are still under 0.7 second with the mean of 531 milliseconds. As desribed in \rfc{ odkaz v bibli: keyword: Fitch, Olson}, a similar test was performed focusing on alerted obstacle crash avoidance. Alerted means that the participants knew what is the test about. The measured mean time was 0.78 seconds. Another similar test was performed also with average resulsts around 0.7 seconds. This means that the application controlling in the change lane test did not influence the participant's awareness. The results are even slightly better than the ones from the tests mentioned above, but it can be caused by the difference of measured signal -- the accelerator pedal vs. steering wheel movement, as the steering wheel movement is usually performed faster.
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[testing.summary]

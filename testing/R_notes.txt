@@ -284,10 +284,10 @@ data[[2]] <- fread("../cardashboard/p2_t_clt.txt", select = c(3,5))
 data[[3]] <- fread("../cardashboard/p3_m_clt.txt", select = c(3,5))
 data[[4]] <- fread("../cardashboard/p4_t_clt.txt", select = c(3,5))
 data[[5]] <- fread("../cardashboard/p5_m_clt.txt", select = c(3,5))
-
 for(i in 1:5){
   data[[i]]$V5 <- (-1) * data[[i]]$V5
 }
+
 dataOpt <- list(c(),c())
 dataOpt[[1]] <- data[[1]]$V3 - 1
 dataOpt[[2]] <- data[[1]]$V5 - 1
@@ -402,4 +402,23 @@ plot(data[[column]]$V3, data[[column]]$V5, xlim=c(-5239.3-35,-5239.3))
 
 # background
 plot(c(0,45), c(0,20), xlab="x[m]", ylab="y[m]")
+
+objectX = -5239.3
+objectY = 2292
+ 
+distFunction <- function(ax, ay, bx, by){ 
+  return(sqrt((ax - bx)^2 + (ay - by)^2))
+}
+
+timeFunction <- function(speedKmph, distance){
+  speedMps = speedKmph / 3.6
+  return(distance / speedMps)
+}
+
+distances <- c()
+times <- c()
+for(i in 1:5){
+  distances <- c(distances, 35 - distFunction(startX[[i]], startY[[i]], objectX, objectY))
+  times <- c(times, timeFunction(60, distances[[i]]))
+}
  

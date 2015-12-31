@@ -228,23 +228,25 @@
 \Xpage{41}
 \Xlabel{testing.users.clt.angles_p1}{5.9}
 \Xlabel{testing.users.clt.table_turn_coordinates}{5.10}
-\Xlabel{testing.users.clt.turn_paths}{5.11}
 \Xpage{42}
-\Xlabel{testing.summary}{5.4}
-\Xtoc{1}{\rm }{5.4}{Summary }{42}
+\Xlabel{testing.users.clt.turn_paths}{5.11}
+\Xlabel{testing.users.clt.turn_distances_times}{5.12}
 \Xpage{43}
+\Xlabel{testing.summary}{5.4}
+\Xtoc{1}{\rm }{5.4}{Summary }{43}
+\Xpage{44}
 \Xlabel{conclusion}{6}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{43}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{44}
 \Xlabel{conclusion.assignment_completion}{6.1}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{43}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{44}
 \Xlabel{conclusion.project_life_cycle}{6.2}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{43}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{44}
 \Xlabel{conclusion.project_life_cycle.present}{6.2.1}
-\Xtoc{2}{\rm }{6.2.1}{Present }{43}
+\Xtoc{2}{\rm }{6.2.1}{Present }{44}
 \Xlabel{conclusion.project_life_cycle.future}{6.2.2}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{43}
+\Xtoc{2}{\rm }{6.2.2}{Future TODO }{44}
 \Xlabel{conclusion.summary}{6.3}
-\Xtoc{1}{\rm }{6.3}{Summary }{43}
+\Xtoc{1}{\rm }{6.3}{Summary }{44}
 \Xpage{45}
 \Xtoc{0}{\bfshape }{A}{Thesis }{45}
 \Xpage{46}
