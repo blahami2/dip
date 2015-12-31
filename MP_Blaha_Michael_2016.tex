@@ -1414,6 +1414,8 @@ print(100 * glanceSum / glanceLength)
 
 As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 817 to 1616 milliseconds with the mean of 1263.3 and a standard deviation of 296.11. The same was measured for CarDashboard \rfc{name} and the results for the maximal glance time are in range from 450 to 1217 milliseconds with the mean of 716.7 and a standard deviation of 298.38. This means that the average maximal glance time for CarDashboard\rfc{name} is nearly half the average maximal glance time for Torque.
 
+As mentioned in \rfc{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001673/}, drivers tend to try obtaining the required information for 1.5 to 2 seconds, then they give it up for the moment and try later. The 1.5-2 seconds glance time is also considered to be the safety limit for a single task requiring a visual focus. With the \rfc{name} exhibiting maximal glance times lower than 1.2 second the limit of 1.5 second is not even reach, which is a success. 
+
 Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \rfc{add}). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{Name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\rfc{add}, the result for \rfc{name} is shown below for illustration.
 
 \begtt
@@ -1482,9 +1484,22 @@ lines (xGrid,dexp(xGrid, rate = 1 / xMean),
 
 As described in the scenario (\ref[testing.users.preparations]), every participant drove for approximately 3 minutes in the speed of 60 kilometers per hour, when the object appeared from nowhere 35 metres in front of the car. The object was a yellow cube with 2.2 metres long side and a red arrow pointing to the left lane. This suggested the driver to go around the object by changing the lane to the left one.
 
+\seccc Object avoidance
+
 The most important metric in the Change-Lane test is avoiding the object while working with the application. Every participant managed to avoid the object, from which we can assume the success rate around 100 \% (the success rate of the testing is 100 \%, however it can be safely stated that nothing is perfect and real 100 \% in every situation possible is not achievable).
 
-The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the realted figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
+\seccc Reaction time
+
+\medskip
+\centerline{
+\label[testing.users.clt.angles_p1]
+\inspic images/testing_users_clt_angles_p1.png
+}
+\nobreak\medskip
+\caption/f Path angles of the first participant (0.1 metres point distance)
+\medskip   
+
+The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data, see example at figure \ref[testing.users.clt.angles_p1] based on the script \ref[scripts.testing.clt.angles]) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the related figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
 
 \label[testing.users.clt.table_turn_coordinates]
 \ctable{ccc}{
@@ -1506,6 +1521,19 @@ The second metric is the reaction time. The reaction is determined from the path
 \caption/f Turn paths
 \medskip   
 
+Given the results, a reaction time can be measured. As described in \rfc{http://www.visualexpert.com/Resources/reactiontime.html}, reaction time consists of three parts, which are highly situation-dependable and unexact:
+\begitems
+* \bf Mental processing time -- the amount of time it takes for brain to percieve a signal and to decide upon a response,
+* \bf movement time -- the amount of time it takes to perform the response (using muscles),
+* \bf device response time -- the amount of time it takes for a vehicle to react to input.
+\enditems
+
+For the purpose of evaluating, the reaction time will be assumed to be a single value without dividing it into three parts. When driving at 60 kilometres per hour, it is approximately the speed of 16,667 metres per second. The times of reaction were measured based on the speed and the traveled distance from the moment of object appearence. The measured times and the distances (from the object) of turns are shown in table \ref[].
+
+\ctable{ccc}{
+  \bf Participant & \bf Turn distance [m] & \bf Turn time [ms] \crl
+ 
+}\caption/f Times and distances of turn from the object
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[testing.summary]
@@ -1718,5 +1746,104 @@ mean of x
 \medskip
 
 
+\label[scripts.testing.clt.angles]
+{
+\begtt
+startX <- c()
+startY <- c()
+
+angles <- list(c(),c(),c(),c(),c())
+xpoints <- list(c(),c(),c(),c(),c())
+ypoints <- list(c(),c(),c(),c(),c())
+
+for(column in 1:5){
+  printedA = 0
+  printedB = 0
+  xlimA = 0
+  xlimB = 0
+  for(i in 1:length(data[[column]]$V3)){
+    if(printedA == 0){
+      if(data[[column]]$V3[[i]] >= (-5239.3-35)){
+        print(i)
+        xlimA = i
+        printedA = 1
+      }
+    } else {
+      if(printedB == 0){
+        if(data[[column]]$V3[[i]] >= (-5239.3)){
+          print(i)
+          xlimB = i
+          printedB = 1
+        }
+      } else {
+        break
+      }
+    }
+  }
+
+  space = 0.1
+  xCoord = 0
+  x1 = 0
+  x2 = 0
+  x3 = 0
+  y1 = 0
+  y2 = 0
+  y3 = 0
+  for(i in xlimA:xlimB){
+    if(xCoord == 0){
+      x1 = data[[column]]$V3[[i]]
+      y1 = data[[column]]$V5[[i]]
+      xCoord = x1
+      xpoints[[column]] <- c(xpoints[[column]], x1)
+      ypoints[[column]] <- c(ypoints[[column]], y1)
+    } else {
+      xCoord2 = data[[column]]$V3[[i]]
+      if(abs(xCoord - xCoord2) < space){
+      } else {
+        if(x2 != 0){
+          x3 = data[[column]]$V3[[i]]
+          y3 = data[[column]]$V5[[i]]
+          xCoord = x3
+          xpoints[[column]] <- c(xpoints[[column]], x3)
+          ypoints[[column]] <- c(ypoints[[column]], y3)
+          ux = x2 - x1
+          uy = y2 - y1
+          vx = x3 - x2
+          vy = y3 - y2
+          top = ux * vx + uy * vy
+          bot = sqrt(ux * ux + uy * uy) * sqrt(vx * vx + vy * vy)
+          angles[[column]] <- c(angles[[column]], acos(top/bot)*180/pi)
+          x1 = x2
+          y1 = y2
+          x2 = x3
+          y2 = y3
+        } else {
+          x2 = data[[column]]$V3[[i]]
+          y2 = data[[column]]$V5[[i]]
+          xCoord = x2
+          xpoints[[column]] <- c(xpoints[[column]], x2)
+          ypoints[[column]] <- c(ypoints[[column]], y2)
+        }
+      }
+    }
+  }
+
+
+  angles[[column]][is.nan(angles[[column]])] <- 0
+
+  for(i in 1:length(angles[[column]])){
+    if(angles[[column]][[i]] > 0.2){
+      print(xpoints[[column]][[i+1]])
+      print(ypoints[[column]][[i+1]])
+      print(i)
+      startX <- c(startX, xpoints[[column]][[i+1]])
+      startY <- c(startY, ypoints[[column]][[i+1]])
+      break
+    }
+  }
+}
+plot(angles[[1]])
+\endtt
+}\caption/f 
 
 \bye

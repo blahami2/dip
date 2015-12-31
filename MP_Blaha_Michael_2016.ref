@@ -226,35 +226,40 @@
 \Xlabel{testing.users.ab.cd_glance_distribution}{5.8}
 \Xtoc{2}{\rm }{5.3.7}{Change Lane Test evaluation }{40}
 \Xpage{41}
-\Xlabel{testing.users.clt.table_turn_coordinates}{5.9}
-\Xlabel{testing.users.clt.turn_paths}{5.10}
-\Xlabel{testing.summary}{5.4}
-\Xtoc{1}{\rm }{5.4}{Summary }{41}
+\Xlabel{testing.users.clt.angles_p1}{5.9}
+\Xlabel{testing.users.clt.table_turn_coordinates}{5.10}
+\Xlabel{testing.users.clt.turn_paths}{5.11}
 \Xpage{42}
-\Xlabel{conclusion}{6}
-\Xtoc{0}{\bfshape }{6}{Conclusion }{42}
-\Xlabel{conclusion.assignment_completion}{6.1}
-\Xtoc{1}{\rm }{6.1}{Assignment completion }{42}
-\Xlabel{conclusion.project_life_cycle}{6.2}
-\Xtoc{1}{\rm }{6.2}{Project life cycle }{42}
-\Xlabel{conclusion.project_life_cycle.present}{6.2.1}
-\Xtoc{2}{\rm }{6.2.1}{Present }{42}
-\Xlabel{conclusion.project_life_cycle.future}{6.2.2}
-\Xtoc{2}{\rm }{6.2.2}{Future TODO }{42}
-\Xlabel{conclusion.summary}{6.3}
-\Xtoc{1}{\rm }{6.3}{Summary }{42}
+\Xlabel{testing.summary}{5.4}
+\Xtoc{1}{\rm }{5.4}{Summary }{42}
 \Xpage{43}
-\Xtoc{0}{\bfshape }{A}{Thesis }{43}
-\Xpage{44}
-\Xtoc{0}{\bfshape }{B}{Images }{44}
-\Xlabel{add.test.ab.torque_glance_distribution}{B.1}
+\Xlabel{conclusion}{6}
+\Xtoc{0}{\bfshape }{6}{Conclusion }{43}
+\Xlabel{conclusion.assignment_completion}{6.1}
+\Xtoc{1}{\rm }{6.1}{Assignment completion }{43}
+\Xlabel{conclusion.project_life_cycle}{6.2}
+\Xtoc{1}{\rm }{6.2}{Project life cycle }{43}
+\Xlabel{conclusion.project_life_cycle.present}{6.2.1}
+\Xtoc{2}{\rm }{6.2.1}{Present }{43}
+\Xlabel{conclusion.project_life_cycle.future}{6.2.2}
+\Xtoc{2}{\rm }{6.2.2}{Future TODO }{43}
+\Xlabel{conclusion.summary}{6.3}
+\Xtoc{1}{\rm }{6.3}{Summary }{43}
 \Xpage{45}
-\Xtoc{0}{\bfshape }{C}{Tables }{45}
-\Xlabel{tables.testing.ab}{C.2}
+\Xtoc{0}{\bfshape }{A}{Thesis }{45}
 \Xpage{46}
-\Xtoc{0}{\bfshape }{D}{Scripts }{46}
+\Xtoc{0}{\bfshape }{B}{Images }{46}
+\Xlabel{add.test.ab.torque_glance_distribution}{B.1}
 \Xpage{47}
+\Xtoc{0}{\bfshape }{C}{Tables }{47}
+\Xlabel{tables.testing.ab}{C.2}
 \Xpage{48}
+\Xtoc{0}{\bfshape }{D}{Scripts }{48}
 \Xpage{49}
 \Xpage{50}
 \Xpage{51}
+\Xpage{52}
+\Xlabel{scripts.testing.clt.angles}{D.8}
+\Xpage{53}
+\Xpage{54}
+\Xpage{55}
