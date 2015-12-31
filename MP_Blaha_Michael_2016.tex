@@ -522,6 +522,28 @@ Continuous integration supports rapid application development while giving the m
 
 For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen \rfc{link \url{https://travis-ci.org/}}. While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
 
+\label[analysis.development_and_support_tools.eval]
+\secc Test evaluation
+
+As described in chapter \ref[testing] about testing in section about testing with users \[testing.users], testing with users on a car simulator will be performed. There is an eye-tracking system on the simulator as well, therefore there will be huge amount of data gathered, from both the simulator and the eye-tracker. A proper software must be used to analyze those data and present them. A few options will be described here: Wolfram Mathematica, Matlab and R.
+
+\seccc Wolfram Mathematica
+
+Wolfram Mathematica is a professional software for technical computing. It covers all areas of technical computing from mathematics, physics and so on. It is based on Wolfram Language, which has strong algorithmic power as well as wide range of capabilities. In Wolfram Mathematica pretty much every technical computation can be done in the most reasonable time. It has one of the most advanced help systems available with hundreds of thousands examples.
+
+However, all of this does not come for free. The Wolfram Mathematica software is very costly and for purpose of this thesis, a minimum functionality would be used. As the results of the testing will probably presented later in a paper, a professional licence would have to be used.
+
+\seccc Matlab
+
+Matlab is another software known for it's technical computing capabilities. It is capable of numeric computation, data analysis and visualisation, programming and algorithm development and even application development and deployment. It is a high-level language and an interactive environment on it's own.
+
+The disadvantage is the price of Matlab. Even a student license is very costly and a professional license would be needed in the future for the paper release. It might be an option in the future, however it is not a viable option now.
+
+\seccc 
+R is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analysing large sets of data meaning it might just be enough for the test resulsts to be analyzed. Should it not be enough, a different approach has to be taken.
+
+As it is completely free, the use and purpose it not limited. The limited functionality should not be a problem. 
+
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \label[analysis.obd]
 \sec On-Board Diagnostics
@@ -541,6 +563,7 @@ Currently there are two versions of OBD. The first one (OBD I) provides only dia
 \secc Data
 
 \rfc{Describe OBD data}
+
 
 
 %------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
