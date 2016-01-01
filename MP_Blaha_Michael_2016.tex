@@ -59,17 +59,18 @@ sources:
 * generally progress: \url{https://docs.google.com/document/d/1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8/edit}
 \enditems
 
+
+%		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
+\label[introduction.motivation]
+\sec Motivation 
+
+In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\rfc{study}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
+
+
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
 \label[introduction.project]
 \sec Project
 
-\rfc{Project}
-
-%		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
-\label[introduction.motivation]
-\secc Motivation 
-
-\rfc{Motivation}
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -325,12 +326,6 @@ Focusing on minimizing the cognitive load, messaging concept in Android Auto foc
 
 It seems to be a good sign that even Google is interested in this area and performs such a research. Every Android application can be designed for Android Auto and use it's simplified user interface, allowing the developer to focus on other issues than in-car user interaction. However, the functionality is currently very limited. Hopefully there will be further progress as soon as possible.
 
-%	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
-\label[analysis.use_cases]
-\sec Use-cases
-
-Based on above. Also other typical analysis stuff.
-
 %	------------------------------------------------------------------------ Platforms ----------------------------------------------------------------------%
 \label[analysis.platforms]
 \sec Platforms
@@ -455,6 +450,75 @@ While in other environment the user can usually control the device brightness, i
 
 Responsiveness is an important factor when it comes to pleasure of using an application, but when it comes to using it in a car, it becomes extremely important for safety as well. When the application is responsive, the user does not have to check the screen for progress so often or worse, wait for the progress looking at it continuously.
 
+\label[analysis.gui.development_process]
+\secc Development process
+
+The GUI development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphics user interface, development methods for other types of user interface will not be described.
+
+The basic procedure of creating a UI design consists of multiple steps. Fulfilling the requirements for each step properly should guarantee the proper outcome. The UI design steps are as follows:
+\begitems
+* Assignment and understanding,
+* research,
+* behaviour specification,
+* basic vision (mockup),
+* detailed design of the looks,
+* implementation,
+* usability testing,
+* evaluation,
+* final implementation.
+\enditems
+
+The process can also be divided into fewer phases, from which each contains multiple tasks. The list mentioned above is divided into those phases, so that those phases are certain sets of steps that can be iterated over and over for the best result possible. Those phases are the lo-fi phase, the hi-fi phase and the final phase \rfc{}.
+
+\seccc Lo-fi phase
+
+\begitems
+* Basic product statement,
+* needs assesment,
+* use case brainstorming,
+* task list definition,
+* task analysis,
+* prototyping,
+* evaluation,
+\begitems
+  * cognitive walk through,
+  * collaborative critiquing,
+  * heuristic evaluation,
+\enditems
+* re-design.
+\enditems
+
+The product statement should state what the product is, what it does and who is it for. This ensures that the developer know what is he actually trying to achieve and why. Also, it briefly describes the target user group.
+
+The needs assesment is a systematic process for determining and adressing the needs. It is not necessary to perform unless the goal or the user group is unknown. It also involves user research.
+
+The use-case brainstorming is used for finding the use-cases of the application. It other words, the outcome should be set of use-cases, of the things a user can do with the application. It also gives an idea about functionality, not just the UI.
+
+Also created using the brainstorming method, the task list is defined. Is is based on the use cases created earlier. A task is a procedure a user has to do with the application when achieving a single goal. After defining the tasks they are also analyzed.
+
+After the analysis is completed, a prototype can be created. Prototypes are the early drafts of the GUI, they serve as something to work on, a physical representation of the current GUI design direction.  They are usually done with a paper and pencil or a professional prototyping software, but they lack functionality. The prototypes in this phase can also be called mock-ups, wireframes or lo-fi prototypes.
+
+The prototype is then evaluated using several evaluation processes. A cognitive walk through, a collaborative critiquing and a heuristic evaluation should be done.  The cognitive walk through is an attempt of the expert to act as user and walk through the application. The collaborative critiquing is a session where group of people try to find problems. And the heuristic evaluation is about fulfilling the heuristic rules and should be taken into consideration during the whole design process.
+
+\seccc Hi-fi phase
+
+The hi-fi phase assumes the completion of the lo-fi phase and takes the prototype further into reality. The hi-fi prototype adds functionality. It is an illusion of the final visual and interaction design. It also already runs on the target platform and follows it's look\&feel. While it should mostly work like the final application, the actual application logic need not be implemented. Also, only the main parts of the application UI are prototyped.
+
+Also in the hi-fi phase an iterative evaluation process is present. The prototype is implemented, tested, evaluated and then optionaly redesigned over and over again. Usually the final design is used in the application itself, which however does not have to be the best way.
+
+The evaluation in this phase is already done with users, but also testing without users is present to check the loyalty to the course (heuristic testing etc.). Usability testing is performed and depends on the application itself. As mentioned in \rfc{ref 5 users is enough}, 5 users should be enough to test an application, as an additional tester does not add that much precision.
+
+
+%	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
+\label[analysis.gui.use_cases]
+\secc Use-cases
+
+\rfc{use cases}
+
+\label[analysis.gui.task_list]
+\secc Task list
+
+\rfc{task list}
 
 %	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%
 %\sec Server
@@ -525,7 +589,7 @@ For simple CI practice integration, there are several online services. For this 
 \label[analysis.development_and_support_tools.eval]
 \secc Test evaluation
 
-As described in chapter \ref[testing] about testing in section about testing with users \[testing.users], testing with users on a car simulator will be performed. There is an eye-tracking system on the simulator as well, therefore there will be huge amount of data gathered, from both the simulator and the eye-tracker. A proper software must be used to analyze those data and present them. A few options will be described here: Wolfram Mathematica, Matlab and R.
+As described in chapter \ref[testing] about testing in section about testing with users \ref[testing.users], testing with users on a car simulator will be performed. There is an eye-tracking system on the simulator as well, therefore there will be huge amount of data gathered, from both the simulator and the eye-tracker. A proper software must be used to analyze those data and present them. Also it has to be purchasable cheaply or for free. A few options will be described here: Wolfram Mathematica, Matlab and R.
 
 \seccc Wolfram Mathematica
 
@@ -539,10 +603,11 @@ Matlab is another software known for it's technical computing capabilities. It i
 
 The disadvantage is the price of Matlab. Even a student license is very costly and a professional license would be needed in the future for the paper release. It might be an option in the future, however it is not a viable option now.
 
-\seccc 
+\seccc R
+
 R is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analysing large sets of data meaning it might just be enough for the test resulsts to be analyzed. Should it not be enough, a different approach has to be taken.
 
-As it is completely free, the use and purpose it not limited. The limited functionality should not be a problem. 
+As it is completely free, the use and purpose it not limited. Also it fits the cheep puchase requirement making it a viable choice. Therefore, R will be used for testing results analyzation and evaluation.
 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \label[analysis.obd]
@@ -636,10 +701,8 @@ Given the car environment, designing proper graphics user interface is crucial f
 
 \rfc{Drafts in additions}
 
-\label[design.gui.the_early_phase]
-\secc The early phase
-
-\rfc{Rename}
+\label[design.gui.phase_one]
+\secc Phase one
 
 In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image \rfc{ link and image \#1}.
 
@@ -661,10 +724,8 @@ For both drafts the following would apply. The swipe action would invoke text-to
 * {\bf Limited} -- the main screen has a limited functionality (near to none) while the layout of subapplications would have to be created independently everytime a~new feature is implemented. This also limits easy extensibility, as creating a~proper GUI is not a~simple task with the given constraints.
 \enditems
 
-\label[design.gui.the_second_phase]
-\secc The second phase
-
-\rfc{rename}
+\label[design.gui.phase_two]
+\secc Phase two
 
 Next step was to fix the problems mentioned above. Being inspired by the reviewed applications \rfc{ link to section} one attempt ended with concept shown on image \rfc{ link \#5}. It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
 
@@ -683,8 +744,8 @@ The second image \rfc{ link \#6} shows possibility of inserting a subapplication
 * {\bf Consistency} -- the vertical application list is consistent, however, the central panel is still suffering from lack of consistency, as every sub-application can have a different layout.
 \enditems
 
-\label[design.gui.the_grid]
-\secc The grid
+\label[design.gui.phase_three]
+\secc Phase three
 
 The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \rfc{ link \#7}, it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
 
@@ -729,9 +790,6 @@ As for the colors, a proper contrast has to be present for good readability. As 
 * {\bf simplicity} -- again, there are only two kinds of elements, which is simple enough,
 * {\bf readability} -- because of the good contrast the text will be easily recognizable and readable.
 \enditems
-
-
-Describe the process, phases, analyse and compare advantages, disadvantages, thoughts
 
 %------------------------------------------------------------------------ REALIZATION ------------------------------------------------------------------------%
 \label[realization]
@@ -1572,7 +1630,17 @@ According to statistics gathered so far in \rfc{ref}, where participants push th
 \label[testing.summary]
 \sec Summary
 
-\rfc{Test summary}
+Thanks to the test driven development, the amount of bugs that got into the release version was limited. The unit tests prevented many bugs from flowing through. However, certain bugs and inperfections were present in the automatic tests as well, allowing disfunctional code go past them. The test driven development just adds another layer to the application development protection layer, but it is not perfect.
+
+After the development of the graphics user interface was done, the heuristic testing came into place. Many shortcomings have been found, however, not all were fixed because of the thesis deadline. They will surely be fixed as soon as possible, as the application will be released into the real market and it has to be nearly perfect by then. The heuristic testing however gives a great insight into certain areas of the user interface.
+
+Then even with a few difficulties, the application was tested in the most suitable environment available -- the realistic car simulator. Thanks to the eye-tracking and the simulator logs huge amount of data has been gathered. The evaulation of those data was done using the R software.
+
+The A/B testing against the potential competitor -- Torque was performed. The tests have shown that the \rfc{name} performs better in the real life scenarios based on obtaining information from a car.
+
+The change lane test was done in order to find out the influence of reaction time when using the application. None or minor influence (in terms of units of milliseconds) has been found, from which one can assume that the application usage is as safe as planned.
+
+Overall the testing was a success and it helped developing a good and safe application for in-car environment. The testing participants were usually happy with the way the application is done and most of them claimed that they would use the application daily.
 
 %------------------------------------------------------------------------ CONCLUSION ------------------------------------------------------------------------%
 \label[conclusion]
@@ -1580,16 +1648,49 @@ According to statistics gathered so far in \rfc{ref}, where participants push th
 
 \rfc{Conclusion intro}
 
+
 %	------------------------------------------------------------------------ Assignment completion ----------------------------------------------------------------------%
 \label[conclusion.assignment_completion]
 \sec Assignment completion
 
-\rfc{Assignment completion}
+\secc Completing the assignment tasks
+
+\seccc Review existing Android applications for in-car use
+
+The reviewed appliactions are described in the section \ref[analysis.existing_applications]. There are following applications: Torque, CarHome Ultra, Car Dashdroid, Ultimate Car Dock. Also Android Auto was briefly described, as it is the current direction of Google in the automotive area.
+
+\seccc Review and analyse User Interface development methods for in-car infotainment applications
+
+A GUI is analyzed in section \ref[analysis.gui]. This analyzation contains requirements for GUI (\ref[analysis.gui.basic_principles]) as well as differencies for the in-car usage (\ref[analysis.gui.ui_in_a_car_environment]). It also describes the development process of user interface in section \ref[analysis.gui.development_process].
+
+\seccc Analyze the in-car OBD API and exported data
+
+The OBD is analyzed in section \ref[analysis.obd]. The API is then described in section \ref[analysis.obd.api] and the data are described in \ref[analysis.obd.data]. The OBD is also mentioned in the realization chapter in section \ref[realization.core.obd].
+
+\seccc Design an application system architecture for accessing the OBD data and resources
+
+The application architecture is described in section \ref[design.application_architecture], where the limitations of the platform architecture (\ref[design.application_architecture.platform_limitations]), the extensibility (\ref[design.application_architecture.extensibility]), the modularity (\ref[design.application_architecture.modularity]) and the adaptibility (\ref[design.application_architecture.adaptability]) are described.
+
+\seccc Design a tablet User Interface for in-car use
+
+The process of designing the tablet User Interface for in-car use is described in the design section \ref[design.gui]. It presents four phases of GUI creation process and the emergence of the final GUI design.
+
+\seccc Design and implement in-car application offering the OBD data for Android tablet platform
+
+The application development phase is described in chapter \ref[realization] in sections \ref[realization.tablet] and \ref[realization.core]. The OBD access itself is described in section \ref[realization.core.obd] while the data are provided using modules described in section \ref[realization.core.modules].
+
+\seccc Perform UI and application testing and evaluate results
+
+The testing is described in chapter \ref[testing]. Both application (\ref[testing.code]) and UI testing (\ref[testing.heuristic] and \ref[testing.users]) are present. The testing with users was performed on a realistic car simulator and it is thoroughly described in section \ref[testing.users].
+
+
 %	------------------------------------------------------------------------ Project life cycle ----------------------------------------------------------------------%
 \label[conclusion.project_life_cycle]
 \sec Project life cycle
 
 \rfc{Project lifecycle}
+
+
 \label[conclusion.project_life_cycle.present]
 \secc Present
 
@@ -1599,11 +1700,13 @@ According to statistics gathered so far in \rfc{ref}, where participants push th
 \secc Future TODO
 
 \rfc{Future}
+
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[conclusion.summary]
 \sec Summary
 
 \rfc{Summary}
+
 \app Thesis
 
 \app Images
