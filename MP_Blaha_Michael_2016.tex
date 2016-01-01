@@ -110,7 +110,7 @@ For best results the application must and will be tested. Both code and UI must 
 \label[analysis]
 \chap Analysis
 
-\rfc{Analysis introduction}
+This chapter is about analyzation process. It contains research about existing related applications, about application platforms and the description of the chosen platform in more detailed way. Also a basic insight into GUI design process as well as general GUI principles and GUI specifics for the car environment. Then the application idea is described the view of use-cases and tasks followed by the review of tools used for development. Finally the OBD is described with it's API and the data it provides.
 
 sources:
 \begitems
@@ -510,15 +510,56 @@ The evaluation in this phase is already done with users, but also testing withou
 
 
 %	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
-\label[analysis.gui.use_cases]
-\secc Use-cases
+\label[analysis.use_cases]
+\sec Use-cases
 
-\rfc{use cases}
+Use-cases describe objectives users want to achieve with a system. They describe not only the UI, but also the functionality. They are usually named with a verb and optionally a noun. The name should be descriptive enough in order to give a proper idea about the specific goal.
+
+The use-case list is based on the analysis so far. It is inspired by the research on existing applications in section \ref[analysis.existing_applications] and the general idea of the application mentioned in section \ref[introduction.motivation].
+
+\begitems
+* Should display the information from the car,
+* should allow customization of displayed information,
+* should work as a dashboard,
+* should provide safe controls,
+* should display device information (time, battery, etc.),
+* should provide easy access to other applications,
+* should support different themes (light, dark).
+\enditems
+
+\rfc{UML?}
 
 \label[analysis.gui.task_list]
-\secc Task list
+\sec Task list
 
-\rfc{task list}
+The tasks are based on the use-cases, they are more exact substasks of the use-case scenarios. A single use-case scenario can be done by performing one or multiple tasks from the task list. They describe the system from the user perspective.
+
+\begitems
+* Display a single piece of information,
+* add a display:
+\begitems
+  * select a position for a new display,
+  * select a desired information or
+  * select a desired action:
+\begitems
+    * select a simple action or
+    * select an external application,
+\enditems
+\enditems
+* remove a display,
+* invoke an external application:
+\begitems
+  * add external application display,
+  * invoke an external application on touch,
+\enditems
+* change a theme,
+* create a group of displays,
+* move to another group of displays,
+* display help,
+* go back.
+\enditems
+
+\rfc{diagram? task graph?}
 
 %	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%
 %\sec Server
@@ -537,6 +578,7 @@ The evaluation in this phase is already done with users, but also testing withou
 \label[analysis.development_and_support_tools]
 \sec Development and support tools
 
+A fluent development process cannot be done without proper development and support tools. Those tools provide additional safety of code (prevention from loss of code), additional protection layer against bugs (automatic tests), help with implementation (code-completion, linking etc.) and more.
 
 \label[analysis.development_and_support_tools.ide]
 \secc Development environment
@@ -635,8 +677,7 @@ Currently there are two versions of OBD. The first one (OBD I) provides only dia
 \label[design]
 \chap Design 
 
-\rfc{Introduction to Design}
-
+This chapter is about the a
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
 \label[design.application_architecture]
@@ -891,7 +932,7 @@ For consistent hierarchical model, there has to be a module containing other mod
 \label[realization.core.modules.abstractdisplaymodule]
 \seccc AbstractDisplayModule
 
-Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request.
+Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request. Also it supports text-to-speech, as the value is said outloud on touch.
 
 \label[realization.core.modules.abstracttimedupdatedisplaymodule]
 \seccc AbstractTimedUpdateDisplayModule
