@@ -17,6 +17,8 @@
 % The following not to be modified
 % % % % % % % % % % % % % 
 \input ctustyle
+\input opmac-bib
+
 \faculty {F8}
 % % % % % % % % % % % % % 
 % Modify the following
@@ -43,9 +45,7 @@
    bakalářská, diplomová, disertační závěrečná práce; \TeX{}.
 }
 \thanks {           % Use main language here
-   Chtěl bych poděkovat své manželce Ludmile za podporu nejen finanční.
-   Díky tomu mohu na svém pracovišti dělat, co mě baví, a nejsem stresován 
-   výplatní páskou.
+ Diky
 }
 
 \picw=.9\hsize
@@ -76,7 +76,7 @@ sources:
 \label[introduction.motivation]
 \sec Motivation 
 
-In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\rfc{study\url{http://www.nsc.org/NewsDocuments/2014-Press-Release-Archive/3-25-2014-Injury-Facts-release.pdf}}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
+In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\fnote{\url{http://www.dailymail.co.uk/news/article-2591148/One-four-car-accidents-caused-cell-phone-use-driving-five-cent-blamed-texting.html}\cite[Gorman2014]}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
 
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
@@ -1841,6 +1841,17 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 
 \rfc{Summary}
 
+%------------------------------------------------------------------------ BIBLIOGRAPHY ------------------------------------------------------------------------%
+
+\bibchap
+\usebbl/c bibliography
+
+\rfc{search-and-replace \"dostupn\' e z\" to \"available from\" and \"a\" to \"and\"}
+% https://www.citacepro.com/dokument/b8tzUVgixHR9aGI3
+% download .tex format
+% insert into bibliography.bbl
+% search and replace
+
 %------------------------------------------------------------------------ APPENDIX / APPENDICES ------------------------------------------------------------------------%
 
 \app Thesis
@@ -2153,6 +2164,7 @@ for(column in 1:5){
 }
 plot(angles[[1]])
 \endtt
-}\caption/f 
+}\caption/f Script for calculating the path angles
+
 
 \bye
