@@ -34,7 +34,18 @@
 \declaration {Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e a \v ze jsem uvedl(a) ve\v sker\'e pou\v zit\'e informa\v cn\'\i{} zdroje v~souladu s~Metodick\'ym pokynem o~etick\'e p\v r\'\i{}prav\v e vysoko\v skolsk\'ych z\'av\v ere\v cn\'ych prac\'\i{}.
 
 		Beru na v\v edom\'\i{}, \v ze se na moji pr\'aci vztahuj\'\i{} pr\'ava a povinnosti vypl\'yvaj\'\i{}c\'\i{} ze z\'akona \v c.~121/2000~Sb., autorsk\'eho z\'akona, ve zn\v en\'\i{} pozd\v ej\v s\'\i{}ch p\v redpis{\r u}, zejm\'ena skute\v cnost, \v ze \v Cesk\'e vysok\'e u\v cen\'\i{} technick\'e v~Praze m\'a pr\'avo na uzav\v ren\'\i{} licen\v cn\'\i{} smlouvy o~u\v zit\'\i{} t\'eto pr\'ace jako \v skoln\'\i{}ho d\'\i{}la podle \S{}~60 odst.~1 autorsk\'eho z\'akona.}
-
+\keywordsEN {%
+   document design template; bachelor, master, Ph.D. thesis; \TeX{}.
+}
+\keywordsCZ {%
+   styl dokumentu; šablona; 
+   bakalářská, diplomová, disertační závěrečná práce; \TeX{}.
+}
+\thanks {           % Use main language here
+   Chtěl bych poděkovat své manželce Ludmile za podporu nejen finanční.
+   Díky tomu mohu na svém pracovišti dělat, co mě baví, a nejsem stresován 
+   výplatní páskou.
+}
 
 \picw=.9\hsize
 \sdef{item:p}{ $+$ }
@@ -64,7 +75,7 @@ sources:
 \label[introduction.motivation]
 \sec Motivation 
 
-In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\rfc{study}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
+In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\rfc{study\url{http://www.nsc.org/NewsDocuments/2014-Press-Release-Archive/3-25-2014-Injury-Facts-release.pdf}}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
 
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
@@ -332,7 +343,7 @@ It seems to be a good sign that even Google is interested in this area and perfo
 
 The chosen platform heavily influences the piece of market an application can reach. Therefore, only platforms with solid market share are considered. Another criteria is the simplicity of development, which influences the time and effort put into an application before it can be released. This is especially important for quickly finding out the sale potential of an application.
 
-Following the first rule mentioned above and based on tablet sales in past years (sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
+Following the first rule mentioned above and based on tablet sales in past years \rfc{source}(sources: \url{http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/}), the only viable options for an application are platforms Android, iOS and Windows.
 
 \label[analysis.platforms.android]
 \secc Android
@@ -709,7 +720,7 @@ The first considered approach was to create requirements on modules, such as man
 
 However, the Android concept with XML layouts does not allow their inflating during runtime. Because it is a performance-expensive operation, it pre-processes a XML file when building the application, as quoted below.
 
-{\it\uv{For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.}} \rfc{andoid layoutinflater documentation and quotes} 
+{\it``For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.''} \rfc{andoid layoutinflater documentation and quotes} 
 
 \seccc Overview 
 
@@ -731,26 +742,34 @@ For that reason there will be module containers which can contain multiple modul
 \label[design.gui]
 \sec GUI
 
-Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in chapter ( link).
-
-\label[design.gui.basic_elements]
-\secc Basic elements
-
-\rfc{Design GUI basic elements}
-
-\label[design.gui.drafts]
-\secc Drafts
-
-\rfc{Drafts in additions}
+Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in section \ref[analysis.gui].
 
 \label[design.gui.phase_one]
 \secc Phase one
 
-In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image \rfc{ link and image \#1}.
+In the early phase of the design process, the main idea was to display single piece of information as a time. Given that, a certain concept was created with a single application panel per screen, which would be a scrollable list. Swiping left or right would change the focus to another application panel. Part of the previous and following application panel would be seen, as shown on image \ref[design.gui.draft1].
 
-This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image \rfc{link and image \#2}, however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
+\medskip
+\centerline{
+\label[design.gui.draft1]
+\inspic images/design_gui_draft1.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#1 with multiple panels
+\medskip
 
-For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \rfc{ \#3 \#4} in the additional \rfc{ PRILOHA}. An early implementation is shown in the additional as well \rfc{ link}.
+This concept was recreated into a similar concept with difference in size of previous and following application panels. Those panels would be moved into the background which would make them smaller, as shown on image \ref[design.gui.draft2], however, more of those panels could be visible letting the user know more about the actual structure. Also, it presents combination of a name and an icon for easier recognizability.
+
+\medskip
+\centerline{
+\label[design.gui.draft2]
+\inspic images/design_gui_draft2.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#2 with the next and previous panels pushed into the background
+\medskip
+
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \ref[app.design.gui.draft3] and \ref[app.design.gui.draft4] in the appendix B on page \pgref[app.design.gui.draft3]. An early implementation is shown in the appendix as well \rfc{screenshot and link}.
 
 \seccc Advantages
 
@@ -769,9 +788,30 @@ For both drafts the following would apply. The swipe action would invoke text-to
 \label[design.gui.phase_two]
 \secc Phase two
 
-Next step was to fix the problems mentioned above. Being inspired by the reviewed applications \rfc{ link to section} one attempt ended with concept shown on image \rfc{ link \#5}. It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
+Next step was to fix the problems mentioned above. Being inspired by the reviewed applications (\ref[analysis.existing_applications]) one attempt ended with concept shown on image \ref[design.gui.draft5]. It presents a vertical list of applications displayed in a column on the right side of the screen instead of horizontal list over whole screen. The main area contains the usual car data such as speed, rpm and consumption.
 
-The second image \rfc{ link \#6} shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
+
+\medskip
+\centerline{
+\label[design.gui.draft5]
+\inspic images/design_gui_draft5.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#3 with the main section in the center and the menu in the right panel
+\medskip
+
+
+The second image \ref[design.gui.draft6] shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
+
+\medskip
+\centerline{
+\label[design.gui.draft6]
+\inspic images/design_gui_draft6.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#4 with additional application screen in the center, pushing the car data to the left panel
+\medskip
+
 
 \seccc Advantages
 
@@ -789,9 +829,29 @@ The second image \rfc{ link \#6} shows possibility of inserting a subapplication
 \label[design.gui.phase_three]
 \secc Phase three
 
-The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \rfc{ link \#7}, it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
+The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \ref[design.gui.draft7], it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
 
-Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image \rfc{ link \#8}). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card.
+\medskip
+\centerline{
+\label[design.gui.draft7]
+\inspic images/design_gui_draft7.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#5 with a grid of panels
+\medskip
+
+
+Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image \ref[design.gui.draft8]). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card, as shown on image \ref[app.design.gui.draft9] in the appendix B.
+
+
+\medskip
+\centerline{
+\label[design.gui.draft8]
+\inspic images/design_gui_draft8.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#6 with a grid of panels, which display information and offer basic functionality
+\medskip
 
 
 \seccc Advantages
@@ -810,13 +870,31 @@ Adding functionality to this grid, a new card concept emerged. It would consist 
 \label[design.gui.the_final_design]
 \secc The final design
 
+\medskip
+\centerline{
+\label[design.gui.draft10]
+\inspic images/design_gui_draft10.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#7 with a grid of simple panels 
+\medskip
+
 Because every of the previously mentioned designs had at least one critical disadvantage, a new approach had to be taken. Because of consistency, every element must be specified. But considering the need for simplicity, there must be very limited amount of those elements.
 
 Given the requirements for both consistency and simplicity, as well as extensible functionality, the elements are divided into two groups: those, that display information and those, that control the application. The simpliest way appeared to be the following: one element serves as a displayer, which displays one and only one kind of information, and the second element servers as a control button, which allows user to perform a single action. Every kind of functionality appears to be achievable by those elements or by sets of those elements.
 
 Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hiearachical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
 
-As shown on image \rfc{ link \#11}, the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
+As shown on image \ref[design.gui.draft12], the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
+
+\medskip
+\centerline{
+\label[design.gui.draft12]
+\inspic images/design_gui_draft12.png
+}
+\nobreak\medskip
+\caption/f GUI draft \#8 presenting the action panel (left) and the display panel (right)
+\medskip
 
 The idea is to have several screens containing several application panels (where amount of panels is based on screen size) with changing the screen by swiping left or right. As mentioned in section \ref[analysis.android_platform.material_design] on page \pgref[analysis.android_platform.material_design], Android suggests using vertically scrollable lists when presenting large sets of data. This can be suitable in most cases, however, in a car a user can easily swipe too heavily and scroll elsewhere and getting back to original place can put an unnecessary load on the driver's attention. Therefore there have to be separate pages, where one swipe changes a page by one.
 
@@ -1107,7 +1185,7 @@ There are many other views similar to the ones described above or just simple vi
 
 Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section.
 
-GUI implementation based on the design! Implementing modules, color, responsive effects
+\rfc{Final GUI implementation screenshot, APPENDIX as well}
 
 \label[realization.gui.common_elements]
 \secc Common elements
@@ -1748,12 +1826,51 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 
 \rfc{Summary}
 
+%------------------------------------------------------------------------ APPENDIX / APPENDICES ------------------------------------------------------------------------%
+
 \app Thesis
 
 \app Images
 
+\medskip
 \centerline{
-\label[add.test.ab.torque_glance_distribution]
+\label[app.design.gui.draft3]
+\inspic images/design_gui_draft3.png
+}
+\nobreak\medskip
+\caption/f Music player GUI draft 
+\medskip
+
+\centerline{
+\label[app.design.gui.draft4]
+\inspic images/design_gui_draft4.png
+}
+\nobreak\medskip
+\caption/f Music playlist GUI draft
+\medskip
+
+\medskip
+\centerline{
+\label[app.design.gui.draf1_impl]
+\inspic images/design_gui_draft1_impl.png
+}
+\nobreak\medskip
+\caption/f Implementation of the draft image \ref[design.gui.draft1]
+\medskip
+
+
+\medskip
+\centerline{
+\label[app.design.gui.draft9]
+\inspic images/design_gui_draft9.png
+}
+\nobreak\medskip
+\caption/f The grid with a music player panel and measurements
+\medskip
+
+
+\centerline{
+\label[app.test.ab.torque_glance_distribution]
 \inspic images/add_test_ab_torque_glance_distribution.png
 }
 \nobreak\medskip
