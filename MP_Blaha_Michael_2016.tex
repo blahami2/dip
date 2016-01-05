@@ -30,7 +30,7 @@
 \title {Tablet infotainment system}
 \author {Bc. Michael Bl\' aha}
 \date {January 2016}
-\supervisor{Ing Jan \v Sediv\' y, CSc.}
+\supervisor{Ing. Jan \v Sediv\' y, CSc.}
 \abstractEN {This document is for testing purpose only.}
 \abstractCZ {Tento dokument je pouze pro pot{\v r}eby testování.}
 \declaration {Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e a \v ze jsem uvedl(a) ve\v sker\'e pou\v zit\'e informa\v cn\'\i{} zdroje v~souladu s~Metodick\'ym pokynem o~etick\'e p\v r\'\i{}prav\v e vysoko\v skolsk\'ych z\'av\v ere\v cn\'ych prac\'\i{}.
@@ -83,6 +83,8 @@ In the modern era of portable electronical devices people use those devices dail
 \label[introduction.project]
 \sec Project
 
+\rfc{fix}
+Car Dashboard application enables users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the cognitive load, this application offers rich variety of use cases in a simple but attractive design.
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -124,27 +126,11 @@ For best results the application must and will be tested. Both code and UI must 
 
 This chapter is about analyzation process. It contains research about existing related applications, about application platforms and the description of the chosen platform in more detailed way. Also a basic insight into GUI design process as well as general GUI principles and GUI specifics for the car environment. Then the application idea is described the view of use-cases and tasks followed by the review of tools used for development. Finally the OBD is described with it's API and the data it provides.
 
-sources:
-\begitems
-* application analysis \url{https://docs.google.com/document/d/1QyOiMzV0ikcDhPY3P5MsRL_80cCGzjoGfCACGvc-UL0/edit}
-* priority list \url{https://docs.google.com/document/d/1juKYgUUDSI5CmfzjR4BsYSPHVYCGqrWuejgbhqzw7kI/edit}
-\enditems
-
 %	------------------------------------------------------------------------ Existing applications ----------------------------------------------------------------------%
 \label[analysis.existing_applications]
 \sec Existing applications
 
-
-\label[analysis.existing_applications.applications]
-\secc Applications
-
-\rfc{Check}
-
-sources:
-\begitems
-* \url{https://docs.google.com/document/d/1p_pSGTUHEojOyP7ICCDNVV7RW1vn8iN_KECipC4Y9tY/edit}
-* \url{http://www.makeuseof.com/tag/5-best-dashboard-car-mode-apps-android-compared/}
-\enditems
+Important step in developing a new application is to check the related applications (if they exist) for valuable information to learn from. Based on applications stated in an article\fnote{\url{http://www.makeuseof.com/tag/5-best-dashboard-car-mode-apps-android-compared/}} multiple applications were reviewed and analyzed listing their advantages and disadvantages.
 
 \label[analysis.existing_applications.torque]
 \secc Torque 
@@ -444,7 +430,7 @@ sources:
 \label[analysis.gui.ui_in_a_car_environment]
 \secc UI in a car environment
 
-When developing user interface for car, it adds a certain responsibility. The need for safety while using the UI becomes the main priority. Because of that, some aspects are more important than other. The most important are described later in this section.
+When developing user interface for car, it adds a certain responsibility. The need for safety while using the UI becomes the main priority. Because of that, some aspects are more important than others\cite[Heaton2013]. The most important are described later in this section.
 
 \seccc Minimality
 
@@ -475,7 +461,7 @@ Responsiveness is an important factor when it comes to pleasure of using an appl
 
 The GUI development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphics user interface, development methods for other types of user interface will not be described.
 
-The basic procedure of creating a UI design consists of multiple steps. Fulfilling the requirements for each step properly should guarantee the proper outcome. The UI design steps are as follows:
+The basic procedure of creating a UI design consists of multiple steps\cite[Zikovsky2015_2]. Fulfilling the requirements for each step properly should guarantee the proper outcome. The UI design steps are as follows:
 \begitems
 * Assignment and understanding,
 * research,
@@ -488,7 +474,7 @@ The basic procedure of creating a UI design consists of multiple steps. Fulfilli
 * final implementation.
 \enditems
 
-The process can also be divided into fewer phases, from which each contains multiple tasks. The list mentioned above is divided into those phases, so that those phases are certain sets of steps that can be iterated over and over for the best result possible. Those phases are the lo-fi phase, the hi-fi phase and the final phase \rfc{}.
+The process can also be divided into fewer phases, from which each contains multiple tasks. The list mentioned above is divided into those phases, so that those phases are certain sets of steps that can be iterated over and over for the best result possible. Those phases are the lo-fi phase, the hi-fi phase and the final phase.
 
 \seccc Lo-fi phase
 
@@ -528,6 +514,26 @@ Also in the hi-fi phase an iterative evaluation process is present. The prototyp
 
 The evaluation in this phase is already done with users, but also testing without users is present to check the loyalty to the course (heuristic testing etc.). Usability testing is performed and depends on the application itself. As mentioned in \rfc{ref 5 users is enough}, 5 users should be enough to test an application, as an additional tester does not add that much precision.
 
+%	------------------------------------------------------------------------Business requirements ----------------------------------------------------------------------%
+\label[analysis.requirements]
+\sec Business requirements
+
+Business requirements describe the application from the business view. They do not describe exact details, neither they describe easily measurable requirements. It is a set of  {\it what} should be achieved with the developed software. Simple business requirements follow:
+
+\begitems
+* Minimizing the cogntive load,
+* simple and consistent user interface,
+* fast and responsive,
+* usability before attractivity,
+* performance before delightful details,
+* rich, extensible functionality:
+\begitems
+  * display information about car,
+  * display common information (time, battery, weather, ...),
+  * etc.
+\enditems
+\enditems
+
 
 %	------------------------------------------------------------------------ Use cases ----------------------------------------------------------------------%
 \label[analysis.use_cases]
@@ -538,13 +544,13 @@ Use-cases describe objectives users want to achieve with a system. They describe
 The use-case list is based on the analysis so far. It is inspired by the research on existing applications in section \ref[analysis.existing_applications] and the general idea of the application mentioned in section \ref[introduction.motivation].
 
 \begitems
-* Should display the information from the car,
-* should allow customization of displayed information,
-* should work as a dashboard,
-* should provide safe controls,
-* should display device information (time, battery, etc.),
-* should provide easy access to other applications,
-* should support different themes (light, dark).
+* Display the information from the car,
+* display device information (time, battery, etc.),
+* display icons for the information to be easily recognizable,
+* allow customization of displayed information,
+* provide safe controls,
+* provide easy access to other applications,
+* support different themes (light, dark).
 \enditems
 
 \rfc{UML?}
@@ -575,7 +581,7 @@ The tasks are based on the use-cases, they are more exact substasks of the use-c
 * change a theme,
 * create a group of displays,
 * move to another group of displays,
-* display help,
+* move back from another group of displays,
 * go back.
 \enditems
 
