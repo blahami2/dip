@@ -26,7 +26,7 @@
 
 % (thesis type {B,M,D})/(language {CZ,EN})
 \worktype [M/EN]
-\department {Katedra softwarového inženýrství}
+\department {Department of Software Engineering}
 \title {Tablet infotainment system}
 \author {Bc. Michael Bl\' aha}
 \date {January 2016}
@@ -512,7 +512,7 @@ The hi-fi phase assumes the completion of the lo-fi phase and takes the prototyp
 
 Also in the hi-fi phase an iterative evaluation process is present. The prototype is implemented, tested, evaluated and then optionaly redesigned over and over again. Usually the final design is used in the application itself, which however does not have to be the best way.
 
-The evaluation in this phase is already done with users, but also testing without users is present to check the loyalty to the course (heuristic testing etc.). Usability testing is performed and depends on the application itself. As mentioned in \rfc{ref 5 users is enough}, 5 users should be enough to test an application, as an additional tester does not add that much precision.
+The evaluation in this phase is already done with users, but also testing without users is present to check the loyalty to the course (heuristic testing etc.). Usability testing is performed and depends on the application itself. As mentioned in \cite[Nielsen2012], 5 users should be enough to test an application, as an additional tester does not add that much precision.
 
 %	------------------------------------------------------------------------Business requirements ----------------------------------------------------------------------%
 \label[analysis.requirements]
@@ -553,8 +553,6 @@ The use-case list is based on the analysis so far. It is inspired by the researc
 * support different themes (light, dark).
 \enditems
 
-\rfc{UML?}
-
 \label[analysis.gui.task_list]
 \sec Task list
 
@@ -585,8 +583,6 @@ The tasks are based on the use-cases, they are more exact substasks of the use-c
 * go back.
 \enditems
 
-\rfc{diagram? task graph?}
-
 %	------------------------------------------------------------------------ Server ----------------------------------------------------------------------%
 %\sec Server
 %
@@ -613,7 +609,7 @@ While using text editor and command line is an option, for speed of development 
 
 \seccc Eclipse
 
-Based on research by (\url{http://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-for-2014/6/}), the Eclipse IDE is the most often used Java IDE. That is probably the reason why Google inc. suggested this IDE for Android development in early phase. However, Eclipse has lost Android development support in late 2014 (\url{http://www.zdnet.com/article/google-releases-android-studio-kills-off-eclipse-adt-plugin/}).
+Based on research by Olver White \cite[White2014], the Eclipse IDE is the most often used Java IDE. That is probably the reason why Google inc. suggested this IDE for Android development in early phase. However, Eclipse has lost Android development support in late 2014 \cite[Duckett2014].
 
 \seccc Android Studio
 
@@ -623,22 +619,26 @@ Released in 2014, Android Studio became the main platform for Android developmen
 \label[analysis.development_and_support_tools.vcs]
 \secc Version control system
 
-In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main VCS worth considering (\url{http://www.sitepoint.com/version-control-software-2014-what-options/}). 
+In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main VCS worth considering (based on an article\fnote{\url{http://www.sitepoint.com/version-control-software-2014-what-options/}}). 
 
 \seccc Subversion
 
-Based on CVS, Subversion has a single repository where all the data are stored. This simplifies the backup of a whole project, because all the data are located in one place. This, however, creates possible threat of data loss when the central repository gets destroyed without backup.
+Subversion has a single repository where all the data are stored \cite[Svn]. This simplifies the backup of a whole project, because all the data are located in one place. This, however, creates possible threat of data loss when the central repository gets destroyed without backup.
 
 Because of the central repository, Subversion allows read and write access controls for a every single location and have them enforced across the entire project, which can come in handy when developing in a large community, but it is usually not required when developing in a small team.
 
 
 \seccc Mercurial
 
-\rfc{Describe Mercurial}
+Mercurial is a distributed source control management tool, it focuses on performance and scalability. It also gives a high priority to keeping history as it is fairly difficult to alter historic data inputs. Also more GUI tools exist for the Mercurial version control system\cite[Mercurial].
 
 \seccc Git
 
-\rfc{Describe Git}
+Git is a widely used version control system. It uses a concept of distributed repositories. Those repositories contain immutable objects identified by the hash of their content. This makes the history verry safe, as there is no way of changing a commit. However a commit can be replaced with another commit and the development story can be altered, making it well-arranged for the potential needs of future analysis. It also supports branching and staging\cite[Git].
+
+\seccc Conclusion
+
+As the author has experience with Git and only Git and it is also one of the most widely used VCS, it will be used for version controlling. It is continuously being improved and enhanced, it supports various additional functionality (for example by using hooks) and is overall widely supported, therefore Git seems to be a good choice.
 
 \label[analysis.development_and_support_tools.tdd]
 \secc Test driven development
@@ -648,7 +648,7 @@ Being one of the main development aproaches in the last decade, test driven deve
 \label[analysis.development_and_support_tools.ci]
 \secc Continuous integration
 
-{\it\uv{Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.}} (Martin Fowler, \url{http://www.martinfowler.com/articles/continuousIntegration.html})
+{\it\uv{Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.}}\cite[Fowler2006]
 
 Continuous integration supports rapid application development while giving the much needed feedback, so that the developer can see and adjust the direction, which the application development takes. 
 

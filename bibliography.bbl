@@ -4,7 +4,7 @@
 GORMAN, Ryan. One in four car accidents caused by cell phone use while driving.. but only five per cent blamed on texting. \textit{Http://www.dailymail.co.uk} [online]. Associated Newspapers Ltd, 2014, 2014-03-27 [cit. 2016-01-03]. Dostupné z: http://www.dailymail.co.uk/news/article-2591148/One-four-car-accidents-caused-cell-phone-use-driving-five-cent-blamed-texting.html
 
 \bibitem{AndroidAuto}
-\textit{Designing for Android Auto} [online]. Google [cit. 2016-01-03]. Dostupné z: https://www.google.com/design/spec-auto/designing-for-android-auto/designing-for-cars.html
+\textit{Designing for Android Auto} [online]. Google Inc. [cit. 2016-01-03]. Dostupné z: https://www.google.com/design/spec-auto/designing-for-android-auto/designing-for-cars.html
 
 \bibitem{Lunden2014}
 LUNDEN, Ingrid. Gartner: 195M Tablets Sold In 2013, Android Grabs Top Spot From iPad With 62\% Share. \textit{Http://techcrunch.com} [online]. AOL Inc., 2014, 2014-03-03 [cit. 2016-01-03]. Dostupné z: http://techcrunch.com/2014/03/03/gartner-195m-tablets-sold-in-2013-android-grabs-top-spot-from-ipad-with-62-share/
@@ -20,5 +20,27 @@ LUNDEN, Ingrid. Gartner: 195M Tablets Sold In 2013, Android Grabs Top Spot From 
 
 \bibitem{Heaton2013}
 HEATON, Andrew. Designing for In-Dash Automotive. A UX Primer. \textit{REVINITY : ANDREW HEATON} [online]. 2013-07-02 [cit. 2016-01-05]. Dostupné z: http://revinity.com/?p=128
+
+\bibitem{Nielsen2012}
+NIELSEN, Jakob. How Many Test Users in a Usability Study? \textit{Nielsen Norman Group} [online]. 2012-06-04 [cit. 2016-01-07]. Dostupné z: https://www.nngroup.com/articles/how-many-test-users/
+
+
+\bibitem{Svn}
+\textit{Subversion} [online]. Apache Software Foundation [cit. 2016-01-07]. Dostupné z: https://subversion.apache.org/
+
+\bibitem{White2014}
+WHITE, Oliver. Java Tools and Technologies Landscape for 2014. \textit{ZeroTurnaround} [online]. ZeroTurnaround, 2014-05-21 [cit. 2016-01-07]. Dostupné z: http://zeroturnaround.com/rebellabs/java-tools-and-technologies-landscape-for-2014/6/
+
+\bibitem{Duckett2014}
+DUCKETT, Chris. Google releases Android Studio, kills off Eclipse ADT plugin. \textit{ZDNet} [online]. CBS Interactive, 2014-12-09 [cit. 2016-01-07]. Dostupné z: http://www.zdnet.com/article/google-releases-android-studio-kills-off-eclipse-adt-plugin/
+
+\bibitem{Mercurial}
+LOSH, Steve. Mercurial vs Git: Why Mercurial? \textit{Atlassian Blogs} [online]. Atlassian, 2012-02-23 [cit. 2016-01-08]. Dostupné z: http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/
+
+\bibitem{Git}
+P'FARRELL, Charles. Git vs Mercurial: Why Git? \textit{Atlassian Blogs} [online]. Atlassian, 2012-03-13 [cit. 2016-01-08]. Dostupné z: http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/
+
+\bibitem{Fowler2006}
+FOWLER, Martin. Continuous Integration. \textit{Martin Fowler} [online]. 2006, 2006-05-01 [cit. 2016-01-08]. Dostupné z: http://www.martinfowler.com/articles/continuousIntegration.html
 
 \end{thebibliography}
