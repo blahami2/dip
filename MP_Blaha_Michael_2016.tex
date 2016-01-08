@@ -609,11 +609,11 @@ While using text editor and command line is an option, for speed of development 
 
 \seccc Eclipse
 
-Based on research by Olver White \cite[White2014], the Eclipse IDE is the most often used Java IDE. That is probably the reason why Google inc. suggested this IDE for Android development in early phase. However, Eclipse has lost Android development support in late 2014 \cite[Duckett2014].
+Based on research by Olver White \cite[White2014], the Eclipse IDE\fnote{\url{https://eclipse.org/}} is the most often used Java IDE. That is probably the reason why Google inc. suggested this IDE for Android development in early phase. However, Eclipse has lost Android development support in late 2014 \cite[Duckett2014].
 
 \seccc Android Studio
 
-Released in 2014, Android Studio became the main platform for Android development. It is based on IntelliJ IDE and supported by Google. For that reason, it is an obvious choice for new applications to be developed in Android Studio.
+Released in 2014, Android Studio\fnote{available at \url{http://developer.android.com/tools/studio/index.html}} became the main platform for Android development. It is based on IntelliJ IDE and supported by Google. For that reason, it is an obvious choice for new applications to be developed in Android Studio.
 
 
 \label[analysis.development_and_support_tools.vcs]
@@ -623,18 +623,18 @@ In a software development process, version is very important. Being able to go b
 
 \seccc Subversion
 
-Subversion has a single repository where all the data are stored \cite[Svn]. This simplifies the backup of a whole project, because all the data are located in one place. This, however, creates possible threat of data loss when the central repository gets destroyed without backup.
+Subversion\fnote{\url{https://subversion.apache.org/}} has a single repository where all the data are stored. This simplifies the backup of a whole project, because all the data are located in one place. This, however, creates possible threat of data loss when the central repository gets destroyed without backup.
 
 Because of the central repository, Subversion allows read and write access controls for a every single location and have them enforced across the entire project, which can come in handy when developing in a large community, but it is usually not required when developing in a small team.
 
 
 \seccc Mercurial
 
-Mercurial is a distributed source control management tool, it focuses on performance and scalability. It also gives a high priority to keeping history as it is fairly difficult to alter historic data inputs. Also more GUI tools exist for the Mercurial version control system\cite[Mercurial].
+Mercurial\fnote{\url{https://www.mercurial-scm.org/}} is a distributed source control management tool, it focuses on performance and scalability. It also gives a high priority to keeping history as it is fairly difficult to alter historic data inputs. Also more GUI tools exist for the Mercurial version control system.
 
 \seccc Git
 
-Git is a widely used version control system. It uses a concept of distributed repositories. Those repositories contain immutable objects identified by the hash of their content. This makes the history verry safe, as there is no way of changing a commit. However a commit can be replaced with another commit and the development story can be altered, making it well-arranged for the potential needs of future analysis. It also supports branching and staging\cite[Git].
+Git\fnote{\url{https://git-scm.com/}} is a widely used version control system. It uses a concept of distributed repositories. Those repositories contain immutable objects identified by the hash of their content. This makes the history verry safe, as there is no way of changing a commit. However a commit can be replaced with another commit and the development story can be altered, making it well-arranged for the potential needs of future analysis. It also supports branching and staging.
 
 \seccc Conclusion
 
@@ -643,7 +643,9 @@ As the author has experience with Git and only Git and it is also one of the mos
 \label[analysis.development_and_support_tools.tdd]
 \secc Test driven development
 
-Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text. \rfc{JUnit}
+Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
+
+The most usual tool in Java is the JUnit framework\fnote{\url{http://junit.org/}}. It allows writing simple repeatable tests and is an instance of the xUnit architecture. Also API for testing from the Android support libraries will be used, as the application environment is specific and for proper testing, an access to certain resources and objects is necessary.
 
 \label[analysis.development_and_support_tools.ci]
 \secc Continuous integration
@@ -652,7 +654,7 @@ Being one of the main development aproaches in the last decade, test driven deve
 
 Continuous integration supports rapid application development while giving the much needed feedback, so that the developer can see and adjust the direction, which the application development takes. 
 
-For simple CI practice integration, there are several online services. For this particular application development, Travis system was chosen \rfc{link \url{https://travis-ci.org/}}. While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
+For simple CI practice integration, there are several online services. For this particular application development, Travis\fnote{available at \url{https://travis-ci.org/}} system was chosen. While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
 
 \label[analysis.development_and_support_tools.eval]
 \secc Test evaluation
@@ -661,19 +663,19 @@ As described in chapter \ref[testing] about testing in section about testing wit
 
 \seccc Wolfram Mathematica
 
-Wolfram Mathematica is a professional software for technical computing. It covers all areas of technical computing from mathematics, physics and so on. It is based on Wolfram Language, which has strong algorithmic power as well as wide range of capabilities. In Wolfram Mathematica pretty much every technical computation can be done in the most reasonable time. It has one of the most advanced help systems available with hundreds of thousands examples.
+Wolfram Mathematica\fnote{\url{https://www.wolfram.com/mathematica/}} is a professional software for technical computing. It covers all areas of technical computing from mathematics, physics and so on. It is based on Wolfram Language, which has strong algorithmic power as well as wide range of capabilities. In Wolfram Mathematica pretty much every technical computation can be done in the most reasonable time. It has one of the most advanced help systems available with hundreds of thousands examples.
 
 However, all of this does not come for free. The Wolfram Mathematica software is very costly and for purpose of this thesis, a minimum functionality would be used. As the results of the testing will probably presented later in a paper, a professional licence would have to be used.
 
 \seccc Matlab
 
-Matlab is another software known for it's technical computing capabilities. It is capable of numeric computation, data analysis and visualisation, programming and algorithm development and even application development and deployment. It is a high-level language and an interactive environment on it's own.
+Matlab\fnote{\url{http://www.mathworks.com/products/matlab/}} is another software known for it's technical computing capabilities. It is capable of numeric computation, data analysis and visualisation, programming and algorithm development and even application development and deployment. It is a high-level language and an interactive environment on it's own.
 
 The disadvantage is the price of Matlab. Even a student license is very costly and a professional license would be needed in the future for the paper release. It might be an option in the future, however it is not a viable option now.
 
 \seccc R
 
-R is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analysing large sets of data meaning it might just be enough for the test resulsts to be analyzed. Should it not be enough, a different approach has to be taken.
+R\fnote{\url{https://www.r-project.org/}} is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analysing large sets of data meaning it might just be enough for the test resulsts to be analyzed. Should it not be enough, a different approach has to be taken.
 
 As it is completely free, the use and purpose it not limited. Also it fits the cheep puchase requirement making it a viable choice. Therefore, R will be used for testing results analyzation and evaluation.
 
@@ -683,7 +685,7 @@ As it is completely free, the use and purpose it not limited. Also it fits the c
 
 \rfc{OBD}
 
-On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes. The full specifications are explained in ISO 15031 \rfc{fix}. Some of them will be discussed later in the text.
+On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes.
 
 Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly. 
 
