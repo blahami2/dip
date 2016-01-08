@@ -31,21 +31,27 @@
 \author {Bc. Michael Bl\' aha}
 \date {January 2016}
 \supervisor{Ing. Jan \v Sediv\' y, CSc.}
-\abstractEN {This document is for testing purpose only.}
-\abstractCZ {Tento dokument je pouze pro pot{\v r}eby testování.}
-\declaration {Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e a \v ze jsem uvedl(a) ve\v sker\'e pou\v zit\'e informa\v cn\'\i{} zdroje v~souladu s~Metodick\'ym pokynem o~etick\'e p\v r\'\i{}prav\v e vysoko\v skolsk\'ych z\'av\v ere\v cn\'ych prac\'\i{}.
+\abstractEN {
+Abs%\rfc{AbstractEN}
+}
+\abstractCZ {
+Abs%\rfc{AbstractCZ}
+}
+\declaration {%\rfc{Declaration}
+Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e a \v ze jsem uvedl(a) ve\v sker\'e pou\v zit\'e informa\v cn\'\i{} zdroje v~souladu s~Metodick\'ym pokynem o~etick\'e p\v r\'\i{}prav\v e vysoko\v skolsk\'ych z\'av\v ere\v cn\'ych prac\'\i{}.
 
 		Beru na v\v edom\'\i{}, \v ze se na moji pr\'aci vztahuj\'\i{} pr\'ava a povinnosti vypl\'yvaj\'\i{}c\'\i{} ze z\'akona \v c.~121/2000~Sb., autorsk\'eho z\'akona, ve zn\v en\'\i{} pozd\v ej\v s\'\i{}ch p\v redpis{\r u}, zejm\'ena skute\v cnost, \v ze \v Cesk\'e vysok\'e u\v cen\'\i{} technick\'e v~Praze m\'a pr\'avo na uzav\v ren\'\i{} licen\v cn\'\i{} smlouvy o~u\v zit\'\i{} t\'eto pr\'ace jako \v skoln\'\i{}ho d\'\i{}la podle \S{}~60 odst.~1 autorsk\'eho z\'akona.}
 
 \keywordsEN {%
-   document design template; bachelor, master, Ph.D. thesis; \TeX{}.
+%\rfc{KeywordsEN}
+kw
 }
 \keywordsCZ {%
-   styl dokumentu; šablona; 
-   bakalářská, diplomová, disertační závěrečná práce; \TeX{}.
+%\rfc{KeywordCZ}
+Android, Java, OBD
 }
 \thanks {           % Use main language here
- Diky
+ Diky, diky vedoucimu, diky FD apod.%\rfc{Thanks}
 }
 
 \picw=.9\hsize
@@ -55,14 +61,15 @@
 %TODO
 \draft
 
+\input glosdata
+
 \makefront
-
-
 
 %----------------------------------------------------------------------- INTRODUCTION ------------------------------------------------------------------------%
 \label[introduction]
 \chap Introduction 
 
+\rfc{AbstractEN/CZ, KeywordEN/CZ, Declaration, Thanks, Draft}
 \rfc{Introduction}
 
 sources:
@@ -1269,34 +1276,39 @@ This chapter is about testing and all that is related. Starting with a section a
 \label[testing.code]
 \sec Code
 
+As mentioned in section \ref[analysis.development_and_support_tools.tdd], the application is being developed with using the test-driven development approach. This means that unit tests cover part of the application functionality. They do not cover everything, as automating certain functionality (such as GUI) might actually be more time-consuming than manual testing.
+
+Apart from unit tests, also instrumentation test are present, as they have to test how well does the communication work with the Android specifics, such as resources and activities. This ensures that even resource-dependant code can be properly tested.
+
 \rfc{Code test}
-Describe testing code, common testing (look\&see, etc.)
 
 \label[testing.code.unit_testing]
 \secc Unit testing
 
 \rfc{Unit test}
 Unit testing on android, mention Test driven development, continuous integration, automatic tests, consider giving an example
+\url{http://developer.android.com/training/testing/unit-testing/local-unit-tests.html}
 
 \label[testing.code.integration_testing]
 \secc Integration testing
 
 \rfc{Integ test}
 Instrumentation? Describe TDD, CI, automation
+\url{http://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html}
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[testing.heuristic]
 \sec Heuristic testing
 
-\rfc{Heuristic testing intro}
+Heuristic testing is based on following certain set of rules. It is based on somebody's experience. It is a speed process of checking the user interface for common issues. However, it does not interpret user's activity. The following evaluation will use the heuristic created by Jakob Nielsen, which consists of ten rules (following later in the text).
 
-Introduction, description
+For purpose of presentation, in further text there will be signs plus ($+$) and minus ($-$) used for interpreting positive (plus) and negative (minus) evaluations. Also, priorities will be stated next to the rule violations in parentheses and they will be limited to words low, medium and high. Also additional notes are present (for future use).
 
 \secc Evaluation
 
 \seccc Visibility of system state
 
-\begitems 
+\begitems \style p 
 * No long-lasting operations present, every long-lasting operations happen in the background without the user knowing,
 * issues might appear with server synchronization, which is not implemented yet.
 \enditems
@@ -1315,9 +1327,9 @@ Introduction, description
 \seccc Minimal responsibility and stress
 
 \begitems \style m
-* Missing confirmation prompt when removing a module (irreversible operation),
-* missing confirmation prompt when editing a module (irreversible operation),
-* missing proper edit option for shortcut modules (irreversible module addition operation).
+* Missing confirmation prompt when removing a module (irreversible operation) (high),
+* missing confirmation prompt when editing a module (irreversible operation) (high),
+* missing proper edit option for shortcut modules (irreversible module addition operation) (high).
 \enditems
 
 \seccc Match with platform and common standards
@@ -1327,11 +1339,11 @@ Introduction, description
 \style m
 * Material Design not present where not suitable:
   \begitems \style m
-  * icon size (too large),
-  * list controls (does not scroll fluently, but scrolls page by page),
-  * navigation is not done by a navigation drawer, but rather a file-system like style,
-  * measures do not match the standards (too large),
-  * platform back button does not work immidietaly after changing the theme.
+  * icon size (too large) (small),
+  * list controls (does not scroll fluently, but scrolls page by page) (small),
+  * navigation is not done by a navigation drawer, but rather a file-system like style (small),
+  * measures do not match the standards (too large) (small),
+  * platform back button does not work immidietaly after changing the theme (medium).
   \enditems
 \enditems
 
@@ -1341,7 +1353,7 @@ Introduction, description
 * Mandatory fields are properly highlighted,
 * keyboard for text fields is limited based on the given field type,
 \style m
-* Intent module is not properly tested before adding.
+* Intent module is not properly tested before adding (medium).
 \enditems
 
 \seccc Look and see
@@ -1350,8 +1362,8 @@ Introduction, description
 \style p
 * User interface is simple and consistent,
 \style m
-* availability of quick menu is not visible, user must memorize it,
-* position in a tree structure is missing, user does not see which layer is he in. 
+* availability of quick menu is not visible, user must memorize it (medium),
+* position in a tree structure is missing, user does not see which layer is he in (high). 
 \enditems
 
 \seccc Flexibility and effectivity
@@ -1360,9 +1372,9 @@ Introduction, description
 \style p
 * Basic settings are very simple,
 \style m
-* there is no advanced mode for advanced users,
-* there are no macros
-* there are no key shortcuts.
+* there is no advanced mode for advanced users (medium),
+* there are no macros (small),
+* there are no key shortcuts (small).
 \enditems
 
 \seccc Minimality
@@ -1379,24 +1391,18 @@ Introduction, description
 \begitems
 \style p
 \style m
-* Only the platform default error line is present,
-* the error line does not say what happened wrong,
-* the error line does not say how to prevent the error from happening,
+* Only the platform default error line is present (high),
+* the error line does not say what happened wrong (high),
+* the error line does not say how to prevent the error from happening (high).
 \enditems
 
 \seccc Help and documentation
 
 \begitems
 \style m
-* The documentation is very limited,
-* the inner help is missing,
-* there is no context hint for input fields.
-\enditems
-
-
-sources:
-\begitems
-* \url{https://docs.google.com/document/d/1LAPqmYqe5LBE6vqWpi-rRYjHY1-zVPCzkFP2Gvh5i-Q/edit}
+* The documentation is very limited (high),
+* the inner help is missing (high),
+* there is no context hint for input fields (medium).
 \enditems
 
 \secc Conclusion
@@ -1414,20 +1420,28 @@ The importance of proper testing is critical as the driver cannot be distracted 
 One of the most commonly used approaches is the usability testing, where usually several testers try to perform certain actions with the application. This is done in a development environment and watched by the developers.
 
 
-The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the CLT (Change Lane Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
+The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the LCT (Lane Change Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
 
 
-Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently the most downloaded OBD-supporting application on Android market. \rfc{ link}
+Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently one of the most downloaded OBD-supporting applications on Android market\fnote{\url{https://play.google.com/store/search?q=OBD&c=apps&hl=en}}.
 
-
-As a related application has been developed simultaneously for a mobile platform \rfc{ link/bibli}, testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
+As a related application has been developed simultaneously for a mobile platform\rfc{|cite[Hruby]}, testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
 
 \label[testing.users.simulator]
 \secc Simulator
 
 While providing safety, the car simulator has other advantages as well. It is equipped with set of cameras that track eye movement. It is then easy to find out, where and for how long is the user focusing his sight, which is really important for evaluating the cognitive load. It is also easy to try out different scenarios with a single click, not requiring to drive around the world looking for a proper place.
 
-The simulator is located in Albertov in the building of the Faculty of Transport \rfc{FD}, CTU. It is build from the interior of the \v Skoda Octavia \rfc{Skoda} car and surrounded by three screens \rfc{ photo?}. There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
+\medskip
+\centerline{
+\clabel[testing.users.simulator.interior]{Simulator interior}
+\inspic images/testing_users_simulator_interior.jpg
+}
+\nobreak\medskip
+\caption/f Simulator interior
+\medskip
+
+The simulator is located in Albertov in the building of the Faculty of Transportation Sciences\fnote{\url{https://www.fd.cvut.cz/english/}}, CTU. It is build from the interior (\ref[testing.users.simulator.interior]) of the \v Skoda Octavia car and surrounded by three screens. There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
 
 The data from the simulator are broadcasted over serial line and they are limited to speed and rounds per minute. However, they can supposedly be extended to wider area of information.
 
@@ -1452,9 +1466,6 @@ As mentioned above, there is also an eye-tracking system. This enables the teste
 \nobreak\medskip
 \caption/f Screenshot from Smart Eye Pro
 
-Describe the car simulator in Albertov.
-DO NOT FORGET TO THANK THE DEPARTMENT OF DRIVING SMTHING, CVUT FD
-
 \label[testing.users.preparations]
 \secc Preparations
 
@@ -1470,8 +1481,9 @@ After testing the eye tracking cameras, a new issue emerged. Those cameras were 
 
 \seccc Scenarios
 
-As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and CLT testing scenarios are unique for each platform, therefore more time is required.
+As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and LCT testing scenarios are unique for each platform, therefore more time is required.
 
+\medskip
 \clabel[testing.users.preparations.scenario]{Single user testing schedule}
 \ctable{ccrl}{
   \bf Start & \bf End & \bf Duration [min] & \bf Content \crl
@@ -1488,7 +1500,7 @@ As shown on tablet \ref[testing.users.preparations.scenario], the testing schedu
 
 The A/B testing scenario is simple. At first the user drives the route without any application, so that he gets to know it. Then he drives the same route with application A (Torque), while being frequently asked to read outloud the speed and RPM. The speed is to be read from the first second with interval of 20 seconds, the RPM is to be read from the tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the user has to scroll from one to another. The same scenario goes for the application B. A and B applications switch places for every tester (B first, A second or the other way around). The metrics then are the glance times for both applications.
 
-The change lane test (CLT) scenario is similar, however only the \rfc{ name} application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
+The change lane test (CLT) scenario is similar, however only the \rfc{name} application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
 
 \seccc World models
 
@@ -1502,7 +1514,6 @@ A Screener questionnaire was created in order to select participants. This quest
 * Are you a driver?
 * How many times per week do you drive?
 \enditems
-
 
 A pre-test questionnaire was created in order to get some information about the participant. The information provided would be anonymous and would only serve for statistics. It consists of six questions:
 \begitems
@@ -1527,20 +1538,18 @@ A post-test questionnaire serves to find out, how satisfied are the participants
 \label[testing.users.process]
 \secc Process
 
-At first, the screener was used to question 20 potential participants. Based on their answers, 9 of them were invited into scheduling process. As the actual testing would have 5 participants, it was a matter of time scheduling which 5 of those 9 would participate in the final stage. 
+After selecting 5 participants (based on the screener questionnaire) and scheduling the testing times, they were invited to come to the Faculty of Transportation Sciences in Albertov, where the simulator is located. There they filled the pre-test questionnaire and begin the actual testing based on a schedule mentioned in section \ref[testing.users.preparations].
 
-After selecting 5 participants and scheduling the testing times, they were invited to come the Faculty of Transport \rfc{FD} in Albertov, where the simulator is located. There they filled the pre-test questionnaire and begin the actual testing based on a schedule mentioned in section \ref[testing.users.preparations].
-
-After eye-tracking setup was done and the participant felt confortable with the simulator (after driving for a while in the warm-up phase), the scenarios took their place. The eye-tracking and simulator logging was turned on as the participant accomplished all the given tasks.
+After eye-tracking setup was done and once the participant felt confortable with the simulator (after driving for a while in the warm-up phase), the scenarios took their place. The eye-tracking and simulator logging was turned on as the participant accomplished all the given tasks.
 
 A post-questionnaire was filled and the testing was over. This was done for all 5 participants. Approximately 3 gigabytes of plain text data were collected from logging, both eye-tracking and simulator logging.
 
 \label[testing.users.evaluation]
 \secc Questionnaire evaluation
-
-\seccc Screener questionnaire
-
-As the results of screener questionnaires show \rfc{ priloha}, from 20 potential participants, only 9 were active drivers, who drive at least once a week and use a smartphone. While 4 potential participants were not drivers at all, another 5 said they did drive truly occassionally (once a month and less). Another 3 were not smartphone users and therefore not suitable for the testing. 
+%
+%\seccc Screener questionnaire
+%
+%As the results of screener questionnaires show \rfc{ priloha}, from 20 potential participants, only 9 were active drivers, who drive at least once a week and use a smartphone. While 4 potential participants were not drivers at all, another 5 said they did drive truly occassionally (once a month and less). Another 3 were not smartphone users and therefore not suitable for the testing. 
 
 \seccc Pre-test questionnaire
 
@@ -1552,13 +1561,13 @@ While the goals appear to be clear for all the participants, not all were entire
 
 \secc A/B testing evaluation
 
-The A/B testing is a testing of Torque versus CarDashboard \rfc{ name} in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 16.6 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
+The A/B testing is a testing of Torque versus \rfc{name} in the same condition. The tester drives while frequently being asked to read information of the screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the eye movement and logs every 16.6 milliseconds if the driver is looking at the tablet or not at the given moment. This ensures certain precision and reliability of results.
 
 Logs have been examined and several outcomes measured. As first the comparison of glance frequency will be shown. Then some statistical data are measured, such as confidence intervals and such. An overall comparison is created. Then duration of glance time is examined for both application and compared. The maximal glance time and the average glance time are compared as well as mean and standard deviation.
 
 \seccc Glance frequency
 
-Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on \rfc{ priloha}).
+Glance distribution in log files for Torque is visible on image \ref[testing.users.ab.glance_torque]. The X axis contains the individual log entries while the Y axis adds 1 per each user looking at the application at the given moment. The log entries are limited from 5000 to 10000 and added together, as shown on the R script below (the initialization script is shown on \ref[script.initialization]).
 
 \label[testing.users.glance_script]
 \begtt
@@ -1593,7 +1602,7 @@ axis(1)
 
 Those are just illustrative plots to see the portion of time looking at the application (the black area of the plot) and not looking at the application (the white area of the plot). The glance distribution in log files for CarDashboard \rfc{name} is visible below the Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
 
-While the individual percentage ratio of time spent looking at the Torque is in range from 13 to 18 percent with the mean of 15.55 and the standard deviation of 2.19, the same for CarDashboard is only in range from 6 to 8 percent with the mean of 7.45 and the standard deviation of 1.32. The average percentage ratio of time spent looking at the Torque is then 15.55 \%, while for CarDashboard it is only 7.40 \%. The R script for the average time ratio is shown below, the R scripts for individual (per participant) data are shown in \rfc{priloha}.
+While the individual percentage ratio of time spent looking at the Torque is in range from 13 to 18 percent with the mean of 15.55 and the standard deviation of 2.19, the same for CarDashboard is only in range from 6 to 8 percent with the mean of 7.45 and the standard deviation of 1.32. The average percentage ratio of time spent looking at the Torque is then 15.55 \%, while for CarDashboard it is only 7.40 \%. The R script for the average time ratio is shown below, the R scripts for individual (per participant) data are shown in \ref[script.glance_ratio_max_all].
 
 \begtt
 glanceLength = 0
@@ -1607,11 +1616,11 @@ print(100 * glanceSum / glanceLength)
 
 \seccc Glance time
 
-As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 817 to 1616 milliseconds with the mean of 1263.3 and a standard deviation of 296.11. The same was measured for CarDashboard \rfc{name} and the results for the maximal glance time are in range from 450 to 1217 milliseconds with the mean of 716.7 and a standard deviation of 298.38. This means that the average maximal glance time for CarDashboard\rfc{name} is nearly half the average maximal glance time for Torque.
+As another important metric, the maximal glance time (the longest continuous time interval spent looking at the application) measured for Torque was in range from 817 to 1616 milliseconds with the mean of 1263.3 and a standard deviation of 296.11. The same was measured for CarDashboard \rfc{name} and the results for the maximal glance time are in range from 450 to 1217 milliseconds with the mean of 716.7 and a standard deviation of 298.38. This means that the average maximal glance time for \rfc{name} is nearly half the average maximal glance time for Torque.
 
-As mentioned in \rfc{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001673/}, drivers tend to try obtaining the required information for 1.5 to 2 seconds, then they give it up for the moment and try later. The 1.5-2 seconds glance time is also considered to be the safety limit for a single task requiring a visual focus. With the \rfc{name} exhibiting maximal glance times lower than 1.2 second the limit of 1.5 second is not even reach, which is a success. 
+As mentioned by Daniel McGehee \cite[McGehee2014], drivers tend to try obtaining the required information for 1.5 to 2 seconds, then they give it up for the moment and try later. The 1.5-2 seconds glance time is also considered to be the safety limit for a single task requiring a visual focus. With the \rfc{name} exhibiting maximal glance times lower than 1.2 second the limit of 1.5 second is not even reach, which is a success. 
 
-Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \rfc{add}). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{Name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\rfc{add}, the result for \rfc{name} is shown below for illustration.
+Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \ref[script.glance_times_list]). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\ref[script.t_test_torque] and \ref[script.t_test_cd]), the result for \rfc{name} is shown below for illustration.
 
 \begtt
 t.test(glanceList, alternative="less", conf.level=0.99)
@@ -1647,7 +1656,7 @@ With the average glance time being 143.926 milliseconds for Torque, the \rfc{nam
 \caption/f \rfc{name} glance times
 \medskip
 
-From further analysis it appears, that the distribution of glance times is exponential. Should this assumption be correct, the probability of looking at the application for longer time would decrease exponentially. The comparison plot used for determining the distribution is shown on image \ref[testing.users.ab.cd_glance_distribution], it is a result of a R script shown below. All the additional resources are available in the additions (\rfc{ref}).
+From further analysis it appears, that the distribution of glance times is exponential. Should this assumption be correct, the probability of looking at the application for longer time would decrease exponentially. The comparison plot used for determining the distribution is shown on image \ref[testing.users.ab.cd_glance_distribution], it is a result of a R script shown below.
 
 \begtt
 xMean = mean(glanceList) 
@@ -1675,13 +1684,13 @@ lines (xGrid,dexp(xGrid, rate = 1 / xMean),
 \caption/f Glance times distribution
 \medskip
 
-\secc Change Lane Test evaluation
+\secc Lane Change Test evaluation
 
 As described in the scenario (\ref[testing.users.preparations]), every participant drove for approximately 3 minutes in the speed of 60 kilometers per hour, when the object appeared from nowhere 35 metres in front of the car. The object was a yellow cube with 2.2 metres long side and a red arrow pointing to the left lane. This suggested the driver to go around the object by changing the lane to the left one.
 
 \seccc Object avoidance
 
-The most important metric in the Change-Lane test is avoiding the object while working with the application. Every participant managed to avoid the object, from which we can assume the success rate around 100 \% (the success rate of the testing is 100 \%, however it can be safely stated that nothing is perfect and real 100 \% in every situation possible is not achievable).
+The most important metric in the Lane Change Test is avoiding the object while working with the application. Every participant managed to avoid the object, from which we can assume the success rate around 100 \% (the success rate of the testing is 100 \%, however it can be safely stated that nothing is perfect and real 100 \% in every situation possible is not achievable).
 
 \seccc Reaction time
 
@@ -1694,7 +1703,7 @@ The most important metric in the Change-Lane test is avoiding the object while w
 \caption/f Path angles of the first participant (0.1 metres point distance)
 \medskip   
 
-The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data, see example at figure \ref[testing.users.clt.angles_p1] based on the script \ref[scripts.testing.clt.angles]) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the related figure \ref[testing.users.clt.turn_paths]. The scripts for such measurements are in the additions \ref[]\rfc{add} as well as the angle plots \ref[]\rfc{add}.
+The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data, see example at figure \ref[testing.users.clt.angles_p1] based on the script \ref[scripts.testing.clt.angles]) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the related figure \ref[testing.users.clt.turn_paths]. %The scripts for such measurements are in the additions \rfc{add} as well as the angle plots \ref[]\rfc{add}.
 
 \clabel[testing.users.clt.table_turn_coordinates]{Results of path angle comparison}
 \ctable{ccc}{
@@ -1716,7 +1725,7 @@ The second metric is the reaction time. The reaction is determined from the path
 \caption/f Turn paths
 \medskip   
 
-Given the results, a reaction time can be measured. As described in \rfc{http://www.visualexpert.com/Resources/reactiontime.html}, reaction time consists of three parts, which are highly situation-dependable and unexact:
+Given the results, a reaction time can be measured. As described by Marc Green\cite[Green2013], reaction time consists of three parts, which are highly situation-dependable and unexact:
 \begitems
 * {\bf Mental processing time} -- the amount of time it takes for brain to percieve a signal and to decide upon a response,
 * {\bf movement time} -- the amount of time it takes to perform the response (using muscles),
@@ -1737,8 +1746,8 @@ For the purpose of evaluating, the reaction time will be assumed to be a single 
 }\caption/t Times and distances of turn from the object\medskip
 
 %\href{http://www.humanbenchmark.com/tests/reactiontime}
-%\href{	http://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf}
-According to statistics gathered so far in \rfc{ref}, where participants push the button when it turns green (knowing it will do so) ficve times over, the average human reaction time for highly expected signal is 215 milliseconds. While the participants in the change lane test did expect something to happen and that they will have to go around something, they drove for three minutes focusing on keeping the speed as well as controlling the tested application in a homogeneous environment of highway in the forest, which heavily lowers their alertness. However, the results are still under 0.7 second with the mean of 531 milliseconds. As desribed in \rfc{ odkaz v bibli: keyword: Fitch, Olson}, a similar test was performed focusing on alerted obstacle crash avoidance. Alerted means that the participants knew what is the test about. The measured mean time was 0.78 seconds. Another similar test was performed also with average resulsts around 0.7 seconds. This means that the application controlling in the change lane test did not influence the participant's awareness. The results are even slightly better than the ones from the tests mentioned above, but it can be caused by the difference of measured signal -- the accelerator pedal vs. steering wheel movement, as the steering wheel movement is usually performed faster.
+%\href{	http://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf}{ odkaz v bibli: keyword: Fitch, Olson}
+According to statistics gathered so far on a human benchmark page\fnote{available at \url{http://www.humanbenchmark.com/tests/reactiontime}}, where participants push the button when it turns green (knowing it will do so) five times over, the average human reaction time for highly expected signal is 215 milliseconds. While the participants in the change lane test did expect something to happen and that they will have to go around something, they drove for three minutes focusing on keeping the speed as well as controlling the tested application in a homogeneous environment of highway in the forest, which heavily lowers their alertness. However, the results are still under 0.7 second with the mean of 531 milliseconds. As desribed in a master's thesis by Pamela M. D'Addario\cite[DAddario2014], a similar test was performed focusing on alerted obstacle crash avoidance. Alerted means that the participants knew what is the test about. The measured mean time was 0.78 seconds. Another similar test was performed also with average resulsts around 0.7 seconds. This means that the application controlling in the change lane test did not influence the participant's awareness. The results are even slightly better than the ones from the tests mentioned above, but it can be caused by the difference of measured signal -- the accelerator pedal vs. steering wheel movement, as the steering wheel movement is usually performed faster.
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[testing.summary]
@@ -1752,7 +1761,7 @@ Then even with a few difficulties, the application was tested in the most suitab
 
 The A/B testing against the potential competitor -- Torque was performed. The tests have shown that the \rfc{name} performs better in the real life scenarios based on obtaining information from a car.
 
-The change lane test was done in order to find out the influence of reaction time when using the application. None or minor influence (in terms of units of milliseconds) has been found, from which one can assume that the application usage is as safe as planned.
+The Lane Change Test was done in order to find out the influence of reaction time when using the application. None or minor influence (in terms of units of milliseconds) has been found, from which one can assume that the application usage is as safe as planned.
 
 Overall the testing was a success and it helped developing a good and safe application for in-car environment. The testing participants were usually happy with the way the application is done and most of them claimed that they would use the application daily.
 
@@ -1808,10 +1817,10 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 \label[conclusion.project_life_cycle.present]
 \secc Present
 
-\rfc{Presnet}
+\rfc{Present}
 
 \label[conclusion.project_life_cycle.future]
-\secc Future TODO
+\secc Future
 
 \rfc{Future}
 
@@ -1835,6 +1844,18 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 %------------------------------------------------------------------------ APPENDIX / APPENDICES ------------------------------------------------------------------------%
 
 \app Thesis
+
+\rfc{Thesis assignment}
+
+\app CD content
+
+\rfc{CD content}
+
+\app User guide
+
+\rfc{User Guide}
+
+\app Glossary\par \makeglos
 
 \app Images
 
@@ -1901,6 +1922,7 @@ S. deviation & 2.191875 \% & 286.1138 ms & 1.32362 \% & 298.3752 ms \cr
 
 \app Scripts
 
+\label[script.initialization]
 {
 \begtt
 data <- list()
@@ -1925,6 +1947,7 @@ for(i in 1:5){
 }\caption/f Initial script for loading and preparing the data
 \medskip
 
+\label[script.glance_times_list]
 {
 \begtt
 glanceList <- c()
@@ -1951,6 +1974,7 @@ if(counter > 0){
 }\caption/f Creating list of glance times
 \medskip
 
+\label[script.glance_ratio_max_all]
 {
 \begtt
 eval <- list(c(),c())
@@ -1982,7 +2006,7 @@ sd(eval[[2]])
 }\caption/f Evaluating glance ratio and max glance time for all the participants
 \medskip
 
-
+\label[script.t_test_torque]
 {
 \begtt
 > t.test(glanceList, alternative="less", conf.level=0.99)
@@ -2014,6 +2038,7 @@ mean of x
 }\caption/f Confidence intervals for Torque glance times
 \medskip
 
+\label[script.t_test_cd]
 {
 \begtt
 > t.test(glanceList, conf.level = 0.99, alternative="less")

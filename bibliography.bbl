@@ -13,10 +13,10 @@ LUNDEN, Ingrid. Gartner: 195M Tablets Sold In 2013, Android Grabs Top Spot From 
 \textit{Android Developers} [online]. Google Inc. [cit. 2016-01-03]. Dostupné z: http://developer.android.com/index.html
 
 \bibitem{Zikovsky2015}
-\v ZIKOVSK\' Y, Pavel. \textit{N\' avrh u\v zivatelsk\' ych rozhran\' i: \' Uvod} [online]. 2015, : 10-16 [cit. 2016-01-03]. Dostupné z: https://edux.fit.cvut.cz/courses/MI-NUR/\_media/lectures/x01-uvod.pdf
+\v ZIKOVSK\' Y, Pavel. \textit{N\' avrh u\v zivatelsk\' ych rozhran\' i: \' Uvod} [online]. 2015, 10-16 [cit. 2016-01-03]. Dostupné z: https://edux.fit.cvut.cz/courses/MI-NUR/\_media/lectures/x01-uvod.pdf
 
 \bibitem{Zikovsky2015_2}
-\v ZIKOVSK\' Y, Pavel. \textit{N\' avrh u\v zivatelsk\' ych rozhran\' i: N\' avrh UI, prototypy} [online]. 2015, : 1-71 [cit. 2016-01-05]. Dostupné z: https://edux.fit.cvut.cz/courses/MI-NUR/\_media/lectures/x02-navh\_a\_prototyping.pdf
+\v ZIKOVSK\' Y, Pavel. \textit{N\' avrh u\v zivatelsk\' ych rozhran\' i: N\' avrh UI, prototypy} [online]. 2015, 1-71 [cit. 2016-01-05]. Dostupné z: https://edux.fit.cvut.cz/courses/MI-NUR/\_media/lectures/x02-navh\_a\_prototyping.pdf
 
 \bibitem{Heaton2013}
 HEATON, Andrew. Designing for In-Dash Automotive. A UX Primer. \textit{REVINITY : ANDREW HEATON} [online]. 2013-07-02 [cit. 2016-01-05]. Dostupné z: http://revinity.com/?p=128
@@ -52,5 +52,19 @@ Dostupné z: https://www1.snapon.com/Files/Diagnostics/\\UserManuals/GlobalOBDVe
 
 \bibitem{Pires}
 PIRES, Paulo. \textit{OBD-II Java API}. 2015-12-18 [cit. 2016-01-07] Dostupné z: https://github.com/pires/obd-java-api.
+
+\bibitem{Zikovsky2015_3}
+\v ZIKOVSK\' Y, Pavel. \textit{N\' avrh u\v zivatelsk\' ych rozhran\' i: Semestr\' alka, Testing without users} [online]. 2015, 31-68 [cit. 2016-01-07]. Dostupné z: https://edux.fit.cvut.cz/courses/MI-NUR/\_media/lectures/x03-semestralka\_testing\_without\_users.pdf
+
+\bibitem{McGehee2014}
+MCGEHEE, Daniel V. \textit{Visual and cognitive distraction metrics in the age of the smart phone: A basic review} [online]. Association for the Advancement of Automotive Medicine, 2014, 2014-03-01 [cit. 2016-01-08].
+
+\bibitem{Green2013}
+GREEN, Marc. \textit{Driver Reaction Time} [online]. Visual Expert, 2013 [cit. 2016-01-08]. Dostupné z: http://www.visualexpert.com/Resources/reactiontime.html
+
+\bibitem{DAddario2014}
+D’ADDARIO, Pamela Maria. \textit{Perception - Response Time to Emergency Roadway Hazards and the Effect of Cognitive Distraction}. Toronto, 2014. Master's Thesis. University of Toronto.
+
+
 
 \end{thebibliography}
