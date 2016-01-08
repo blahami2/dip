@@ -41,6 +41,16 @@ LOSH, Steve. Mercurial vs Git: Why Mercurial? \textit{Atlassian Blogs} [online].
 P'FARRELL, Charles. Git vs Mercurial: Why Git? \textit{Atlassian Blogs} [online]. Atlassian, 2012-03-13 [cit. 2016-01-08]. Dostupné z: http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/
 
 \bibitem{Fowler2006}
-FOWLER, Martin. Continuous Integration. \textit{Martin Fowler} [online]. 2006, 2006-05-01 [cit. 2016-01-08]. Dostupné z: http://www.martinfowler.com/articles/continuousIntegration.html
+FOWLER, Martin. Continuous Integration. \textit{Martin Fowler} [online]. 2006-05-01 [cit. 2016-01-08]. Dostupné z: http://www.martinfowler.com/articles/continuousIntegration.html
+
+\bibitem{EPA}
+On-Board Diagnostics (OBD): Basic Information. \textit{EPA} [online]. [cit. 2016-01-08]. Dostupné z: http://www3.epa.gov/obd/basic.htm
+
+\bibitem{Obd}
+\textit{Global OBD Vehicle Communication Software Manual} [online]. Snap-on Inc., 2013-08-01 [cit. 2016-01-08].
+Dostupné z: https://www1.snapon.com/Files/Diagnostics/\\UserManuals/GlobalOBDVehicleCommunicationSoftwareManual\_EAZ0025B43B.pdf
+
+\bibitem{Pires}
+PIRES, Paulo. \textit{OBD-II Java API}. 2015-12-18 [cit. 2016-01-07] Dostupné z: https://github.com/pires/obd-java-api.
 
 \end{thebibliography}

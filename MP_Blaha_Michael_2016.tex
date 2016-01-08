@@ -368,7 +368,7 @@ Fulfiling the requirements for customer base as well as simplicity of developmen
 \label[analysis.android_platform]
 \sec Android platform
 
-There are some platform aspects to be considered when developing for Android-based tablet device. First is the problem with most of the tablet devices -- the device performance. While the hardware is continuously evolving, one must consider older devices as well as growing requirements for graphics presentation. The second possible issue is the Android architecture, which influences the application inner communication.\cite[AndroidDevelopers]
+There are some platform aspects to be considered when developing for Android-based tablet device. First is the problem with most of the tablet devices -- the device performance. While the hardware is continuously evolving, one must consider older devices as well as growing requirements for graphical presentation. The second possible issue is the Android architecture, which influences the application inner communication.\cite[AndroidDevelopers]
 
 \label[analysis.android_platform.performance]
 \secc Performance
@@ -459,7 +459,7 @@ Responsiveness is an important factor when it comes to pleasure of using an appl
 \label[analysis.gui.development_process]
 \secc Development process
 
-The GUI development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphics user interface, development methods for other types of user interface will not be described.
+The GUI development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphical user interface, development methods for other types of user interface will not be described.
 
 The basic procedure of creating a UI design consists of multiple steps\cite[Zikovsky2015_2]. Fulfilling the requirements for each step properly should guarantee the proper outcome. The UI design steps are as follows:
 \begitems
@@ -683,29 +683,49 @@ As it is completely free, the use and purpose it not limited. Also it fits the c
 \label[analysis.obd]
 \sec On-Board Diagnostics
 
-\rfc{OBD}
-
 On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes.
 
-Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly. 
+Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly.\cite[Obd] 
+
+\label[analysis.obd.connection]
+\secc Connection
+
+To connect to the OBD II, an OBD-II Dongle has to be connected to the car. This dongle then enables creating a bluetooth connection and via that connection it provides a communication channel. Some dongles also support wi-fi.
 
 \label[analysis.obd.api]
 \secc API
 
-\rfc{describe OBD API}
+The OBD communication protocol supports certain modes and allows reading information on certain PIDs. The mode is used to set a mode of the OBD adapter. Based on the latest OBD-II standard SAE J1979\fnote{\url{http://standards.sae.org/j1979_201408/}} there are 10 modes available. Based on the current mode the adapter behaves differently. The modes are:
+\begitems
+* Show current data,
+* show freeze frame data,
+* show stored Diagnostic Trouble Codes,
+* clear Diagnostic Trouble Codes and stored values,
+* test results, oxygen sensor monitoring,
+* test results, other component/system monitoring,
+* show pending Diagnostic Trouble Codes,
+* control operation of on-board component/system,
+* request vehicle information,
+* permanent Diagnostic Trouble Codes.
+\enditems
+
+Vehicle manufacturers do not have to implement all the modes as well as they are not required to implement all the PIDs. However, there is a special request available to recieve the list of supported PIDs. This is done via sequence of bits stating 1 for supported and 0 for not supported PIDs.
+
+For every mode, there are different PIDs available. The actual vehicle data (such as speed, fuel, engine load, tempteratures, etc.) are available via modes 1 and 2. The Diagnostic Trouble Codes are available via modes 3, 7 and 9. For information retrieval, a hexadecimal number is sent to the adapter containing the PID number according to the data requested. The full table of PID codes is available at the OBD-II wikipedia page\fnote{\url{https://en.wikipedia.org/wiki/OBD-II_PIDs}}.
+
+As the OBD is widely used in software, libraries used for accessing the data are available. Such library can save a lot of work required to implement the communication protocol, to solve all the safety issues as well as to cover different vehicles. For such task, an OBD-II Java API library\fnote{available from \url{https://github.com/pires/obd-java-api}} will be used\cite[Pires].
 
 \label[analysis.obd.data]
 \secc Data
 
-\rfc{Describe OBD data}
 
+The OBD-II covers nearly all the data one can imagine a vehicle knows. It goes from the usual data, such as vehicle speed or engine RPM, to less usual such as multiple oxygen sensors. As mentioned earlier, the full table of the data provided is available at the OBD-II wikipedia page. All of those data should be available (via the application) to the driver if he demands it and if the car supports it 
 
 
 %------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
 \label[design]
 \chap Design 
 
-\rfc{add design - UML and shit?}
 This chapter is about the design process. The first section is about the application architecture, it's requirements and the platform conditions. It is followed by a thorough description of the GUI design process divided into four phases as parts of the iterative process. 
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
@@ -722,7 +742,7 @@ As mentioned in Android platform analysis in section \ref[analysis-android_platf
 \label[design.application_architecture.extensibility]
 \secc Extensibility
 
-With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis \rfc{CarDashboard app name}, new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
+With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis, new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
 
 The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in section \ref[design.application_architecture.modularity].
 
@@ -737,29 +757,29 @@ The first considered approach was to create requirements on modules, such as man
 
 However, the Android concept with XML layouts does not allow their inflating during runtime. Because it is a performance-expensive operation, it pre-processes a XML file when building the application, as quoted below.
 
-{\it``For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.''} \rfc{andoid layoutinflater documentation and quotes} 
+{\it``For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.''}\fnote{from documentation available at \url{http://developer.android.com/reference/android/view/LayoutInflater.html}}
 
 \seccc Overview 
 
-Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. 
+Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. The modularity will be supported via extending predefined classes and implementing requirerd functionality (such as action on update). This limits the modularity, however it is not suitable to do it differently at the moment, given the restrains mentioned above.
 
 \label[design.application_architecture.adaptability]
 \secc Adaptability
 
 Because the space on the screen is limited and also unknown (multiple devices have varying screen sizes) and every user might want to see different kind of information, he must be able to modify the layout, to choose the information he wants to see. The application must be adaptable to user's needs and requirements, so that he can control the application fluently and spend as little time as possible seeking the requested information.
 
-For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility. 
+For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility.
 
-\label[design.application_architecture.android_auto_preparation]
-\secc Android Auto preparation
+\label[design.application_architecture.architecture]
+\secc The architecture
 
-\rfc{Anroid auto prep}
+A multilayer architecture will be used for the application. With the Android architecture requirements, a modified MVC architecture will be used, where an Activity works as a controller and partialy as a view. The activity will contain set of modules, which are single-purpose elements based on the predefined classes (as mentioned in section \ref[design.application_architecture.modularity]). Those modules will communicate via interface, which will be implemented by the activity. Also an event-driven approach will be used in communicatio, especially with timed events. 
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[design.gui]
 \sec GUI
 
-Given the car environment, designing proper graphics user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in section \ref[analysis.gui].
+Given the car environment, designing proper graphical user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in section \ref[analysis.gui].
 
 \label[design.gui.phase_one]
 \secc Phase one
@@ -786,7 +806,7 @@ This concept was recreated into a similar concept with difference in size of pre
 \caption/f GUI draft \#2 with the next and previous panels pushed into the background
 \medskip
 
-For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \ref[app.design.gui.draft3] and \ref[app.design.gui.draft4] in the appendix B on page \pgref[app.design.gui.draft3]. An early implementation is shown in the appendix as well \rfc{screenshot and link}.
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \ref[app.design.gui.draft3] and \ref[app.design.gui.draft4] in the appendix B on page \pgref[app.design.gui.draft3].
 
 \seccc Advantages
 
@@ -930,10 +950,9 @@ As for the colors, a proper contrast has to be present for good readability. As 
 
 %------------------------------------------------------------------------ REALIZATION ------------------------------------------------------------------------%
 \label[realization]
-\chap Realization
+\chap Implementation
 
-This chapter is about the whole realization process -- the process of implementing the application with it's logic and GUI. It starts with a section about preparation, which provides an insight into the preparation of implementation environment and tools. It is then followed by the description of tablet specific part and then the actual core of the application. At last the final GUI is described.
-\rfc{Graphics/Graphic/Graphical user interface? Search and replace}
+This chapter is about the whole implementation process -- the process of implementing the application with it's logic and GUI. It starts with a section about preparation, which provides an insight into the preparation of implementation environment and tools. It is then followed by the description of tablet specific part and then the actual core of the application. At last the final GUI is described.
 
 %	------------------------------------------------------------------------ Preparation ----------------------------------------------------------------------%
 \label[realization.preparation]
@@ -952,16 +971,6 @@ As mentioned in analysis section \ref[analysis.development_and_support_tools.ide
 
 Because of the workaround with a shared library in Android Studio, a special approach has to be taken. As Git supports submodules, a shared library has to be registered as one. This can be achieved by calling command {\tt git submodule add LIBRARY\_REPOSITORY\_URL} in the root project folder and then adding the library subfolder into the {\tt .gitignore} file.
 
-
-\label[realization.preparation.testing]
-\secc Testing
-
-\rfc{Testing}
-
-\label[realization.preparation.scripting]
-\secc Scripting
-
-\rfc{Scripting?}
 %	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
 \label[realization.tablet]
 \sec Tablet specific
@@ -995,7 +1004,7 @@ As mentioned in section \ref[analysis.android_platform.architecture] on page \pg
 \label[realization.tablet.gridlayout]
 \secc GridLayout
 
-Because the Android concept does not expect functionality required by this application, a library class {\tt android.widget.GridLayout} is not suitable for this situation. As mentioned in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design], Android suggests the lists to be scrollable vertically. This is a functionality fully supported by {\tt android.widget.GridLayout} but unsuitable for the given use-case. It also makes it difficult to use this library class for the use-case described in section \ref[design.gui.the_final_design].
+Because the Android concept does not expect functionality required by this application, a library class {\tt android.widget.GridLayout}\fnote{more information available at \url{http://developer.android.com/reference/android/widget/GridLayout.html}} is not suitable for this situation. As mentioned in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design], Android suggests the lists to be scrollable vertically. This is a functionality fully supported by {\tt android.widget.GridLayout} but unsuitable for the given use-case. It also makes it difficult to use this library class for the use-case described in section \ref[design.gui.the_final_design].
 
 For reasons mentioned above a custom layout had to be created. Based on given measurements (of a module tile, a space) it computes amount of modules displayed per page and also their positions. Given the computed positions it then layouts all the provided modules.
 
@@ -1050,7 +1059,7 @@ There are several implementations of the modules mentioned above. A few will be 
 \begitems
   * {\bf SimpleShortcutModule} A mere implementation of {\tt AbstractShortcutModule} class (\ref[realization.core.modules])
   * {\bf SimpleParentModule} A mere implementation of {\tt AbstractParentModule} class  (\ref[realization.core.modules])
-  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the \rfc{ name} developed application can server as an application launcher optimized for in-car usage 
+  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the \rfc{name} can server as an application launcher optimized for in-car usage 
   * {\bf EmtpyModule} An empty module meant to be swapped for a different one, occupying an empty space
   * {\bf BackModule} A module handling the back button, which can be pressed to get back to upper parent module (go up in the hierarchy)
   * {\bf LightButtonModule} A module created for IoT support, offering a way to turn a given light on or off
@@ -1130,11 +1139,11 @@ When a custom Intent is to be created as a module, a {\tt CustomShortcutDialogFr
 
 \seccc GmapsShortcutDialogFragment
 
-As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. It uses Google Maps API described in \rfc{ \url{https://developers.google.com/maps/}{here}}. It allows creating the following:
+As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. Using Google Maps API\fnote{ \url{https://developers.google.com/maps/}}, it allows creating shortcut modules, which can invoke the following:
 \begitems
-* Displaying a location on map,
-* launching a navigation to a certain location from the current location,
-* searching the current location for given string, for example hospital, pharmacy or gas station.
+* Display a location on a map,
+* launch navigation to a certain location from the current location,
+* search current location for a given string, for example hospital, pharmacy or gas station.
 \enditems
 
 \seccc RenameDialogFragment
@@ -1147,7 +1156,7 @@ As an extension to previous, this Fragment allows creating custom Intents partic
 \rfc{OBD}
 While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
 
-Handling the OBD communication is done by background service which uses the \rfc{ OBD lib} library to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
+Handling the OBD communication is done by background service which uses the OBD-II Java API library\cite[Pires] to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
 
 \label[realization.core.utility]
 \secc Utility classes
@@ -1179,7 +1188,7 @@ This class provides simplified text-to-speech functionality. It handles all the 
 
 As the in-car GUI is not the usual type of GUI, it requires several implementations of custom {\tt Views}. Some provide functionality that is not provided by the Android API, some minimize the programming effort when working with modules as well as cover the low-level implementation.
 
-\seccc AutoResizeTextView \rfc{ change code}
+\seccc AutoResizeTextView \rfc{change code}
 
 To be able to create custom modules easily, it is necessary to create automatically adjustable elements. Such element is an {\tt AutoResizeTextView}, which automatically resizes the text based on the space provided. This enabled the information to be as large as possible, while still being able to display several types of data (even longer strings). This class is used to help displaying an {\tt AbstractDisplayModule} (\ref[realization.core.modules]).
 
@@ -1200,9 +1209,13 @@ There are many other views similar to the ones described above or just simple vi
 \label[realization.gui]
 \sec GUI
 
-Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section.
+Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section. The final result is shown on figure \ref[realization.gui.final].
 
-\rfc{Final GUI implementation screenshot, APPENDIX as well}
+\medskip
+\centerline{
+\clabel[realization.gui.final]{Final GUI implementation}
+\inspic images/realization_gui_final.png }\nobreak\medskip
+\caption/f Final GUI implementation
 
 \label[realization.gui.common_elements]
 \secc Common elements
@@ -1217,7 +1230,7 @@ While Material Design (\ref[analysis.android_platform.material_design]) suggests
 
 \seccc Effects
 
-Trying to follow Material Design principles (\ref[analysis.android_platform.material_design]), several graphics effects are present in order to increase the overall atractivity. All the modules support proper elevation with shadowing even with increasing the elevation when touch the button. Also, a ripple effect is present when the module is touch, a stronger ripple effect appears on a longer touch. This gives the user proper visual feedback making the application more pleasant.
+Trying to follow Material Design principles (\ref[analysis.android_platform.material_design]), several graphical effects are present in order to increase the overall atractivity. All the modules support proper elevation with shadowing even with increasing the elevation when touch the button. Also, a ripple effect is present when the module is touch, a stronger ripple effect appears on a longer touch. This gives the user proper visual feedback making the application more pleasant.
 
 \seccc Quick menu
 
@@ -1768,7 +1781,7 @@ According to statistics gathered so far in \rfc{ref}, where participants push th
 
 Thanks to the test driven development, the amount of bugs that got into the release version was limited. The unit tests prevented many bugs from flowing through. However, certain bugs and inperfections were present in the automatic tests as well, allowing disfunctional code go past them. The test driven development just adds another layer to the application development protection layer, but it is not perfect.
 
-After the development of the graphics user interface was done, the heuristic testing came into place. Many shortcomings have been found, however, not all were fixed because of the thesis deadline. They will surely be fixed as soon as possible, as the application will be released into the real market and it has to be nearly perfect by then. The heuristic testing however gives a great insight into certain areas of the user interface.
+After the development of the graphical user interface was done, the heuristic testing came into place. Many shortcomings have been found, however, not all were fixed because of the thesis deadline. They will surely be fixed as soon as possible, as the application will be released into the real market and it has to be nearly perfect by then. The heuristic testing however gives a great insight into certain areas of the user interface.
 
 Then even with a few difficulties, the application was tested in the most suitable environment available -- the realistic car simulator. Thanks to the eye-tracking and the simulator logs huge amount of data has been gathered. The evaulation of those data was done using the R software.
 
