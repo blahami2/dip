@@ -83,8 +83,7 @@ In the modern era of portable electronical devices people use those devices dail
 \label[introduction.project]
 \sec Project
 
-\rfc{fix}
-Car Dashboard application enables users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the cognitive load, this application offers rich variety of use cases in a simple but attractive design.
+\rfc{name} application enables users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the cognitive load, this application offers rich variety of use cases in a simple but attractive design.
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -149,7 +148,7 @@ This application can actually show almost anything OBD (described in section \re
 \seccc Advantages
 
 \begitems
-* Lot of data from OBD available,
+* High amount of data from OBD available,
 * various layout settings and themes,
 * HUD mode.
 \enditems
@@ -732,7 +731,7 @@ This chapter is about the design process. The first section is about the applica
 \label[design.application_architecture]
 \sec Application architecture
 
-Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours (TODO link Code Complete?). Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
+Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours \rfc{CodeComplete}. Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
 
 \label[design.application_architecture.platform_limitations]
 \secc Platform limitations
@@ -748,8 +747,6 @@ The main approach to achieve proper extensibility should be to write a clean cod
 
 \label[design.application_architecture.modularity]
 \secc Modularity
-
-\rfc{Describe modularity}
 
 \seccc Note for Android platform limitations
 
@@ -1153,7 +1150,6 @@ As an extension to previous, this Fragment allows creating custom Intents partic
 \label[realization.core.obd]
 \secc OBD
 
-\rfc{OBD}
 While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
 
 Handling the OBD communication is done by background service which uses the OBD-II Java API library\cite[Pires] to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
@@ -1234,13 +1230,17 @@ Trying to follow Material Design principles (\ref[analysis.android_platform.mate
 
 \seccc Quick menu
 
-As mentioned in section \ref[realization.core.modules], a quick menu is a limited set of options for every module. It gets invoked by a long touch on a module. It separates the rectangular module into four rectangular pieces, each containing a button. \rfc{ IMAGES}
+As mentioned in section \ref[realization.core.modules], a quick menu is a limited set of options for every module. It gets invoked by a long touch on a module. It separates the rectangular module into four rectangular pieces, each containing a button (as shown on figure \ref[realization.gui.quickmenu]).
+
+\medskip
+\centerline{
+\clabel[realization.gui.quickmenu]{Quick menu in the final GUI}
+\inspic images/realization_gui_quickmenu.png }\nobreak\medskip
+\caption/f Quick menu (2nd row, 3rd column) in the final GUI
 
 \seccc Icons
 
 Given the platform guidelines (\ref[analysis.android_platform.material_design]), it is easier to find proper icons for various actions. Material Design icons are frequently updated and more icons are added on demand. Should an icon be missing currently, it has a high chance of being created later. It also helps to use familiar icons, so that the user does not have to learn more images and their meanings.
-
-Hierarchical model, effects, submenus
 
 \label[realization.gui.multiple_designs]
 \secc Multiple designs
@@ -1249,17 +1249,15 @@ As mentioned in section \ref[design.gui.the_final_design], there are two types o
 
 \seccc Action module
 
-An action module is a rectangular element consisting of a large centered icon and a title in the bottom on background of the opposite color to the font color. The icon ensures recognizability, while the title specifies the module identity.
+An action module is a rectangular element consisting of a large centered icon and a title in the bottom on background of the opposite color to the font color. The icon ensures recognizability, while the title specifies the module identity. The result can be visible on the figure \ref[realization.gui.quickmenu] (except for the quick menu it is full of action modules).
 
 Such action module is meant to be pressed, not to display information. On press it performs some action, which may or may not give a feedback, based on it's purpose. However, it always gives a visual feedback (\ref[realization.gui.common_elements]).
 
 \seccc Display module
 
-A display module is also a rectangular element, however it consists of a large centered value text, a title on top, a value in the right bottom corner and a small gray icon in the left bottom corner. All of it is on backgrdoun of the opposite color to the font color.
+A display module is also a rectangular element, however it consists of a large centered value text, a title on top, a value in the right bottom corner and a small gray icon in the left bottom corner. All of it is on backgrdoun of the opposite color to the font color. The result can be seen on the figure \ref[realization.gui.final] (all modules in the first row are display modules as well as the first and the last module in the second row).
 
 Such display module serves as a source of information for the driver. It can display various data in a well readable form, while preserving an attractive design. It is able to display several types of data from numbers to short strings.
-
-Limited set of module types
 
 %------------------------------------------------------------------------ TESTING ------------------------------------------------------------------------%
 \label[testing]
@@ -1285,18 +1283,6 @@ Unit testing on android, mention Test driven development, continuous integration
 
 \rfc{Integ test}
 Instrumentation? Describe TDD, CI, automation
-
-\label[testing.code.system_testing]
-\secc System testing
-
-\rfc{Server}
-Server testing, consider removing
-
-\label[testing.code.qualification_testing]
-\secc Qualification testing
-
-\rfc{Q test}
-Testing with users - consider section on its own - testing application as a whole thing
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[testing.heuristic]
@@ -1435,27 +1421,6 @@ Also, to see how the application is doing in context of competition, thorough AB
 
 
 As a related application has been developed simultaneously for a mobile platform \rfc{ link/bibli}, testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
-
-\label[testing.users.usability]
-\secc Usability testing
-
-
-\rfc{Usability}
-Testing the application as a regular application. Is it understandable? Is it easy to control, to see data, to understand, to comprehend, to learn?
-
-A AA AS 
-
-A AS A
-
-A ASAS 
-
-A AA A 
-
-AAAA
-
-AAAA
-
-AAAAA
 
 \label[testing.users.simulator]
 \secc Simulator
