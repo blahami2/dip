@@ -32,7 +32,7 @@
 \date {January 2016}
 \supervisor{Ing. Jan \v Sediv\' y, CSc.}
 \abstractEN {
-Abs%\rfc{AbstractEN}
+In~the~modern era of~portable electronic devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in~cars during driving. The goal of this thesis is to design a graphical user interface for in-car usage, which will minimize the cognitive load and still offer the required functionality. Next goal is to develop an application using this GUI and displaying the information from a car obtained via OBD. Final goal is to test the application in a suitable environment.
 }
 \abstractCZ {
 Abs%\rfc{AbstractCZ}
@@ -44,14 +44,14 @@ Prohla\v suji, \v ze jsem p\v redlo\v zenou pr\'aci vypracoval(a) samostatn\v e 
 
 \keywordsEN {%
 %\rfc{KeywordsEN}
-kw
+Android, Java, OBD, GUI, car, LCT, A/B testing
 }
 \keywordsCZ {%
 %\rfc{KeywordCZ}
-Android, Java, OBD
+Android, Java, OBD, GUI, auto, LCT, A/B testov\' an\' i
 }
 \thanks {           % Use main language here
- Diky, diky vedoucimu, diky FD apod.%\rfc{Thanks}
+I would like to express my gratitude to my master thesis supervisor, Ing.~Jan~\v Sediv\' y,~CSc. I am also deeply grateful to the Department of Vehicle Technology on CTU Faculty of Transportation Sciences for all the help and patience with testing and everything related. I would also like to thank to my college, Bc. Luk\' a\v s Hrub\' y for cooperation and advices.
 }
 
 \picw=.9\hsize
@@ -70,13 +70,13 @@ Android, Java, OBD
 \chap Introduction 
 
 \rfc{AbstractEN/CZ, KeywordEN/CZ, Declaration, Thanks, Draft}
-\rfc{Introduction}
-
-sources:
-\begitems
-* \url{https://docs.google.com/document/d/1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8/edit}
-* generally progress: \url{https://docs.google.com/document/d/1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8/edit}
-\enditems
+%\rfc{Introduction}
+%
+%sources:
+%\begitems
+%* \url{https://docs.google.com/document/d/1pGtlS5uY4PdKfHjf83dFGrajyVcea0tvzAnwXf61Cs8/edit}
+%* generally progress: \url{https://docs.google.com/document/d/1CEWym7MphsCO0v3CXe_bTHOgFBgquBbPVbhk_pHZ5t8/edit}
+%\enditems
 
 
 %		------------------------------------------------------------------------ Motivation ----------------------------------------------------------------------%
@@ -91,6 +91,8 @@ In~the~modern era of~portable electronic devices people use those devices daily.
 \sec Project
 
 The goal of this project is to create an~application, that will enable users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the~cognitive load, this application should offer rich variety of use cases in a~simple but attractive design. For the~purpose of this project, this application will be referred to as ``CarDashboard''.
+
+First step in the project will be reviewing existing applications, as it is essential for better insight and inspiration. Designing a proper user interface will follow. To design a user interface for a car environment is not a simple task, since it is the main mean of interaction with the driver, it's quality is the most important factor in driver's distraction when controlling the application. After designing the \glref{GUI}, an application will be developed implementing the given \glref{GUI}. It will enable the driver to communicate with car (currently using read-only operations) via \glref{OBD}. After the development process, the application will be properly tested using a car simulator. The tests will be thoroughly evaluated using various evaluation methods.
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -397,7 +399,13 @@ As a~relatively new concept, so called Fragment was created. It is similar to ac
 \label[analysis.android_platform.material_design]
 \secc Material design
 
-\rfc{Describe MD, scrolling lists}
+Material design is a visual language created by Google. It is inspired by real material, it's behavior in motion, the effects of light and dark, the rules of physics. It also describes colors, which should please the eye and create meaning and focus. The usage of this language is described in Material design guidelines~\cite[MaterialDesign].
+
+Every material has certain properties. Every element is considered to be a real object with depth and position in the 3D space. This causes lighting to create shadows based on elevation, to distinguish between layers, to show distance of elements.
+
+Material design guidelines also describe animations considering the mass and weight of animated objects. Also the physical laws in motion, in acceleration and deceleration, in jumping up and falling down, the responses to interaction.
+
+Apart from those general descriptions of material and motion, it also states certain rules and exact measurements. For example, lists should be scrollable vertically and fluently. Buttons, icons, fonts and all the other elements should be of certain sizes. Views should choose from a certain set of layouts. Layouts for lists, cards, buttons and so on are all specified in the guidelines.
 
 %------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[analysis.gui]
@@ -1063,7 +1071,7 @@ There are several implementations of the~modules mentioned above. A~few will be 
 \begitems
   * {\bf SimpleShortcutModule} A~mere implementation of {\tt AbstractShortcutModule} class (\ref[realization.core.modules])
   * {\bf SimpleParentModule} A~mere implementation of {\tt AbstractParentModule} class  (\ref[realization.core.modules])
-  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the~\rfc{name} can server as an~application launcher optimized for in-car usage 
+  * {\bf AppShortcutModule} An extension to {\tt AbstractShortcutModule} which limits to Intents invoking other installed application, therefore the~CarDashboard can server as an~application launcher optimized for in-car usage 
   * {\bf EmtpyModule} An empty module meant to be swapped for a~different one, occupying an~empty space
   * {\bf BackModule} A~module handling the~back button, which can be pressed to get back to upper parent module (go up in the~hierarchy)
   * {\bf LightButtonModule} A~module created for IoT support, offering a~way to turn a~given light on or off
@@ -1500,7 +1508,7 @@ As shown on tablet \ref[testing.users.preparations.scenario], the~testing schedu
 
 The A/B testing scenario is simple. At first the~user drives the~route without any application, so that he gets to know it. Then he drives the~same route with application A~(Torque), while being frequently asked to read out loud the~speed and RPM. The speed is to be read from the~first second with interval of 20 seconds, the~RPM is to be read from the~tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the~user has to scroll from one to another. The same scenario goes for the~application B. A~and B applications switch places for every tester (B first, A~second or the~other way around). The metrics then are the~glance times for both applications.
 
-The change lane test (\glref{LCT}) scenario is similar, however only the~\rfc{name} application is being tested. The driver is to drive on a~highway until a~speed limit sign appears telling him to drive at 60 km/h. After a~while (approximately 3 minutes) an~object appears from nowhere 35 meters in front of the~driver in his lane. He is then supposed to turn to the~left lane and avoid the~object. During the~whole journey the~user is asked for RPM to be read from the~tablet application, so that he has to control the~application while driving. The metrics is avoiding the~object and following the~predefined path while using the~application. It measures how much the~application distracts the~driver and how much does it influence the~reaction time.  
+The change lane test (\glref{LCT}) scenario is similar, however only the~CarDashboard application is being tested. The driver is to drive on a~highway until a~speed limit sign appears telling him to drive at 60 km/h. After a~while (approximately 3 minutes) an~object appears from nowhere 35 meters in front of the~driver in his lane. He is then supposed to turn to the~left lane and avoid the~object. During the~whole journey the~user is asked for RPM to be read from the~tablet application, so that he has to control the~application while driving. The metrics is avoiding the~object and following the~predefined path while using the~application. It measures how much the~application distracts the~driver and how much does it influence the~reaction time.  
 
 \seccc World models
 
@@ -1561,7 +1569,7 @@ While the~goals appear to be clear for all the~participants, not all were entire
 
 \secc A/B testing evaluation
 
-The A/B testing is a~testing of Torque versus \rfc{name} in the~same condition. The tester drives while frequently being asked to read information of the~screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the~eye movement and logs every 16.6 milliseconds if the~driver is looking at the~tablet or not at the~given moment. This ensures certain precision and reliability of results.
+The A/B testing is a~testing of Torque versus CarDashboard in the~same condition. The tester drives while frequently being asked to read information of the~screen (as described in section about scenarios \ref[testing.users.preparation]). The eye-tracking system tracks the~eye movement and logs every 16.6 milliseconds if the~driver is looking at the~tablet or not at the~given moment. This ensures certain precision and reliability of results.
 
 Logs have been examined and several outcomes measured. As first the~comparison of glance frequency will be shown. Then some statistical data are measured, such as confidence intervals and such. An overall comparison is created. Then duration of glance time is examined for both application and compared. The maximal glance time and the~average glance time are compared as well as mean and standard deviation.
 
@@ -1597,10 +1605,10 @@ axis(1)
 \inspic images/testing_users_ab_glance_cd.png
 }
 \nobreak\medskip
-\caption/f Glances for \rfc{name}
+\caption/f Glances for CarDashboard
 \medskip
 
-Those are just illustrative plots to see the~portion of time looking at the~application (the black area of the~plot) and not looking at the~application (the white area of the~plot). The glance distribution in log files for CarDashboard \rfc{name} is visible below the~Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
+Those are just illustrative plots to see the~portion of time looking at the~application (the black area of the~plot) and not looking at the~application (the white area of the~plot). The glance distribution in log files for CarDashboard CarDashboard is visible below the~Torque image for better comparison (\ref[testing.users.ab.glance_cd]).
 
 While the~individual percentage ratio of time spent looking at the~Torque is in range from 13 to 18 percent with the~mean of 15.55 and the~standard deviation of 2.19, the~same for CarDashboard is only in range from 6 to 8 percent with the~mean of 7.45 and the~standard deviation of 1.32. The average percentage ratio of time spent looking at the~Torque is then 15.55 \%, while for CarDashboard it is only 7.40 \%. The R script for the~average time ratio is shown below, the~R scripts for individual (per participant) data are shown in \ref[script.glance_ratio_max_all].
 
@@ -1616,11 +1624,11 @@ print(100 * glanceSum / glanceLength)
 
 \seccc Glance time
 
-As another important metric, the~maximal glance time (the longest continuous time interval spent looking at the~application) measured for Torque was in range from 817 to 1616 milliseconds with the~mean of 1263.3 and a~standard deviation of 296.11. The same was measured for CarDashboard \rfc{name} and the~results for the~maximal glance time are in range from 450 to 1217 milliseconds with the~mean of 716.7 and a~standard deviation of 298.38. This means that the~average maximal glance time for \rfc{name} is nearly half the~average maximal glance time for Torque.
+As another important metric, the~maximal glance time (the longest continuous time interval spent looking at the~application) measured for Torque was in range from 817 to 1616 milliseconds with the~mean of 1263.3 and a~standard deviation of 296.11. The same was measured for CarDashboard CarDashboard and the~results for the~maximal glance time are in range from 450 to 1217 milliseconds with the~mean of 716.7 and a~standard deviation of 298.38. This means that the~average maximal glance time for CarDashboard is nearly half the~average maximal glance time for Torque.
 
-As mentioned by Daniel McGehee~\cite[McGehee2014], drivers tend to try obtaining the~required information for 1.5 to 2 seconds, then they give it up for the~moment and try later. The 1.5-2 seconds glance time is also considered to be the~safety limit for a~single task requiring a~visual focus. With the~\rfc{name} exhibiting maximal glance times lower than 1.2 second the~limit of 1.5 second is not even reach, which is a~success. 
+As mentioned by Daniel McGehee~\cite[McGehee2014], drivers tend to try obtaining the~required information for 1.5 to 2 seconds, then they give it up for the~moment and try later. The 1.5-2 seconds glance time is also considered to be the~safety limit for a~single task requiring a~visual focus. With the~CarDashboard exhibiting maximal glance times lower than 1.2 second the~limit of 1.5 second is not even reach, which is a~success. 
 
-Furthering the~glance time analysis, all the~log entries were combined into one (as shown in R script in the~addition \ref[script.glance_times_list]). Based on Student's t-test, there is 1 \% chance that the~driver will be looking continuously at the~Torque application for more than 157.67 milliseconds. For \rfc{name} there is 1 \% chance of looking at the~application for more than only 109 milliseconds. Both of the~results from the~t-test performed in R are shown in the~additions (\ref[script.t_test_torque] and \ref[script.t_test_cd]), the~result for \rfc{name} is shown below for illustration.
+Furthering the~glance time analysis, all the~log entries were combined into one (as shown in R script in the~addition \ref[script.glance_times_list]). Based on Student's t-test, there is 1 \% chance that the~driver will be looking continuously at the~Torque application for more than 157.67 milliseconds. For CarDashboard there is 1 \% chance of looking at the~application for more than only 109 milliseconds. Both of the~results from the~t-test performed in R are shown in the~additions (\ref[script.t_test_torque] and \ref[script.t_test_cd]), the~result for CarDashboard is shown below for illustration.
 
 \begtt
 t.test(glanceList, alternative="less", conf.level=0.99)
@@ -1637,7 +1645,7 @@ mean of x
  99.27168 
 \endtt
 
-With the~average glance time being 143.926 milliseconds for Torque, the~\rfc{name} appears to perform much better with it's average glance time of 99.27 milliseconds. The glance times for Torque are shown on figure \ref[testing.users.ab.torque_glance_times], the~glance times for \rfc{name} are shown below the~Torque figure on figure \ref[testing.users.ab.cd_glance_times]. 
+With the~average glance time being 143.926 milliseconds for Torque, the~CarDashboard appears to perform much better with it's average glance time of 99.27 milliseconds. The glance times for Torque are shown on figure \ref[testing.users.ab.torque_glance_times], the~glance times for CarDashboard are shown below the~Torque figure on figure \ref[testing.users.ab.cd_glance_times]. 
 
 \medskip
 \centerline{
@@ -1653,7 +1661,7 @@ With the~average glance time being 143.926 milliseconds for Torque, the~\rfc{nam
 \inspic images/testing_users_ab_cd_glance_times.png
 }
 \nobreak\medskip
-\caption/f \rfc{name} glance times
+\caption/f CarDashboard glance times
 \medskip
 
 From further analysis it appears, that the~distribution of glance times is exponential. Should this assumption be correct, the~probability of looking at the~application for longer time would decrease exponentially. The comparison plot used for determining the~distribution is shown on image \ref[testing.users.ab.cd_glance_distribution], it is a~result of a~R script shown below.
@@ -1759,7 +1767,7 @@ After the~development of the~graphical user interface was done, the~heuristic te
 
 Then even with a~few difficulties, the~application was tested in the~most suitable environment available -- the~realistic car simulator. Thanks to the~eye-tracking and the~simulator logs huge amount of data has been gathered. The evaluation of those data was done using the~R software.
 
-The A/B testing against the~potential competitor -- Torque was performed. The tests have shown that the~\rfc{name} performs better in the~real life scenarios based on obtaining information from a~car.
+The A/B testing against the~potential competitor -- Torque was performed. The tests have shown that the~CarDashboard performs better in the~real life scenarios based on obtaining information from a~car.
 
 The Lane Change Test was done in order to find out the~influence of reaction time when using the~application. None or minor influence (in terms of units of milliseconds) has been found, from which one can assume that the~application usage is as safe as planned.
 
@@ -1769,8 +1777,7 @@ Overall the~testing was a~success and it helped developing a~good and safe appli
 \label[conclusion]
 \chap Conclusion
 
-\rfc{Conclusion intro}
-
+In this chapter, first the assignment completion will be reviewed (fulfillment will be described for every single point of assignment). Information about the project life cycle, it's present and future will follow. Finally the thesis will be reviewed followed by a personal opinion and experience.
 
 %	------------------------------------------------------------------------ Assignment completion ----------------------------------------------------------------------%
 \label[conclusion.assignment_completion]
@@ -1811,24 +1818,29 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 \label[conclusion.project_life_cycle]
 \sec Project life cycle
 
-\rfc{Project lifecycle}
-
-
 \label[conclusion.project_life_cycle.present]
 \secc Present
 
-\rfc{Present}
+Currently the application is being prepared for release. As mentioned in the chapter about testing (\ref[testing]), some adjustments have to be made in order to fix all the issues. After this is done, the application will be release to the Google Play Store\fnote{\url{https://play.google.com/store?hl=en}}.
 
 \label[conclusion.project_life_cycle.future]
 \secc Future
 
-\rfc{Future}
+In the future, the application will be enhanced with additional functionality, statistics and so on. It is planned to implement a logging mechanism, which will log interesting data on the server. Those data can later be evaluated and presented to the user (for example his driving style can be evaluated, it can also serve as a path tracker and so on).
+
+Also, the application can serve as a device for Internet of Things as a controller and viewer. It can display simple information (such as home temperature) or even turn on lights, open the garage, play music, etc. Some of the functionality is already being tested, the application contains a few \glref{IoT} modules (temperature and light switch).
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[conclusion.summary]
 \sec Summary
 
-\rfc{Summary}
+The goal of this thesis has been achieved, however a lot of work is still left to be done. The CarDashboard application offers a simple graphical user interface and easy extendability, making it truly versatile. The car does not have to be the only environment the application can be used in. The next step can be smart homes or even factories, where precision and simplicity is necessary.
+
+I am really glad I had a chance to work with a wide area of technologies during this project. I had a chance to perform a proper testing with access to the car simulator, which is far better than I could've imagined at the beginning. I used all kinds of statistics when evaluating results and it was very interesting to see it from different points of view. 
+
+I've learned a lot more about developing for Android. However imperfect it was, it is a great experience to have. Also trying the \glref{GUI} development process in practice is really interesting. During that I've learned some wonderful techniques from start to end.
+
+And at last but not least, I've improved my research abilities, as I've reviewed several research papers and soon I might attempt to create one or two (in cooperation) regarding this topic. Overall, this has been a great experience.
 
 %------------------------------------------------------------------------ BIBLIOGRAPHY ------------------------------------------------------------------------%
 
@@ -1903,6 +1915,7 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 \nobreak\medskip
 \caption/f Glance times distribution for Torque
 
+\rfc{car path avoiding object}
 
 \app Tables
 
@@ -2067,7 +2080,7 @@ sample estimates:
 mean of x 
  99.27168 
 \endtt
-}\caption/f Confidence intervals for \rfc{name} glance times
+}\caption/f Confidence intervals for CarDashboard glance times
 \medskip
 
 
