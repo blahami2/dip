@@ -1,17 +1,17 @@
 ﻿% % % % % % % % % % % % %
-% Example thesis (CTU FIT) based on CTUstyle 
+% Example thesis (\glref{CTU} FIT) based on \glref{CTU}style 
 % use: pdfcsplain <FIT-ZP.tex>
 % write this document as UTF-8
 % % % % % % % % % % % % %
-% CTUstyle: see more at http://petr.olsak.net/ctustyle.html
+% \glref{CTU}style: see more at http://petr.olsak.net/ctustyle.html
 % requirements: ctustyle.tex, ctulogo.pdf
-% CTUstyle requires OPmac (opmac.tex)
+% \glref{CTU}style requires OPmac (opmac.tex)
 % download OPmac from
 % http://petr.olsak.net/opmac.html
 % % % % % % % % % % % % %
 
 % This example created by Ondrej Guth <ondrej.guth@fit.cvut.cz> 2014
-% based on CTUstyle by Petr Olsak
+% based on \glref{CTU}style by Petr Olsak
 
 % % % % % % % % % % % % % 
 % The following not to be modified
@@ -83,14 +83,14 @@ sources:
 \label[introduction.motivation]
 \sec Motivation 
 
-In the modern era of portable electronical devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\fnote{\url{http://www.dailymail.co.uk/news/article-2591148/One-four-car-accidents-caused-cell-phone-use-driving-five-cent-blamed-texting.html}\cite[Gorman2014]}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
+In the modern era of portable electronic devices people use those devices daily. Unfortunately, even when it is inappropriate -- for example in cars during driving. Such usage can easily cause safety hazards and often they actually do\fnote{\url{http://www.dailymail.co.uk/news/article-2591148/One-four-car-accidents-caused-cell-phone-use-driving-five-cent-blamed-texting.html}\cite[Gorman2014]}. This situation calls desperately for a proper solution. As the usage of those devices is forbidden while driving and yet drivers still use them, the prohibition is not the solution. And when people do not adapt, the environment has to adapt. As we cannot change the way of transportation, we can change the way of controlling those devices. Therefore an application will be made, which tries to solve this issue, which helps the driver do all the tasks he wants to do, but in a safe way without endangering the driver himself and everybody else who might get hurt in a possible accident.
 
 
 %	------------------------------------------------------------------------ Project ----------------------------------------------------------------------%
 \label[introduction.project]
 \sec Project
 
-\rfc{name} application enables users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the cognitive load, this application offers rich variety of use cases in a simple but attractive design.
+The goal of this project is to create an application, that will enable users to use their android tablet or phone safely while driving. While focusing on usability and minimizing the cognitive load, this application should offer rich variety of use cases in a simple but attractive design. For the purpose of this project, this application will be referred to as ``CarDashboard''.
 
 %	------------------------------------------------------------------------ Assignment analysis ----------------------------------------------------------------------%
 \label[introduction.assignment_analysis]
@@ -100,23 +100,23 @@ In the modern era of portable electronical devices people use those devices dail
 
 \seccc Review existing Android applications for in-car use
 
-One of the key approches in research project is reviewing the existing progress in the given field. Reviewing existing applications helps understanding the topic, seeing the bigger picture, learning from mistakes of others and last but not least, getting general idea about competition.
+One of the key approaches in research project is reviewing the existing progress in the given field. Reviewing existing applications helps understanding the topic, seeing the bigger picture, learning from mistakes of others and last but not least, getting general idea about competition.
 
-\seccc Review and analyse User Interface development methods for in-car infotainment applications
+\seccc Review and analyze User Interface development methods for in-car infotainment applications
 
-Cosindering the car environment, the user interface must deal with a lot of different problems than usual. This task should review existing User Interface development rules and apply them to the car environment, then analyse them and choose proper method for car-UI design process.
+Considering the car environment, the user interface must deal with a lot of different problems than usual. This task should review existing User Interface development rules and apply them to the car environment, then analyze them and choose proper method for car-\glref{UI} design process.
 
 \seccc Analyze the in-car OBD API and exported data
 
-On-Board Diagnostics API is a standard API provided by modern cars for gathering various information from speed to engine temperature. This task focuses on understanding and gathering data from the OBD API.
+On-Board Diagnostics \glref{API} is a standard \glref{API} provided by modern cars for gathering various information from speed to engine temperature. This task focuses on understanding and gathering data from the \glref{OBD} \glref{API}.
 
 \seccc Design an application system architecture for accessing the OBD data and resources
 
-Having the data from OBD and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unnecessary delay.
+Having the data from \glref{OBD} and preparing an application for displaying them, designing proper architecture is required for everything to work well. The application has to gather data, while displaying them properly without unnecessary delay.
 
 \seccc Design a tablet User Interface for in-car use
 
-After reviewing existing applications and UI development methods, the next goal is to create new User Interface for in-car use, while considering the constraints this environment puts on it.
+After reviewing existing applications and \glref{UI} development methods, the next goal is to create new User Interface for in-car use, while considering the constraints this environment puts on it.
 
 \seccc Design and implement in-car application offering the OBD data for Android tablet platform
 
@@ -124,13 +124,13 @@ With everything prepared and thought through, the application will be developed 
 
 \seccc Perform UI and application testing and evaluate results
 
-For best results the application must and will be tested. Both code and UI must be tested properly, using various testing approaches, such as unit tests or UI testing with reaul users in a car simulator.
+For best results the application must and will be tested. Both code and \glref{UI} must be tested properly, using various testing approaches, such as unit tests or \glref{UI} testing with real users in a car simulator.
 
 %------------------------------------------------------------------------ ANALYSIS ------------------------------------------------------------------------%
 \label[analysis]
 \chap Analysis
 
-This chapter is about analyzation process. It contains research about existing related applications, about application platforms and the description of the chosen platform in more detailed way. Also a basic insight into GUI design process as well as general GUI principles and GUI specifics for the car environment. Then the application idea is described the view of use-cases and tasks followed by the review of tools used for development. Finally the OBD is described with it's API and the data it provides.
+This chapter is about the process of analyzing resources, researches, tools and project related areas. It contains research about existing related applications, about application platforms and the description of the chosen platform in more detailed way. Also a basic insight into \glref{GUI} design process as well as general \glref{GUI} principles and \glref{GUI} specifics for the car environment. Then the application idea is described the view of use-cases and tasks followed by the review of tools used for development. Finally the \glref{OBD} is described with it's \glref{API} and the data it provides.
 
 %	------------------------------------------------------------------------ Existing applications ----------------------------------------------------------------------%
 \label[analysis.existing_applications]
@@ -143,19 +143,19 @@ Important step in developing a new application is to check the related applicati
 
 Starting with an empty screen, lot of settings are required before using this application\fnote{available from \url{https://play.google.com/store/apps/details?id=org.prowl.torquefree&hl=en}}, since there is no default mode. Adding new views is easy and intuitive, but still very confusing. The add menu lacks hierarchy and everything is just sorted array of various options. There is no cancel button when popping the menu dialog.
 
-This application can actually show almost anything OBD (described in section \ref[analysis.obd]) provides. It supports differents types of display, but it is hard to tell by their names. Responsiveness it not smooth at all and launching the application in horizontal mode confuses it, everything behaves like if it was in vertical mode.
+This application can actually show almost anything \glref{OBD} (described in section \ref[analysis.obd]) provides. It supports different types of display, but it is hard to tell by their names. Responsiveness it not smooth at all and launching the application in horizontal mode confuses it, everything behaves like if it was in vertical mode.
 
 
 \medskip
 \centerline{
-\clabel[analysis.existing_applications.torque.img]{Screenshort from Torque}
+\clabel[analysis.existing_applications.torque.img]{Screenshot from Torque}
 \inspic images/analysis_app_torque.png }\nobreak\medskip
 \caption/f Screenshot from Torque
 
 \seccc Advantages
 
 \begitems
-* High amount of data from OBD available,
+* High amount of data from \glref{OBD} available,
 * various layout settings and themes,
 * HUD mode.
 \enditems
@@ -167,7 +167,7 @@ This application can actually show almost anything OBD (described in section \re
 * limited size options for displays (3 types),
 * lacks default mode with predefined displays,
 * hard to place displays, the grid does not work well,
-* slow and laggy.
+* slow and unresponsive.
 \enditems
 
 % screenshot
@@ -175,7 +175,7 @@ This application can actually show almost anything OBD (described in section \re
 \label[analysis.existing_applications.carhome_ultra]
 \secc CarHome Ultra 
 
-This application\fnote{available from \url{https://play.google.com/store/apps/details?id=spinninghead.carhome&hl=en}} starts with a pop-up tutorial for it's elementary functionality, telling the user about the speedmeter, compass, weather forecast and customizable dashboard for launching external applications. In default it offers Google Maps, Google Navigation and voice search. Adding another external application shortcut is done by tapping the tab. Also there are basic settings, which offer brightness mode (day, night, auto), theme and safety options.
+This application\fnote{available from \url{https://play.google.com/store/apps/details?id=spinninghead.carhome&hl=en}} starts with a pop-up tutorial for it's elementary functionality, telling the user about the speedometer, compass, weather forecast and customizable dashboard for launching external applications. In default it offers Google Maps, Google Navigation and voice search. Adding another external application shortcut is done by tapping the tab. Also there are basic settings, which offer brightness mode (day, night, auto), theme and safety options.
 
 It appears to be just a simple application offering speed, compass, weather and external application launcher. The new version also displays location (address) and a phone version is able to respond to text messages. It also supports text to speech (on touch).
 
@@ -188,7 +188,7 @@ It appears to be just a simple application offering speed, compass, weather and 
 \seccc Advantages
 
 \begitems
-* Simple UI, easy to understand,
+* Simple \glref{UI}, easy to understand,
 * responsive, fluent,
 * possible to change units (mile/km, etc.),
 * lot of themes available,
@@ -210,7 +210,7 @@ It appears to be just a simple application offering speed, compass, weather and 
 
 After a long loading of the Car Dashdroid application\fnote{available from \url{https://play.google.com/store/apps/details?id=com.nezdroid.cardashdroid&hl=en}}, the main window appears. It has three screens, which change by swiping right or left. The left screen contains dial keyboard, the right screen contains customizable cards (for external application shortcuts or built-in tools) and the main screen consists of weather, speed and shortcuts to contacts, music, navigation and voice command.
 
-It also provides settings for bluetooth, brightness, screen rotation, fullscreen, day/night mode and application settings, where other options can be set, such as home adress, theme, units.
+It also provides settings for bluetooth, brightness, screen rotation, full-screen, day/night mode and application settings, where other options can be set, such as home address, theme, units.
 
 \medskip
 \centerline{
@@ -221,10 +221,10 @@ It also provides settings for bluetooth, brightness, screen rotation, fullscreen
 \seccc Advantages
 
 \begitems
-* Simple UI, easy to understand,
+* Simple \glref{UI}, easy to understand,
 * responsive, fluent,
 * possible to change units (mile/km, etc.),
-* able to read incoming SMS using TTS.
+* able to read incoming \glref{SMS} using \glref{TTS}.
 \enditems
 
 \seccc Disadvantages
@@ -249,11 +249,11 @@ While the design is very similar to CarHome Ultra, this application\fnote{availa
 \seccc Advantages
 
 \begitems
-* Simple UI, easy to understand,
+* Simple \glref{UI}, easy to understand,
 * responsive, fluent,
 * possible to change units (mile/km, etc.),
-* able to read various incoming notifications using TTS (Gmail, WhatsApp, etc.),
-* predefined SMS responses (selectable when a message comes),
+* able to read various incoming notifications using \glref{TTS} (Gmail, WhatsApp, etc.),
+* predefined \glref{SMS} responses (selectable when a message comes),
 * direct calls and messages (shortcut to call/message a certain person).
 \enditems
 
@@ -268,21 +268,21 @@ While the design is very similar to CarHome Ultra, this application\fnote{availa
 \label[analysis.existing_applications.conclusion]
 \secc Conclusion 
 
-Except by Torque, which focuses mainly (and only) on OBD, all the applications are very similar to each other. They have similar design and functionality -- mostly weather, speed provided by GPS, voice command and shortcuts for external applications.
+Except by Torque, which focuses mainly (and only) on \glref{OBD}, all the applications are very similar to each other. They have similar design and functionality -- mostly weather, speed provided by GPS, voice command and shortcuts for external applications.
 
 \seccc Suggestions
 
 \begitems
-* OBD data,
+* \glref{OBD} data,
 * shortcuts to other applications,
 * adjustable cards,
 * built-in cards (weather, speed, voice command, etc.),
-* simple grid UI,
+* simple grid \glref{UI},
 * possibility to change displayed units,
 * responsive and fluent,
 * day and night theme,
 * predefined message and call responses,
-* TTS for incoming notifications.
+* \glref{TTS} for incoming notifications.
 \enditems
 
 \seccc Possible issues to avoid
@@ -297,7 +297,7 @@ Except by Torque, which focuses mainly (and only) on OBD, all the applications a
 \label[analysis.existing_applications.android_auto]
 \secc Android Auto 
 
-Recently, Google presented new application model for information delivery while driving\cite[AndroidAuto]. It is called Android Auto, it provides a standardized user interface and user interaction model for Android devices. Focusing on minimazing the driver distraction, it presents a few options to interact with user. It supports three application types:
+Recently, Google presented new application model for information delivery while driving\cite[AndroidAuto]. It is called Android Auto, it provides a standardized user interface and user interaction model for Android devices. Focusing on minimizing the driver distraction, it presents a few options to interact with user. It supports three application types:
 \begitems
 * System overview
 * Audio applications
@@ -306,7 +306,7 @@ Recently, Google presented new application model for information delivery while 
 
 \seccc System overview
 
-System overview is supposed to be a home screen for Android Auto application. It presents both current and past notifications. The amount of notifications is limited based on screen size. Every notification consists of an intent icon, text and image, while following certain sizing rules. Every such notification can be expanded on the spot or another subapplication can be launched.
+System overview is supposed to be a home screen for Android Auto application. It presents both current and past notifications. The amount of notifications is limited based on screen size. Every notification consists of an intent icon, text and image, while following certain sizing rules. Every such notification can be expanded on the spot or another sub-application can be launched.
 
 \medskip
 \centerline{
@@ -326,7 +326,7 @@ Audio applications in Android Auto have a simple template structure. It consists
 
 \seccc Messaging applications
 
-Focusing on minimizing the cognitive load, messaging concept in Android Auto focuses on voice control over looking and typing. It allows reading the message outloud and responding with a set of predefined voice commands as well as dictating a whole message using built-in speech recognition.
+Focusing on minimizing the cognitive load, messaging concept in Android Auto focuses on voice control over looking and typing. It allows reading the message out-loud and responding with a set of predefined voice commands as well as dictating a whole message using built-in speech recognition.
 
 \medskip
 \centerline{
@@ -363,12 +363,12 @@ However, the development language called Swift is somewhat new in the world, whi
 \label[analysis.platforms.windows]
 \secc Windows
 
-With only 2.1 \% market share in 2013\cite[Lunden2014], the Windows platform does not seem to be a valid choise for given criteria. Having thirty times lower customer base than Android, it goes into the nice-to-have section when it comes to multi-platform applications.
+With only 2.1 \% market share in 2013\cite[Lunden2014], the Windows platform does not seem to be a valid choice for given criteria. Having thirty times lower customer base than Android, it goes into the nice-to-have section when it comes to multi-platform applications.
 
 \label[analysis.platforms.conclusion]
 \secc Conclusion
 
-Fulfiling the requirements for customer base as well as simplicity of development, the Android platform seems to be the best choice available at the time of writing this. As such, it will be analyzed more thoroughly later in this chapter.
+Fulfilling the requirements for customer base as well as simplicity of development, the Android platform seems to be the best choice available at the time of writing this. As such, it will be analyzed more thoroughly later in this chapter.
 
 %	------------------------------------------------------------------------ Android platform ----------------------------------------------------------------------%
 \label[analysis.android_platform]
@@ -379,18 +379,18 @@ There are some platform aspects to be considered when developing for Android-bas
 \label[analysis.android_platform.performance]
 \secc Performance
 
-Nearly with every new version of Android, new presentation effects are prepared for developers to use. While it is not mandatory, it is still adviced to hold the platform standards as the market demands it. The application must have a good look and feel in order to attract attention. This must be considered when building the application, because the environment demands fluent responses.
+Nearly with every new version of Android, new presentation effects are prepared for developers to use. While it is not mandatory, it is still advised to hold the platform standards as the market demands it. The application must have a good look and feel in order to attract attention. This must be considered when building the application, because the environment demands fluent responses.
 
 \label[analysis.android_platform.architecture]
 \secc Architecture
 
-The main building block in Android application is an activity. The activity is an idependent component of application, a hybrid between controller and view in MVC architecture. It contains a single screen (which contains a single layout), it has it's own independent data. An application usually consists of multiple loosely coupled activities. Those activities are held in an activity stack, where they are preserved to be used later without need to create them all over again. However, if the system needs memory, it clears the stack from the bottom (least recently used activities).
+The main building block in Android application is an activity. The activity is an independent component of application, a hybrid between controller and view in \glos{MVC} architecture. It contains a single screen (which contains a single layout), it has it's own independent data. An application usually consists of multiple loosely coupled activities. Those activities are held in an activity stack, where they are preserved to be used later without need to create them all over again. However, if the system needs memory, it clears the stack from the bottom (least recently used activities).
 
 For communication between activities there are so called Intents. An intent is the main concept of communication between two components. A component can be for example an activity or a service. Intent can contain simple data, such as primitive or serialized data.
 
-Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the GUI designed create a GUI without having to understand the Java language or the Android API.
+Presentation is handled using XML layout descriptors, which contain information about View objects and their parameters. This allows to separate the actual code from the layout creation, which could help the \glref{GUI} designed create a \glref{GUI} without having to understand the Java language or the Android \glref{API}.
 
-XML is not used just for layouts. Most of the resources are defined using XML descriptors. There are strings, values, dimensions and even certain graphical objects defined using XML. Those resources are accessable from code using static class {\tt R}, which is created during build time by most build system automatically.
+XML is not used just for layouts. Most of the resources are defined using XML descriptors. There are strings, values, dimensions and even certain graphical objects defined using XML. Those resources are accessible from code using static class {\tt R}, which is created during build time by most build system automatically.
 
 As a relatively new concept, so called Fragment was created. It is similar to activity, however it is not a mandatory component. It can be used as a controller for certain functionality area. It's advantage is that a developer can create separate Fragments with separate area of concern and display one or many of those based on the screen size. The typical use-case example can be a list of items and a detail of a selected item. On small screens, two Activities containing a single Fragment each will be needed, while on larger screens one activity can contain both Fragments.
 
@@ -407,12 +407,12 @@ As a relatively new concept, so called Fragment was created. It is similar to ac
 \label[analysis.gui.basic_principles]
 \secc Basic principles
 
-As the main tool of communication between an application and it's user, user interface must follow one basic rule -- the user goes first. UI is about the user, he must have a good feeling when using the application. He must understand what to do and how to do it. Therefore there are four rules a proper UI must obey\cite[Zikovsky2015]:
+As the main tool of communication between an application and it's user, user interface must follow one basic rule -- the user goes first. \glref{UI} is about the user, he must have a good feeling when using the application. He must understand what to do and how to do it. Therefore there are four rules a proper \glref{UI} must obey\cite[Zikovsky2015]:
 \begitems
 * {\bf Clear} -- it must be obvious what and where the user can control,
 * {\bf Effective} -- minimizing the required user interactions for certain (requested) thing to happen,
 * {\bf Foolproof} - avoiding the errors before they happen,
-* {\bf Pleasant} - no stress when working with the UI, pleasant colors, contrast, good readability.
+* {\bf Pleasant} - no stress when working with the \glref{UI}, pleasant colors, contrast, good readability.
 \enditems
 
 Those rules might seem too shallow. That is why there are certain subgoals which are more specific, helping to achieve the main four goals. Those subgoals are the following seven:
@@ -423,20 +423,20 @@ Those rules might seem too shallow. That is why there are certain subgoals which
 * {\bf Familiarity} -- using familiar, commonly used metaphors, icons, procedures,
 * {\bf Consistency} -- using consistent visual and interaction language,
 * {\bf Integration} -- using platform specific elements and rules
-* {\bf Simplicity} - allowing user to quickly learn how to use the UI
+* {\bf Simplicity} - allowing user to quickly learn how to use the \glref{UI}
 \enditems
 
-sources:
-\begitems
-* MI-NUR \url{https://edux.fit.cvut.cz/courses/MI-NUR/lectures/start}
-* Designing for indash automotive \url{http://revinity.com/?p=128 }
-* UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         0
-\enditems
+%sources:
+%\begitems
+%* MI-NUR \url{https://edux.fit.cvut.cz/courses/MI-NUR/lectures/start}
+%* Designing for indash automotive \url{http://revinity.com/?p=128 }
+%* UX design stackexchange \url{http://ux.stackexchange.com/questions/51968/what-ux-guidelines-should-one-keep-in-mind-when-designing-the-gui-for-a-automobi}         0
+%\enditems
 
 \label[analysis.gui.ui_in_a_car_environment]
 \secc UI in a car environment
 
-When developing user interface for car, it adds a certain responsibility. The need for safety while using the UI becomes the main priority. Because of that, some aspects are more important than others\cite[Heaton2013]. The most important are described later in this section.
+When developing user interface for car, it adds a certain responsibility. The need for safety while using the \glref{UI} becomes the main priority. Because of that, some aspects are more important than others\cite[Heaton2013]. The most important are described later in this section.
 
 \seccc Minimality
 
@@ -444,7 +444,7 @@ For minimizing the cognitive load, the must be as little information as possible
 
 \seccc Consistence
 
-Supporting usability and shortness of learning curve, consistency allows user to remember one procedure and apply it successfuly in different sections of UI. It allows user to learn things just once.
+Supporting usability and shortness of learning curve, consistency allows user to remember one procedure and apply it successfully in different sections of \glref{UI}. It allows user to learn things just once.
 
 \seccc Readability
 
@@ -465,9 +465,9 @@ Responsiveness is an important factor when it comes to pleasure of using an appl
 \label[analysis.gui.development_process]
 \secc Development process
 
-The GUI development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphical user interface, development methods for other types of user interface will not be described.
+The \glref{GUI} development process is a part of a bigger process -- the User Interface development process. As the decision has already been made to create a graphical user interface, development methods for other types of user interface will not be described.
 
-The basic procedure of creating a UI design consists of multiple steps\cite[Zikovsky2015_2]. Fulfilling the requirements for each step properly should guarantee the proper outcome. The UI design steps are as follows:
+The basic procedure of creating a \glref{UI} design consists of multiple steps\cite[Zikovsky2015_2]. Fulfilling the requirements for each step properly should guarantee the proper outcome. The \glref{UI} design steps are as follows:
 \begitems
 * Assignment and understanding,
 * research,
@@ -486,7 +486,7 @@ The process can also be divided into fewer phases, from which each contains mult
 
 \begitems
 * Basic product statement,
-* needs assesment,
+* needs assessment,
 * use case brainstorming,
 * task list definition,
 * task analysis,
@@ -502,21 +502,21 @@ The process can also be divided into fewer phases, from which each contains mult
 
 The product statement should state what the product is, what it does and who is it for. This ensures that the developer know what is he actually trying to achieve and why. Also, it briefly describes the target user group.
 
-The needs assesment is a systematic process for determining and adressing the needs. It is not necessary to perform unless the goal or the user group is unknown. It also involves user research.
+The needs assessment is a systematic process for determining and addressing the needs. It is not necessary to perform unless the goal or the user group is unknown. It also involves user research.
 
-The use-case brainstorming is used for finding the use-cases of the application. It other words, the outcome should be set of use-cases, of the things a user can do with the application. It also gives an idea about functionality, not just the UI.
+The use-case brainstorming is used for finding the use-cases of the application. It other words, the outcome should be set of use-cases, of the things a user can do with the application. It also gives an idea about functionality, not just the \glref{UI}.
 
 Also created using the brainstorming method, the task list is defined. Is is based on the use cases created earlier. A task is a procedure a user has to do with the application when achieving a single goal. After defining the tasks they are also analyzed.
 
-After the analysis is completed, a prototype can be created. Prototypes are the early drafts of the GUI, they serve as something to work on, a physical representation of the current GUI design direction.  They are usually done with a paper and pencil or a professional prototyping software, but they lack functionality. The prototypes in this phase can also be called mock-ups, wireframes or lo-fi prototypes.
+After the analysis is completed, a prototype can be created. Prototypes are the early drafts of the \glref{GUI}, they serve as something to work on, a physical representation of the current \glref{GUI} design direction.  They are usually done with a paper and pencil or a professional prototyping software, but they lack functionality. The prototypes in this phase can also be called mock-ups, wire-frames or lo-fi prototypes.
 
 The prototype is then evaluated using several evaluation processes. A cognitive walk through, a collaborative critiquing and a heuristic evaluation should be done.  The cognitive walk through is an attempt of the expert to act as user and walk through the application. The collaborative critiquing is a session where group of people try to find problems. And the heuristic evaluation is about fulfilling the heuristic rules and should be taken into consideration during the whole design process.
 
 \seccc Hi-fi phase
 
-The hi-fi phase assumes the completion of the lo-fi phase and takes the prototype further into reality. The hi-fi prototype adds functionality. It is an illusion of the final visual and interaction design. It also already runs on the target platform and follows it's look\&feel. While it should mostly work like the final application, the actual application logic need not be implemented. Also, only the main parts of the application UI are prototyped.
+The hi-fi phase assumes the completion of the lo-fi phase and takes the prototype further into reality. The hi-fi prototype adds functionality. It is an illusion of the final visual and interaction design. It also already runs on the target platform and follows it's look\&feel. While it should mostly work like the final application, the actual application logic need not be implemented. Also, only the main parts of the application \glref{UI} are prototyped.
 
-Also in the hi-fi phase an iterative evaluation process is present. The prototype is implemented, tested, evaluated and then optionaly redesigned over and over again. Usually the final design is used in the application itself, which however does not have to be the best way.
+Also in the hi-fi phase an iterative evaluation process is present. The prototype is implemented, tested, evaluated and then optionally redesigned over and over again. Usually the final design is used in the application itself, which however does not have to be the best way.
 
 The evaluation in this phase is already done with users, but also testing without users is present to check the loyalty to the course (heuristic testing etc.). Usability testing is performed and depends on the application itself. As mentioned in \cite[Nielsen2012], 5 users should be enough to test an application, as an additional tester does not add that much precision.
 
@@ -527,7 +527,7 @@ The evaluation in this phase is already done with users, but also testing withou
 Business requirements describe the application from the business view. They do not describe exact details, neither they describe easily measurable requirements. It is a set of  {\it what} should be achieved with the developed software. Simple business requirements follow:
 
 \begitems
-* Minimizing the cogntive load,
+* Minimizing the cognitive load,
 * simple and consistent user interface,
 * fast and responsive,
 * usability before attractivity,
@@ -545,7 +545,7 @@ Business requirements describe the application from the business view. They do n
 \label[analysis.use_cases]
 \sec Use-cases
 
-Use-cases describe objectives users want to achieve with a system. They describe not only the UI, but also the functionality. They are usually named with a verb and optionally a noun. The name should be descriptive enough in order to give a proper idea about the specific goal.
+Use-cases describe objectives users want to achieve with a system. They describe not only the \glref{UI}, but also the functionality. They are usually named with a verb and optionally a noun. The name should be descriptive enough in order to give a proper idea about the specific goal.
 
 The use-case list is based on the analysis so far. It is inspired by the research on existing applications in section \ref[analysis.existing_applications] and the general idea of the application mentioned in section \ref[introduction.motivation].
 
@@ -562,7 +562,7 @@ The use-case list is based on the analysis so far. It is inspired by the researc
 \label[analysis.gui.task_list]
 \sec Task list
 
-The tasks are based on the use-cases, they are more exact substasks of the use-case scenarios. A single use-case scenario can be done by performing one or multiple tasks from the task list. They describe the system from the user perspective.
+The tasks are based on the use-cases, they are more exact subtasks of the use-case scenarios. A single use-case scenario can be done by performing one or multiple tasks from the task list. They describe the system from the user perspective.
 
 \begitems
 * Display a single piece of information,
@@ -611,21 +611,21 @@ A fluent development process cannot be done without proper development and suppo
 \label[analysis.development_and_support_tools.ide]
 \secc Development environment
 
-While using text editor and command line is an option, for speed of development only Integrated Development Environments are considered. In the time of writing this text, there were two possibilities for Android development -- Eclipse and AndroidStudio.
+While using text editor and command line is an option, for speed of development only Integrated Development Environments are considered. In the time of writing this text, there were two possibilities for Android development -- Eclipse and Android Studio.
 
 \seccc Eclipse
 
-Based on research by Olver White \cite[White2014], the Eclipse IDE\fnote{\url{https://eclipse.org/}} is the most often used Java IDE. That is probably the reason why Google inc. suggested this IDE for Android development in early phase. However, Eclipse has lost Android development support in late 2014 \cite[Duckett2014].
+Based on research by Oliver White \cite[White2014], the Eclipse \glref{IDE}\fnote{\url{https://eclipse.org/}} is the most often used Java \glref{IDE}. That is probably the reason why Google inc. suggested this \glref{IDE} for Android development in early phase. However, Eclipse has lost Android development support in late 2014 \cite[Duckett2014].
 
 \seccc Android Studio
 
-Released in 2014, Android Studio\fnote{available at \url{http://developer.android.com/tools/studio/index.html}} became the main platform for Android development. It is based on IntelliJ IDE and supported by Google. For that reason, it is an obvious choice for new applications to be developed in Android Studio.
+Released in 2014, Android Studio\fnote{available at \url{http://developer.android.com/tools/studio/index.html}} became the main platform for Android development. It is based on IntelliJ \glref{IDE} and supported by Google. For that reason, it is an obvious choice for new applications to be developed in Android Studio.
 
 
 \label[analysis.development_and_support_tools.vcs]
 \secc Version control system
 
-In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main VCS worth considering (based on an article\fnote{\url{http://www.sitepoint.com/version-control-software-2014-what-options/}}). 
+In a software development process, version is very important. Being able to go back to working version, or to develop new features while the main version is still working is priceless. Currently there are three main \glref{VCS} worth considering (based on an article\fnote{\url{http://www.sitepoint.com/version-control-software-2014-what-options/}}). 
 
 \seccc Subversion
 
@@ -636,22 +636,22 @@ Because of the central repository, Subversion allows read and write access contr
 
 \seccc Mercurial
 
-Mercurial\fnote{\url{https://www.mercurial-scm.org/}} is a distributed source control management tool, it focuses on performance and scalability. It also gives a high priority to keeping history as it is fairly difficult to alter historic data inputs. Also more GUI tools exist for the Mercurial version control system.
+Mercurial\fnote{\url{https://www.mercurial-scm.org/}} is a distributed source control management tool, it focuses on performance and scalability. It also gives a high priority to keeping history as it is fairly difficult to alter historic data inputs. Also more \glref{GUI} tools exist for the Mercurial version control system.
 
 \seccc Git
 
-Git\fnote{\url{https://git-scm.com/}} is a widely used version control system. It uses a concept of distributed repositories. Those repositories contain immutable objects identified by the hash of their content. This makes the history verry safe, as there is no way of changing a commit. However a commit can be replaced with another commit and the development story can be altered, making it well-arranged for the potential needs of future analysis. It also supports branching and staging.
+Git\fnote{\url{https://git-scm.com/}} is a widely used version control system. It uses a concept of distributed repositories. Those repositories contain immutable objects identified by the hash of their content. This makes the history very safe, as there is no way of changing a commit. However a commit can be replaced with another commit and the development story can be altered, making it well-arranged for the potential needs of future analysis. It also supports branching and staging.
 
 \seccc Conclusion
 
-As the author has experience with Git and only Git and it is also one of the most widely used VCS, it will be used for version controlling. It is continuously being improved and enhanced, it supports various additional functionality (for example by using hooks) and is overall widely supported, therefore Git seems to be a good choice.
+As the author has experience with Git and only Git and it is also one of the most widely used \glref{VCS}, it will be used for version controlling. It is continuously being improved and enhanced, it supports various additional functionality (for example by using hooks) and is overall widely supported, therefore Git seems to be a good choice.
 
 \label[analysis.development_and_support_tools.tdd]
 \secc Test driven development
 
-Being one of the main development aproaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
+Being one of the main development approaches in the last decade, test driven development helps to develop the application quickly and fluently. The main idea of TDD is to create automatic tests before the actual application code. While this enforces the developer to think twice when creating tests, which makes him think about what he actually wants to achieve, it also helps against random errors in code. Having the application tested with every build also supports continuous integration, which is described later in this text.
 
-The most usual tool in Java is the JUnit framework\fnote{\url{http://junit.org/}}. It allows writing simple repeatable tests and is an instance of the xUnit architecture. Also API for testing from the Android support libraries will be used, as the application environment is specific and for proper testing, an access to certain resources and objects is necessary.
+The most usual tool in Java is the JUnit framework\fnote{\url{http://junit.org/}}. It allows writing simple repeatable tests and is an instance of the xUnit architecture. Also \glref{API} for testing from the Android support libraries will be used, as the application environment is specific and for proper testing, an access to certain resources and objects is necessary.
 
 \label[analysis.development_and_support_tools.ci]
 \secc Continuous integration
@@ -660,7 +660,7 @@ The most usual tool in Java is the JUnit framework\fnote{\url{http://junit.org/}
 
 Continuous integration supports rapid application development while giving the much needed feedback, so that the developer can see and adjust the direction, which the application development takes. 
 
-For simple CI practice integration, there are several online services. For this particular application development, Travis\fnote{available at \url{https://travis-ci.org/}} system was chosen. While offering usual CI functionality, it also integrates easily with GitHub and Gradle build system. 
+For simple \glref{CI} practice integration, there are several online services. For this particular application development, Travis\fnote{available at \url{https://travis-ci.org/}} system was chosen. While offering usual \glref{CI} functionality, it also integrates easily with GitHub\fnote{\url{https://github.com/}} and Gradle\fnote{\url{http://gradle.org/}} build system. 
 
 \label[analysis.development_and_support_tools.eval]
 \secc Test evaluation
@@ -671,7 +671,7 @@ As described in chapter \ref[testing] about testing in section about testing wit
 
 Wolfram Mathematica\fnote{\url{https://www.wolfram.com/mathematica/}} is a professional software for technical computing. It covers all areas of technical computing from mathematics, physics and so on. It is based on Wolfram Language, which has strong algorithmic power as well as wide range of capabilities. In Wolfram Mathematica pretty much every technical computation can be done in the most reasonable time. It has one of the most advanced help systems available with hundreds of thousands examples.
 
-However, all of this does not come for free. The Wolfram Mathematica software is very costly and for purpose of this thesis, a minimum functionality would be used. As the results of the testing will probably presented later in a paper, a professional licence would have to be used.
+However, all of this does not come for free. The Wolfram Mathematica software is very costly and for purpose of this thesis, a minimum functionality would be used. As the results of the testing will probably presented later in a paper, a professional license would have to be used.
 
 \seccc Matlab
 
@@ -681,9 +681,9 @@ The disadvantage is the price of Matlab. Even a student license is very costly a
 
 \seccc R
 
-R\fnote{\url{https://www.r-project.org/}} is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analysing large sets of data meaning it might just be enough for the test resulsts to be analyzed. Should it not be enough, a different approach has to be taken.
+R\fnote{\url{https://www.r-project.org/}} is a free software environment focused on statistical computing. It does not have as wide area of use as the software mentioned above, but it is still capable of analyzing large sets of data meaning it might just be enough for the test results to be analyzed. Should it not be enough, a different approach has to be taken.
 
-As it is completely free, the use and purpose it not limited. Also it fits the cheep puchase requirement making it a viable choice. Therefore, R will be used for testing results analyzation and evaluation.
+As it is completely free, the use and purpose it not limited. Also it fits the cheep purchase requirement making it a viable choice. Therefore, R will be used for testing results analysis and evaluation.
 
 %	------------------------------------------------------------------------ On-Board Diagnostics ----------------------------------------------------------------------%
 \label[analysis.obd]
@@ -691,17 +691,17 @@ As it is completely free, the use and purpose it not limited. Also it fits the c
 
 On-Board Diagnostics states for a self-diagnostic equipment requirements for automotive vehicles. The modern implementations offer standardized communication port to provide real-time data as well as diagnostic trouble codes.
 
-Currently there are two versions of OBD. The first one (OBD I) provides only diagnostic trouble codes. The second one (OBD II) adds real-time vehicle data. The third version (OBD III) is currently being developed. It should support so called "remote OBD", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly.\cite[Obd] 
+Currently there are two versions of \glref{OBD}. The first one (\glref{OBD} I) provides only diagnostic trouble codes. The second one (\glref{OBD} II) adds real-time vehicle data. The third version (\glref{OBD} III) is currently being developed. It should support so called "remote \glref{OBD}", which would broadcast the data to other vehicles, which could prevent collisions by warning the drivers when something bad happens suddenly.\cite[Obd] 
 
 \label[analysis.obd.connection]
 \secc Connection
 
-To connect to the OBD II, an OBD-II Dongle has to be connected to the car. This dongle then enables creating a bluetooth connection and via that connection it provides a communication channel. Some dongles also support wi-fi.
+To connect to the \glref{OBD} II, an \glref{OBD}-II Dongle has to be connected to the car. This dongle then enables creating a bluetooth connection and via that connection it provides a communication channel. Some dongles also support Wi-Fi.
 
 \label[analysis.obd.api]
 \secc API
 
-The OBD communication protocol supports certain modes and allows reading information on certain PIDs. The mode is used to set a mode of the OBD adapter. Based on the latest OBD-II standard SAE J1979\fnote{\url{http://standards.sae.org/j1979_201408/}} there are 10 modes available. Based on the current mode the adapter behaves differently. The modes are:
+The \glref{OBD} communication protocol supports certain modes and allows reading information on certain PIDs. The mode is used to set a mode of the \glref{OBD} adapter. Based on the latest \glref{OBD}-II standard SAE J1979\fnote{\url{http://standards.sae.org/j1979_201408/}} there are 10 modes available. Based on the current mode the adapter behaves differently. The modes are:
 \begitems
 * Show current data,
 * show freeze frame data,
@@ -715,42 +715,42 @@ The OBD communication protocol supports certain modes and allows reading informa
 * permanent Diagnostic Trouble Codes.
 \enditems
 
-Vehicle manufacturers do not have to implement all the modes as well as they are not required to implement all the PIDs. However, there is a special request available to recieve the list of supported PIDs. This is done via sequence of bits stating 1 for supported and 0 for not supported PIDs.
+Vehicle manufacturers do not have to implement all the modes as well as they are not required to implement all the PIDs. However, there is a special request available to receive the list of supported PIDs. This is done via sequence of bits stating 1 for supported and 0 for not supported PIDs.
 
-For every mode, there are different PIDs available. The actual vehicle data (such as speed, fuel, engine load, tempteratures, etc.) are available via modes 1 and 2. The Diagnostic Trouble Codes are available via modes 3, 7 and 9. For information retrieval, a hexadecimal number is sent to the adapter containing the PID number according to the data requested. The full table of PID codes is available at the OBD-II wikipedia page\fnote{\url{https://en.wikipedia.org/wiki/OBD-II_PIDs}}.
+For every mode, there are different PIDs available. The actual vehicle data (such as speed, fuel, engine load, temperatures, etc.) are available via modes 1 and 2. The Diagnostic Trouble Codes are available via modes 3, 7 and 9. For information retrieval, a hexadecimal number is sent to the adapter containing the PID number according to the data requested. The full table of PID codes is available at the \glref{OBD}-II wikipedia page\fnote{\url{https://en.wikipedia.org/wiki/OBD-II_PIDs}}.
 
-As the OBD is widely used in software, libraries used for accessing the data are available. Such library can save a lot of work required to implement the communication protocol, to solve all the safety issues as well as to cover different vehicles. For such task, an OBD-II Java API library\fnote{available from \url{https://github.com/pires/obd-java-api}} will be used\cite[Pires].
+As the \glref{OBD} is widely used in software, libraries used for accessing the data are available. Such library can save a lot of work required to implement the communication protocol, to solve all the safety issues as well as to cover different vehicles. For such task, an \glref{OBD}-II Java \glref{API} library\fnote{available from \url{https://github.com/pires/obd-java-api}} will be used\cite[Pires].
 
 \label[analysis.obd.data]
 \secc Data
 
 
-The OBD-II covers nearly all the data one can imagine a vehicle knows. It goes from the usual data, such as vehicle speed or engine RPM, to less usual such as multiple oxygen sensors. As mentioned earlier, the full table of the data provided is available at the OBD-II wikipedia page. All of those data should be available (via the application) to the driver if he demands it and if the car supports it 
+The \glref{OBD}-II covers nearly all the data one can imagine a vehicle knows. It goes from the usual data, such as vehicle speed or engine RPM, to less usual such as multiple oxygen sensors. As mentioned earlier, the full table of the data provided is available at the \glref{OBD}-II wikipedia page. All of those data should be available (via the application) to the driver if he demands it and if the car supports it 
 
 
 %------------------------------------------------------------------------ DESIGN ------------------------------------------------------------------------%
 \label[design]
 \chap Design 
 
-This chapter is about the design process. The first section is about the application architecture, it's requirements and the platform conditions. It is followed by a thorough description of the GUI design process divided into four phases as parts of the iterative process. 
+This chapter is about the design process. The first section is about the application architecture, it's requirements and the platform conditions. It is followed by a thorough description of the \glref{GUI} design process divided into four phases as parts of the iterative process. 
 
 %	------------------------------------------------------------------------ Application architecture ----------------------------------------------------------------------%
 \label[design.application_architecture]
 \sec Application architecture
 
-Designing proper application architecture is one of the main and most challanging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for manhours \rfc{CodeComplete}. Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
+Designing proper application architecture is one of the main and most challenging tasks in development process. Changing the architecture in to future proves to be one of the most expensive changes as for man-hours \rfc{CodeComplete}. Application architecture influences data flow, communication amongst components and overall application performance, as well as extensibility and possibility to change or add features in the future. While Android application architecture enforces certain components and platform features to be used, the is still space for diversity.
 
 \label[design.application_architecture.platform_limitations]
 \secc Platform limitations
 
-As mentioned in Android platform analysis in section \ref[analysis-android_platform] on page \pgref[analysis-android_platform], the typical Android application consits of multiple Activities, which communicate with each other using Intents. While this approach supports the loosely coupled concept, it makes certain inter-cooperation rather difficult.  Sharing an object between activities usually means serializing the object or saving it to the database, which means deserializing or loading from database later. When striving for excellent performance, this can emerge into a real problem. As the Android platform does not allow database IO operations on the main presentation thread, it requires background thread with callbacks to the main one and screen revalidation when such callback occurs. It is critical to avoid such delays as much as possible, when comes to car environment where rapid reactions are required.
+As mentioned in Android platform analysis in section \ref[analysis-android_platform] on page \pgref[analysis-android_platform], the typical Android application consists of multiple Activities, which communicate with each other using Intents. While this approach supports the loosely coupled concept, it makes certain inter-cooperation rather difficult.  Sharing an object between activities usually means serializing the object or saving it to the database, which means deserializing or loading from database later. When striving for excellent performance, this can emerge into a real problem. As the Android platform does not allow database IO operations on the main presentation thread, it requires background thread with callbacks to the main one and screen revalidation when such callback occurs. It is critical to avoid such delays as much as possible, when comes to car environment where rapid reactions are required.
 
 \label[design.application_architecture.extensibility]
 \secc Extensibility
 
 With the current rapid application development there is a need to be able to adjust based on market requirements. While creating a new application with every feature is a possibility, it is certainly better to be able to add new features to the old application so that is actually never becomes old. Extensibility is one of the main requirements for many reasons. When it comes to application developed in this thesis, new features are planned to be added based on user feedback. Therefore the architecture must be prepared to be easily extendable.
 
-The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very usefull when it comes to extensibility and it will be discussed in section \ref[design.application_architecture.modularity].
+The main approach to achieve proper extensibility should be to write a clean code, which can prove to be a good idea when considering nearly every part of implementation process. Also the modularity concept is very useful when it comes to extensibility and it will be discussed in section \ref[design.application_architecture.modularity].
 
 \label[design.application_architecture.modularity]
 \secc Modularity
@@ -765,25 +765,25 @@ However, the Android concept with XML layouts does not allow their inflating dur
 
 \seccc Overview 
 
-Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. The modularity will be supported via extending predefined classes and implementing requirerd functionality (such as action on update). This limits the modularity, however it is not suitable to do it differently at the moment, given the restrains mentioned above.
+Modularity concept allows application to contain certain modules, each offering certain functionality based on some predefined requirements. The modularity will be supported via extending predefined classes and implementing required functionality (such as action on update). This limits the modularity, however it is not suitable to do it differently at the moment, given the restrains mentioned above.
 
 \label[design.application_architecture.adaptability]
 \secc Adaptability
 
 Because the space on the screen is limited and also unknown (multiple devices have varying screen sizes) and every user might want to see different kind of information, he must be able to modify the layout, to choose the information he wants to see. The application must be adaptable to user's needs and requirements, so that he can control the application fluently and spend as little time as possible seeking the requested information.
 
-For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptibility.
+For that reason there will be module containers which can contain multiple modules. User then selects the module for each container and selects a single container to be displayed at a time. This allows to build custom module sets for greater adaptability.
 
 \label[design.application_architecture.architecture]
 \secc The architecture
 
-A multilayer architecture will be used for the application. With the Android architecture requirements, a modified MVC architecture will be used, where an Activity works as a controller and partialy as a view. The activity will contain set of modules, which are single-purpose elements based on the predefined classes (as mentioned in section \ref[design.application_architecture.modularity]). Those modules will communicate via interface, which will be implemented by the activity. Also an event-driven approach will be used in communicatio, especially with timed events. 
+A multilayer architecture will be used for the application. With the Android architecture requirements, a modified \glos{MVC} architecture will be used, where an Activity works as a controller and partially as a view. The activity will contain set of modules, which are single-purpose elements based on the predefined classes (as mentioned in section \ref[design.application_architecture.modularity]). Those modules will communicate via interface, which will be implemented by the activity. Also an event-driven approach will be used in communication, especially with timed events. 
 
 %	------------------------------------------------------------------------ GUI ----------------------------------------------------------------------%
 \label[design.gui]
 \sec GUI
 
-Given the car environment, designing proper graphical user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the GUI should follow the principles mentioned in section \ref[analysis.gui].
+Given the car environment, designing proper graphical user interface is crucial for an in-car application. Not only it has to look good, it also has to consider safety issues, such as minimizing the cognitive load and required glance time to control the application or to read displayed information. To achieve that the \glref{GUI} should follow the principles mentioned in section \ref[analysis.gui].
 
 \label[design.gui.phase_one]
 \secc Phase one
@@ -810,7 +810,7 @@ This concept was recreated into a similar concept with difference in size of pre
 \caption/f GUI draft \#2 with the next and previous panels pushed into the background
 \medskip
 
-For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player subapplication are shown on images \ref[app.design.gui.draft3] and \ref[app.design.gui.draft4] in the appendix B on page \pgref[app.design.gui.draft3].
+For both drafts the following would apply. The swipe action would invoke text-to-speech action telling user the name of selected panel. This could lower the need to look at the application screen while driving. Also, all the panels would have different colors making them recognizable on first sight. The touch on an application panel would invoke the related application. This could be a music player, a map, etc. Examples of a music player sub-application are shown on images \ref[app.design.gui.draft3] and \ref[app.design.gui.draft4] in the appendix B on page \pgref[app.design.gui.draft3].
 
 \seccc Advantages
 
@@ -822,8 +822,8 @@ For both drafts the following would apply. The swipe action would invoke text-to
 \seccc Disadvantages
 
 \begitems
-* {\bf Consistency} -- however is the main screen consistent, the~invoked subapplications are not. The concept does not force them to be, neither it gives a~clue about how they should look.
-* {\bf Limited} -- the main screen has a limited functionality (near to none) while the layout of subapplications would have to be created independently everytime a~new feature is implemented. This also limits easy extensibility, as creating a~proper GUI is not a~simple task with the given constraints.
+* {\bf Consistency} -- however is the main screen consistent, the~invoked sub-applications are not. The concept does not force them to be, neither it gives a~clue about how they should look.
+* {\bf Limited} -- the main screen has a limited functionality (near to none) while the layout of sub-applications would have to be created independently every time a~new feature is implemented. This also limits easy extensibility, as creating a~proper \glref{GUI} is not a~simple task with the given constraints.
 \enditems
 
 \label[design.gui.phase_two]
@@ -842,15 +842,15 @@ Next step was to fix the problems mentioned above. Being inspired by the reviewe
 \medskip
 
 
-The second image \ref[design.gui.draft6] shows possibility of inserting a subapplication screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
+The second image \ref[design.gui.draft6] shows possibility of inserting a sub-application screen between application list and car data, for example a navigation. Also, it presents the concept of micro-controls in application list. It would allow a single control button to be displayed on an application panel such as pausing the song or silencing the radio. 
 
 \medskip
 \centerline{
-\clabel[design.gui.draft6]{GUI draft \#4}
+\clabel[design.gui.draft6]{GUI draft\#4}
 \inspic images/design_gui_draft6.png
 }
 \nobreak\medskip
-\caption/f GUI draft \#4 with additional application screen in the center, pushing the car data to the left panel
+\caption/f GUI draft\#4 with additional application screen in the center, pushing the car data to the left panel
 \medskip
 
 
@@ -870,35 +870,35 @@ The second image \ref[design.gui.draft6] shows possibility of inserting a subapp
 \label[design.gui.phase_three]
 \secc Phase three
 
-The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \ref[design.gui.draft7], it is just an extension of preveously shown vertical list making it vertical and horizontal -- two dimensional.
+The next step towards consistency and space usage was to create a grid. This grid would be adjustable based on screen size, displaying the proper amount of application panels for given device. As shown on image \ref[design.gui.draft7], it is just an extension of previously shown vertical list making it vertical and horizontal -- two dimensional.
 
 \medskip
 \centerline{
-\clabel[design.gui.draft7]{GUI draft \#5}
+\clabel[design.gui.draft7]{GUI draft\#5}
 \inspic images/design_gui_draft7.png
 }
 \nobreak\medskip
-\caption/f GUI draft \#5 with a grid of panels
+\caption/f GUI draft\#5 with a grid of panels
 \medskip
 
 
-Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image \ref[design.gui.draft8]). They would be active demoversion of the full application, which would be invoked by touch to the upper area of the card, as shown on image \ref[app.design.gui.draft9] in the appendix B.
+Adding functionality to this grid, a new card concept emerged. It would consist of cards, which would provide additional information as well as control elements (as shown on image \ref[design.gui.draft8]). They would be active demo-version of the full application, which would be invoked by touch to the upper area of the card, as shown on image \ref[app.design.gui.draft9] in the appendix B.
 
 
 \medskip
 \centerline{
-\clabel[design.gui.draft8]{GUI draft \#6}
+\clabel[design.gui.draft8]{GUI draft\#6}
 \inspic images/design_gui_draft8.png
 }
 \nobreak\medskip
-\caption/f GUI draft \#6 with a grid of panels, which display information and offer basic functionality
+\caption/f GUI draft\#6 with a grid of panels, which display information and offer basic functionality
 \medskip
 
 
 \seccc Advantages
 
 \begitems
-* {\bf Accsessible functionality} -- the concept shows available basic functionality without the need to invoke full application. This allows the user to remain in the main screen in most cases.
+* {\bf Accessible functionality} -- the concept shows available basic functionality without the need to invoke full application. This allows the user to remain in the main screen in most cases.
 \enditems
 
 \seccc Disadvantages
@@ -913,28 +913,28 @@ Adding functionality to this grid, a new card concept emerged. It would consist 
 
 \medskip
 \centerline{
-\clabel[design.gui.draft10]{GUI draft \#7}
+\clabel[design.gui.draft10]{GUI draft\#7}
 \inspic images/design_gui_draft10.png
 }
 \nobreak\medskip
-\caption/f GUI draft \#7 with a grid of simple panels 
+\caption/f GUI draft\#7 with a grid of simple panels 
 \medskip
 
 Because every of the previously mentioned designs had at least one critical disadvantage, a new approach had to be taken. Because of consistency, every element must be specified. But considering the need for simplicity, there must be very limited amount of those elements.
 
-Given the requirements for both consistency and simplicity, as well as extensible functionality, the elements are divided into two groups: those, that display information and those, that control the application. The simpliest way appeared to be the following: one element serves as a displayer, which displays one and only one kind of information, and the second element servers as a control button, which allows user to perform a single action. Every kind of functionality appears to be achievable by those elements or by sets of those elements.
+Given the requirements for both consistency and simplicity, as well as extensible functionality, the elements are divided into two groups: those, that display information and those, that control the application. The simplest way appeared to be the following: one element serves as a displayer, which displays one and only one kind of information, and the second element servers as a control button, which allows user to perform a single action. Every kind of functionality appears to be achievable by those elements or by sets of those elements.
 
-Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hiearachical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
+Also, for improved adaptability a hierarchy model was considered, which makes it possible to create independent sets of functionality using hierarchical model, which supports the consistency and simplicity by repeating the same pattern in distinct areas.
 
 As shown on image \ref[design.gui.draft12], the display panel consists of a name, an icon, a value and a unit. The control button is more simple, it consists of a name and an icon. An icon serves as a checkpoint for eyes to seek out the requested information quickly.
 
 \medskip
 \centerline{
-\clabel[design.gui.draft12]{GUI draft \#8}
+\clabel[design.gui.draft12]{GUI draft\#8}
 \inspic images/design_gui_draft12.png
 }
 \nobreak\medskip
-\caption/f GUI draft \#8 presenting the action panel (left) and the display panel (right)
+\caption/f GUI draft\#8 presenting the action panel (left) and the display panel (right)
 \medskip
 
 The idea is to have several screens containing several application panels (where amount of panels is based on screen size) with changing the screen by swiping left or right. As mentioned in section \ref[analysis.android_platform.material_design] on page \pgref[analysis.android_platform.material_design], Android suggests using vertically scrollable lists when presenting large sets of data. This can be suitable in most cases, however, in a car a user can easily swipe too heavily and scroll elsewhere and getting back to original place can put an unnecessary load on the driver's attention. Therefore there have to be separate pages, where one swipe changes a page by one.
@@ -956,30 +956,30 @@ As for the colors, a proper contrast has to be present for good readability. As 
 \label[realization]
 \chap Implementation
 
-This chapter is about the whole implementation process -- the process of implementing the application with it's logic and GUI. It starts with a section about preparation, which provides an insight into the preparation of implementation environment and tools. It is then followed by the description of tablet specific part and then the actual core of the application. At last the final GUI is described.
+This chapter is about the whole implementation process -- the process of implementing the application with it's logic and \glref{GUI}. It starts with a section about preparation, which provides an insight into the preparation of implementation environment and tools. It is then followed by the description of tablet specific part and then the actual core of the application. At last the final \glref{GUI} is described.
 
 %	------------------------------------------------------------------------ Preparation ----------------------------------------------------------------------%
 \label[realization.preparation]
 \sec Preparation
 
-While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile or any other platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet GUI and other specifics.
+While this thesis focuses on creating a tablet application, it's functionality could be shared amongst other Android platforms just by reflecting the differences. A possibility to extend application to a mobile or any other platform creates a need to divide a single project into two -- a core with shared functionality and a tablet project which focuses on tablet \glref{GUI} and other specifics.
 
 \label[realization.preparation.environment]
 \secc Environment
 
-As mentioned in analysis section \ref[analysis.development_and_support_tools.ide] on page \pgref[analysis.development_and_support_tools.ide], Android Studio IDE is used for code development. As it does not allow importing other project as a library, it requires a shared project to be registered as a module. This module has to be placed in a project subfolder and it is an Android Studio project of it's own. This is done by adding a new module and selecting a library module.
+As mentioned in analysis section \ref[analysis.development_and_support_tools.ide] on page \pgref[analysis.development_and_support_tools.ide], Android Studio \glref{IDE} is used for code development. As it does not allow importing other project as a library, it requires a shared project to be registered as a module. This module has to be placed in a project sub-folder and it is an Android Studio project of it's own. This is done by adding a new module and selecting a library module.
 
 
 \label[realization.preparation.versioning]
 \secc Versioning
 
-Because of the workaround with a shared library in Android Studio, a special approach has to be taken. As Git supports submodules, a shared library has to be registered as one. This can be achieved by calling command {\tt git submodule add LIBRARY\_REPOSITORY\_URL} in the root project folder and then adding the library subfolder into the {\tt .gitignore} file.
+Because of the workaround with a shared library in Android Studio, a special approach has to be taken. As Git supports submodules, a shared library has to be registered as one. This can be achieved by calling command {\tt git submodule add LIBRARY\_REPOSITORY\_URL} in the root project folder and then adding the library sub-folder into the {\tt .gitignore} file.
 
 %	------------------------------------------------------------------------ Tablet ----------------------------------------------------------------------%
 \label[realization.tablet]
 \sec Tablet specific
 
-While the Android API is shared across all Android platforms, it is the device size that is usually different. The GUI has to adapt based on the platform and therefore it's implementation differs. This section describes the tablet-related implementation using a shared library described in section \ref[realization.core].
+While the Android \glref{API} is shared across all Android platforms, it is the device size that is usually different. The \glref{GUI} has to adapt based on the platform and therefore it's implementation differs. This section describes the tablet-related implementation using a shared library described in section \ref[realization.core].
 
 \label[realization.tablet.activity]
 \secc ModulePagerActivity
@@ -990,9 +990,9 @@ While usually multiple activities are present in a single application, thanks to
 
 \seccc Improvements
 
-There are some improvements implemented for performance, battery consumption and hardware overloading prevention reasons, one of which is reacting to acitivity state by disabling inactive modules. Because of the independent module concept, modules display data on their own and they do not know when the data are requested. Therefore, the activity uses a list of those modules to deactive them when entering a paused or stopped state.
+There are some improvements implemented for performance, battery consumption and hardware overloading prevention reasons, one of which is reacting to Activity state by disabling inactive modules. Because of the independent module concept, modules display data on their own and they do not know when the data are requested. Therefore, the activity uses a list of those modules to deactivate them when entering a paused or stopped state.
 
-Also, sometimes it is required to restart the entire application, for example when some global changes need to be performed. As the Android architecture saves latest activities in a stack as mentioned in section \ref[analysis.android_platform.architecture] on page \pgref[analysis.android_platform.architecture], it is nessessary to clear this stack first, so that the OS does not backtrack to an old Activity. This is done by keeping control over existing activities and ending them one by one. This can also be used, when forcing the application to exit, as there is no proper option to end an application on Android platform from the application developer's view. 
+Also, sometimes it is required to restart the entire application, for example when some global changes need to be performed. As the Android architecture saves latest activities in a stack as mentioned in section \ref[analysis.android_platform.architecture] on page \pgref[analysis.android_platform.architecture], it is necessary to clear this stack first, so that the OS does not backtrack to an old Activity. This is done by keeping control over existing activities and ending them one by one. This can also be used, when forcing the application to exit, as there is no proper option to end an application on Android platform from the application developer's view. 
 
 \label[realization.tablet.fragment]
 \secc ModulePageFragment
@@ -1003,7 +1003,7 @@ As mentioned in section \ref[analysis.android_platform.architecture] on page \pg
 \label[realization.tablet.adapter]
 \secc ModuleFragmentAdapter
 
-{\tt ModuleFragmentAdapter} follows the adapter concept, where extension of Android API class {\tt Adapter} is used to cover the access to list of data. This adapter gets a single {\tt ParentModule} (described in section \ref[realization.core.modules] on page \pgref[realization.core.modules]) and retrieves it submodules on demand.
+{\tt ModuleFragmentAdapter} follows the adapter concept, where extension of Android \glref{API} class {\tt Adapter} is used to cover the access to list of data. This adapter gets a single {\tt ParentModule} (described in section \ref[realization.core.modules] on page \pgref[realization.core.modules]) and retrieves it submodules on demand.
 
 \label[realization.tablet.gridlayout]
 \secc GridLayout
@@ -1017,7 +1017,7 @@ For reasons mentioned above a custom layout had to be created. Based on given me
 \label[realization.core]
 \sec Core
 
-The core contains all the functionality, it handles data, logic and also a standardized part of presentation, which consists of predefined single module veiws. Everything will be described in following text.
+The core contains all the functionality, it handles data, logic and also a standardized part of presentation, which consists of predefined single module views. Everything will be described in following text.
                         
 \label[realization.core.modules]
 \secc Modules
@@ -1027,7 +1027,7 @@ As mentioned in section \ref[design.application_architecture.modularity]), there
 \label[realization.core.modules.imodule]
 \seccc IModule
 
-{\tt IModule} is an interface which covers the basic module functionality. It has to be implemented by every single module in order to achieve proper polymorfism. Using this approach, a tablet implementation can display a set of modules without knowing which module does what.
+{\tt IModule} is an interface which covers the basic module functionality. It has to be implemented by every single module in order to achieve proper polymorphism. Using this approach, a tablet implementation can display a set of modules without knowing which module does what.
 
 \label[realization.core.modules.abstractsimplemodule]
 \seccc  AbstractSimpleModule
@@ -1042,12 +1042,12 @@ For consistent hierarchical model, there has to be a module containing other mod
 \label[realization.core.modules.abstractdisplaymodule]
 \seccc AbstractDisplayModule
 
-Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request. Also it supports text-to-speech, as the value is said outloud on touch.
+Displaying information is one of the most important goals of the developed application. {\tt AbstractDisplayModule} is the base class to be extended by modules displaying information. It handles updating the displayed value on request. Also it supports text-to-speech, as the value is said out loud on touch.
 
 \label[realization.core.modules.abstracttimedupdatedisplaymodule]
 \seccc AbstractTimedUpdateDisplayModule
 
-{\tt AbstractTimedUpdateDisplayModule} serves as an extension to {\tt AbstractDisplayModule} handling automatic timed updates. It uses advanced genericity to offer multiple update modes for extending modules. Such mode states the frequency of calling the {\tt getUpdatedValue} method, which is to be implemented by subclasses. An optimization is implemented for this process, as {\tt getUpdatedValue} can invoke a long-lasting process. The last value is saved for further use by the {\tt updateValue} method, while the {\tt getUpdateValue} method merely updates this last value when it is done.
+{\tt AbstractTimedUpdateDisplayModule} serves as an extension to {\tt AbstractDisplayModule} handling automatic timed updates. It uses advanced generics to offer multiple update modes for extending modules. Such mode states the frequency of calling the {\tt getUpdatedValue} method, which is to be implemented by subclasses. An optimization is implemented for this process, as {\tt getUpdatedValue} can invoke a long-lasting process. The last value is saved for further use by the {\tt updateValue} method, while the {\tt getUpdateValue} method merely updates this last value when it is done.
 
 \label[realization.core.modules.abstractshortcutmodule]
 \seccc AbstractShortcutModule
@@ -1067,8 +1067,8 @@ There are several implementations of the modules mentioned above. A few will be 
   * {\bf EmtpyModule} An empty module meant to be swapped for a different one, occupying an empty space
   * {\bf BackModule} A module handling the back button, which can be pressed to get back to upper parent module (go up in the hierarchy)
   * {\bf LightButtonModule} A module created for IoT support, offering a way to turn a given light on or off
-  * {\bf ObdRpmModule} A module communicating with the OBD and displaying information about current RPM of the vehicle
-  * {\bf ObdSpeedModule} A module communicating with the OBD and displaying information about current speed of the vehicle
+  * {\bf ObdRpmModule} A module communicating with the \glref{OBD} and displaying information about current RPM of the vehicle
+  * {\bf ObdSpeedModule} A module communicating with the \glref{OBD} and displaying information about current speed of the vehicle
 \enditems 
 
 \label[realization.core.modules.imodulecontext]
@@ -1103,7 +1103,7 @@ As mentioned in section \ref[analysis.android_platform.architecture], resources 
 
 \seccc Storage
 
-As the application is adjustable by users, the settings need to be preserved. The main data area to be saved is the user-customized hierarchy of modules. Given the hierarchy model of those data and the simplicity of content (module type, name, additional data), a JSON format is used for data persistance. A single JSON file is created containing all the required data for customized user interface. The advantage of the JSON format is the ability to easily persist those settings on a server, given the support of JSON format in web communication procotols.
+As the application is adjustable by users, the settings need to be preserved. The main data area to be saved is the user-customized hierarchy of modules. Given the hierarchy model of those data and the simplicity of content (module type, name, additional data), a \glref{JSON} format is used for data persistence. A single \glref{JSON} file is created containing all the required data for customized user interface. The advantage of the \glref{JSON} format is the ability to easily persist those settings on a server, given the support of \glref{JSON} format in web communication protocols.
 
 To save and load those data there is a class {\tt ModuleDAO}. This class separates the access code from the rest of application, making it easy to change the saving format, the type of data saved or even the location of data. It also enables data to be saved in a background thread, so that the saving process does not block the application.
 
@@ -1115,9 +1115,9 @@ Another advantage of this class it possibility to adapt. Should the modules take
 
 \seccc Object creation tools
 
-One of the challenging tasks was to save and then load all types of modules. Since there can be custom modules, it is not an easy task without requesting the developer to create DAO for every module. To simplify the module implementation process as much as possible, a set of creation tools was made. Once the module fits in one of those tools, it can be loaded and created without further effort. However, once a new module type is created, for example a type which requires additional data to be saved, a new tool has to be implemented into existing tools.
+One of the challenging tasks was to save and then load all types of modules. Since there can be custom modules, it is not an easy task without requesting the developer to create \glref{DAO} for every module. To simplify the module implementation process as much as possible, a set of creation tools was made. Once the module fits in one of those tools, it can be loaded and created without further effort. However, once a new module type is created, for example a type which requires additional data to be saved, a new tool has to be implemented into existing tools.
 
-There are two types of those tools. The tools to create an object based on a loaded module data and the tools to create an object based on selected module when adding a new one into the structure. Both of those tools are based on Java reflection API. For both of those tools a map exists in {\tt ModuleCreationToolsMap} class based on the module class. Every module class has to be registered with a {\tt ModuleCreator} and a {\tt ModuleLoader} before being able to be loaded or added.
+There are two types of those tools. The tools to create an object based on a loaded module data and the tools to create an object based on selected module when adding a new one into the structure. Both of those tools are based on Java reflection \glref{API}. For both of those tools a map exists in {\tt ModuleCreationToolsMap} class based on the module class. Every module class has to be registered with a {\tt ModuleCreator} and a {\tt ModuleLoader} before being able to be loaded or added.
 
 The {\tt ModuleLoader} serves to create a new object from previously persisted session. It is an enum of many enum items, each of which implements a method to load from {\tt JSONObject} and to save into a {\tt JSONObject}. Support methods are provided for saving and loading common data, so that only the specifics have to be implemented.
 
@@ -1127,7 +1127,7 @@ The {\tt ModuleCreator} serves to create a new object when swapping the {\tt Emp
 \label[realization.core.fragments]
 \secc Fragments
 
-Following are DialogFragments, which is a Fragment in a Dialog window. THe advantage of DialogFragment is the ability to adapt. On larger screens it is a Dialog window as a pop-up, on smaller screen it is a full-screen window.
+Following are DialogFragments, which is a Fragment in a Dialog window. The advantage of DialogFragment is the ability to adapt. On larger screens it is a Dialog window as a pop-up, on smaller screen it is a full-screen window.
 
 \seccc ModuleListDialogFragment
 
@@ -1143,7 +1143,7 @@ When a custom Intent is to be created as a module, a {\tt CustomShortcutDialogFr
 
 \seccc GmapsShortcutDialogFragment
 
-As an extension to previous, this Fragment allows creating custom Intents particulary for Gmaps. Using Google Maps API\fnote{ \url{https://developers.google.com/maps/}}, it allows creating shortcut modules, which can invoke the following:
+As an extension to previous, this Fragment allows creating custom Intents particularly for Google Maps. Using Google Maps \glref{API}\fnote{ \url{https://developers.google.com/maps/}}, it allows creating shortcut modules, which can invoke the following:
 \begitems
 * Display a location on a map,
 * launch navigation to a certain location from the current location,
@@ -1157,9 +1157,9 @@ As an extension to previous, this Fragment allows creating custom Intents partic
 \label[realization.core.obd]
 \secc OBD
 
-While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the OBD protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single subpackage, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the OBD data can then ask this package for information and recieve it as quickly as possible.
+While modules are as independent as possible, there are cases where a shared functionality is required. Communicating with the \glref{OBD} protocol is relatively expensive and it would be inefficient to handle it separately. Therefore the communication is centered into a single sub-package, which handles the data retrieval using requests and saving the responses for later use. Every module displaying the \glref{OBD} data can then ask this package for information and receive it as quickly as possible.
 
-Handling the OBD communication is done by background service which uses the OBD-II Java API library\cite[Pires] to send requests to the OBD and to recieve results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requeste, minimizing the load.
+Handling the \glref{OBD} communication is done by background service which uses the \glref{OBD}-II Java \glref{API} library\cite[Pires] to send requests to the \glref{OBD} and to receive results. It sends requests based on tasks from a queue, where modules push their requests. This ensures that only currently needed information will be requested, minimizing the load.
 
 \label[realization.core.utility]
 \secc Utility classes
@@ -1184,12 +1184,12 @@ A {\tt ModuleViewFactory} class enables creating new {\tt ModuleViews} (\ref[rea
 
 \seccc TextToSpeechUtils
 
-This class provides simplified text-to-speech functionality. It handles all the settings and preparations and the calling object merely has to provide a string to be read outloud. This class is especially useful given the environment and it is often used with several modules. For example, all the implementations of {\tt AbstractDisplayModule} (\ref[realization.core.modules]) use the text-to-speech functionality when touched, saying the related value. Once the driver memorizes the position of a module, he can easily push it without even looking at it and still recieve the information about value.
+This class provides simplified text-to-speech functionality. It handles all the settings and preparations and the calling object merely has to provide a string to be read out loud. This class is especially useful given the environment and it is often used with several modules. For example, all the implementations of {\tt AbstractDisplayModule} (\ref[realization.core.modules]) use the text-to-speech functionality when touched, saying the related value. Once the driver memorizes the position of a module, he can easily push it without even looking at it and still receive the information about value.
 
 \label[realization.core.view]
 \secc Views
 
-As the in-car GUI is not the usual type of GUI, it requires several implementations of custom {\tt Views}. Some provide functionality that is not provided by the Android API, some minimize the programming effort when working with modules as well as cover the low-level implementation.
+As the in-car \glref{GUI} is not the usual type of \glref{GUI}, it requires several implementations of custom {\tt Views}. Some provide functionality that is not provided by the Android \glref{API}, some minimize the programming effort when working with modules as well as cover the low-level implementation.
 
 \seccc AutoResizeTextView \rfc{change code}
 
@@ -1212,7 +1212,7 @@ There are many other views similar to the ones described above or just simple vi
 \label[realization.gui]
 \sec GUI
 
-Implementation of GUI is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section. The final result is shown on figure \ref[realization.gui.final].
+Implementation of \glref{GUI} is based in the final designed described in section \ref[design.gui.the_final_design] on page \pgref[design.gui.the_final_design]. While following the designed concept, also platform specific rules, as mentioned in section \ref[analysis.android_platform.material_design] on page \ref[analysis.android_platform.material_design], were applied where possible. Following the Material Design was a secondary goal, since the safety of the driver is the most important goal. Therefore compromises had to be made and they will be discussed later in this section. The final result is shown on figure \ref[realization.gui.final].
 
 \medskip
 \centerline{
@@ -1233,7 +1233,7 @@ While Material Design (\ref[analysis.android_platform.material_design]) suggests
 
 \seccc Effects
 
-Trying to follow Material Design principles (\ref[analysis.android_platform.material_design]), several graphical effects are present in order to increase the overall atractivity. All the modules support proper elevation with shadowing even with increasing the elevation when touch the button. Also, a ripple effect is present when the module is touch, a stronger ripple effect appears on a longer touch. This gives the user proper visual feedback making the application more pleasant.
+Trying to follow Material Design principles (\ref[analysis.android_platform.material_design]), several graphical effects are present in order to increase the overall attractivity. All the modules support proper elevation with shadowing even with increasing the elevation when touch the button. Also, a ripple effect is present when the module is touch, a stronger ripple effect appears on a longer touch. This gives the user proper visual feedback making the application more pleasant.
 
 \seccc Quick menu
 
@@ -1262,7 +1262,7 @@ Such action module is meant to be pressed, not to display information. On press 
 
 \seccc Display module
 
-A display module is also a rectangular element, however it consists of a large centered value text, a title on top, a value in the right bottom corner and a small gray icon in the left bottom corner. All of it is on backgrdoun of the opposite color to the font color. The result can be seen on the figure \ref[realization.gui.final] (all modules in the first row are display modules as well as the first and the last module in the second row).
+A display module is also a rectangular element, however it consists of a large centered value text, a title on top, a value in the right bottom corner and a small gray icon in the left bottom corner. All of it is on background of the opposite color to the font color. The result can be seen on the figure \ref[realization.gui.final] (all modules in the first row are display modules as well as the first and the last module in the second row).
 
 Such display module serves as a source of information for the driver. It can display various data in a well readable form, while preserving an attractive design. It is able to display several types of data from numbers to short strings.
 
@@ -1276,9 +1276,9 @@ This chapter is about testing and all that is related. Starting with a section a
 \label[testing.code]
 \sec Code
 
-As mentioned in section \ref[analysis.development_and_support_tools.tdd], the application is being developed with using the test-driven development approach. This means that unit tests cover part of the application functionality. They do not cover everything, as automating certain functionality (such as GUI) might actually be more time-consuming than manual testing.
+As mentioned in section \ref[analysis.development_and_support_tools.tdd], the application is being developed with using the test-driven development approach. This means that unit tests cover part of the application functionality. They do not cover everything, as automating certain functionality (such as \glref{GUI}) might actually be more time-consuming than manual testing.
 
-Apart from unit tests, also instrumentation test are present, as they have to test how well does the communication work with the Android specifics, such as resources and activities. This ensures that even resource-dependant code can be properly tested.
+Apart from unit tests, also instrumentation test are present, as they have to test how well does the communication work with the Android specifics, such as resources and activities. This ensures that even resource-dependent code can be properly tested.
 
 \rfc{Code test}
 
@@ -1343,7 +1343,7 @@ For purpose of presentation, in further text there will be signs plus ($+$) and 
   * list controls (does not scroll fluently, but scrolls page by page) (small),
   * navigation is not done by a navigation drawer, but rather a file-system like style (small),
   * measures do not match the standards (too large) (small),
-  * platform back button does not work immidietaly after changing the theme (medium).
+  * platform back button does not work immediately after changing the theme (medium).
   \enditems
 \enditems
 
@@ -1420,10 +1420,10 @@ The importance of proper testing is critical as the driver cannot be distracted 
 One of the most commonly used approaches is the usability testing, where usually several testers try to perform certain actions with the application. This is done in a development environment and watched by the developers.
 
 
-The UI is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the UI evaluation follows commonly recognized rules about Car UI testing - the LCT (Lane Change Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
+The \glref{UI} is meant to be used in unusual conditions, therefore testing in development environment cannot cover usability tests well enough. Considering that, the \glref{UI} evaluation follows commonly recognized rules about Car \glref{UI} testing - the \glref{LCT} (Lane Change Test). Given the issue of performing possibly dangerous tasks in live traffic, the usability tests are performed in safe but realistic environment - in the car simulator with real-drive scenarios.
 
 
-Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently one of the most downloaded OBD-supporting applications on Android market\fnote{\url{https://play.google.com/store/search?q=OBD&c=apps&hl=en}}.
+Also, to see how the application is doing in context of competition, thorough AB testing is performed. This testing uses the advantages of a car simulator as well. The competition to be compared with is the application Torque, which is currently one of the most downloaded \glref{OBD}-supporting applications on Android market\fnote{\url{https://play.google.com/store/search?q=OBD&c=apps&hl=en}}.
 
 As a related application has been developed simultaneously for a mobile platform\rfc{|cite[Hruby]}, testing was performed for both of those applications together. Therefore, preparations were made just once as well as some parts of actual testing, such as introduction and questionnaires. However, both platforms were tested by each user so that the results are relevant. 
 
@@ -1441,11 +1441,11 @@ While providing safety, the car simulator has other advantages as well. It is eq
 \caption/f Simulator interior
 \medskip
 
-The simulator is located in Albertov in the building of the Faculty of Transportation Sciences\fnote{\url{https://www.fd.cvut.cz/english/}}, CTU. It is build from the interior (\ref[testing.users.simulator.interior]) of the \v Skoda Octavia car and surrounded by three screens. There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualising and the last one handles the control and communication interface.
+The simulator is located in Albertov in the building of the Faculty of Transportation Sciences\fnote{\url{https://www.fd.cvut.cz/english/}}, \glref{CTU}. It is build from the interior (\ref[testing.users.simulator.interior]) of the \v Skoda Octavia car and surrounded by three screens. There are three computers as the hardware background. One serves for computing the physical mode, other one serves for visualizing and the last one handles the control and communication interface.
 
-The data from the simulator are broadcasted over serial line and they are limited to speed and rounds per minute. However, they can supposedly be extended to wider area of information.
+The data from the simulator are broad-casted over serial line and they are limited to speed and rounds per minute. However, they can supposedly be extended to wider area of information.
 
-The control software is called CarDynamics (shown on \ref[testing.users.simulator.cardynamics]), it shows all kinds of data about the current state of the vehicle, such as speed, rounds per minute, steering wheel position, gear position, acceleration, position in a world model and more. It contains several world scenarios -- highways, countryside or even small cities.
+The control software is called ``CarDynamics'' (shown on \ref[testing.users.simulator.cardynamics]), it shows all kinds of data about the current state of the vehicle, such as speed, rounds per minute, steering wheel position, gear position, acceleration, position in a world model and more. It contains several world scenarios -- highways, countryside or even small cities.
 
 \medskip
 \centerline{
@@ -1469,11 +1469,11 @@ As mentioned above, there is also an eye-tracking system. This enables the teste
 \label[testing.users.preparations]
 \secc Preparations
 
-Before even starting to test with users, several preparations had to be made. This includes implementing a software, that can emulate an OBD module to transfer data from the simulator to the application. Also cameras had to be prepared, because the software is not flawless and proper eye tracking prove to be an issue. Then, finally, scenarios could have been made for all the tested situations.
+Before even starting to test with users, several preparations had to be made. This includes implementing a software, that can emulate an \glref{OBD} module to transfer data from the simulator to the application. Also cameras had to be prepared, because the software is not flawless and proper eye tracking prove to be an issue. Then, finally, scenarios could have been made for all the tested situations.
 
 \seccc Software
 
-As the simulator broadcasts data through serial link, it is impossible to easily catch the data in tablet and still have a realistic scenario. Also an OBD module is expected to be used with the application, therefore it is most suitable to emulate it. A simple software has been developed in Java language for such task. It listens to the serial link on a certain port, translates those data into inner Java primitive types, as they are in the C structure format. Then a bluetooth connection is initialized and an OBD module's protocol is emulated in order to communicate with the actual tablet application. This had to be optimized for Torque as well in order to have even conditions.
+As the simulator broadcasts data through serial link, it is impossible to easily catch the data in tablet and still have a realistic scenario. Also an \glref{OBD} module is expected to be used with the application, therefore it is most suitable to emulate it. A simple software has been developed in Java language for such task. It listens to the serial link on a certain port, translates those data into inner Java primitive types, as they are in the C structure format. Then a bluetooth connection is initialized and an \glref{OBD} module's protocol is emulated in order to communicate with the actual tablet application. This had to be optimized for Torque as well in order to have even conditions.
 
 \seccc Cameras
 
@@ -1481,36 +1481,36 @@ After testing the eye tracking cameras, a new issue emerged. Those cameras were 
 
 \seccc Scenarios
 
-As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and LCT testing scenarios are unique for each platform, therefore more time is required.
+As shown on tablet \ref[testing.users.preparations.scenario], the testing schedule has been made containing multiple supportive tasks as well as two testing scenarios. While the rest of schedule is shared across platforms, the A/B and \glref{LCT} testing scenarios are unique for each platform, therefore more time is required.
 
 \medskip
 \clabel[testing.users.preparations.scenario]{Single user testing schedule}
 \ctable{ccrl}{
   \bf Start & \bf End & \bf Duration [min] & \bf Content \crl
   00:00:00 & 00:05:00 & 5 & Introduction\cr
-  00:05:00 & 00:10:00 & 5 & Pre-test questionnairei \cr
+  00:05:00 & 00:10:00 & 5 & Pre-test questionnaire \cr
   00:10:00 & 00:25:00 & 15 & Instructions and EyeTracker setup \cr
   00:25:00 & 00:40:00 & 15 & Warm-up driving \cr
   00:40:00 & 00:55:00 & 15 & A/B testing \cr
-  00:55:00 & 01:05:00 & 10 & CLT testing \cr
+  00:55:00 & 01:05:00 & 10 & \glref{LCT} testing \cr
   01:05:00 & 01:10:00 & 5 & Post-test questionnaire \cr
   01:10:00 & 01:15:00 & 5 & Debriefing \cr
 }\caption/t Single user testing schedule
 \medskip
 
-The A/B testing scenario is simple. At first the user drives the route without any application, so that he gets to know it. Then he drives the same route with application A (Torque), while being frequently asked to read outloud the speed and RPM. The speed is to be read from the first second with interval of 20 seconds, the RPM is to be read from the tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the user has to scroll from one to another. The same scenario goes for the application B. A and B applications switch places for every tester (B first, A second or the other way around). The metrics then are the glance times for both applications.
+The A/B testing scenario is simple. At first the user drives the route without any application, so that he gets to know it. Then he drives the same route with application A (Torque), while being frequently asked to read out loud the speed and RPM. The speed is to be read from the first second with interval of 20 seconds, the RPM is to be read from the tenth second with interval of 20 seconds. The RPM and speed displays are located on different screens, so that the user has to scroll from one to another. The same scenario goes for the application B. A and B applications switch places for every tester (B first, A second or the other way around). The metrics then are the glance times for both applications.
 
-The change lane test (CLT) scenario is similar, however only the \rfc{name} application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 kmph. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
+The change lane test (\glref{LCT}) scenario is similar, however only the \rfc{name} application is being tested. The driver is to drive on a highway until a speed limit sign appears telling him to drive at 60 km/h. After a while (approximately 3 minutes) an object appears from nowhere 35 meters in front of the driver in his lane. He is then supposed to turn to the left lane and avoid the object. During the whole journey the user is asked for RPM to be read from the tablet application, so that he has to control the application while driving. The metrics is avoiding the object and following the predefined path while using the application. It measures how much the application distracts the driver and how much does it influence the reaction time.  
 
 \seccc World models
 
-As there are multiple world models available, it is necessay to choose the proper ones for the given scenarios. Therefore several world models were tested and the best ones were chosen. For the AB testing, a countryside with villages on the route was chosen. It is the most realistic model available, containing even traffic and so on. For the CLT testing a highway world model without traffic is the most suitable. However it had to be edited, so that an object could appear at given location when driver crosses a certain radius. This object would appear seemingly randomly, but there were two fixed locations in an envirovnment, when every part of the road looks the same, not giving the driver anything to memorize. This ensures that the driver is not prepared when the object appears.
+As there are multiple world models available, it is necessary to choose the proper ones for the given scenarios. Therefore several world models were tested and the best ones were chosen. For the AB testing, a countryside with villages on the route was chosen. It is the most realistic model available, containing even traffic and so on. For the \glref{LCT} testing a highway world model without traffic is the most suitable. However it had to be edited, so that an object could appear at given location when driver crosses a certain radius. This object would appear seemingly randomly, but there were two fixed locations in an environment, when every part of the road looks the same, not giving the driver anything to memorize. This ensures that the driver is not prepared when the object appears.
 
 \seccc Questionnaires
 
-A Screener questionnaire was created in order to select participants. This questionnaire ensured that only relatively active drivers would participate. Also only smartphone users were considered, as other drivers are not likely to use such a device (smartphone, tablet) while driving. It is based on three questions:
+A Screener questionnaire was created in order to select participants. This questionnaire ensured that only relatively active drivers would participate. Also only smart-phone users were considered, as other drivers are not likely to use such a device (smart-phone, tablet) while driving. It is based on three questions:
 \begitems
-* Are you a smartphone user?
+* Are you a smart-phone user?
 * Are you a driver?
 * How many times per week do you drive?
 \enditems
@@ -1520,13 +1520,13 @@ A pre-test questionnaire was created in order to get some information about the 
 * How old are you?
 * What is your sex?
 * How many kilometers you drive by a car per year?
-* Which operting system is your smartphone running?
-* Have you ever used smartphone while driving?
-* How often are you using your smartphone while driving?
+* Which operating system is your smart-phone running?
+* Have you ever used smart-phone while driving?
+* How often are you using your smart-phone while driving?
 \enditems
-This questionnaire also focuses on the market demand -- trying to find out, if the drivers tend to use their devices while driving. Again, it is assumed that by answering the smartphone questions, answers to similar tablet questions would be strongly related. Usually when a person has a smartphone with a certain operating system and also has a tablet, the operating system on the tablet is the same. This simplifies the questionnaire and does not overload the participant, as the participation was voluntary and without fee.
+This questionnaire also focuses on the market demand -- trying to find out, if the drivers tend to use their devices while driving. Again, it is assumed that by answering the smart-phone questions, answers to similar tablet questions would be strongly related. Usually when a person has a smart-phone with a certain operating system and also has a tablet, the operating system on the tablet is the same. This simplifies the questionnaire and does not overload the participant, as the participation was voluntary and without fee.
 
-A post-test questionnaire serves to find out, how satisfied are the participants with the appliction and the testing process itself. It consists of following five questions, some of which are to be rated from 1 to 5, where 1 is the best:
+A post-test questionnaire serves to find out, how satisfied are the participants with the application and the testing process itself. It consists of following five questions, some of which are to be rated from 1 to 5, where 1 is the best:
 \begitems
 * What is your impression of using the device while driving? (1-5)
 * Were the goals clear for you? (Yes/No)
@@ -1540,7 +1540,7 @@ A post-test questionnaire serves to find out, how satisfied are the participants
 
 After selecting 5 participants (based on the screener questionnaire) and scheduling the testing times, they were invited to come to the Faculty of Transportation Sciences in Albertov, where the simulator is located. There they filled the pre-test questionnaire and begin the actual testing based on a schedule mentioned in section \ref[testing.users.preparations].
 
-After eye-tracking setup was done and once the participant felt confortable with the simulator (after driving for a while in the warm-up phase), the scenarios took their place. The eye-tracking and simulator logging was turned on as the participant accomplished all the given tasks.
+After eye-tracking setup was done and once the participant felt comfortable with the simulator (after driving for a while in the warm-up phase), the scenarios took their place. The eye-tracking and simulator logging was turned on as the participant accomplished all the given tasks.
 
 A post-questionnaire was filled and the testing was over. This was done for all 5 participants. Approximately 3 gigabytes of plain text data were collected from logging, both eye-tracking and simulator logging.
 
@@ -1553,7 +1553,7 @@ A post-questionnaire was filled and the testing was over. This was done for all 
 
 \seccc Pre-test questionnaire
 
-Both men and women participated in the testing, in age range from 22 to 45 years with the mean of 28 and standard deviation of 9.62. The kilometers per year drove by the participants were in range from 4000 to 30000 with the mean of 14800 and the standard deviation of 10849. As for the smartphone operating systems, all the most commonly used were present. With Windows Phone and iOS both appearing once, the Android OS was present with 3 participants. All of the participants confessed to having used the smartphone while driving at least once, with 3 of them using confessing to use it often. The other 2 confessed to using the smartphone only occasionally.
+Both men and women participated in the testing, in age range from 22 to 45 years with the mean of 28 and standard deviation of 9.62. The kilometers per year drove by the participants were in range from 4000 to 30000 with the mean of 14800 and the standard deviation of 10849. As for the smart-phone operating systems, all the most commonly used were present. With Windows Phone and iOS both appearing once, the Android OS was present with 3 participants. All of the participants confessed to having used the smart-phone while driving at least once, with 3 of them using confessing to use it often. The other 2 confessed to using the smart-phone only occasionally.
 
 \seccc Post-test questionnaire
 
@@ -1620,7 +1620,7 @@ As another important metric, the maximal glance time (the longest continuous tim
 
 As mentioned by Daniel McGehee \cite[McGehee2014], drivers tend to try obtaining the required information for 1.5 to 2 seconds, then they give it up for the moment and try later. The 1.5-2 seconds glance time is also considered to be the safety limit for a single task requiring a visual focus. With the \rfc{name} exhibiting maximal glance times lower than 1.2 second the limit of 1.5 second is not even reach, which is a success. 
 
-Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addidition \ref[script.glance_times_list]). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\ref[script.t_test_torque] and \ref[script.t_test_cd]), the result for \rfc{name} is shown below for illustration.
+Furthering the glance time analysis, all the log entries were combined into one (as shown in R script in the addition \ref[script.glance_times_list]). Based on Student's t-test, there is 1 \% chance that the driver will be looking continuously at the Torque application for more than 157.67 milliseconds. For \rfc{name} there is 1 \% chance of looking at the application for more than only 109 milliseconds. Both of the results from the t-test performed in R are shown in the additions (\ref[script.t_test_torque] and \ref[script.t_test_cd]), the result for \rfc{name} is shown below for illustration.
 
 \begtt
 t.test(glanceList, alternative="less", conf.level=0.99)
@@ -1686,7 +1686,7 @@ lines (xGrid,dexp(xGrid, rate = 1 / xMean),
 
 \secc Lane Change Test evaluation
 
-As described in the scenario (\ref[testing.users.preparations]), every participant drove for approximately 3 minutes in the speed of 60 kilometers per hour, when the object appeared from nowhere 35 metres in front of the car. The object was a yellow cube with 2.2 metres long side and a red arrow pointing to the left lane. This suggested the driver to go around the object by changing the lane to the left one.
+As described in the scenario (\ref[testing.users.preparations]), every participant drove for approximately 3 minutes in the speed of 60 kilometers per hour, when the object appeared from nowhere 35 meters in front of the car. The object was a yellow cube with 2.2 meters long side and a red arrow pointing to the left lane. This suggested the driver to go around the object by changing the lane to the left one.
 
 \seccc Object avoidance
 
@@ -1700,7 +1700,7 @@ The most important metric in the Lane Change Test is avoiding the object while w
 \inspic images/testing_users_clt_angles_p1.png
 }
 \nobreak\medskip
-\caption/f Path angles of the first participant (0.1 metres point distance)
+\caption/f Path angles of the first participant (0.1 meters point distance)
 \medskip   
 
 The second metric is the reaction time. The reaction is determined from the path of the vehicle. The beginning of the turning of the car is considered as the start of the actual reaction. The turning is determined from significantly increasing the angle between subsequent vectors in the path. This is done by creating pairs of subsequent vectors from trinities of subsequent points. Experimentally, it was discovered (for the measured data, see example at figure \ref[testing.users.clt.angles_p1] based on the script \ref[scripts.testing.clt.angles]) that an angle of 0.2 degrees is significant enough to determine the turn. The exact results are visible in table \ref[testing.users.clt.table_turn_coordinates], the visual comparison is visible on the related figure \ref[testing.users.clt.turn_paths]. %The scripts for such measurements are in the additions \rfc{add} as well as the angle plots \ref[]\rfc{add}.
@@ -1727,12 +1727,12 @@ The second metric is the reaction time. The reaction is determined from the path
 
 Given the results, a reaction time can be measured. As described by Marc Green\cite[Green2013], reaction time consists of three parts, which are highly situation-dependable and unexact:
 \begitems
-* {\bf Mental processing time} -- the amount of time it takes for brain to percieve a signal and to decide upon a response,
+* {\bf Mental processing time} -- the amount of time it takes for brain to perceive a signal and to decide upon a response,
 * {\bf movement time} -- the amount of time it takes to perform the response (using muscles),
 * {\bf device response time} -- the amount of time it takes for a vehicle to react to input.
 \enditems
 
-For the purpose of evaluating, the reaction time will be assumed to be a single value without dividing it into three parts. A note has to be made, that the simulator reaction delay is much lower than real vehicle delay, therefore a device response time it minimized. When driving at 60 kilometres per hour, it is approximately the speed of 16,667 metres per second. The times of reaction were measured based on the speed and the traveled distance from the moment of object appearence. The measured times and the distances (from the object) of turns are shown in table \ref[testing.users.clt.turn_distances_times].
+For the purpose of evaluating, the reaction time will be assumed to be a single value without dividing it into three parts. A note has to be made, that the simulator reaction delay is much lower than real vehicle delay, therefore a device response time it minimized. When driving at 60 kilometers per hour, it is approximately the speed of 16,667 meters per second. The times of reaction were measured based on the speed and the traveled distance from the moment of object appearance. The measured times and the distances (from the object) of turns are shown in table \ref[testing.users.clt.turn_distances_times].
 
 \medskip
 \clabel[testing.users.clt.turn_distances_times]{Times and distances of turn from the object}
@@ -1747,17 +1747,17 @@ For the purpose of evaluating, the reaction time will be assumed to be a single 
 
 %\href{http://www.humanbenchmark.com/tests/reactiontime}
 %\href{	http://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf}{ odkaz v bibli: keyword: Fitch, Olson}
-According to statistics gathered so far on a human benchmark page\fnote{available at \url{http://www.humanbenchmark.com/tests/reactiontime}}, where participants push the button when it turns green (knowing it will do so) five times over, the average human reaction time for highly expected signal is 215 milliseconds. While the participants in the change lane test did expect something to happen and that they will have to go around something, they drove for three minutes focusing on keeping the speed as well as controlling the tested application in a homogeneous environment of highway in the forest, which heavily lowers their alertness. However, the results are still under 0.7 second with the mean of 531 milliseconds. As desribed in a master's thesis by Pamela M. D'Addario\cite[DAddario2014], a similar test was performed focusing on alerted obstacle crash avoidance. Alerted means that the participants knew what is the test about. The measured mean time was 0.78 seconds. Another similar test was performed also with average resulsts around 0.7 seconds. This means that the application controlling in the change lane test did not influence the participant's awareness. The results are even slightly better than the ones from the tests mentioned above, but it can be caused by the difference of measured signal -- the accelerator pedal vs. steering wheel movement, as the steering wheel movement is usually performed faster.
+According to statistics gathered so far on a human benchmark page\fnote{available at \url{http://www.humanbenchmark.com/tests/reactiontime}}, where participants push the button when it turns green (knowing it will do so) five times over, the average human reaction time for highly expected signal is 215 milliseconds. While the participants in the change lane test did expect something to happen and that they will have to go around something, they drove for three minutes focusing on keeping the speed as well as controlling the tested application in a homogeneous environment of highway in the forest, which heavily lowers their alertness. However, the results are still under 0.7 second with the mean of 531 milliseconds. As described in a master's thesis by Pamela M. D'Addario\cite[DAddario2014], a similar test was performed focusing on alerted obstacle crash avoidance. Alerted means that the participants knew what is the test about. The measured mean time was 0.78 seconds. Another similar test was performed also with average results around 0.7 seconds. This means that the application controlling in the change lane test did not influence the participant's awareness. The results are even slightly better than the ones from the tests mentioned above, but it can be caused by the difference of measured signal -- the accelerator pedal vs. steering wheel movement, as the steering wheel movement is usually performed faster.
 
 %	------------------------------------------------------------------------ Summary ----------------------------------------------------------------------%
 \label[testing.summary]
 \sec Summary
 
-Thanks to the test driven development, the amount of bugs that got into the release version was limited. The unit tests prevented many bugs from flowing through. However, certain bugs and inperfections were present in the automatic tests as well, allowing disfunctional code go past them. The test driven development just adds another layer to the application development protection layer, but it is not perfect.
+Thanks to the test driven development, the amount of bugs that got into the release version was limited. The unit tests prevented many bugs from flowing through. However, certain bugs and imperfections were present in the automatic tests as well, allowing dysfunctional code go past them. The test driven development just adds another layer to the application development protection layer, but it is not perfect.
 
 After the development of the graphical user interface was done, the heuristic testing came into place. Many shortcomings have been found, however, not all were fixed because of the thesis deadline. They will surely be fixed as soon as possible, as the application will be released into the real market and it has to be nearly perfect by then. The heuristic testing however gives a great insight into certain areas of the user interface.
 
-Then even with a few difficulties, the application was tested in the most suitable environment available -- the realistic car simulator. Thanks to the eye-tracking and the simulator logs huge amount of data has been gathered. The evaulation of those data was done using the R software.
+Then even with a few difficulties, the application was tested in the most suitable environment available -- the realistic car simulator. Thanks to the eye-tracking and the simulator logs huge amount of data has been gathered. The evaluation of those data was done using the R software.
 
 The A/B testing against the potential competitor -- Torque was performed. The tests have shown that the \rfc{name} performs better in the real life scenarios based on obtaining information from a car.
 
@@ -1780,31 +1780,31 @@ Overall the testing was a success and it helped developing a good and safe appli
 
 \seccc Review existing Android applications for in-car use
 
-The reviewed appliactions are described in the section \ref[analysis.existing_applications]. There are following applications: Torque, CarHome Ultra, Car Dashdroid, Ultimate Car Dock. Also Android Auto was briefly described, as it is the current direction of Google in the automotive area.
+The reviewed applications are described in the section \ref[analysis.existing_applications]. There are following applications: Torque, CarHome Ultra, Car Dashdroid, Ultimate Car Dock. Also Android Auto was briefly described, as it is the current direction of Google in the automotive area.
 
-\seccc Review and analyse User Interface development methods for in-car infotainment applications
+\seccc Review and analyze User Interface development methods for in-car infotainment applications
 
-A GUI is analyzed in section \ref[analysis.gui]. This analyzation contains requirements for GUI (\ref[analysis.gui.basic_principles]) as well as differencies for the in-car usage (\ref[analysis.gui.ui_in_a_car_environment]). It also describes the development process of user interface in section \ref[analysis.gui.development_process].
+A \glref{GUI} is analyzed in section \ref[analysis.gui]. This analysis contains requirements for \glref{GUI} (\ref[analysis.gui.basic_principles]) as well as differences for the in-car usage (\ref[analysis.gui.ui_in_a_car_environment]). It also describes the development process of user interface in section \ref[analysis.gui.development_process].
 
 \seccc Analyze the in-car OBD API and exported data
 
-The OBD is analyzed in section \ref[analysis.obd]. The API is then described in section \ref[analysis.obd.api] and the data are described in \ref[analysis.obd.data]. The OBD is also mentioned in the realization chapter in section \ref[realization.core.obd].
+The \glref{OBD} is analyzed in section \ref[analysis.obd]. The \glref{API} is then described in section \ref[analysis.obd.api] and the data are described in \ref[analysis.obd.data]. The \glref{OBD} is also mentioned in the realization chapter in section \ref[realization.core.obd].
 
 \seccc Design an application system architecture for accessing the OBD data and resources
 
-The application architecture is described in section \ref[design.application_architecture], where the limitations of the platform architecture (\ref[design.application_architecture.platform_limitations]), the extensibility (\ref[design.application_architecture.extensibility]), the modularity (\ref[design.application_architecture.modularity]) and the adaptibility (\ref[design.application_architecture.adaptability]) are described.
+The application architecture is described in section \ref[design.application_architecture], where the limitations of the platform architecture (\ref[design.application_architecture.platform_limitations]), the extensibility (\ref[design.application_architecture.extensibility]), the modularity (\ref[design.application_architecture.modularity]) and the adaptability (\ref[design.application_architecture.adaptability]) are described.
 
 \seccc Design a tablet User Interface for in-car use
 
-The process of designing the tablet User Interface for in-car use is described in the design section \ref[design.gui]. It presents four phases of GUI creation process and the emergence of the final GUI design.
+The process of designing the tablet User Interface for in-car use is described in the design section \ref[design.gui]. It presents four phases of \glref{GUI} creation process and the emergence of the final \glref{GUI} design.
 
 \seccc Design and implement in-car application offering the OBD data for Android tablet platform
 
-The application development phase is described in chapter \ref[realization] in sections \ref[realization.tablet] and \ref[realization.core]. The OBD access itself is described in section \ref[realization.core.obd] while the data are provided using modules described in section \ref[realization.core.modules].
+The application development phase is described in chapter \ref[realization] in sections \ref[realization.tablet] and \ref[realization.core]. The \glref{OBD} access itself is described in section \ref[realization.core.obd] while the data are provided using modules described in section \ref[realization.core.modules].
 
 \seccc Perform UI and application testing and evaluate results
 
-The testing is described in chapter \ref[testing]. Both application (\ref[testing.code]) and UI testing (\ref[testing.heuristic] and \ref[testing.users]) are present. The testing with users was performed on a realistic car simulator and it is thoroughly described in section \ref[testing.users].
+The testing is described in chapter \ref[testing]. Both application (\ref[testing.code]) and \glref{UI} testing (\ref[testing.heuristic] and \ref[testing.users]) are present. The testing with users was performed on a realistic car simulator and it is thoroughly described in section \ref[testing.users].
 
 
 %	------------------------------------------------------------------------ Project life cycle ----------------------------------------------------------------------%
@@ -1861,11 +1861,11 @@ The testing is described in chapter \ref[testing]. Both application (\ref[testin
 
 \medskip
 \centerline{
-\clabel[app.design.gui.draft3]{Music player GUI draft }
+\clabel[app.design.gui.draft3]{Music player GUI draft}
 \inspic images/design_gui_draft3.png
 }
 \nobreak\medskip
-\caption/f Music player GUI draft 
+\caption/f Music player GUI draft
 \medskip
 
 \centerline{
